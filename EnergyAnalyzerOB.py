@@ -1,7 +1,9 @@
 import json
+import math
 import re
 import yaml
 from collections import defaultdict
+from datetime import datetime
 from pyswip import Prolog
 
 # Define Input Files
@@ -9,22 +11,23 @@ istio = "istio_data_default.json"
 kepler = "kepler-metrics.txt"
 deployment = "deployment_example.json"
 infrastructure = "infrastructure_example.yaml"
+knowledgeBase = "knowledgeBase.json"
+energyMix = "energyMix_timeSeries.json"
 
 # Define constant values
 
-# Global average grid intensity in gCO2e/kWh
-grid_intensity = 494
-
-# Energy consumption for transferring 1 GB over 1km
-energy_intensity = 0.05 / 1000
+# Energy consumption for transferring 1 GB in KWh/GB
+energy_intensity = 0.0028125
 
 # Threshold for service communications
 commThreshold = 0.5
-delayThreshold = 0.5
 volumeThreshold = 0.5
 
 # Threshold for services joule consumption
 serviceThreshold = 0.8
+
+# When constrainst should stop being produced
+knowledgeBaseMemoryThreshold = 0.5
 
 # From the kepler .txt obtain a JSON structure
 def prepareKepler(keplerFile):
@@ -108,21 +111,49 @@ def prepareInfrastructure(yamlFile):
     data = dict(data)
     return data
 
+def prepareDeploymentInfo(deploymentFile):
+    with open(deploymentFile, 'r') as file:
+            deploymentinfo = json.load(file)
+
+    return deploymentinfo
+
 # From the service metric files obtain the consumption values for each service and each connection
 def prepareValues(istio, kepler):
-    finalIstio = []
-    finalKepler = []
-    finalDelay = []
-    finalVolume = []
+
+    def traffic_multiplier(hour):
+        if 8 <= hour <= 18:  
+            peak_hour = 15
+            sigma = 2    
+            multiplier = math.exp(-((hour - peak_hour) ** 2) / (2 * sigma ** 2))
+            return 0.5 + multiplier
+        else:
+            return 0.35
+
+    def simulate_traffic(base_value):
+        current_hour = datetime.now().hour
+        multiplier = traffic_multiplier(current_hour)
+        return base_value * multiplier
+
+    def findNode(service, services):
+        for s in services:
+            if s["service"] == service:
+                return s["node"]
 
     def truncate_string(s):
         reversed_s = s[::-1]
         parts = reversed_s.split('-', 2)
         return parts[-1][::-1]
     
+    finalIstio = []
+    finalKepler = []
+    finalVolume = []
+    
     with open(istio, 'r') as file:
         metrics = json.load(file)
     keplerMetrics = json.loads(kepler)
+
+    with open(energyMix, 'r') as file:
+        energymix = json.load(file)
 
     for element in metrics:
         # /1000 -> from ms to s
@@ -132,15 +163,14 @@ def prepareValues(istio, kepler):
         # requestVolume measures the amount of requests in a span of 1 hour
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
         # Scale Data Transfer
-        data_transfer = data_transfer * 15000
+        data_transfer = data_transfer * 65000
+        grid_intensity = prepareGridIntensity(energymix, findNode(element["source"], prepareDeploymentInfo(deployment)))
         # distance (km) * data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
-        estimated_emissions = distance * data_transfer * grid_intensity * energy_intensity
+        estimated_emissions = data_transfer * grid_intensity * energy_intensity
         joules = (estimated_emissions / grid_intensity) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
-        delay = {"source": element["source"], "destination": element["destination"], "delay": float(element["requestDuration"])}
         volume = {"source": element["source"], "destination": element["destination"], "volume": data_transfer}
         finalIstio.append(consumption)
-        finalDelay.append(delay)
         finalVolume.append(volume)
 
     # Define the important fields to take from the Kepler
@@ -151,20 +181,15 @@ def prepareValues(istio, kepler):
             metric["values"] = sorted(metric["values"], key=lambda x: float(x["value"]), reverse=True)[:]
             for pod in metric["values"]:
                 if pod["container_name"] == "server":
-                    estimated_emissions = (float(pod["value"]) / 1000) * grid_intensity
-                    joules = {"service": truncate_string(pod["pod_name"]), "emissions": estimated_emissions, "joules": float(pod["value"])}
+                    grid_intensity = prepareGridIntensity(energymix, findNode(truncate_string(pod["pod_name"]), prepareDeploymentInfo(deployment)))
+                    estimated_emissions = (simulate_traffic(float(pod["value"])) / 1000) * grid_intensity
+                    joules = {"service": truncate_string(pod["pod_name"]), "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                     finalKepler.append(joules)
 
-    return finalIstio, finalKepler, finalDelay, finalVolume
+    return finalIstio, finalKepler, finalVolume
 
 # From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output
-def prepareConstraints(finalIstio, finalKepler, finalDelay, finalVolume):
-
-    def createPrologFile(filename, facts):
-        with open(filename, 'w') as file:
-            for fact in facts:
-                file.write(fact + ".\n")
-
+def prepareConstraints(finalIstio, finalKepler, finalVolume):
     def checkThreshold(array, field, max, threshold):
         output = []
         for var in array:
@@ -194,22 +219,19 @@ def prepareConstraints(finalIstio, finalKepler, finalDelay, finalVolume):
 
     maxIstio = max(finalIstio, key=lambda x: x['emissions'])
     maxKepler = max(finalKepler, key=lambda x: x['emissions'])
-    maxDelay = max(finalDelay, key=lambda x: x['delay'])
     maxVolume = max(finalVolume, key=lambda x: x['volume'])
     maxAll = max(maxIstio['emissions'], maxKepler['emissions'])
     maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
 
     monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], commThreshold)
     monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], serviceThreshold)
-    monitorDelay = checkThreshold(finalDelay, 'delay', maxDelay['delay'], delayThreshold)
     monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)
                 
     monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
-    monitorDelay = sorted(monitorDelay, key=lambda x: x['delay'], reverse=True)
     monitorVolume = sorted(monitorVolume, key=lambda x: x['volume'], reverse=True)
-
     prologFacts = []
     constraints = []
+    constraintsHistory = []
 
     totalJoulesConsumption = 0
     totalEmissionsConsumption = 0
@@ -229,14 +251,22 @@ def prepareConstraints(finalIstio, finalKepler, finalDelay, finalVolume):
     for node in myInfrastructure:
         fact = f"node({node}, {myInfrastructure[node]["profile"]["carbon"]})"
         prologFacts.append(fact)
-    with open(deployment, 'r') as file:
-            deploymentinfo = json.load(file)
+    deploymentinfo = prepareDeploymentInfo(deployment)
     for element in deploymentinfo:
         rule = f"deployedTo({element["service"]},{element["flavour"]},{element["node"]})"
         prologFacts.append(rule)
     for comm in monitorIstio:
         rule = f"highConsumptionConnection({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll)})"
         constraint = f"affinity({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
+        constraintData = {
+            "category": "affinity",
+            "source": comm["source"],
+            "source_flavour": findFlavour(comm['source'], deploymentinfo),
+            "destination": comm["destination"],
+            "destination_flavour": findFlavour(comm['destination'], deploymentinfo),
+            "constraint_weight": float(comm['emissions'] / maxAll)
+        }
+        constraintsHistory.append(constraintData)
         prologFacts.append(rule)
         constraints.append(constraint)
         totalEmissionsSaved += float(comm['emissions'])
@@ -251,11 +281,154 @@ def prepareConstraints(finalIstio, finalKepler, finalDelay, finalVolume):
             if(scaledWeight > serviceThreshold):
                 prologFacts.append(rule)
                 constraints.append(constraint)
-    createPrologFile("facts.pl", prologFacts)
-
+    
     produceSavingsOut()
+
+    return constraintsHistory, prologFacts
         
+def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints, rules):
+    with open(knowledgeBase, "r") as file:
+        myKnowledgeBase = yaml.safe_load(file)
+    
+    def sigmoid_decay_step(weight):
+        k = 2
+        multiplier = 1 / (1 + math.exp(k * (1 - weight)))
+        new_weight = weight * multiplier
+        return new_weight
+
+    def createPrologFile(filename, facts):
+        with open(filename, 'w') as file:
+            for fact in facts:
+                file.write(fact + ".\n")
+
+    if not myKnowledgeBase:
+        # We have no previous knowledge, save the basis
+        services = []
+        connections = []
+        constr = []
+        for element in kepler:
+            past = []
+            pastData = {
+                "emissions": element["emissions"],
+                "joules": element["joules"]
+            }
+            past.append(pastData)
+            historyData = {
+                "service": element["service"],
+                "history": past
+            }
+            services.append(historyData)
+        for element in istio:
+            past = []
+            pastData = {
+                "emissions": element["emissions"],
+                "joules": element["joules"]
+            }
+            past.append(pastData)
+            historyData = {
+                "source": element["source"],
+                "destination": element["destination"],
+                "history": past
+            }
+            connections.append(historyData)
+        for element in constraints:
+            element["weight"] = 1.0
+            constr.append(element)
+        knowledge = {
+            "services": services,
+            "connections": connections,
+            "constraints": constr
+        }
+
+        with open(knowledgeBase, "w") as json_file:
+            json.dump(knowledge, json_file, indent=4)
+    else:
+        for element in kepler:
+            service_found = False
+            for service in myKnowledgeBase["services"]:
+                if service["service"] == element["service"]:
+                    pastData = {
+                        "emissions": element["emissions"],
+                        "joules": element["joules"]
+                    }
+                    service["history"].append(pastData)
+                    service_found = True
+                    break
+            if not service_found:
+                newKnowledge = {
+                    "service": element["service"],
+                    "history": [
+                        {
+                            "emissions": element["emissions"],
+                            "joules": element["joules"]
+                        }
+                    ]
+                }
+                myKnowledgeBase["services"].append(newKnowledge) 
+        for element in istio:
+            pairing_found = False
+            for connection in myKnowledgeBase["connections"]:
+                if connection["source"] == element["source"] and connection["destination"] == element["destination"]:
+                    pastData = {
+                        "emissions": element["emissions"],
+                        "joules": element["joules"]
+                    }
+                    connection["history"].append(pastData)
+                    pairing_found = True
+                    break
+            if not pairing_found:
+                newKnowledge = {
+                    "source": element["service"],
+                    "destination": element["destination"],
+                    "history": [
+                        {
+                            "emissions": element["emissions"],
+                            "joules": element["joules"]
+                        }
+                    ]
+                }
+                myKnowledgeBase["connections"].append(newKnowledge)
+        for element in constraints:
+            constr_found = False
+            for constr in myKnowledgeBase["constraints"]:
+                if constr["source"] == element["source"] and constr["source_flavour"] == element['source_flavour'] \
+                    and constr["destination"] == element["destination"] and constr["destination_flavour"] == element['destination_flavour']:
+                    constr_found = True
+                    break
+            if not constr_found:
+                myKnowledgeBase["constraints"].append(element)
+        for constr in myKnowledgeBase["constraints"]:
+            constr_found = False
+            for element in constraints:
+                if constr["source"] == element["source"] and constr["source_flavour"] == element['source_flavour'] \
+                    and constr["destination"] == element["destination"] and constr["destination_flavour"] == element['destination_flavour']:
+                    constr_found = True
+                    break
+            if not constr_found:
+                constr["weight"] = sigmoid_decay_step(constr["weight"])
+
+        with open(knowledgeBase, "w") as json_file:
+            json.dump(myKnowledgeBase, json_file, indent=4)    
+
+    for element in myKnowledgeBase["constraints"]:
+        if knowledgeBaseMemoryThreshold < element["weight"] < 1.0:
+            new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_weight"]})"
+            rules.append(new_rule)
+    createPrologFile("facts.pl", rules)   
+
+def prepareGridIntensity(energyMix, node):
+    current_hour = datetime.now().hour
+    current_mix = None
+    for entry in energyMix[node]:
+        entry_hour = datetime.fromisoformat(entry["timestamp"]).hour
+        if entry_hour == current_hour:
+            current_mix = entry["mix"]
+            break
+    return current_mix
+
 myInfrastructure = prepareInfrastructure(infrastructure)
-prepareConstraints(*prepareValues(istio, prepareKepler(kepler)))
+ist, kep, vol = prepareValues(istio, prepareKepler(kepler))
+constr, rules = prepareConstraints(ist, kep, vol)
+handleKnowledgeBase(knowledgeBase, ist, kep, constr, rules)
 
 Prolog().consult("rules.pl")
