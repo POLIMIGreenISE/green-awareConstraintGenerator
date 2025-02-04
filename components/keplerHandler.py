@@ -1,0 +1,50 @@
+import json
+import re
+from collections import defaultdict
+
+# From the kepler .txt obtain a JSON structure
+def prepareKepler(keplerFile):
+    data = defaultdict(dict)
+    final = []
+
+    with open(keplerFile, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if not line.startswith('#'):
+                parts = re.split(r'[{}]', line)
+                field = parts[0]
+                data = parts[1]
+                value = parts[2].strip()
+                data = data.split(',')
+                tojson = {}
+                tojson["field"] = field
+                for ele in data:
+                    if '=' in ele:
+                        key, value2 = ele.split('=', 1)
+                        tojson[key] = value2.strip('"')
+                tojson["value"] = value
+                final.append(tojson)
+
+    # Filter only the fields of a specific namespace
+    def filterByNS(namespace):
+        filter = [item for item in final if item.get("container_namespace") == namespace]
+        grouped_data = defaultdict(list)
+        for item in filter:
+            field = item['field']
+            grouped_data[field].append({
+                "container_name": item['container_name'],
+                "pod_name": item['pod_name'],
+                "value": item['value']
+            })
+        final_data = []
+        for field, values in grouped_data.items():
+            final_data.append({
+                "field": field,
+                "values": values
+            })
+        return json.dumps(final_data, indent=4)
+
+    # Request only the default namespace as that is where our microservices reside
+    namespaces = ["default"]
+    for ns in namespaces:
+        return filterByNS(ns)

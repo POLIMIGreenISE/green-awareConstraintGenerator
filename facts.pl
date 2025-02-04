@@ -1,27 +1,27 @@
-serviceConnection(checkoutservice, currencyservice, 26.226595597740488, 97.86043133485256).
-serviceConnection(checkoutservice, emailservice, 40.07374902793879, 149.52891428335369).
-serviceConnection(checkoutservice, paymentservice, 11.03255240715952, 41.166240325222084).
-serviceConnection(checkoutservice, productcatalogservice, 15.746377426819869, 58.75513965231294).
-serviceConnection(checkoutservice, shippingservice, 38.834855505703246, 144.90617726008674).
-serviceConnection(frontend, productcatalogservice, 165.0064775355256, 3113.329764821238).
-serviceConnection(frontend, recommendationservice, 49.57275900654144, 935.3350755951216).
-serviceConnection(frontend, shippingservice, 11.473272654584028, 216.4768425393213).
-serviceConnection(frontend, adservice, 24.292625739485604, 458.3514290468982).
-serviceConnection(checkoutservice, cartservice, 20.445383629459286, 76.28874488604211).
-serviceConnection(frontend, cartservice, 52.42807155519927, 989.2088972679107).
-serviceConnection(frontend, checkoutservice, 5.438845307358472, 102.61972278034852).
-serviceConnection(frontend, currencyservice, 109.88976303164551, 2073.3917553140664).
-serviceConnection(recommendationservice, productcatalogservice, 93.29697404508353, 348.123037481655).
-service(frontend, 96.34661726876033, 1817.860703184157).
-service(productcatalogservice, 217.46900050465868, 811.4514944203682).
-service(currencyservice, 241.30930642478253, 722.4829533676124).
-service(recommendationservice, 132.61178268593756, 494.82008464902077).
-service(cartservice, 149.80293001917317, 448.5117665244706).
-service(adservice, 68.88585704912433, 206.24508098540218).
-service(checkoutservice, 26.40374655556241, 98.52144237150152).
-service(shippingservice, 27.092039575997934, 81.11389094610159).
-service(emailservice, 13.879919610768683, 41.5566455412236).
-service(paymentservice, 9.57391693924461, 28.664421973786254).
+serviceConnection(checkoutservice, currencyservice, 27.49878120509357, 97.86043133485258).
+serviceConnection(checkoutservice, emailservice, 42.01762491362239, 149.5289142833537).
+serviceConnection(checkoutservice, paymentservice, 11.567713531387408, 41.16624032522209).
+serviceConnection(checkoutservice, productcatalogservice, 16.51019424229994, 58.75513965231295).
+serviceConnection(checkoutservice, shippingservice, 40.71863581008438, 144.90617726008676).
+serviceConnection(frontend, productcatalogservice, 171.23313706516808, 3113.329764821238).
+serviceConnection(frontend, recommendationservice, 51.44342915773168, 935.3350755951215).
+serviceConnection(frontend, shippingservice, 11.90622633966267, 216.47684253932127).
+serviceConnection(frontend, adservice, 25.2093285975794, 458.3514290468982).
+serviceConnection(checkoutservice, cartservice, 21.437137312977832, 76.28874488604211).
+serviceConnection(frontend, cartservice, 54.40648934973509, 989.2088972679107).
+serviceConnection(frontend, checkoutservice, 5.644084752919169, 102.61972278034854).
+serviceConnection(frontend, currencyservice, 114.03654654227364, 2073.3917553140664).
+serviceConnection(recommendationservice, productcatalogservice, 97.82257353234505, 348.123037481655).
+service(frontend, 217.56272188656527, 3955.685852483005).
+service(productcatalogservice, 496.169514321933, 1765.7278089748504).
+service(currencyservice, 528.2360958733552, 1572.1312377183192).
+service(recommendationservice, 302.56231304671775, 1076.734210130668).
+service(cartservice, 327.9248367007477, 975.9667758950823).
+service(adservice, 150.7940026335529, 448.79167450462177).
+service(checkoutservice, 60.24184630614589, 214.3837946837932).
+service(shippingservice, 59.30560004875897, 176.50476204987788).
+service(emailservice, 30.38372060678836, 90.42773990115582).
+service(paymentservice, 20.957701885313487, 62.37411275390919).
 node(node_a, 27).
 node(node_b, 35).
 node(node_c, 25).
@@ -35,8 +35,8 @@ deployedTo(shippingservice,small,node_c).
 deployedTo(currencyservice,small,node_c).
 deployedTo(paymentservice,small,node_c).
 deployedTo(emailservice,small,node_c).
-highConsumptionConnection(frontend,large,productcatalogservice,medium,0.6837965761878274).
-highConsumptionConnection(frontend,large,currencyservice,small,0.4553896600995734).
-highConsumptionConnection(recommendationservice,large,productcatalogservice,medium,0.38662816377604037).
-highConsumptionService(productcatalogservice,medium, node_b, 0.9012043659925938).
+highConsumptionConnection(frontend,large,productcatalogservice,medium,0.3241602351729884).
+highConsumptionConnection(frontend,large,currencyservice,small,0.215881776033749).
+highConsumptionConnection(recommendationservice,large,productcatalogservice,medium,0.18518721892832943).
+highConsumptionService(productcatalogservice,medium, node_b, 0.9392949822968739).
 highConsumptionService(currencyservice,small, node_b, 1.0).

@@ -1,0 +1,241 @@
+{
+    "services": [
+        {
+            "service": "frontend",
+            "history": {
+                "emissions": 224.66247194328264,
+                "joules": 4123.789426241503,
+                "count": 2
+            }
+        },
+        {
+            "service": "productcatalogservice",
+            "history": {
+                "emissions": 508.63396516096645,
+                "joules": 1840.7654044874253,
+                "count": 2
+            }
+        },
+        {
+            "service": "currencyservice",
+            "history": {
+                "emissions": 555.8016399366776,
+                "joules": 1638.9416188591595,
+                "count": 2
+            }
+        },
+        {
+            "service": "recommendationservice",
+            "history": {
+                "emissions": 310.16308852335885,
+                "joules": 1122.491855065334,
+                "count": 2
+            }
+        },
+        {
+            "service": "cartservice",
+            "history": {
+                "emissions": 345.03731085037384,
+                "joules": 1017.4421379475411,
+                "count": 2
+            }
+        },
+        {
+            "service": "adservice",
+            "history": {
+                "emissions": 158.66305731677647,
+                "joules": 467.8638372523109,
+                "count": 2
+            }
+        },
+        {
+            "service": "checkoutservice",
+            "history": {
+                "emissions": 61.75520315307294,
+                "joules": 223.49439734189662,
+                "count": 2
+            }
+        },
+        {
+            "service": "shippingservice",
+            "history": {
+                "emissions": 62.40041152437949,
+                "joules": 184.00563102493896,
+                "count": 2
+            }
+        },
+        {
+            "service": "emailservice",
+            "history": {
+                "emissions": 31.969268803394183,
+                "joules": 94.27061995057792,
+                "count": 2
+            }
+        },
+        {
+            "service": "paymentservice",
+            "history": {
+                "emissions": 6.592034098706,
+                "joules": 30.45024181696365,
+                "count": 16
+            }
+        }
+    ],
+    "connections": [
+        {
+            "source": "checkoutservice",
+            "destination": "currencyservice",
+            "history": {
+                "emissions": 26.6180373230799,
+                "joules": 97.86043133485258,
+                "count": 1
+            }
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "emailservice",
+            "history": {
+                "emissions": 40.6718646850722,
+                "joules": 149.52891428335369,
+                "count": 1
+            }
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "paymentservice",
+            "history": {
+                "emissions": 11.197217368460409,
+                "joules": 41.16624032522209,
+                "count": 1
+            }
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "productcatalogservice",
+            "history": {
+                "emissions": 15.98139798542912,
+                "joules": 58.75513965231294,
+                "count": 1
+            }
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "shippingservice",
+            "history": {
+                "emissions": 39.4144802147436,
+                "joules": 144.90617726008676,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "productcatalogservice",
+            "history": {
+                "emissions": 168.11980730034682,
+                "joules": 3113.3297648212374,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "recommendationservice",
+            "history": {
+                "emissions": 50.50809408213656,
+                "joules": 935.3350755951215,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "shippingservice",
+            "history": {
+                "emissions": 11.689749497123351,
+                "joules": 216.47684253932132,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "adservice",
+            "history": {
+                "emissions": 24.750977168532504,
+                "joules": 458.35142904689826,
+                "count": 1
+            }
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "cartservice",
+            "history": {
+                "emissions": 20.750538609003456,
+                "joules": 76.28874488604212,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "cartservice",
+            "history": {
+                "emissions": 53.417280452467175,
+                "joules": 989.2088972679106,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "checkoutservice",
+            "history": {
+                "emissions": 5.54146503013882,
+                "joules": 102.61972278034852,
+                "count": 1
+            }
+        },
+        {
+            "source": "frontend",
+            "destination": "currencyservice",
+            "history": {
+                "emissions": 111.96315478695956,
+                "joules": 2073.391755314066,
+                "count": 1
+            }
+        },
+        {
+            "source": "recommendationservice",
+            "destination": "productcatalogservice",
+            "history": {
+                "emissions": 94.68946619501014,
+                "joules": 348.12303748165493,
+                "count": 1
+            }
+        }
+    ],
+    "constraints": [
+        {
+            "category": "affinity",
+            "source": "frontend",
+            "source_flavour": "large",
+            "destination": "productcatalogservice",
+            "destination_flavour": "medium",
+            "constraint_weight": 0.28818866043782615,
+            "weight": 1.0
+        },
+        {
+            "category": "affinity",
+            "source": "frontend",
+            "source_flavour": "large",
+            "destination": "currencyservice",
+            "destination_flavour": "small",
+            "constraint_weight": 0.19192569938414564,
+            "weight": 1.0
+        },
+        {
+            "category": "affinity",
+            "source": "recommendationservice",
+            "source_flavour": "large",
+            "destination": "productcatalogservice",
+            "destination_flavour": "medium",
+            "constraint_weight": 0.16231538007631596,
+            "weight": 1.0
+        }
+    ]
+}
