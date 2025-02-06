@@ -1,7 +1,7 @@
 import yaml
 from collections import defaultdict
 
-# Parse the infrastructure file
+# Parse the yaml infrastructure file
 def prepareInfrastructure(yamlFile):
     with open(yamlFile, "r") as file:
         data = yaml.safe_load(file)
@@ -26,12 +26,12 @@ def prepareInfrastructure(yamlFile):
 
     # Populate the nested dictionary
     for field_name, field_value in fields:
-        keys = field_name.split('.')  # Split the field name into hierarchical levels
+        keys = field_name.split('.')
         d = data
-        for key in keys[:-1]:  # Traverse and create intermediate levels
+        for key in keys[:-1]:
             d = d[key]
-        d[keys[-1]] = field_value  # Set the final key's value
+        d[keys[-1]] = field_value
 
-    # Convert back to a regular dict (optional)
+    # Convert back to a regular dict
     data = dict(data)
     return data

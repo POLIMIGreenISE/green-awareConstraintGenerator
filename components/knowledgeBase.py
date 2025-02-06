@@ -6,7 +6,7 @@ from pyswip import Prolog
 # When constrainst should stop being produced
 knowledgeBaseMemoryThreshold = 0.5
 
-def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints, rules):
+def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
     with open(knowledgeBase, "r") as file:
         myKnowledgeBase = yaml.safe_load(file)
     
@@ -45,7 +45,7 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints, rules):
             }
             connections.append(historyData)
         for element in constraints:
-            element["weight"] = 1.0
+            element["memory_weight"] = 1.0
             constr.append(element)
         knowledge = {
             "services": services,
@@ -118,19 +118,21 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints, rules):
                     constr_found = True
                     break
             if not constr_found:
-                constr["weight"] = sigmoid_decay_step(constr["weight"])
+                constr["memory_weight"] = sigmoid_decay_step(constr["memory_weight"])
 
         with open(knowledgeBase, "w") as json_file:
             json.dump(myKnowledgeBase, json_file, indent=4)    
 
     if myKnowledgeBase is not None:
         for element in myKnowledgeBase["constraints"]:
-            if knowledgeBaseMemoryThreshold < element["weight"] < 1.0:
-                new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_weight"]})"
-                rules.append(new_rule)
+            if knowledgeBaseMemoryThreshold < element["memory_weight"] < 1.0:
+                new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_emissions"]})"
+                constraints.append(element)
+                #rules.append(new_rule)
     else:
         for element in knowledge["constraints"]:
-            if knowledgeBaseMemoryThreshold < element["weight"] < 1.0:
-                new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_weight"]})"
-                rules.append(new_rule)
-    return rules
+            if knowledgeBaseMemoryThreshold < element["memory_weight"] < 1.0:
+                new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_emissions"]})"
+                constraints.append(element)
+                #rules.append(new_rule)
+    return constraints

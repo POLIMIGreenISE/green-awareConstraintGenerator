@@ -5,4 +5,4 @@ def createPrologFile(filename, facts):
         for fact in facts:
             file.write(fact + ".\n")
 
-Prolog().consult("rules.pl")
+    Prolog().consult("rules.pl")    

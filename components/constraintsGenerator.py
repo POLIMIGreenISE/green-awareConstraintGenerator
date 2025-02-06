@@ -49,6 +49,7 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
     prologFacts = []
     constraints = []
     constraintsHistory = []
+    singleInstanceConstraints = []
 
     totalJoulesConsumption = 0
     totalEmissionsConsumption = 0
@@ -73,7 +74,7 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
         rule = f"deployedTo({element["service"]},{element["flavour"]},{element["node"]})"
         prologFacts.append(rule)
     for comm in monitorIstio:
-        rule = f"highConsumptionConnection({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll)})"
+        #rule = f"highConsumptionConnection({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
         constraint = f"affinity({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
         constraintData = {
             "category": "affinity",
@@ -81,10 +82,10 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
             "source_flavour": findFlavour(comm['source'], deploymentinfo),
             "destination": comm["destination"],
             "destination_flavour": findFlavour(comm['destination'], deploymentinfo),
-            "constraint_weight": float(comm['emissions'] / maxAll)
+            "constraint_emissions": comm['emissions']
         }
         constraintsHistory.append(constraintData)
-        prologFacts.append(rule)
+        #prologFacts.append(rule)
         constraints.append(constraint)
         totalEmissionsSaved += float(comm['emissions'])
         totalJoulesSaved += float(comm['joules'])
@@ -93,12 +94,20 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
         for node in myInfrastructure:
             nodeWeight = float(myInfrastructure[node]["profile"]["carbon"] / myInfrastructure[maxNode]["profile"]["carbon"])
             scaledWeight = nodeWeight * serviceWeight
-            rule = f"highConsumptionService({service["service"]},{findFlavour(service['service'], deploymentinfo)}, {node}, {scaledWeight})"
+            #rule = f"highConsumptionService({service["service"]},{findFlavour(service['service'], deploymentinfo)}, {node}, {scaledWeight:.3f})"
             constraint = f"avoid({service["service"]},{findFlavour(service['service'], deploymentinfo)},{node},{scaledWeight:.3f})"
             if(scaledWeight > serviceThreshold):
-                prologFacts.append(rule)
+                singleInst = {
+                    "category": "avoid",
+                    "source": service["service"],
+                    "flavour": findFlavour(service['service'], deploymentinfo),
+                    "node": node,
+                    "constraint_emissions": service["emissions"]
+                }
+                singleInstanceConstraints.append(singleInst)
+                #prologFacts.append(rule)
                 constraints.append(constraint)
     
-    produceSavingsOut()
+    # produceSavingsOut()
 
-    return constraintsHistory, prologFacts
+    return constraintsHistory, singleInstanceConstraints, maxAll, prologFacts

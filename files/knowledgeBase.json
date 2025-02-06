@@ -3,81 +3,81 @@
         {
             "service": "frontend",
             "history": {
-                "emissions": 224.66247194328264,
-                "joules": 4123.789426241503,
-                "count": 2
+                "emissions": 167.80192880894654,
+                "joules": 3166.074128470689,
+                "count": 1
             }
         },
         {
             "service": "productcatalogservice",
             "history": {
-                "emissions": 508.63396516096645,
-                "joules": 1840.7654044874253,
-                "count": 2
+                "emissions": 404.19326709084027,
+                "joules": 1413.2631716462947,
+                "count": 1
             }
         },
         {
             "service": "currencyservice",
             "history": {
-                "emissions": 555.8016399366776,
-                "joules": 1638.9416188591595,
-                "count": 2
+                "emissions": 434.11738374921305,
+                "joules": 1258.3112572440957,
+                "count": 1
             }
         },
         {
             "service": "recommendationservice",
             "history": {
-                "emissions": 310.16308852335885,
-                "joules": 1122.491855065334,
-                "count": 2
+                "emissions": 246.47554168264722,
+                "joules": 861.8025932959694,
+                "count": 1
             }
         },
         {
             "service": "cartservice",
             "history": {
-                "emissions": 345.03731085037384,
-                "joules": 1017.4421379475411,
-                "count": 2
+                "emissions": 269.4966763669381,
+                "joules": 781.1497865708351,
+                "count": 1
             }
         },
         {
             "service": "adservice",
             "history": {
-                "emissions": 158.66305731677647,
-                "joules": 467.8638372523109,
-                "count": 2
+                "emissions": 123.9262110631011,
+                "joules": 359.20640887855393,
+                "count": 1
             }
         },
         {
             "service": "checkoutservice",
             "history": {
-                "emissions": 61.75520315307294,
-                "joules": 223.49439734189662,
-                "count": 2
+                "emissions": 49.07465688886849,
+                "joules": 171.58970940163806,
+                "count": 1
             }
         },
         {
             "service": "shippingservice",
             "history": {
-                "emissions": 62.40041152437949,
-                "joules": 184.00563102493896,
-                "count": 2
+                "emissions": 48.73879717037921,
+                "joules": 141.27187585617162,
+                "count": 1
             }
         },
         {
             "service": "emailservice",
             "history": {
-                "emissions": 31.969268803394183,
-                "joules": 94.27061995057792,
-                "count": 2
+                "emissions": 24.970087052794554,
+                "joules": 72.37706392114364,
+                "count": 1
             }
         },
         {
             "service": "paymentservice",
             "history": {
-                "emissions": 6.592034098706,
-                "joules": 30.45024181696365,
-                "count": 16
+                "emissions": 17.223553602117935,
+                "joules": 49.92334377425488,
+                "count": 1
             }
         }
     ],
@@ -86,7 +86,7 @@
             "source": "checkoutservice",
             "destination": "currencyservice",
             "history": {
-                "emissions": 26.6180373230799,
+                "emissions": 27.988083361767835,
                 "joules": 97.86043133485258,
                 "count": 1
             }
@@ -95,7 +95,7 @@
             "source": "checkoutservice",
             "destination": "emailservice",
             "history": {
-                "emissions": 40.6718646850722,
+                "emissions": 42.765269485039155,
                 "joules": 149.52891428335369,
                 "count": 1
             }
@@ -104,8 +104,8 @@
             "source": "checkoutservice",
             "destination": "paymentservice",
             "history": {
-                "emissions": 11.197217368460409,
-                "joules": 41.16624032522209,
+                "emissions": 11.773544733013516,
+                "joules": 41.166240325222084,
                 "count": 1
             }
         },
@@ -113,8 +113,8 @@
             "source": "checkoutservice",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 15.98139798542912,
-                "joules": 58.75513965231294,
+                "emissions": 16.8039699405615,
+                "joules": 58.755139652312934,
                 "count": 1
             }
         },
@@ -122,8 +122,8 @@
             "source": "checkoutservice",
             "destination": "shippingservice",
             "history": {
-                "emissions": 39.4144802147436,
-                "joules": 144.90617726008676,
+                "emissions": 41.44316669638481,
+                "joules": 144.90617726008674,
                 "count": 1
             }
         },
@@ -131,8 +131,8 @@
             "source": "frontend",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 168.11980730034682,
-                "joules": 3113.3297648212374,
+                "emissions": 165.0064775355256,
+                "joules": 3113.329764821238,
                 "count": 1
             }
         },
@@ -140,8 +140,8 @@
             "source": "frontend",
             "destination": "recommendationservice",
             "history": {
-                "emissions": 50.50809408213656,
-                "joules": 935.3350755951215,
+                "emissions": 49.57275900654144,
+                "joules": 935.3350755951216,
                 "count": 1
             }
         },
@@ -149,8 +149,8 @@
             "source": "frontend",
             "destination": "shippingservice",
             "history": {
-                "emissions": 11.689749497123351,
-                "joules": 216.47684253932132,
+                "emissions": 11.473272654584028,
+                "joules": 216.4768425393213,
                 "count": 1
             }
         },
@@ -158,8 +158,8 @@
             "source": "frontend",
             "destination": "adservice",
             "history": {
-                "emissions": 24.750977168532504,
-                "joules": 458.35142904689826,
+                "emissions": 24.292625739485604,
+                "joules": 458.3514290468982,
                 "count": 1
             }
         },
@@ -167,7 +167,7 @@
             "source": "checkoutservice",
             "destination": "cartservice",
             "history": {
-                "emissions": 20.750538609003456,
+                "emissions": 21.818581037408045,
                 "joules": 76.28874488604212,
                 "count": 1
             }
@@ -176,8 +176,8 @@
             "source": "frontend",
             "destination": "cartservice",
             "history": {
-                "emissions": 53.417280452467175,
-                "joules": 989.2088972679106,
+                "emissions": 52.42807155519927,
+                "joules": 989.2088972679107,
                 "count": 1
             }
         },
@@ -185,7 +185,7 @@
             "source": "frontend",
             "destination": "checkoutservice",
             "history": {
-                "emissions": 5.54146503013882,
+                "emissions": 5.438845307358472,
                 "joules": 102.61972278034852,
                 "count": 1
             }
@@ -194,8 +194,8 @@
             "source": "frontend",
             "destination": "currencyservice",
             "history": {
-                "emissions": 111.96315478695956,
-                "joules": 2073.391755314066,
+                "emissions": 109.88976303164551,
+                "joules": 2073.3917553140664,
                 "count": 1
             }
         },
@@ -203,8 +203,8 @@
             "source": "recommendationservice",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 94.68946619501014,
-                "joules": 348.12303748165493,
+                "emissions": 99.56318871975333,
+                "joules": 348.123037481655,
                 "count": 1
             }
         }
@@ -216,8 +216,8 @@
             "source_flavour": "large",
             "destination": "productcatalogservice",
             "destination_flavour": "medium",
-            "constraint_weight": 0.28818866043782615,
-            "weight": 1.0
+            "constraint_emissions": 165.0064775355256,
+            "memory_weight": 1.0
         },
         {
             "category": "affinity",
@@ -225,8 +225,8 @@
             "source_flavour": "large",
             "destination": "currencyservice",
             "destination_flavour": "small",
-            "constraint_weight": 0.19192569938414564,
-            "weight": 1.0
+            "constraint_emissions": 109.88976303164551,
+            "memory_weight": 1.0
         },
         {
             "category": "affinity",
@@ -234,8 +234,8 @@
             "source_flavour": "large",
             "destination": "productcatalogservice",
             "destination_flavour": "medium",
-            "constraint_weight": 0.16231538007631596,
-            "weight": 1.0
+            "constraint_emissions": 99.56318871975333,
+            "memory_weight": 1.0
         }
     ]
 }
