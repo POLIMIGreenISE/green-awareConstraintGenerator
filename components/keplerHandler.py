@@ -3,12 +3,15 @@ import re
 from collections import defaultdict
 
 # From the kepler .txt obtain a JSON structure
-def prepareKepler(keplerFile):
+def handleKepler(keplerFile):
     data = defaultdict(dict)
     final = []
 
+    # Open the file
     with open(keplerFile, 'r') as file:
+        # Read line by line
         for line in file:
+            # Obtain the parts useful to us
             line = line.strip()
             if not line.startswith('#'):
                 parts = re.split(r'[{}]', line)

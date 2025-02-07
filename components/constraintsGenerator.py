@@ -6,7 +6,9 @@ volumeThreshold = 0.5
 serviceThreshold = 0.8
 
 # From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output
-def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myInfrastructure):
+def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructure):
+
+    # Threshold comparator helper function
     def checkThreshold(array, field, max, threshold):
         output = []
         for var in array:
@@ -14,12 +16,13 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
                 output.append(var)
         return output
     
+    # Given a service find which flavour it was deployed as
     def findFlavour(service, services):
         for s in services:
             if s["service"] == service:
                 return s["flavour"]
 
-    # Print the total Emissions and the saved Emissions
+    # Print the total Emissions and the saved Emissions. OUTDATED
     def produceSavingsOut():
         print("Initial Consumption:")
         print("gCO2/h:", totalEmissionsConsumption, "Joules/h:", totalJoulesConsumption)
@@ -34,18 +37,20 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
             "\ngCO2/h risparmiata:", totalEmissionsConsumption - postEmissions + myInfrastructure[maxNode]["profile"]["carbon"], 
             "\nJoules/h risparmiata:", totalJoulesConsumption - postJoules + myInfrastructure[maxNode]["profile"]["carbon"])
 
+    # Find the max consumption for all our estimates
     maxIstio = max(finalIstio, key=lambda x: x['emissions'])
     maxKepler = max(finalKepler, key=lambda x: x['emissions'])
-    maxVolume = max(finalVolume, key=lambda x: x['volume'])
+    #maxVolume = max(finalVolume, key=lambda x: x['volume'])
     maxAll = max(maxIstio['emissions'], maxKepler['emissions'])
     maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
 
+    # Filer only the consumption above the threshold, which are to our interest
     monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], commThreshold)
     monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], serviceThreshold)
-    monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)
+    #monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)
                 
     monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
-    monitorVolume = sorted(monitorVolume, key=lambda x: x['volume'], reverse=True)
+    #monitorVolume = sorted(monitorVolume, key=lambda x: x['volume'], reverse=True)
     prologFacts = []
     constraints = []
     constraintsHistory = []
@@ -56,23 +61,30 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
     totalJoulesSaved = 0
     totalEmissionsSaved = 0
 
+    # Prolog file preparation
+
+    # For each communication in our Istio metrics, save the fact
     for comm in finalIstio:
         fact = f"serviceConnection({comm["source"]}, {comm["destination"]}, {comm["emissions"]}, {comm["joules"]})"
         prologFacts.append(fact)
         totalEmissionsConsumption += comm['emissions']
         totalJoulesConsumption += comm['joules']
+    # For each service in our Kepler metrics, save the fact    
     for service in finalKepler:
         fact = f"service({service["service"]}, {service["emissions"]}, {service["joules"]})"
         prologFacts.append(fact)
         totalEmissionsConsumption += service['emissions']
         totalJoulesConsumption += service['joules']
+    # For each node in our infrastructure, save the fact
     for node in myInfrastructure:
         fact = f"node({node}, {myInfrastructure[node]["profile"]["carbon"]})"
         prologFacts.append(fact)
-    
+    # For each element in our deployment, save the fact
     for element in deploymentinfo:
         rule = f"deployedTo({element["service"]},{element["flavour"]},{element["node"]})"
         prologFacts.append(rule)
+
+    # For each communication of interest, save that there is an affinity
     for comm in monitorIstio:
         #rule = f"highConsumptionConnection({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
         constraint = f"affinity({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
@@ -89,6 +101,8 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
         constraints.append(constraint)
         totalEmissionsSaved += float(comm['emissions'])
         totalJoulesSaved += float(comm['joules'])
+
+    # For each service of interest, save that there is an avoid
     for service in monitorKepler:
         serviceWeight = float(service['emissions'] / maxAll)
         for node in myInfrastructure:
@@ -108,6 +122,6 @@ def prepareConstraints(finalIstio, finalKepler, finalVolume, deploymentinfo, myI
                 #prologFacts.append(rule)
                 constraints.append(constraint)
     
-    # produceSavingsOut()
+    #produceSavingsOut()
 
     return constraintsHistory, singleInstanceConstraints, maxAll, prologFacts

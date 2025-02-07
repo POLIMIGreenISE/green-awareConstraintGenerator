@@ -1,6 +1,7 @@
 from datetime import datetime
 
-def prepareGridIntensity(energyMix, node):
+# Gather the energy mix based on the current hour of the day
+def gatherEnergyMix(energyMix, node):
     current_hour = datetime.now().hour
     current_mix = None
     for entry in energyMix[node]:

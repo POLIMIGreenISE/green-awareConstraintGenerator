@@ -1,14 +1,15 @@
 import json
 import math
 from datetime import datetime
-from .energyMixGatherer import prepareGridIntensity
+from .energyMixGatherer import gatherEnergyMix
 
 # Energy consumption for transferring 1 GB in KWh/GB
-energy_intensity = 0.0028125  
+energy_intensity = 0.0028125
 
 # From the service metric files obtain the consumption values for each service and each connection
-def prepareValues(istio, kepler, energyMix, deploymentInfo):
+def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
 
+    # Simulate more traffic during busy hours
     def traffic_multiplier(hour):
         if 8 <= hour <= 18:  
             peak_hour = 15
@@ -23,6 +24,7 @@ def prepareValues(istio, kepler, energyMix, deploymentInfo):
         multiplier = traffic_multiplier(current_hour)
         return base_value * multiplier
 
+    # Given a service find the node it is deployed to
     def findNode(service, services):
         for s in services:
             if s["service"] == service:
@@ -35,8 +37,9 @@ def prepareValues(istio, kepler, energyMix, deploymentInfo):
     
     finalIstio = []
     finalKepler = []
-    finalVolume = []
+    #finalVolume = []
     
+    # Open the istio file. We already handled kepler outside and have the json ready.
     with open(istio, 'r') as file:
         metrics = json.load(file)
     keplerMetrics = json.loads(kepler)
@@ -53,14 +56,14 @@ def prepareValues(istio, kepler, energyMix, deploymentInfo):
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
         # Scale Data Transfer
         data_transfer = data_transfer * 65000
-        grid_intensity = prepareGridIntensity(energymix, findNode(element["source"], deploymentInfo))
+        grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
         # distance (km) * data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
         estimated_emissions = data_transfer * grid_intensity * energy_intensity
         joules = (estimated_emissions / grid_intensity) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
-        volume = {"source": element["source"], "destination": element["destination"], "volume": data_transfer}
+        #volume = {"source": element["source"], "destination": element["destination"], "volume": data_transfer}
         finalIstio.append(consumption)
-        finalVolume.append(volume)
+        #finalVolume.append(volume)
 
     # Define the important fields to take from the Kepler
     importantKeplerMetrics = ["kepler_container_platform_joules_total"]
@@ -70,9 +73,9 @@ def prepareValues(istio, kepler, energyMix, deploymentInfo):
             metric["values"] = sorted(metric["values"], key=lambda x: float(x["value"]), reverse=True)[:]
             for pod in metric["values"]:
                 if pod["container_name"] == "server":
-                    grid_intensity = prepareGridIntensity(energymix, findNode(truncate_string(pod["pod_name"]), deploymentInfo))
+                    grid_intensity = gatherEnergyMix(energymix, findNode(truncate_string(pod["pod_name"]), deploymentInfo))
                     estimated_emissions = (simulate_traffic(float(pod["value"])) / 1000) * grid_intensity
                     joules = {"service": truncate_string(pod["pod_name"]), "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                     finalKepler.append(joules)
 
-    return finalIstio, finalKepler, finalVolume
+    return finalIstio, finalKepler

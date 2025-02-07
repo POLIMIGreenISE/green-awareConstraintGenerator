@@ -1,7 +1,11 @@
 average_global = 100
 multiplier = 0.75
 
-def weightGenerator(constraints, singleInstanceConstr, maxConsumption, prologFacts):
+def generateWeights(constraints, singleInstanceConstr, maxConsumption, prologFacts):
+    # Generate the weights of our constraints
+    # Given an average global gco2e consumtpion
+    # If our services consume below
+    # Give them a malus multiplier
     for constr in constraints:
         if maxConsumption < average_global:
             final_weight = constr["constraint_emissions"] * multiplier
