@@ -14,7 +14,7 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
     # Step sigmoid function to handle memory decay
     def sigmoid_decay_step(weight):
         k = 2
-        multiplier = 1 / (1 + math.exp(k * (1 - weight)))
+        multiplier = 1 / (1 + math.exp(k * (0.15 - weight)))
         new_weight = weight * multiplier
         return new_weight
 

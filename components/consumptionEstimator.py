@@ -48,16 +48,12 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         energymix = json.load(file)
 
     for element in metrics:
-        # /1000 -> from ms to s
-        # /2 from RTT to one way trip 
-        # *200000 speed of light in fiber optics
-        distance = (float(element["requestDuration"]) / 2000) * 200000
         # requestVolume measures the amount of requests in a span of 1 hour
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
         # Scale Data Transfer
         data_transfer = data_transfer * 65000
         grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
-        # distance (km) * data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
+        # data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
         estimated_emissions = data_transfer * grid_intensity * energy_intensity
         joules = (estimated_emissions / grid_intensity) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
