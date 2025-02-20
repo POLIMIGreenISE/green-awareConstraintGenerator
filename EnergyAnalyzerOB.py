@@ -8,6 +8,7 @@ deployment = os.path.abspath(os.path.join("files", "deployment_example.json"))
 infrastructure = os.path.abspath(os.path.join("files", "infrastructure_example.yaml"))
 knowledgeBase = os.path.abspath(os.path.join("files", "knowledgeBase.json"))
 energyMix = os.path.abspath(os.path.join("files", "energyMix_timeSeries.json"))
+explanation = os.path.abspath(os.path.join("files", "explanation.txt"))
 plFacts = os.path.abspath("facts.pl")
 
 infrastructureInformation = handleInfrastructure(infrastructure)
@@ -16,4 +17,4 @@ istioConsumptions, keplerConsumptions = estimateConsumptions(istio, handleKepler
 energyConstraints, singleInstanceConstraints, highestConsumption, prologFacts = generateConstraints(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation)
 finalConstraints = handleKnowledgeBase(knowledgeBase, istioConsumptions, keplerConsumptions, energyConstraints)
 finalPrologFacts = generateWeights(finalConstraints, singleInstanceConstraints, highestConsumption, prologFacts)
-createPrologFile(plFacts, finalPrologFacts)
+adaptOutput(plFacts, finalPrologFacts, finalConstraints, singleInstanceConstraints, explanation)

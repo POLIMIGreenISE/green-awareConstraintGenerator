@@ -1,0 +1,9 @@
+A constrant of affinity was generated between frontend in flavour large and productcatalogservice in flavour medium since the services exchanged a lot of data between them
+A constrant of affinity was generated between frontend in flavour large and currencyservice in flavour small since the services exchanged a lot of data between them
+A constrant of affinity was generated between recommendationservice in flavour large and productcatalogservice in flavour medium since the services exchanged a lot of data between them
+A constrant of affinity was generated between frontend in flavour large and cartservice in flavour small since the services exchanged a lot of data between them
+A constrant of affinity was generated between frontend in flavour large and recommendationservice in flavour large since the services exchanged a lot of data between them
+A constrant of avoid was generated between productcatalogservice in flavour medium and node_b since the services used a lot of resources and the node has a poor energy mix
+A constrant of avoid was generated between currencyservice in flavour small and node_a since the services used a lot of resources and the node has a poor energy mix
+A constrant of avoid was generated between currencyservice in flavour small and node_b since the services used a lot of resources and the node has a poor energy mix
+A constrant of avoid was generated between currencyservice in flavour small and node_c since the services used a lot of resources and the node has a poor energy mix

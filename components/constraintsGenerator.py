@@ -1,9 +1,4 @@
-# Threshold for service communications
-commThreshold = 0.5
-volumeThreshold = 0.5
-
-# Threshold for services joule consumption
-serviceThreshold = 0.8
+import statistics
 
 # From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output
 def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructure):
@@ -36,7 +31,7 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
         print("Risparmio massimo:", f"{(totalEmissionsConsumption - postEmissions + myInfrastructure[maxNode]["profile"]["carbon"]) / totalEmissionsConsumption * 100:.3f}%", 
             "\ngCO2/h risparmiata:", totalEmissionsConsumption - postEmissions + myInfrastructure[maxNode]["profile"]["carbon"], 
             "\nJoules/h risparmiata:", totalJoulesConsumption - postJoules + myInfrastructure[maxNode]["profile"]["carbon"])
-
+   
     # Find the max consumption for all our estimates
     maxIstio = max(finalIstio, key=lambda x: x['emissions'])
     maxKepler = max(finalKepler, key=lambda x: x['emissions'])
@@ -44,9 +39,16 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
     maxAll = max(maxIstio['emissions'], maxKepler['emissions'])
     maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
 
+    # Findthe avg consumption for all our estimates
+    avgIstio = statistics.mean(x["emissions"] for x in finalIstio)
+    # 75th quantile
+    avgKepler = statistics.quantiles([x["emissions"] for x in finalKepler], n=4)[2]
+    istioThreshold = avgIstio / maxIstio['emissions']
+    keplerThreshold = avgKepler / maxKepler['emissions']
+
     # Filer only the consumption above the threshold, which are to our interest
-    monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], commThreshold)
-    monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], serviceThreshold)
+    monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], istioThreshold)
+    monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], keplerThreshold)
     #monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)
                 
     monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
@@ -110,7 +112,7 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
             scaledWeight = nodeWeight * serviceWeight
             #rule = f"highConsumptionService({service["service"]},{findFlavour(service['service'], deploymentinfo)}, {node}, {scaledWeight:.3f})"
             constraint = f"avoid({service["service"]},{findFlavour(service['service'], deploymentinfo)},{node},{scaledWeight:.3f})"
-            if(scaledWeight > serviceThreshold):
+            if(scaledWeight > keplerThreshold):
                 singleInst = {
                     "category": "avoid",
                     "source": service["service"],
@@ -123,5 +125,5 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
                 constraints.append(constraint)
     
     #produceSavingsOut()
-
+    
     return constraintsHistory, singleInstanceConstraints, maxAll, prologFacts
