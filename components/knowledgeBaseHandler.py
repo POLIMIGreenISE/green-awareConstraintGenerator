@@ -1,6 +1,5 @@
 import json
 import math
-import yaml
 from pyswip import Prolog
 
 # Threshold telling us when constraints should stop being remembered
@@ -8,8 +7,11 @@ knowledgeBaseMemoryThreshold = 0.5
 
 def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
     # Open the knowledge base
-    with open(knowledgeBase, "r") as file:
-        myKnowledgeBase = yaml.safe_load(file)
+    try:
+        with open(knowledgeBase, "r") as file:
+            myKnowledgeBase = json.load(file)
+    except json.JSONDecodeError:
+        myKnowledgeBase = {}
     
     # Step sigmoid function to handle memory decay
     def sigmoid_decay_step(weight):
@@ -61,7 +63,6 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
         # Save the knowledge aquired
         with open(knowledgeBase, "w") as json_file:
             json.dump(knowledge, json_file, indent=4)
-
     # If our knowledge base is not empty
     else:
         # For each kepler element
@@ -73,8 +74,6 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
                     service["history"]["emissions"] += element["emissions"]
                     service["history"]["joules"] += element["joules"]
                     service["history"]["count"] += 1
-                    service["history"]["emissions"] /= service["history"]["count"]
-                    service["history"]["joules"] /= service["history"]["count"]
                     service_found = True
                     break
             # Otherwise add it
@@ -95,11 +94,9 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
             # If the connection already existed, update the connection average
             for connection in myKnowledgeBase["connections"]:
                 if connection["source"] == element["source"] and connection["destination"] == element["destination"]:
-                    service["history"]["emissions"] += element["emissions"]
-                    service["history"]["joules"] += element["joules"]
-                    service["history"]["count"] += 1
-                    service["history"]["emissions"] /= service["history"]["count"]
-                    service["history"]["joules"] /= service["history"]["count"]
+                    connection["history"]["emissions"] += element["emissions"]
+                    connection["history"]["joules"] += element["joules"]
+                    connection["history"]["count"] += 1
                     pairing_found = True
                     break
             # Otherwise add it
@@ -126,6 +123,7 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
                     break
             # Otherwise add it
             if not constr_found:
+                element["memory_weight"] = 1.0
                 myKnowledgeBase["constraints"].append(element)
 
         # Now we search all the constraints that were not among our current constraints, and update their memory weight
@@ -144,7 +142,7 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, constraints):
             json.dump(myKnowledgeBase, json_file, indent=4)    
 
     # Save all the rules that need to be passed to the weightGenerator
-    if myKnowledgeBase is not None:
+    if myKnowledgeBase:
         for element in myKnowledgeBase["constraints"]:
             if knowledgeBaseMemoryThreshold < element["memory_weight"] < 1.0:
                 #new_rule = f"highConsumptionConnection({element['source']},{element["source_flavour"]},{element['destination']},{element["destination_flavour"]},{element["constraint_emissions"]})"

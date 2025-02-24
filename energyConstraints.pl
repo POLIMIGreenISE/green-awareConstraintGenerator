@@ -1,8 +1,8 @@
-affinity(d(frontend,large),d(productcatalogservice,medium),0.315).
-affinity(d(frontend,large),d(recommendationservice,large),0.071).
-affinity(d(frontend,large),d(cartservice,small),0.075).
-affinity(d(frontend,large),d(currencyservice,small),0.21).
-avoid(d(productcatalogservice,medium),node_b,0.881).
-avoid(d(currencyservice,small),node_a,1.0).
-avoid(d(currencyservice,small),node_b,1.0).
-avoid(d(currencyservice,small),node_c,1.0).
+affinity(d(frontend,large),d(productcatalogservice,medium),0.134).
+affinity(d(frontend,large),d(recommendationservice,large),0.03).
+affinity(d(frontend,large),d(cartservice,small),0.032).
+affinity(d(frontend,large),d(currencyservice,small),0.067).
+avoid(d(frontend,large),node_b,0.158).
+avoid(d(frontend,large),node_c,0.158).
+avoid(d(productcatalogservice,medium),node_c,0.355).
+avoid(d(currencyservice,small),node_c,0.397).

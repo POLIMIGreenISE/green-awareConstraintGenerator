@@ -1,13 +1,15 @@
+import json
 import statistics
+from .energyMixGatherer import gatherEnergyMix
 
 # From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output
-def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructure):
+def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructure, knowledgeBase, energyMix):
 
     # Threshold comparator helper function
     def checkThreshold(array, field, max, threshold):
         output = []
         for var in array:
-            if float(var[field] > (max * threshold)):
+            if float(var[field] >= threshold):
                 output.append(var)
         return output
     
@@ -16,43 +18,57 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
         for s in services:
             if s["service"] == service:
                 return s["flavour"]
-
-    # Print the total Emissions and the saved Emissions. OUTDATED
-    def produceSavingsOut():
-        print("Initial Consumption:")
-        print("gCO2/h:", totalEmissionsConsumption, "Joules/h:", totalJoulesConsumption)
-        print("After applying constraints:")
-        postEmissions = totalEmissionsConsumption - totalEmissionsSaved
-        postJoules = totalJoulesConsumption - totalJoulesSaved
-        print("gCO2/h:", postEmissions, "Joules/h:", postJoules)
-        print("Risparmio minimo:", f"{(totalEmissionsConsumption - postEmissions) / totalEmissionsConsumption * 100:.0f}%", 
-            "\ngCO2/h risparmiata:", totalEmissionsConsumption - postEmissions, 
-            "\nJoules/h risparmiata:", totalJoulesConsumption - postJoules)
-        print("Risparmio massimo:", f"{(totalEmissionsConsumption - postEmissions + myInfrastructure[maxNode]["profile"]["carbon"]) / totalEmissionsConsumption * 100:.3f}%", 
-            "\ngCO2/h risparmiata:", totalEmissionsConsumption - postEmissions + myInfrastructure[maxNode]["profile"]["carbon"], 
-            "\nJoules/h risparmiata:", totalJoulesConsumption - postJoules + myInfrastructure[maxNode]["profile"]["carbon"])
    
+    with open(energyMix, "r") as file:
+        myEnergyMix = json.load(file)
+
+    # Open knowledgebase
+    try:
+        with open(knowledgeBase, "r") as file:
+            myKnowledgeBase = json.load(file)
+    except json.JSONDecodeError:
+        myKnowledgeBase = {}
+
     # Find the max consumption for all our estimates
     maxIstio = max(finalIstio, key=lambda x: x['emissions'])
     maxKepler = max(finalKepler, key=lambda x: x['emissions'])
     #maxVolume = max(finalVolume, key=lambda x: x['volume'])
     maxAll = max(maxIstio['emissions'], maxKepler['emissions'])
-    maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
+    maxNode = max(myEnergyMix, key=lambda x: gatherEnergyMix(myEnergyMix, x))
+    #maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
 
-    # Findthe avg consumption for all our estimates
-    avgIstio = statistics.mean(x["emissions"] for x in finalIstio)
-    # 75th quantile
-    avgKepler = statistics.quantiles([x["emissions"] for x in finalKepler], n=4)[2]
-    istioThreshold = avgIstio / maxIstio['emissions']
-    keplerThreshold = avgKepler / maxKepler['emissions']
-
+    # Dynamic Thresholding
+    if not myKnowledgeBase:
+        # Findthe avg consumption for all our estimates
+        istioThreshold = statistics.mean(x["emissions"] for x in finalIstio)
+        # 75th quantile
+        keplerThreshold = statistics.quantiles([x["emissions"] for x in finalKepler], n=4)[2]
+    else:
+        cumsum = 0
+        for element in myKnowledgeBase["connections"]:
+            cumsum += element["history"]["emissions"] / element["history"]["count"]
+        for element in finalIstio:
+            cumsum += element["emissions"]
+        # Findthe avg consumption for all our estimates
+        istioThreshold = cumsum / (len(myKnowledgeBase["services"]) + len(finalIstio))
+        # 75th quantile
+        quant = []
+        for element in myKnowledgeBase["services"]:
+            quant.append((element["history"]["emissions"] / element["history"]["count"]))
+        for element in finalKepler:
+            quant.append(element["emissions"])
+        keplerThreshold = statistics.quantiles(quant, n=4)[2]
+    # print(istioThreshold)
+    # print(keplerThreshold)
     # Filer only the consumption above the threshold, which are to our interest
     monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], istioThreshold)
     monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], keplerThreshold)
-    #monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)
-                
+    #monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)            
     monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
     #monitorVolume = sorted(monitorVolume, key=lambda x: x['volume'], reverse=True)
+    # print([ele["emissions"] for ele in monitorIstio])
+    # print([ele["emissions"] for ele in monitorKepler])
+
     prologFacts = []
     constraints = []
     constraintsHistory = []
@@ -106,13 +122,15 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
 
     # For each service of interest, save that there is an avoid
     for service in monitorKepler:
-        serviceWeight = float(service['emissions'] / maxAll)
+        serviceWeight = float(service['emissions'])
         for node in myInfrastructure:
-            nodeWeight = float(myInfrastructure[node]["profile"]["carbon"] / myInfrastructure[maxNode]["profile"]["carbon"])
+            #nodeWeight = float(myInfrastructure[node]["profile"]["carbon"] / myInfrastructure[maxNode]["profile"]["carbon"])
+            nodeWeight = float(gatherEnergyMix(myEnergyMix, node) / gatherEnergyMix(myEnergyMix, maxNode))
             scaledWeight = nodeWeight * serviceWeight
             #rule = f"highConsumptionService({service["service"]},{findFlavour(service['service'], deploymentinfo)}, {node}, {scaledWeight:.3f})"
-            constraint = f"avoid({service["service"]},{findFlavour(service['service'], deploymentinfo)},{node},{scaledWeight:.3f})"
-            if(scaledWeight > keplerThreshold):
+            constraint = f"avoid({service["service"]},{findFlavour(service["service"], deploymentinfo)},{node},{scaledWeight:.3f})"
+            #print(scaledWeight, keplerThreshold, nodeWeight, serviceWeight, maxAll)
+            if(scaledWeight >= keplerThreshold):
                 singleInst = {
                     "category": "avoid",
                     "source": service["service"],
@@ -123,7 +141,5 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
                 singleInstanceConstraints.append(singleInst)
                 #prologFacts.append(rule)
                 constraints.append(constraint)
-    
-    #produceSavingsOut()
-    
+ 
     return constraintsHistory, singleInstanceConstraints, maxAll, prologFacts

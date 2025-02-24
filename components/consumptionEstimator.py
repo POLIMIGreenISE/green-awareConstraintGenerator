@@ -11,11 +11,11 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
 
     # Simulate more traffic during busy hours
     def traffic_multiplier(hour):
-        if 8 <= hour <= 18:  
-            peak_hour = 15
-            sigma = 2    
+        if 6 <= hour <= 24:  
+            peak_hour = 16
+            sigma = 7
             multiplier = math.exp(-((hour - peak_hour) ** 2) / (2 * sigma ** 2))
-            return 0.5 + multiplier
+            return multiplier
         else:
             return 0.35
 
@@ -51,11 +51,11 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         # requestVolume measures the amount of requests in a span of 1 hour
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
         # Scale Data Transfer
-        data_transfer = data_transfer * 65000
+        data_transfer *= 50000
         grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
         # data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
-        estimated_emissions = data_transfer * grid_intensity * energy_intensity
-        joules = (estimated_emissions / grid_intensity) * 1000
+        estimated_emissions = data_transfer * energy_intensity
+        joules = (estimated_emissions) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
         #volume = {"source": element["source"], "destination": element["destination"], "volume": data_transfer}
         finalIstio.append(consumption)
@@ -70,8 +70,12 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
             for pod in metric["values"]:
                 if pod["container_name"] == "server":
                     grid_intensity = gatherEnergyMix(energymix, findNode(truncate_string(pod["pod_name"]), deploymentInfo))
-                    estimated_emissions = (simulate_traffic(float(pod["value"])) / 1000) * grid_intensity
+                    # Jh / 1000 = KWh
+                    estimated_emissions = simulate_traffic(float(pod["value"])) / 1000 
+                        #* gatherEnergyMix(energymix, findNode(truncate_string(pod["pod_name"]), deploymentInfo))
                     joules = {"service": truncate_string(pod["pod_name"]), "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                     finalKepler.append(joules)
-
+    # print([ele["emissions"] for ele in finalKepler])
+    # print("*"*100)
+    # print([ele["emissions"] for ele in finalIstio])
     return finalIstio, finalKepler
