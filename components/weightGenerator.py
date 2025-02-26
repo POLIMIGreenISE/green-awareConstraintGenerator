@@ -1,7 +1,7 @@
 from .energyMixGatherer import gatherEnergyMix
 import json
 
-def generateWeights(affinityConstraints, avoidConstraints, maxEmission, prologFacts, deploymentInfo, energyMix):
+def generateWeights(affinityConstraints, avoidConstraints, prologFacts, deploymentInfo, energyMix):
     # Generate the weights of our constraints
     # Given an average global gco2e consumtpion
     # If our services consume below
@@ -17,11 +17,14 @@ def generateWeights(affinityConstraints, avoidConstraints, maxEmission, prologFa
             if s["service"] == service:
                 return s["node"]
 
-    maxNode = max(myEnergyMix, key=lambda x: gatherEnergyMix(myEnergyMix, x))
-    maxConsumption = maxEmission * gatherEnergyMix(myEnergyMix, maxNode)
-
     for constr in affinityConstraints:
         constr["constraint_emissions"] *= gatherEnergyMix(myEnergyMix, findNode(constr["source"], deploymentInfo))
+    for constr in avoidConstraints:
+        constr["constraint_emissions"] *= gatherEnergyMix(myEnergyMix, findNode(constr["source"], deploymentInfo))
+
+    maxConsumption = max(max(constr["constraint_emissions"] for constr in affinityConstraints), max(constr["constraint_emissions"] for constr in avoidConstraints))
+
+    for constr in affinityConstraints:
         if maxConsumption < average_global:
             final_weight = constr["constraint_emissions"] * multiplier
             final_weight /= average_global
@@ -34,7 +37,6 @@ def generateWeights(affinityConstraints, avoidConstraints, maxEmission, prologFa
         prologFacts.append(new_rule)
 
     for constr in avoidConstraints:
-        constr["constraint_emissions"] *= gatherEnergyMix(myEnergyMix, findNode(constr["source"], deploymentInfo))
         if maxConsumption < average_global:
             final_weight = constr["constraint_emissions"] * multiplier
             final_weight /= average_global

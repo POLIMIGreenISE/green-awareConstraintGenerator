@@ -53,7 +53,7 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         # Scale Data Transfer
         data_transfer *= 50000
         grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
-        # data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB/km) = gCO2e/h
+        # data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB) = gCO2e/h
         estimated_emissions = data_transfer * energy_intensity
         joules = (estimated_emissions) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
