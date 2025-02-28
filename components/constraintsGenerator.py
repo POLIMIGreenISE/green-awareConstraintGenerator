@@ -71,8 +71,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
 
     prologFacts = []
     constraints = []
-    constraintsHistory = []
-    singleInstanceConstraints = []
+    affinityConstraints = []
+    avoidConstraints = []
 
     totalJoulesConsumption = 0
     totalEmissionsConsumption = 0
@@ -114,7 +114,7 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
             "destination_flavour": findFlavour(comm['destination'], deploymentinfo),
             "constraint_emissions": comm['emissions']
         }
-        constraintsHistory.append(constraintData)
+        affinityConstraints.append(constraintData)
         #prologFacts.append(rule)
         constraints.append(constraint)
         totalEmissionsSaved += float(comm['emissions'])
@@ -138,8 +138,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
                     "node": node,
                     "constraint_emissions": service["emissions"]
                 }
-                singleInstanceConstraints.append(singleInst)
+                avoidConstraints.append(singleInst)
                 #prologFacts.append(rule)
                 constraints.append(constraint)
  
-    return constraintsHistory, singleInstanceConstraints, maxAll, prologFacts
+    return affinityConstraints, avoidConstraints, maxAll, prologFacts

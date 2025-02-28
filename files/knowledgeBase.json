@@ -3,80 +3,90 @@
         {
             "service": "frontend",
             "history": {
-                "emissions": 2.832213905591043,
-                "joules": 2832.213905591043,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 2.746827088943369,
+                "joules": 2746.827088943369,
                 "count": 1
             }
         },
         {
             "service": "productcatalogservice",
             "history": {
-                "emissions": 1.2642355941709256,
-                "joules": 1264.2355941709257,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.2261208696206947,
+                "joules": 1226.1208696206947,
                 "count": 1
             }
         },
         {
             "service": "currencyservice",
             "history": {
-                "emissions": 1.1256232468725877,
-                "joules": 1125.6232468725877,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.091687467655724,
+                "joules": 1091.687467655724,
                 "count": 1
             }
         },
         {
             "service": "recommendationservice",
             "history": {
-                "emissions": 0.7709261342488694,
-                "joules": 770.9261342488694,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.7476839178526924,
+                "joules": 747.6839178526924,
                 "count": 1
             }
         },
         {
             "service": "cartservice",
             "history": {
-                "emissions": 0.6987781075562003,
-                "joules": 698.7781075562003,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.6777110412482766,
+                "joules": 677.7110412482766,
                 "count": 1
             }
         },
         {
             "service": "adservice",
             "history": {
-                "emissions": 0.3213283533240181,
-                "joules": 321.3283533240181,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.311640806371857,
+                "joules": 311.64080637185697,
                 "count": 1
             }
         },
         {
             "service": "checkoutservice",
             "history": {
-                "emissions": 0.15349569886994024,
-                "joules": 153.49569886994024,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.14886804378013904,
+                "joules": 148.86804378013903,
                 "count": 1
             }
         },
         {
             "service": "shippingservice",
             "history": {
-                "emissions": 0.12637485890516634,
-                "joules": 126.37485890516633,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.12256485469435824,
+                "joules": 122.56485469435823,
                 "count": 1
             }
         },
         {
             "service": "emailservice",
             "history": {
-                "emissions": 0.0647449549711996,
-                "joules": 64.7449549711996,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.06279299590904182,
+                "joules": 62.79299590904182,
                 "count": 1
             }
         },
         {
             "service": "paymentservice",
             "history": {
-                "emissions": 0.04465896334503833,
-                "joules": 44.65896334503833,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 0.043312565494476894,
+                "joules": 43.31256549447689,
                 "count": 1
             }
         }
@@ -86,8 +96,9 @@
             "source": "checkoutservice",
             "destination": "currencyservice",
             "history": {
-                "emissions": 0.07527725487296352,
-                "joules": 75.27725487296352,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000160591477063,
+                "joules": 1500.0160591477063,
                 "count": 1
             }
         },
@@ -95,8 +106,9 @@
             "source": "checkoutservice",
             "destination": "emailservice",
             "history": {
-                "emissions": 0.1150222417564259,
-                "joules": 115.0222417564259,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000245380782413,
+                "joules": 1500.0245380782412,
                 "count": 1
             }
         },
@@ -104,8 +116,9 @@
             "source": "checkoutservice",
             "destination": "paymentservice",
             "history": {
-                "emissions": 0.0316663387117093,
-                "joules": 31.666338711709297,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000067554855918,
+                "joules": 1500.0067554855918,
                 "count": 1
             }
         },
@@ -113,8 +126,9 @@
             "source": "checkoutservice",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 0.04519626127100996,
-                "joules": 45.19626127100996,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000096418690712,
+                "joules": 1500.0096418690712,
                 "count": 1
             }
         },
@@ -122,8 +136,9 @@
             "source": "checkoutservice",
             "destination": "shippingservice",
             "history": {
-                "emissions": 0.11146629020006674,
-                "joules": 111.46629020006674,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000237794752427,
+                "joules": 1500.0237794752427,
                 "count": 1
             }
         },
@@ -131,8 +146,9 @@
             "source": "frontend",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 2.3948690498624905,
-                "joules": 2394.8690498624906,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.500510905397304,
+                "joules": 1500.510905397304,
                 "count": 1
             }
         },
@@ -140,8 +156,9 @@
             "source": "frontend",
             "destination": "recommendationservice",
             "history": {
-                "emissions": 0.719488519688555,
-                "joules": 719.488519688555,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5001534908842002,
+                "joules": 1500.1534908842002,
                 "count": 1
             }
         },
@@ -149,8 +166,9 @@
             "source": "frontend",
             "destination": "shippingservice",
             "history": {
-                "emissions": 0.1665206481071702,
-                "joules": 166.52064810717022,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000355244049295,
+                "joules": 1500.0355244049294,
                 "count": 1
             }
         },
@@ -158,8 +176,9 @@
             "source": "frontend",
             "destination": "adservice",
             "history": {
-                "emissions": 0.35257802234376784,
-                "joules": 352.5780223437678,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000752166447666,
+                "joules": 1500.0752166447667,
                 "count": 1
             }
         },
@@ -167,8 +186,9 @@
             "source": "checkoutservice",
             "destination": "cartservice",
             "history": {
-                "emissions": 0.05868364991234008,
-                "joules": 58.68364991234008,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.500012519178648,
+                "joules": 1500.012519178648,
                 "count": 1
             }
         },
@@ -176,8 +196,9 @@
             "source": "frontend",
             "destination": "cartservice",
             "history": {
-                "emissions": 0.760929920975316,
-                "joules": 760.929920975316,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5001623317164747,
+                "joules": 1500.1623317164747,
                 "count": 1
             }
         },
@@ -185,8 +206,9 @@
             "source": "frontend",
             "destination": "checkoutservice",
             "history": {
-                "emissions": 0.07893824829257579,
-                "joules": 78.93824829257579,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000168401596357,
+                "joules": 1500.0168401596356,
                 "count": 1
             }
         },
@@ -194,8 +216,9 @@
             "source": "frontend",
             "destination": "currencyservice",
             "history": {
-                "emissions": 1.594916734856974,
-                "joules": 1594.916734856974,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.500340248903436,
+                "joules": 1500.340248903436,
                 "count": 1
             }
         },
@@ -203,8 +226,9 @@
             "source": "recommendationservice",
             "destination": "productcatalogservice",
             "history": {
-                "emissions": 0.26778695190896534,
-                "joules": 267.78695190896536,
+                "timestamp": "2025-02-28 14:06:14",
+                "emissions": 1.5000571278830739,
+                "joules": 1500.057127883074,
                 "count": 1
             }
         }
@@ -216,8 +240,9 @@
             "source_flavour": "large",
             "destination": "productcatalogservice",
             "destination_flavour": "medium",
-            "constraint_emissions": 2.3948690498624905,
-            "memory_weight": 1.0
+            "constraint_emissions": 1.500510905397304,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
         },
         {
             "category": "affinity",
@@ -225,8 +250,9 @@
             "source_flavour": "large",
             "destination": "currencyservice",
             "destination_flavour": "small",
-            "constraint_emissions": 1.594916734856974,
-            "memory_weight": 1.0
+            "constraint_emissions": 1.500340248903436,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
         },
         {
             "category": "affinity",
@@ -234,8 +260,9 @@
             "source_flavour": "large",
             "destination": "cartservice",
             "destination_flavour": "small",
-            "constraint_emissions": 0.760929920975316,
-            "memory_weight": 1.0
+            "constraint_emissions": 1.5001623317164747,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
         },
         {
             "category": "affinity",
@@ -243,8 +270,36 @@
             "source_flavour": "large",
             "destination": "recommendationservice",
             "destination_flavour": "large",
-            "constraint_emissions": 0.719488519688555,
-            "memory_weight": 1.0
+            "constraint_emissions": 1.5001534908842002,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "node_b",
+            "constraint_emissions": 2.746827088943369,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "node_c",
+            "constraint_emissions": 2.746827088943369,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
+        },
+        {
+            "category": "avoid",
+            "source": "productcatalogservice",
+            "flavour": "medium",
+            "node": "node_c",
+            "constraint_emissions": 1.2261208696206947,
+            "memory_weight": 1.0,
+            "timestamp": "2025-02-28 14:06:14"
         }
     ]
 }

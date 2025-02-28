@@ -1,7 +1,7 @@
 from pyswip import Prolog
 
 # Create the prolog file and execute it
-def adaptOutput(filename, facts, generalConstraints, singleConstraints, explanationfile):
+def adaptOutput(filename, facts, finalConstraints, explanationfile):
     def explain(constrType):
         match constrType:
             case "affinity":
@@ -16,17 +16,16 @@ def adaptOutput(filename, facts, generalConstraints, singleConstraints, explanat
     Prolog().consult("rules.pl")
 
     with open(explanationfile, "w") as explfile:
-        for constraint in generalConstraints:
-            explanation = (f"A constrant of {constraint["category"]} was generated " 
-                f"between {constraint["source"]} in flavour {constraint["source_flavour"]} "
-                f"and {constraint["destination"]} in flavour {constraint["destination_flavour"]} "
-                f"{explain(constraint["category"])}\n")
-            explfile.write(explanation)
-            
-        for constraint in singleConstraints:
-            explanation = (f"A constrant of {constraint["category"]} was generated " 
-                f"between {constraint["source"]} in flavour {constraint["flavour"]} "
-                f"and {constraint["node"]} {explain(constraint["category"])}\n"
-                )
-
+        for constraint in finalConstraints:
+            if constraint["category"] == "affinity":
+                explanation = (f"A constrant of {constraint["category"]} was generated " 
+                    f"between {constraint["source"]} in flavour {constraint["source_flavour"]} "
+                    f"and {constraint["destination"]} in flavour {constraint["destination_flavour"]} "
+                    f"{explain(constraint["category"])}\n")
+                explfile.write(explanation)
+            elif constraint["category"] == "avoid":
+                explanation = (f"A constrant of {constraint["category"]} was generated " 
+                    f"between {constraint["source"]} in flavour {constraint["flavour"]} "
+                    f"and {constraint["node"]} {explain(constraint["category"])}\n"
+                    )
             explfile.write(explanation)

@@ -2,6 +2,9 @@
 
 :- initialization(save_to_file).
 
+:- dynamic highConsumptionService/4.
+:- dynamic highConsumptionConnection/5.
+
 save_to_file :-
     open('energyConstraints.pl', write, Stream),
     allSuggested(Constraints),

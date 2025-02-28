@@ -50,11 +50,14 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
     for element in metrics:
         # requestVolume measures the amount of requests in a span of 1 hour
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
+        #data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 2))
         # Scale Data Transfer
-        data_transfer *= 50000
-        grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
+        #data_transfer *= 50000
+        #grid_intensity = gatherEnergyMix(energymix, findNode(element["source"], deploymentInfo))
         # data_transfer (GB/h) * grid_intensity (gCO2e/kWh) * energy_intensity (kWh/GB) = gCO2e/h
-        estimated_emissions = data_transfer * energy_intensity
+        #estimated_emissions = data_transfer * energy_intensity
+        estimated_emissions = (1.5 + 0.03*data_transfer)
+        #estimated_emissions = data_transfer * 0.0065
         joules = (estimated_emissions) * 1000
         consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
         #volume = {"source": element["source"], "destination": element["destination"], "volume": data_transfer}
