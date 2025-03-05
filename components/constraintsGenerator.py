@@ -6,7 +6,7 @@ from .energyMixGatherer import gatherEnergyMix
 def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructure, knowledgeBase, energyMix):
 
     # Threshold comparator helper function
-    def checkThreshold(array, field, max, threshold):
+    def checkThreshold(array, field, threshold):
         output = []
         for var in array:
             if float(var[field] >= threshold):
@@ -32,10 +32,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
     # Find the max consumption for all our estimates
     maxIstio = max(finalIstio, key=lambda x: x['emissions'])
     maxKepler = max(finalKepler, key=lambda x: x['emissions'])
-    #maxVolume = max(finalVolume, key=lambda x: x['volume'])
     maxAll = max(maxIstio['emissions'], maxKepler['emissions'])
     maxNode = max(myEnergyMix, key=lambda x: gatherEnergyMix(myEnergyMix, x))
-    #maxNode = max(myInfrastructure, key=lambda x: myInfrastructure[x]["profile"]["carbon"])
 
     # Dynamic Thresholding
     if not myKnowledgeBase:
@@ -58,41 +56,25 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
         for element in finalKepler:
             quant.append(element["emissions"])
         keplerThreshold = statistics.quantiles(quant, n=4)[2]
-    # print(istioThreshold)
-    # print(keplerThreshold)
-    # Filer only the consumption above the threshold, which are to our interest
-    monitorIstio = checkThreshold(finalIstio, 'emissions', maxIstio['emissions'], istioThreshold)
-    monitorKepler = checkThreshold(finalKepler, 'emissions', maxKepler['emissions'], keplerThreshold)
-    #monitorVolume = checkThreshold(finalVolume, 'volume', maxVolume['volume'], volumeThreshold)            
-    monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
-    #monitorVolume = sorted(monitorVolume, key=lambda x: x['volume'], reverse=True)
-    # print([ele["emissions"] for ele in monitorIstio])
-    # print([ele["emissions"] for ele in monitorKepler])
 
+    # Filer only the consumption above the threshold, which are to our interest
+    monitorIstio = checkThreshold(finalIstio, 'emissions', istioThreshold)
+    monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
+    monitorKepler = checkThreshold(finalKepler, 'emissions', keplerThreshold)          
+    
     prologFacts = []
-    constraints = []
     affinityConstraints = []
     avoidConstraints = []
 
-    totalJoulesConsumption = 0
-    totalEmissionsConsumption = 0
-    totalJoulesSaved = 0
-    totalEmissionsSaved = 0
-
     # Prolog file preparation
-
     # For each communication in our Istio metrics, save the fact
     for comm in finalIstio:
         fact = f"serviceConnection({comm["source"]}, {comm["destination"]}, {comm["emissions"]}, {comm["joules"]})"
         prologFacts.append(fact)
-        totalEmissionsConsumption += comm['emissions']
-        totalJoulesConsumption += comm['joules']
     # For each service in our Kepler metrics, save the fact    
     for service in finalKepler:
         fact = f"service({service["service"]}, {service["emissions"]}, {service["joules"]})"
         prologFacts.append(fact)
-        totalEmissionsConsumption += service['emissions']
-        totalJoulesConsumption += service['joules']
     # For each node in our infrastructure, save the fact
     for node in myInfrastructure:
         fact = f"node({node}, {myInfrastructure[node]["profile"]["carbon"]})"
@@ -104,9 +86,7 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
 
     # For each communication of interest, save that there is an affinity
     for comm in monitorIstio:
-        #rule = f"highConsumptionConnection({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
-        constraint = f"affinity({comm['source']},{findFlavour(comm['source'], deploymentinfo)},{comm['destination']},{findFlavour(comm['destination'], deploymentinfo)},{float(comm['emissions'] / maxAll):.3f})"
-        constraintData = {
+        affinity = {
             "category": "affinity",
             "source": comm["source"],
             "source_flavour": findFlavour(comm['source'], deploymentinfo),
@@ -114,32 +94,22 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
             "destination_flavour": findFlavour(comm['destination'], deploymentinfo),
             "constraint_emissions": comm['emissions']
         }
-        affinityConstraints.append(constraintData)
-        #prologFacts.append(rule)
-        constraints.append(constraint)
-        totalEmissionsSaved += float(comm['emissions'])
-        totalJoulesSaved += float(comm['joules'])
+        affinityConstraints.append(affinity)
 
     # For each service of interest, save that there is an avoid
     for service in monitorKepler:
         serviceWeight = float(service['emissions'])
         for node in myInfrastructure:
-            #nodeWeight = float(myInfrastructure[node]["profile"]["carbon"] / myInfrastructure[maxNode]["profile"]["carbon"])
             nodeWeight = float(gatherEnergyMix(myEnergyMix, node) / gatherEnergyMix(myEnergyMix, maxNode))
             scaledWeight = nodeWeight * serviceWeight
-            #rule = f"highConsumptionService({service["service"]},{findFlavour(service['service'], deploymentinfo)}, {node}, {scaledWeight:.3f})"
-            constraint = f"avoid({service["service"]},{findFlavour(service["service"], deploymentinfo)},{node},{scaledWeight:.3f})"
-            #print(scaledWeight, keplerThreshold, nodeWeight, serviceWeight, maxAll)
             if(scaledWeight >= keplerThreshold):
-                singleInst = {
+                avoid = {
                     "category": "avoid",
                     "source": service["service"],
                     "flavour": findFlavour(service['service'], deploymentinfo),
                     "node": node,
                     "constraint_emissions": service["emissions"]
                 }
-                avoidConstraints.append(singleInst)
-                #prologFacts.append(rule)
-                constraints.append(constraint)
+                avoidConstraints.append(avoid)
  
     return affinityConstraints, avoidConstraints, maxAll, prologFacts

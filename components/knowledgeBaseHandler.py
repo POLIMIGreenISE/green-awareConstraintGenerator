@@ -5,7 +5,6 @@ from datetime import datetime
 # Threshold telling us when constraints should stop being remembered
 knowledgeBaseMemoryThreshold = 0.5
 
-
 def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoidConstraints):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Open the knowledge base
