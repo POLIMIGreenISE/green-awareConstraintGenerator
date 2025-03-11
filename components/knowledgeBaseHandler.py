@@ -1,11 +1,12 @@
 import json
 import math
 from datetime import datetime
+from .energyMixGatherer import gatherEnergyMix
 
 # Threshold telling us when constraints should stop being remembered
 knowledgeBaseMemoryThreshold = 0.5
 
-def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoidConstraints):
+def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoidConstraints, energyMix):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Open the knowledge base
     try:
@@ -13,6 +14,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
             myKnowledgeBase = json.load(file)
     except json.JSONDecodeError:
         myKnowledgeBase = {}
+    with open(energyMix, "r") as file:
+        myEnergyMix = json.load(file)
     # Step sigmoid function to handle memory decay
     def sigmoid_decay_step(weight):
         k = 2
@@ -25,23 +28,27 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
         services = []
         connections = []
         constr = []
+        nodes = []
         # Save each kepler element
         for element in kepler:
             pastData = {
                 "timestamp": timestamp,
+                "flavour": element["flavour"],
                 "emissions": element["emissions"],
                 "joules": element["joules"],
                 "count": 1
             }
             historyData = {
                 "service": element["service"],
-                "history": pastData
+                "history": [pastData]
             }
             services.append(historyData)
         # Save each istio element
         for element in istio:
             pastData = {
                 "timestamp": timestamp,
+                "source_flavour": element["source_flavour"],
+                "destination_flavour": element["destination_flavour"],
                 "emissions": element["emissions"],
                 "joules": element["joules"],
                 "count": 1
@@ -49,7 +56,7 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
             historyData = {
                 "source": element["source"],
                 "destination": element["destination"],
-                "history": pastData
+                "history": [pastData]
             }
             connections.append(historyData)
         # Save each constraint produced so far, and give a memory weight of 1
@@ -61,10 +68,18 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
             element["memory_weight"] = 1.0
             element["timestamp"] = timestamp
             constr.append(element)
+        for element in myEnergyMix:
+            node = {
+                "timestamp": timestamp,
+                "node": element,
+                "mix":  gatherEnergyMix(myEnergyMix, element)
+            }
+            nodes.append(node)
         knowledge = {
             "services": services,
             "connections": connections,
-            "constraints": constr
+            "constraints": constr,
+            "nodes": nodes
         }
         # Save the knowledge aquired
         with open(knowledgeBase, "w") as json_file:
@@ -74,52 +89,89 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
         # For each kepler element
         for element in kepler:
             service_found = False
+            flavour_found = False
             # If the service already existed, update the service average
             for service in myKnowledgeBase["services"]:
                 if service["service"] == element["service"]:
-                    service["history"]["timestamp"] = timestamp
-                    service["history"]["emissions"] += element["emissions"]
-                    service["history"]["joules"] += element["joules"]
-                    service["history"]["count"] += 1
+                    for historyPoint in service["history"]:
+                        if historyPoint["flavour"] == element["flavour"]:
+                            historyPoint["timestamp"] = timestamp
+                            historyPoint["emissions"] += element["emissions"]
+                            historyPoint["joules"] += element["joules"]
+                            historyPoint["count"] += 1
+                            flavour_found = True
+                            break
+                    # Otherwise add the flavour
+                    if not flavour_found:
+                        newFlavour = {
+                            "timestamp": timestamp,
+                            "flavour": element["flavour"],
+                            "emissions": element["emissions"],
+                            "joules": element["joules"],
+                            "count": 1   
+                        }
+                        service["history"].append(newFlavour)
                     service_found = True
                     break
-            # Otherwise add it
+            # Otherwise add the service
             if not service_found:
                 newKnowledge = {
                     "service": element["service"],
-                    "history":
+                    "history": [
                         {
                             "timestamp": timestamp,
+                            "flavour": element["flavour"],
                             "emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1
                         }
+                    ]
                 }
-                myKnowledgeBase["services"].append(newKnowledge) 
+                myKnowledgeBase["services"].append(newKnowledge)
         # For each istio element
         for element in istio:
             pairing_found = False
+            pairing_flavours = False
             # If the connection already existed, update the connection average
             for connection in myKnowledgeBase["connections"]:
                 if connection["source"] == element["source"] and connection["destination"] == element["destination"]:
-                    connection["history"]["timestamp"] = timestamp
-                    connection["history"]["emissions"] += element["emissions"]
-                    connection["history"]["joules"] += element["joules"]
-                    connection["history"]["count"] += 1
+                    for historyPoint in connection["history"]:
+                        if historyPoint["source_flavour"] == element["source_flavour"] and \
+                        historyPoint["destination_flavour"] == element["destination_flavour"]:
+                            historyPoint["timestamp"] = timestamp
+                            historyPoint["emissions"] += element["emissions"]
+                            historyPoint["joules"] += element["joules"]
+                            historyPoint["count"] += 1
+                            pairing_flavours = True
+                            break
+                    # Otherwise add the flavour
+                    if not pairing_flavours:
+                        newFlavourPair = {
+                            "timestamp": timestamp,
+                            "source_flavour": element["source_flavour"],
+                            "destination_flavour": element["destination_flavour"],
+                            "emissions": element["emissions"],
+                            "joules": element["joules"],
+                            "count": 1                         
+                        }
+                        connection["history"].append(newFlavourPair)
                     pairing_found = True
                     break
-            # Otherwise add it
+            # Otherwise add the connection
             if not pairing_found:
                 newKnowledge = {
                     "source": element["service"],
                     "destination": element["destination"],
-                    "history": 
+                    "history": [
                         {
                             "timestamp": timestamp,
+                            "source_flavour": element["source_flavour"],
+                            "destination_flavour": element["destination_flavour"],
                             "emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1
                         }
+                    ]
                 }
                 myKnowledgeBase["connections"].append(newKnowledge)
         # For each constraint
@@ -177,7 +229,21 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                         break
             if not constr_found and constr["category"] == "avoid":
                 constr["memory_weight"] = sigmoid_decay_step(constr["memory_weight"])
-
+        for element in myEnergyMix:
+            node_found = False
+            for node in myKnowledgeBase["nodes"]:
+                if element == node["node"]:
+                    node_found = True
+                    node["timestamp"] = timestamp
+                    node["mix"] = gatherEnergyMix(myEnergyMix, element)
+                    break
+            if not node_found:
+                newNode = {
+                    "timestamp": timestamp,
+                    "node": element,
+                    "mix": gatherEnergyMix(myEnergyMix, element)
+                }
+                myKnowledgeBase["nodes"].append(newNode)
         # Save the knowledge base
         with open(knowledgeBase, "w") as json_file:
             json.dump(myKnowledgeBase, json_file, indent=4)    

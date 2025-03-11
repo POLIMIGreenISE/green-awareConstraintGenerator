@@ -28,6 +28,12 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         parts = reversed_s.split('-', 2)
         return parts[-1][::-1]
     
+    # Given a service find which flavour it was deployed as
+    def findFlavour(service, services):
+        for s in services:
+            if s["service"] == service:
+                return s["flavour"]
+
     finalIstio = []
     finalKepler = []
     
@@ -43,7 +49,9 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         estimated_emissions = (1.5 + 0.03*data_transfer)
         # Convert kWh to Joules
         joules = (estimated_emissions) * 1000
-        consumption = {"source": element["source"], "destination": element["destination"], "emissions": estimated_emissions, "joules": joules}
+        consumption = {"source": element["source"], "source_flavour": findFlavour(element["source"], deploymentInfo), 
+                       "destination": element["destination"], "destination_flavour": findFlavour(element["destination"], deploymentInfo),
+                       "emissions": estimated_emissions, "joules": joules}
         finalIstio.append(consumption)
 
     # Define the important fields to take from the Kepler
@@ -55,7 +63,8 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
                 if pod["container_name"] == "server":
                     # Jh / 1000 = KWh
                     estimated_emissions = simulate_traffic(float(pod["value"])) / 1000
-                    joules = {"service": truncate_string(pod["pod_name"]), "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
+                    joules = {"service": truncate_string(pod["pod_name"]), "flavour": findFlavour(truncate_string(pod["pod_name"]), deploymentInfo), 
+                              "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                     finalKepler.append(joules)
-
+                    
     return finalIstio, finalKepler

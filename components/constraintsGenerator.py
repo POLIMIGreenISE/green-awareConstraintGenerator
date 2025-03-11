@@ -44,7 +44,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
     else:
         cumsum = 0
         for element in myKnowledgeBase["connections"]:
-            cumsum += element["history"]["emissions"] / element["history"]["count"]
+            for historyPoint in element["history"]:
+                cumsum += historyPoint["emissions"] / historyPoint["count"]
         for element in finalIstio:
             cumsum += element["emissions"]
         # Findthe avg consumption for all our estimates
@@ -52,7 +53,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
         # 75th quantile
         quant = []
         for element in myKnowledgeBase["services"]:
-            quant.append((element["history"]["emissions"] / element["history"]["count"]))
+            for historyPoint in element["history"]:
+                quant.append((historyPoint["emissions"] / historyPoint["count"]))
         for element in finalKepler:
             quant.append(element["emissions"])
         keplerThreshold = statistics.quantiles(quant, n=4)[2]
@@ -111,5 +113,5 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
                     "constraint_emissions": service["emissions"]
                 }
                 avoidConstraints.append(avoid)
- 
+
     return affinityConstraints, avoidConstraints, maxAll, prologFacts
