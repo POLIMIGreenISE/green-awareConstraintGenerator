@@ -8,6 +8,7 @@ nodes:
       bwIn: 3000
       bwOut: 3000
       availability: 99
+      subnet: [public]
       security: [ssl, firewall, encrypted_storage]
     profile:
       cost: { cpu: 50, ram: 5, storage: 1 }
@@ -20,6 +21,7 @@ nodes:
       bwIn: 300
       bwOut: 300
       availability: 99
+      subnet: [private]
       security: [ssl, firewall, encrypted_storage]
     profile:
       cost: { cpu: 50, ram: 5, storage: 1 }
@@ -32,6 +34,7 @@ nodes:
       bwIn: 1500
       bwOut: 1500
       availability: 98
+      subnet: [private]
       security: [ssl, firewall, encrypted_storage]
     profile:
       cost: { cpu: 150, ram: 25, storage: 10 }

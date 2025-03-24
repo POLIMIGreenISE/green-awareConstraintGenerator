@@ -4,6 +4,8 @@ from datetime import datetime
 
 # Energy consumption for transferring 1 GB in KWh/GB
 energy_intensity = 0.0028125
+# Coefficient to convert 1 GB in kWh
+wattcoefficient = 0.0065
 
 # From the service metric files obtain the consumption values for each service and each connection
 def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
@@ -46,7 +48,8 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
         # requestVolume measures the amount of requests in a span of 1 hour, multiplied by the average size of said requests
         data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
         # data_transfer (GB/h) * energy_intensity (kWh/GB) = kWh
-        estimated_emissions = (1.5 + 0.03*data_transfer)
+        #estimated_emissions = (1.5 + 0.03*data_transfer)
+        estimated_emissions = data_transfer * wattcoefficient
         # Convert kWh to Joules
         joules = (estimated_emissions) * 1000
         consumption = {"source": element["source"], "source_flavour": findFlavour(element["source"], deploymentInfo), 
@@ -66,5 +69,5 @@ def estimateConsumptions(istio, kepler, energyMix, deploymentInfo):
                     joules = {"service": truncate_string(pod["pod_name"]), "flavour": findFlavour(truncate_string(pod["pod_name"]), deploymentInfo), 
                               "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                     finalKepler.append(joules)
-                    
+    print(finalIstio)
     return finalIstio, finalKepler

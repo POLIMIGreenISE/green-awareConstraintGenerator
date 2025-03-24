@@ -19,6 +19,24 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
             if s["service"] == service:
                 return s["flavour"]
    
+   # Given a service find which node it was deployed on
+    def findNode(service, services):
+        for s in services:
+            if s["service"] == service:
+                return s["node"]
+
+    # Given a service, obtain only the deployable nodes
+    def obtainDeployableNodes(service, infrastructure):
+        deployableNodes = []
+        mynode = findNode(service, deploymentinfo)
+        mysubnet = infrastructure[mynode]["capabilities"]["subnet"]
+        for node in infrastructure:
+            for value in infrastructure[node]["capabilities"]:
+                if value == "subnet":
+                    if set(mysubnet) & set(infrastructure[node]["capabilities"][value]):
+                        deployableNodes.append(node)
+        return deployableNodes
+
     with open(energyMix, "r") as file:
         myEnergyMix = json.load(file)
 
@@ -101,7 +119,8 @@ def generateConstraints(finalIstio, finalKepler, deploymentinfo, myInfrastructur
     # For each service of interest, save that there is an avoid
     for service in monitorKepler:
         serviceWeight = float(service['emissions'])
-        for node in myInfrastructure:
+        deployableNodes = obtainDeployableNodes(service["service"], myInfrastructure)
+        for node in deployableNodes:
             nodeWeight = float(gatherEnergyMix(myEnergyMix, node) / gatherEnergyMix(myEnergyMix, maxNode))
             scaledWeight = nodeWeight * serviceWeight
             if(scaledWeight >= keplerThreshold):

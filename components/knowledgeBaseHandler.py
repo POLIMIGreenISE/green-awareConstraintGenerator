@@ -35,6 +35,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                 "timestamp": timestamp,
                 "flavour": element["flavour"],
                 "emissions": element["emissions"],
+                "max_emissions": element["emissions"],
+                "min_emissions": element["emissions"],
                 "joules": element["joules"],
                 "count": 1
             }
@@ -50,6 +52,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                 "source_flavour": element["source_flavour"],
                 "destination_flavour": element["destination_flavour"],
                 "emissions": element["emissions"],
+                "max_emissions": element["emissions"],
+                "min_emissions": element["emissions"],
                 "joules": element["joules"],
                 "count": 1
             }
@@ -99,6 +103,10 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             historyPoint["emissions"] += element["emissions"]
                             historyPoint["joules"] += element["joules"]
                             historyPoint["count"] += 1
+                            if element["emissions"] > historyPoint["max_emissions"]:
+                                historyPoint["max_emissions"] = element["emissions"]
+                            if element["emissions"] < historyPoint["min_emissions"]:
+                                historyPoint["min_emissions"] = element["emissions"]
                             flavour_found = True
                             break
                     # Otherwise add the flavour
@@ -107,6 +115,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             "timestamp": timestamp,
                             "flavour": element["flavour"],
                             "emissions": element["emissions"],
+                            "max_emissions": element["emissions"],
+                            "min_emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1   
                         }
@@ -122,6 +132,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             "timestamp": timestamp,
                             "flavour": element["flavour"],
                             "emissions": element["emissions"],
+                            "max_emissions": element["emissions"],
+                            "min_emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1
                         }
@@ -142,6 +154,10 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             historyPoint["emissions"] += element["emissions"]
                             historyPoint["joules"] += element["joules"]
                             historyPoint["count"] += 1
+                            if element["emissions"] > historyPoint["max_emissions"]:
+                                historyPoint["max_emissions"] = element["emissions"]
+                            if element["emissions"] < historyPoint["min_emissions"]:
+                                historyPoint["min_emissions"] = element["emissions"]
                             pairing_flavours = True
                             break
                     # Otherwise add the flavour
@@ -151,6 +167,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             "source_flavour": element["source_flavour"],
                             "destination_flavour": element["destination_flavour"],
                             "emissions": element["emissions"],
+                            "max_emissions": element["emissions"],
+                            "min_emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1                         
                         }
@@ -168,6 +186,8 @@ def handleKnowledgeBase(knowledgeBase, istio, kepler, affinityConstraints, avoid
                             "source_flavour": element["source_flavour"],
                             "destination_flavour": element["destination_flavour"],
                             "emissions": element["emissions"],
+                            "max_emissions": element["emissions"],
+                            "min_emissions": element["emissions"],
                             "joules": element["joules"],
                             "count": 1
                         }
