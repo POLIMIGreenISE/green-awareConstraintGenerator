@@ -1,0 +1,82 @@
+[
+    {
+        "source": "load_balancer",
+        "destination": "frontend",
+        "requestVolume": 1,
+        "requestDuration": 1.372084126617491,
+        "requestSize": 5,
+        "requestThroughput": 3.0997770935342124,
+        "responseSize": 59.39021074013495,
+        "responseThroughput": 3.0998094714375397
+    },
+    {
+        "source": "frontend",
+        "destination": "api",
+        "requestVolume": 1,
+        "requestDuration": 2.0794074659139126,
+        "requestSize": 5,
+        "requestThroughput": 0.8927834569209038,
+        "responseSize": 57.1947610244341,
+        "responseThroughput": 0.8927925275423729
+    },
+    {
+        "source": "frontend",
+        "destination": "redis",
+        "requestVolume": 1,
+        "requestDuration": 2.330543332692201,
+        "requestSize": 3,
+        "requestThroughput": 0.892816211942875,
+        "responseSize": 97.87914512350251,
+        "responseThroughput": 0.8928265423728813
+    },
+    {
+        "source": "api",
+        "destination": "identity_provider",
+        "requestVolume": 1,
+        "requestDuration": 1.138673243273616,
+        "requestSize": 3,
+        "requestThroughput": 2.2030749016007536,
+        "responseSize": 195.68224528587768,
+        "responseThroughput": 2.203097291431262
+    },
+    {
+        "source": "api",
+        "destination": "etcd",
+        "requestVolume": 1,
+        "requestDuration": 1.0991573754637998,
+        "requestSize": 4,
+        "requestThroughput": 1.7899273479284368,
+        "responseSize": 65.15532733381005,
+        "responseThroughput": 1.7899470468455745
+    },
+    {
+        "source": "api",
+        "destination": "database",
+        "requestVolume": 1,
+        "requestDuration": 1.5175790078944336,
+        "requestSize": 11,
+        "requestThroughput": 117.5227424232804,
+        "responseSize": 218.86000635664303,
+        "responseThroughput": 117.52392717398071
+    },
+    {
+        "source": "api",
+        "destination": "redis",
+        "requestVolume": 1,
+        "requestDuration": 5.7576575499281955,
+        "requestSize": 1,
+        "requestThroughput": 18.02064887633396,
+        "responseSize": 105.37371963021528,
+        "responseThroughput": 18.02088289014438
+    },
+    {
+        "source": "identity_provider",
+        "destination": "etcd",
+        "requestVolume": 1,
+        "requestDuration": 1.4252247818130197,
+        "requestSize": 1,
+        "requestThroughput": 5.453101442325801,
+        "responseSize": 58.8301073218512,
+        "responseThroughput": 5.4531614755178905
+    }
+]

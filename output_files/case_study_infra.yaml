@@ -1,0 +1,95 @@
+links: [{capabilities: {availability: 99, latency: 10}, connected_nodes: [public1,
+      public2]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private1, private2]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private1, private3]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private1, private4]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private1, private5]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private2, private3]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private2, private4]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private2, private5]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private3, private4]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private3, private5]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      private4, private5]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      public1, private1]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      public1, private3]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      public2, private1]}, {capabilities: {availability: 99, latency: 10}, connected_nodes: [
+      public2, private3]}]
+name: case_study
+nodes:
+  private1:
+    capabilities:
+      availability: 99
+      cpu: 3
+      ram: 16
+      security: [ssl, firewall, encrypted_storage]
+      storage: 512
+      subnet: [private]
+    profile:
+      carbon: 346
+      cost: 7
+  private2:
+    capabilities:
+      availability: 99
+      cpu: 2
+      ram: 4
+      security: [ssl, firewall]
+      storage: 50
+      subnet: [private]
+    profile:
+      carbon: 74
+      cost: 7
+  private3:
+    capabilities:
+      availability: 99
+      cpu: 2
+      ram: 8
+      security: [ssl, firewall]
+      storage: 250
+      subnet: [private]
+    profile:
+      carbon: 620
+      cost: 7
+  private4:
+    capabilities:
+      availability: 99
+      cpu: 2
+      ram: 4
+      security: [ssl, firewall]
+      storage: 50
+      subnet: [private]
+    profile:
+      carbon: 155
+      cost: 7
+  private5:
+    capabilities:
+      availability: 99
+      cpu: 4
+      ram: 8
+      security: [ssl, firewall, encrypted_storage]
+      storage: 600
+      subnet: [private]
+    profile:
+      carbon: 290
+      cost: 7
+  public1:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security: [ssl, firewall]
+      storage: 1024
+      subnet: [public]
+    profile:
+      carbon: 402
+      cost: 9
+  public2:
+    capabilities:
+      availability: 99
+      cpu: 2
+      ram: 4
+      security: [ssl, firewall]
+      storage: 250
+      subnet: [public]
+    profile:
+      carbon: 255
+      cost: 9

@@ -1,0 +1,16 @@
+requirements:
+  components:
+    database:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private3
+    identity_provider:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private3

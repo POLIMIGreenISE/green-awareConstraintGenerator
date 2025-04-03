@@ -1,0 +1,5 @@
+node private3 537
+node private5 343
+service api large 1227
+service identity_provider large 883
+service database large 1360

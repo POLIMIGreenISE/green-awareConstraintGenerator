@@ -1,0 +1,2 @@
+A constrant of avoid was generated between api in flavour large and private3 since the services used a lot of resources and the node has a poor energy mix
+A constrant of avoid was generated between database in flavour large and private3 since the services used a lot of resources and the node has a poor energy mix

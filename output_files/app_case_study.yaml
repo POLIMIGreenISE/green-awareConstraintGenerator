@@ -1,0 +1,243 @@
+components:
+  api:
+    flavours:
+      large:
+        energy: 853
+        uses: [{component: identity_provider, min_flavour: large}, {component: etcd,
+            min_flavour: large}, {component: database, min_flavour: large}, {component: redis,
+            min_flavour: large}]
+      medium:
+        energy: 682
+        uses: [{component: identity_provider, min_flavour: tiny}, {component: database,
+            min_flavour: large}]
+      tiny:
+        energy: 546
+        uses: [{component: database, min_flavour: large}]
+    importance_order: [tiny, medium, large]
+  database:
+    flavours:
+      large:
+        energy: 1361
+        uses: []
+    importance_order: [large]
+  etcd:
+    flavours:
+      large:
+        energy: 45
+        uses: []
+    importance_order: [large]
+  frontend:
+    flavours:
+      large:
+        energy: 594
+        uses: [{component: api, min_flavour: medium}, {component: redis, min_flavour: tiny}]
+      tiny:
+        energy: 475
+        uses: [{component: api, min_flavour: tiny}]
+    importance_order: [tiny, large]
+  identity_provider:
+    flavours:
+      large:
+        energy: 884
+        uses: [{component: etcd, min_flavour: large}]
+      tiny:
+        energy: 707
+        uses: [{component: etcd, min_flavour: large}]
+    importance_order: [tiny, large]
+  load_balancer:
+    flavours:
+      large:
+        energy: 747
+        uses: [{component: frontend, min_flavour: large}]
+      tiny:
+        energy: 598
+        uses: [{component: frontend, min_flavour: tiny}]
+    importance_order: [tiny, large]
+    must: true
+  redis:
+    flavours:
+      large:
+        energy: 88
+        uses: []
+      tiny:
+        energy: 70
+        uses: []
+    importance_order: [tiny, large]
+name: case_study
+requirements:
+  budget:
+    carbon: 2000000
+    cost: 2000000
+  components:
+    api:
+      common:
+        security: [ssl]
+        subnet: [private]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 6
+        medium:
+          availability: 98
+          cpu: 2
+          ram: 4
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 2
+    database:
+      common:
+        security: [encrypted_storage]
+        subnet: [private]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 4
+          storage: 512
+    etcd:
+      common:
+        security: [ssl]
+        subnet: [private]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    frontend:
+      common:
+        security: [firewall, ssl]
+        subnet: [public]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 4
+        tiny:
+          availability: 98
+          cpu: 1
+          ram: 2
+    identity_provider:
+      common:
+        security: [ssl]
+        subnet: [private]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 2
+    load_balancer:
+      common:
+        security: [firewall]
+        subnet: [public]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 4
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 2
+    redis:
+      common:
+        security: [ssl]
+        subnet: [private]
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 2
+  dependencies:
+    api:
+      large:
+        database:
+          energy: 11
+          requirements:
+            availability: 99
+            latency: 20
+        etcd:
+          energy: 4
+          requirements:
+            availability: 99
+            latency: 20
+        identity_provider:
+          energy: 3
+          requirements:
+            availability: 99
+            latency: 20
+        redis:
+          energy: 1
+          requirements:
+            availability: 99
+            latency: 20
+      medium:
+        database:
+          energy: 11
+          requirements:
+            availability: 98
+            latency: 40
+        identity_provider:
+          energy: 3
+          requirements:
+            availability: 98
+            latency: 40
+      tiny:
+        database:
+          energy: 11
+          requirements:
+            availability: 97
+            latency: 60
+    frontend:
+      large:
+        api:
+          energy: 5
+          requirements:
+            availability: 98
+            latency: 25
+        redis:
+          energy: 3
+          requirements:
+            availability: 99
+            latency: 25
+      tiny:
+        api:
+          energy: 5
+          requirements:
+            availability: 99
+            latency: 50
+    identity_provider:
+      large:
+        etcd:
+          energy: 1
+          requirements:
+            availability: 99
+            latency: 20
+      tiny:
+        etcd:
+          energy: 1
+          requirements:
+            availability: 97
+            latency: 40
+    load_balancer:
+      large:
+        frontend:
+          energy: 5
+          requirements:
+            availability: 99
+            latency: 25
+      tiny:
+        frontend:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 50
