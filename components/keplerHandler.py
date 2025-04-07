@@ -1,7 +1,7 @@
+import csv
 import json
 import re
 from collections import defaultdict
-import csv
 
 class KeplerHandler:
     def __init__(self, kepler_file):

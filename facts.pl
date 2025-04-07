@@ -1,18 +1,18 @@
-serviceConnection(load_balancer, frontend, 0.005, 5.0).
-serviceConnection(frontend, api, 0.005, 5.0).
+serviceConnection(load_balancer, frontend, 0.0049999999999999906, 4.99999999999999).
+serviceConnection(frontend, api, 0.0049999999999999906, 4.99999999999999).
 serviceConnection(frontend, redis, 0.003, 3.0).
 serviceConnection(api, identity_provider, 0.003, 3.0).
-serviceConnection(api, etcd, 0.004, 4.0).
-serviceConnection(api, database, 0.011, 11.0).
-serviceConnection(api, redis, 0.001, 1.0).
-serviceConnection(identity_provider, etcd, 0.001, 1.0).
-service(load_balancer, 0.747, 1494.0).
-service(frontend, 0.594, 1188.0).
-service(api, 1.2274449947122323, 2454.8899894244646).
-service(identity_provider, 0.8839999999999996, 1767.999999999999).
-service(database, 1.360999999999997, 2721.999999999994).
-service(redis, 0.08800000000000016, 176.0000000000003).
-service(etcd, 0.045, 90.0).
+serviceConnection(api, etcd, 0.004000000000000005, 4.000000000000005).
+serviceConnection(api, database, 0.01100000000000002, 11.00000000000002).
+serviceConnection(api, redis, 0.0010000000000000013, 1.0000000000000013).
+serviceConnection(identity_provider, etcd, 0.0010000000000000013, 1.0000000000000013).
+service(load_balancer, 0.747, 747.0).
+service(frontend, 0.594, 594.0).
+service(api, 1.2274449947122323, 1227.4449947122323).
+service(identity_provider, 0.8839999999999996, 883.9999999999995).
+service(database, 1.360999999999997, 1360.999999999997).
+service(redis, 0.08800000000000016, 88.00000000000016).
+service(etcd, 0.045, 45.0).
 node(public1, 402).
 node(public2, 255).
 node(private1, 346).

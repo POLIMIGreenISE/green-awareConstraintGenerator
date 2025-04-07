@@ -3,3 +3,5 @@ node private5 343
 service api large 1227
 service identity_provider large 883
 service database large 1360
+link load_balancer large frontend 4
+link frontend large api 4

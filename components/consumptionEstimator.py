@@ -27,20 +27,28 @@ class ConsumptionEstimator:
         self.finalIstio = []
         self.finalKepler = []
 
-        for element in self.istio:
-            # requestVolume measures the amount of requests in a span of 1 hour, multiplied by the average size of said requests
-            data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) ) # / (1024 ** 3))
-            # data_transfer (GB/h) * energy_intensity (kWh/GB) = kWh
-            estimated_emissions = data_transfer /1000 #* wattcoefficient
-            # Convert kWh to Joules
-            joules = (estimated_emissions) * 1000
-            consumption = {"source": element["source"], "source_flavour": findFlavour(element["source"], self.deployment), 
-                        "destination": element["destination"], "destination_flavour": findFlavour(element["destination"], self.deployment),
-                        "emissions": estimated_emissions, "joules": joules}
+        # for element in self.istio:
+        #     # requestVolume measures the amount of requests in a span of 1 hour, multiplied by the average size of said requests
+        #     data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) ) # / (1024 ** 3))
+        #     # data_transfer (GB/h) * energy_intensity (kWh/GB) = kWh
+        #     estimated_emissions = data_transfer /1000 #* wattcoefficient
+        #     # Convert kWh to Joules
+        #     joules = (estimated_emissions) * 1000
+        #     consumption = {"source": element["source"], "source_flavour": findFlavour(element["source"], self.deployment), 
+        #                 "destination": element["destination"], "destination_flavour": findFlavour(element["destination"], self.deployment),
+        #                 "emissions": estimated_emissions, "joules": joules}
+        #     self.finalIstio.append(consumption)
+
+        for (source, destination), total in self.istio.items():
+            estimated_emissions = (total / 24) / 1000
+            consumption = {"source": source, "source_flavour": findFlavour(source, self.deployment), 
+                      "destination": destination, "destination_flavour": findFlavour(destination, self.deployment),
+                      "emissions": estimated_emissions, "joules": total / 24}
             self.finalIstio.append(consumption)
 
         for key, total in self.kepler.items():
             estimated_emissions = (total / 24) / 1000
-            joules = {"service": key, "flavour": "large", "emissions": estimated_emissions, "joules": total /12}
+            joules = {"service": key, "flavour": findFlavour(key, self.deployment), "emissions": estimated_emissions, "joules": total / 24}
             self.finalKepler.append(joules)
-        return self.finalIstio, self.finalKepler    
+   
+        return self.finalIstio, self.finalKepler

@@ -11,7 +11,7 @@ from components.Adapter import Adapter
 from components.Yamlmodifier import YamlModifier
 
 # Define Input Files
-istio = os.path.abspath(os.path.join("input_files", "istio_data_default.json"))
+istio = os.path.abspath(os.path.join("input_files", "interaction3.csv"))
 kepler = os.path.abspath(os.path.join("input_files", "service3.csv"))
 deployment = os.path.abspath(os.path.join("input_files", "case_study_deployment.txt"))
 infrastructure = os.path.abspath(os.path.join("input_files", "case_study_infra.yaml"))
