@@ -32,15 +32,15 @@ class Adapter:
             for constraint in self.constraints:
                 if (constraint.get("constraint_emissions") / maxV) > 0.3:
                     if constraint["category"] == "affinity":
-                        explanation = (f"A constrant of {constraint["category"]} was generated " 
-                            f"between {constraint["source"]} in flavour {constraint["source_flavour"]} "
-                            f"and {constraint["destination"]} in flavour {constraint["destination_flavour"]} "
-                            f"{explain(constraint["category"])}\n")
+                        explanation = (f'A constrant of {constraint["category"]} was generated '
+                            f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
+                            f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
+                            f'{explain(constraint["category"])}\n')
                         explfile.write(explanation)
                     elif constraint["category"] == "avoid":
-                        explanation = (f"A constrant of {constraint["category"]} was generated " 
-                            f"between {constraint["source"]} in flavour {constraint["flavour"]} "
-                            f"and {constraint["node"]} {explain(constraint["category"])}\n"
+                        explanation = (f'A constrant of {constraint["category"]} was generated '
+                            f'between {constraint["source"]} in flavour {constraint["flavour"]} '
+                            f'and {constraint["node"]} {explain(constraint["category"])}\n'
                             )
                         explfile.write(explanation)
 

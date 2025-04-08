@@ -1,7 +1,7 @@
 import json
 import math
 from datetime import datetime
-from components.EnergyMixGatherer import EnergyMixGatherer
+from components.energyMixGatherer import EnergyMixGatherer
 
 class KnowledgeBaseHandler:
     def __init__(self, knowledgeBase, istio, kepler, affinity, avoid, infrastructure):

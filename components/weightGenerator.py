@@ -1,5 +1,5 @@
 import json
-from components.EnergyMixGatherer import EnergyMixGatherer
+from components.energyMixGatherer import EnergyMixGatherer
 
 class WeightGenerator:
     def __init__(self, constraints, prologFacts, deployment):
@@ -35,7 +35,7 @@ class WeightGenerator:
                     final_weight /= maxConsumption
                 else:
                     final_weight = constr["constraint_emissions"] / maxConsumption
-                new_rule = f"highConsumptionConnection({constr['source']},{constr["source_flavour"]},{constr['destination']},{constr["destination_flavour"]},{final_weight:.3f})"
+                new_rule = f"highConsumptionConnection({constr['source']},{constr['source_flavour']},{constr['destination']},{constr['destination_flavour']},{final_weight:.3f})"
                 self.prologFacts.append(new_rule)
             elif constr["category"] == "avoid":
                 if maxConsumption < average_global:
@@ -46,7 +46,7 @@ class WeightGenerator:
                     final_weight /= maxConsumption
                 else:
                     final_weight = constr["constraint_emissions"] / maxConsumption
-                new_rule = f"highConsumptionService({constr["source"]},{constr["flavour"]},{constr["node"]},{final_weight:.3f})"
+                new_rule = f"highConsumptionService({constr['source']},{constr['flavour']},{constr['node']},{final_weight:.3f})"
                 self.prologFacts.append(new_rule)
 
         return self.prologFacts

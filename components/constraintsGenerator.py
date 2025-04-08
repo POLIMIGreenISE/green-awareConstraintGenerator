@@ -1,6 +1,6 @@
 import json
 import statistics
-from components.EnergyMixGatherer import EnergyMixGatherer
+from components.energyMixGatherer import EnergyMixGatherer
 
 class ConstraintsGenerator:
     def __init__(self, istio, kepler, deployment, infrastructure, knowledgeBase):
@@ -98,19 +98,19 @@ class ConstraintsGenerator:
         # Prolog file preparation
         # For each communication in our Istio metrics, save the fact
         for comm in self.istio:
-            fact = f"serviceConnection({comm["source"]}, {comm["destination"]}, {comm["emissions"]}, {comm["joules"]})"
+            fact = f'serviceConnection({comm["source"]}, {comm["destination"]}, {comm["emissions"]}, {comm["joules"]})'
             self.prologFacts.append(fact)
         # For each service in our Kepler metrics, save the fact    
         for service in self.kepler:
-            fact = f"service({service["service"]}, {service["emissions"]}, {service["joules"]})"
+            fact = f'service({service["service"]}, {service["emissions"]}, {service["joules"]})'
             self.prologFacts.append(fact)
         # For each node in our infrastructure, save the fact
         for node in self.infrastructure["nodes"]:
-            fact = f"node({node}, {self.infrastructure["nodes"][node]["profile"]["carbon"]})"
+            fact = f'node({node}, {self.infrastructure["nodes"][node]["profile"]["carbon"]})'
             self.prologFacts.append(fact)
         # For each element in our deployment, save the fact
         for element in self.deployment:
-            rule = f"deployedTo({element["service"]},{element["flavour"]},{element["node"]})"
+            rule = f'deployedTo({element["service"]},{element["flavour"]},{element["node"]})'
             self.prologFacts.append(rule)
 
         # For each communication of interest, save that there is an affinity

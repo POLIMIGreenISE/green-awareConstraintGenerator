@@ -56,5 +56,8 @@ Creates an internal ranking of constraints based on the amount of energy consump
 Formats the output for the consumption of future components
 
 # Installation
-
-**TBD**
+```bash
+python -m .venv venv
+source ./.venv/bin/activate # or equivalent in other OS
+pip intall -r requirements.txt
+```

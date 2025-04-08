@@ -1,0 +1,309 @@
+{
+    "services": [
+        {
+            "service": "load_balancer",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 0.747,
+                    "max_emissions": 0.747,
+                    "min_emissions": 0.747,
+                    "joules": 747.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "frontend",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 0.594,
+                    "max_emissions": 0.594,
+                    "min_emissions": 0.594,
+                    "joules": 594.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "api",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 1.2274449947122323,
+                    "max_emissions": 1.2274449947122323,
+                    "min_emissions": 1.2274449947122323,
+                    "joules": 1227.4449947122323,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "identity_provider",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 0.8839999999999996,
+                    "max_emissions": 0.8839999999999996,
+                    "min_emissions": 0.8839999999999996,
+                    "joules": 883.9999999999995,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "database",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 1.360999999999997,
+                    "max_emissions": 1.360999999999997,
+                    "min_emissions": 1.360999999999997,
+                    "joules": 1360.999999999997,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "redis",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 0.08800000000000016,
+                    "max_emissions": 0.08800000000000016,
+                    "min_emissions": 0.08800000000000016,
+                    "joules": 88.00000000000016,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "etcd",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "flavour": "large",
+                    "emissions": 0.045,
+                    "max_emissions": 0.045,
+                    "min_emissions": 0.045,
+                    "joules": 45.0,
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "source": "load_balancer",
+            "destination": "frontend",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.0049999999999999906,
+                    "max_emissions": 0.0049999999999999906,
+                    "min_emissions": 0.0049999999999999906,
+                    "joules": 4.99999999999999,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "frontend",
+            "destination": "api",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.0049999999999999906,
+                    "max_emissions": 0.0049999999999999906,
+                    "min_emissions": 0.0049999999999999906,
+                    "joules": 4.99999999999999,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "frontend",
+            "destination": "redis",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.003,
+                    "max_emissions": 0.003,
+                    "min_emissions": 0.003,
+                    "joules": 3.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "api",
+            "destination": "identity_provider",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.003,
+                    "max_emissions": 0.003,
+                    "min_emissions": 0.003,
+                    "joules": 3.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "api",
+            "destination": "etcd",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.004000000000000005,
+                    "max_emissions": 0.004000000000000005,
+                    "min_emissions": 0.004000000000000005,
+                    "joules": 4.000000000000005,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "api",
+            "destination": "database",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.01100000000000002,
+                    "max_emissions": 0.01100000000000002,
+                    "min_emissions": 0.01100000000000002,
+                    "joules": 11.00000000000002,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "api",
+            "destination": "redis",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.0010000000000000013,
+                    "max_emissions": 0.0010000000000000013,
+                    "min_emissions": 0.0010000000000000013,
+                    "joules": 1.0000000000000013,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "identity_provider",
+            "destination": "etcd",
+            "history": [
+                {
+                    "timestamp": "2025-04-08 09:16:52",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.0010000000000000013,
+                    "max_emissions": 0.0010000000000000013,
+                    "min_emissions": 0.0010000000000000013,
+                    "joules": 1.0000000000000013,
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "category": "affinity",
+            "source": "api",
+            "source_flavour": "large",
+            "destination": "database",
+            "destination_flavour": "large",
+            "constraint_emissions": 0.01100000000000002,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-08 09:16:52"
+        },
+        {
+            "category": "affinity",
+            "source": "load_balancer",
+            "source_flavour": "large",
+            "destination": "frontend",
+            "destination_flavour": "large",
+            "constraint_emissions": 0.0049999999999999906,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-08 09:16:52"
+        },
+        {
+            "category": "avoid",
+            "source": "api",
+            "flavour": "large",
+            "node": "private3",
+            "constraint_emissions": 1.2274449947122323,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-08 09:16:52"
+        },
+        {
+            "category": "avoid",
+            "source": "database",
+            "flavour": "large",
+            "node": "private3",
+            "constraint_emissions": 1.360999999999997,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-08 09:16:52"
+        }
+    ],
+    "nodes": [
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "public1",
+            "mix": 402
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "public2",
+            "mix": 255
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "private1",
+            "mix": 346
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "private2",
+            "mix": 74
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "private3",
+            "mix": 537
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "private4",
+            "mix": 155
+        },
+        {
+            "timestamp": "2025-04-08 09:16:52",
+            "node": "private5",
+            "mix": 343
+        }
+    ]
+}
