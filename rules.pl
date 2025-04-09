@@ -1,12 +1,10 @@
 :- ['facts.pl'].
 
-:- initialization(save_to_file).
-
 :- dynamic highConsumptionService/4.
 :- dynamic highConsumptionConnection/5.
 
-save_to_file :-
-    open('energyConstraints.pl', write, Stream),
+save_to_file(Path) :-
+    open(Path, write, Stream),
     allSuggested(Constraints),
     write_results(Constraints, Stream),
     close(Stream).

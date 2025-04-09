@@ -12,6 +12,7 @@ from components.Yamlmodifier import YamlModifier
 
 
 def run(
+    rules,
     interaction,
     service,
     deployment,
@@ -20,7 +21,8 @@ def run(
     kb,
     explanation,
     facts,
-    constraints,
+    prologConstraints,
+    yamlConstraints,
     changelog
 ):
     infrastructureInformation = InfrastructureHandler(infrastructure).handle_infrastructure()
@@ -31,11 +33,12 @@ def run(
     affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, kb).generate_constraints()
     finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation).handle_knowledgeBase()
     finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
-    Adapter(facts, finalPrologFacts, finalConstraints, explanation, constraints).adapt_output()
+    Adapter(rules, facts, finalPrologFacts, prologConstraints, finalConstraints, explanation, yamlConstraints).adapt_output()
     YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions, changelog).modify_YAML()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FREEDA main loop over ECLYPSE simulator")
+    parser.add_argument("rules", type=str, help="Prolog rules ABSOLUTE file path")
     parser.add_argument("interaction", type=str, help="Interaction file path")
     parser.add_argument("service", type=str, help="Service file path")
     parser.add_argument("deployment", type=str, help="Deployment file path")
@@ -44,11 +47,13 @@ if __name__ == "__main__":
     parser.add_argument("knowledge_base", type=str, help="Knowledge base file")
     parser.add_argument("explanation", type=str, help="Explanation output file path")
     parser.add_argument("facts", type=str, help="Prolog facts file path")
+    parser.add_argument("prolog_constraints", type=str, help="Prolog constraint file path")
     parser.add_argument("constraints", type=str, help="Constraints output file path")
     parser.add_argument("changelog", type=str, help="Changelog output file path")
     args = parser.parse_args()
 
     run(
+        args.rules,
         args.interaction,
         args.service,
         args.deployment,
@@ -57,6 +62,7 @@ if __name__ == "__main__":
         args.knowledge_base,
         args.explanation,
         args.facts,
+        args.prolog_constraints,
         args.constraints,
         args.changelog
     )

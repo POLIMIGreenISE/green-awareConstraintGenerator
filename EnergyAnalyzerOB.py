@@ -1,16 +1,17 @@
 import os
 from components.IstioHandler import IstioHandler
-from components.KeplerHandler import KeplerHandler
-from components.DeploymentHandler import DeploymentHandler
-from components.InfrastructureHandler import InfrastructureHandler
-from components.ConsumptionEstimator import ConsumptionEstimator
-from components.ConstraintsGenerator import ConstraintsGenerator
-from components.KnowledgeBaseHandler import KnowledgeBaseHandler
-from components.WeightGenerator import WeightGenerator
-from components.Adapter import Adapter
+from components.keplerHandler import KeplerHandler
+from components.deploymentHandler import DeploymentHandler
+from components.infrastructureHandler import InfrastructureHandler
+from components.consumptionEstimator import ConsumptionEstimator
+from components.constraintsGenerator import ConstraintsGenerator
+from components.knowledgeBaseHandler import KnowledgeBaseHandler
+from components.weightGenerator import WeightGenerator
+from components.adapter import Adapter
 from components.Yamlmodifier import YamlModifier
 
 # Define Input Files
+rules = os.path.abspath("./rules.pl")
 istio = os.path.abspath(os.path.join("input_files", "interaction3.csv"))
 kepler = os.path.abspath(os.path.join("input_files", "service3.csv"))
 deployment = os.path.abspath(os.path.join("input_files", "case_study_deployment.txt"))
@@ -18,6 +19,7 @@ infrastructure = os.path.abspath(os.path.join("input_files", "case_study_infra.y
 knowledgeBase = os.path.abspath(os.path.join("output_files", "knowledgeBase.json"))
 explanation = os.path.abspath(os.path.join("output_files", "explanation.txt"))
 prologFactsFile = os.path.abspath("facts.pl")
+prologConstraintFile = os.path.abspath("energyConstraints.pl")
 yamlOutput = os.path.abspath(os.path.join("output_files", "EnergyEnhancer3.yaml"))
 application = os.path.abspath(os.path.join("input_files", "app_case_study.yaml"))
 changelog = os.path.abspath(os.path.join("output_files", "changelog.txt"))
@@ -30,5 +32,5 @@ istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler
 affinityConstraints, avoidConstraints, highestConsumption, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, knowledgeBase).generate_constraints()
 finalConstraints = KnowledgeBaseHandler(knowledgeBase, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation).handle_knowledgeBase()
 finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
-Adapter(prologFactsFile, finalPrologFacts, finalConstraints, explanation, yamlOutput).adapt_output()
+Adapter(rules, prologFactsFile, finalPrologFacts, prologConstraintFile, finalConstraints, explanation, yamlOutput).adapt_output()
 YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions, changelog).modify_YAML()

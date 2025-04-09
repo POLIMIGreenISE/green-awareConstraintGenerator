@@ -3,10 +3,12 @@ import yaml
 import os
 
 class Adapter:
-    def __init__(self, prologFile, prologFacts, constraints, explanationFile, yamlOut):
+    def __init__(self, prologRules, prologFile, prologFacts, prologConstraints, constraints, explanationFile, yamlOut):
+        self.prologRules = prologRules
         self.prologFile = prologFile
         self.prologFacts = prologFacts
         self.constraints = constraints
+        self.prologConstraints = prologConstraints
         self.explanationFile = explanationFile
         self.yamlout = yamlOut
 
@@ -24,7 +26,11 @@ class Adapter:
             for fact in self.prologFacts:
                 file.write(fact + ".\n")
 
-        Prolog().consult("rules.pl")
+        p = Prolog()
+        p.consult(self.prologRules)
+        a = p.query(f"save_to_file('{self.prologConstraints}')")
+        print(sorted(a))
+        exit()
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
 

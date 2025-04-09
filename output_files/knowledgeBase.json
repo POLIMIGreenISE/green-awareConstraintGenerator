@@ -4,13 +4,13 @@
             "service": "load_balancer",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 0.747,
+                    "emissions": 12.699,
                     "max_emissions": 0.747,
                     "min_emissions": 0.747,
-                    "joules": 747.0,
-                    "count": 1
+                    "joules": 12699.0,
+                    "count": 17
                 }
             ]
         },
@@ -18,13 +18,13 @@
             "service": "frontend",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 0.594,
+                    "emissions": 10.097999999999999,
                     "max_emissions": 0.594,
                     "min_emissions": 0.594,
-                    "joules": 594.0,
-                    "count": 1
+                    "joules": 10098.0,
+                    "count": 17
                 }
             ]
         },
@@ -32,13 +32,13 @@
             "service": "api",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 1.2274449947122323,
+                    "emissions": 20.866564910107954,
                     "max_emissions": 1.2274449947122323,
                     "min_emissions": 1.2274449947122323,
-                    "joules": 1227.4449947122323,
-                    "count": 1
+                    "joules": 20866.564910107954,
+                    "count": 17
                 }
             ]
         },
@@ -46,13 +46,13 @@
             "service": "identity_provider",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 0.8839999999999996,
+                    "emissions": 15.027999999999999,
                     "max_emissions": 0.8839999999999996,
                     "min_emissions": 0.8839999999999996,
-                    "joules": 883.9999999999995,
-                    "count": 1
+                    "joules": 15027.999999999998,
+                    "count": 17
                 }
             ]
         },
@@ -60,13 +60,13 @@
             "service": "database",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 1.360999999999997,
+                    "emissions": 23.13699999999995,
                     "max_emissions": 1.360999999999997,
                     "min_emissions": 1.360999999999997,
-                    "joules": 1360.999999999997,
-                    "count": 1
+                    "joules": 23136.999999999945,
+                    "count": 17
                 }
             ]
         },
@@ -74,13 +74,13 @@
             "service": "redis",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 0.08800000000000016,
+                    "emissions": 1.4960000000000024,
                     "max_emissions": 0.08800000000000016,
                     "min_emissions": 0.08800000000000016,
-                    "joules": 88.00000000000016,
-                    "count": 1
+                    "joules": 1496.0000000000027,
+                    "count": 17
                 }
             ]
         },
@@ -88,13 +88,13 @@
             "service": "etcd",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "flavour": "large",
-                    "emissions": 0.045,
+                    "emissions": 0.7650000000000001,
                     "max_emissions": 0.045,
                     "min_emissions": 0.045,
-                    "joules": 45.0,
-                    "count": 1
+                    "joules": 765.0,
+                    "count": 17
                 }
             ]
         }
@@ -105,14 +105,14 @@
             "destination": "frontend",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.0049999999999999906,
+                    "emissions": 0.08499999999999984,
                     "max_emissions": 0.0049999999999999906,
                     "min_emissions": 0.0049999999999999906,
-                    "joules": 4.99999999999999,
-                    "count": 1
+                    "joules": 84.99999999999983,
+                    "count": 17
                 }
             ]
         },
@@ -121,14 +121,14 @@
             "destination": "api",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.0049999999999999906,
+                    "emissions": 0.08499999999999984,
                     "max_emissions": 0.0049999999999999906,
                     "min_emissions": 0.0049999999999999906,
-                    "joules": 4.99999999999999,
-                    "count": 1
+                    "joules": 84.99999999999983,
+                    "count": 17
                 }
             ]
         },
@@ -137,14 +137,14 @@
             "destination": "redis",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.003,
+                    "emissions": 0.05100000000000001,
                     "max_emissions": 0.003,
                     "min_emissions": 0.003,
-                    "joules": 3.0,
-                    "count": 1
+                    "joules": 51.0,
+                    "count": 17
                 }
             ]
         },
@@ -153,14 +153,14 @@
             "destination": "identity_provider",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.003,
+                    "emissions": 0.05100000000000001,
                     "max_emissions": 0.003,
                     "min_emissions": 0.003,
-                    "joules": 3.0,
-                    "count": 1
+                    "joules": 51.0,
+                    "count": 17
                 }
             ]
         },
@@ -169,14 +169,14 @@
             "destination": "etcd",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.004000000000000005,
+                    "emissions": 0.06800000000000007,
                     "max_emissions": 0.004000000000000005,
                     "min_emissions": 0.004000000000000005,
-                    "joules": 4.000000000000005,
-                    "count": 1
+                    "joules": 68.0000000000001,
+                    "count": 17
                 }
             ]
         },
@@ -185,14 +185,14 @@
             "destination": "database",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.01100000000000002,
+                    "emissions": 0.1870000000000003,
                     "max_emissions": 0.01100000000000002,
                     "min_emissions": 0.01100000000000002,
-                    "joules": 11.00000000000002,
-                    "count": 1
+                    "joules": 187.00000000000034,
+                    "count": 17
                 }
             ]
         },
@@ -201,14 +201,14 @@
             "destination": "redis",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.0010000000000000013,
+                    "emissions": 0.01700000000000002,
                     "max_emissions": 0.0010000000000000013,
                     "min_emissions": 0.0010000000000000013,
-                    "joules": 1.0000000000000013,
-                    "count": 1
+                    "joules": 17.000000000000025,
+                    "count": 17
                 }
             ]
         },
@@ -217,14 +217,14 @@
             "destination": "etcd",
             "history": [
                 {
-                    "timestamp": "2025-04-08 09:16:52",
+                    "timestamp": "2025-04-09 11:41:02",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.0010000000000000013,
+                    "emissions": 0.01700000000000002,
                     "max_emissions": 0.0010000000000000013,
                     "min_emissions": 0.0010000000000000013,
-                    "joules": 1.0000000000000013,
-                    "count": 1
+                    "joules": 17.000000000000025,
+                    "count": 17
                 }
             ]
         }
@@ -238,7 +238,7 @@
             "destination_flavour": "large",
             "constraint_emissions": 0.01100000000000002,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-08 09:16:52"
+            "timestamp": "2025-04-09 11:41:02"
         },
         {
             "category": "affinity",
@@ -248,7 +248,7 @@
             "destination_flavour": "large",
             "constraint_emissions": 0.0049999999999999906,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-08 09:16:52"
+            "timestamp": "2025-04-09 11:41:02"
         },
         {
             "category": "avoid",
@@ -257,7 +257,7 @@
             "node": "private3",
             "constraint_emissions": 1.2274449947122323,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-08 09:16:52"
+            "timestamp": "2025-04-09 11:41:02"
         },
         {
             "category": "avoid",
@@ -266,42 +266,42 @@
             "node": "private3",
             "constraint_emissions": 1.360999999999997,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-08 09:16:52"
+            "timestamp": "2025-04-09 11:41:02"
         }
     ],
     "nodes": [
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "public1",
             "mix": 402
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "public2",
             "mix": 255
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "private1",
             "mix": 346
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "private2",
             "mix": 74
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "private3",
             "mix": 537
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "private4",
             "mix": 155
         },
         {
-            "timestamp": "2025-04-08 09:16:52",
+            "timestamp": "2025-04-09 11:41:02",
             "node": "private5",
             "mix": 343
         }
