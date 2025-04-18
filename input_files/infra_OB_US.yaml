@@ -1,0 +1,81 @@
+name: online_boutique
+nodes:
+  washington:
+    capabilities:
+      cpu: 8
+      ram: 16
+      storage: 1024
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall]
+    profile:
+      cost: 9
+      carbon: 244
+  california:
+    capabilities:
+      cpu: 8
+      ram: 16
+      storage: 1024
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall]
+    profile:
+      cost: 9
+      carbon: 235
+  texas:
+    capabilities:
+      cpu: 3
+      ram: 16
+      storage: 512
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall, encrypted_storage]
+    profile:
+      cost: 7
+      carbon: 231
+  florida:
+    capabilities:
+      cpu: 2
+      ram: 4
+      storage: 50
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall]
+    profile:
+      cost: 7
+      carbon: 300
+  newyork:
+    capabilities:
+      cpu: 2
+      ram: 8
+      storage: 250
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall]
+    profile:
+      cost: 7
+      carbon: 236
+  arizona:
+    capabilities:
+      cpu: 2
+      ram: 4
+      storage: 50
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall]
+    profile:
+      cost: 7
+      carbon: 229
+links:
+  - connected_nodes: [node_a, node_b]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [node_a, node_c]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [node_a, node_d]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [node_b, node_d]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [node_b, node_e]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [node_c, node_d]
+    capabilities: { latency: 10, availability: 99 }

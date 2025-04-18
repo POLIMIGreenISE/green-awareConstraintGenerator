@@ -1,13 +1,13 @@
 import argparse
 from components.IstioHandler import IstioHandler
-from components.keplerHandler import KeplerHandler
-from components.deploymentHandler import DeploymentHandler
-from components.infrastructureHandler import InfrastructureHandler
-from components.consumptionEstimator import ConsumptionEstimator
-from components.constraintsGenerator import ConstraintsGenerator
-from components.knowledgeBaseHandler import KnowledgeBaseHandler
-from components.weightGenerator import WeightGenerator
-from components.adapter import Adapter
+from components.KeplerHandler import KeplerHandler
+from components.DeploymentHandler import DeploymentHandler
+from components.InfrastructureHandler import InfrastructureHandler
+from components.ConsumptionEstimator import ConsumptionEstimator
+from components.ConstraintsGenerator import ConstraintsGenerator
+from components.KnowledgeBaseHandler import KnowledgeBaseHandler
+from components.WeightGenerator import WeightGenerator
+from components.Adapter import Adapter
 from components.Yamlmodifier import YamlModifier
 
 

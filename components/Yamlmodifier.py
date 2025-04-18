@@ -1,6 +1,6 @@
 import os
 import yaml
-from components.energyMixGatherer import EnergyMixGatherer
+from components.EnergyMixGatherer import EnergyMixGatherer
 
 class YamlModifier:
     def __init__(self, infrastructure, application, istio, kepler, changelog):
@@ -28,24 +28,22 @@ class YamlModifier:
 
         for node in myInfrastructure["nodes"]:
             if myInfrastructure["nodes"][node]["profile"]["carbon"] != EnergyMixGatherer(node).gather_energyMix():
-                nodestr = f"node {node} {EnergyMixGatherer(node).gather_energyMix()}"
+                nodestr = f"node {node} {EnergyMixGatherer(node).gather_energyMix()} vs old {myInfrastructure["nodes"][node]["profile"]["carbon"]}"
                 self.changes.append(nodestr)
-
 
         for service in myApplication["components"]:
             for flavour in myApplication["components"][service]["flavours"]:
                 if [item for item in self.kepler if item["service"] == service and item["flavour"] == flavour]:
                     if myApplication["components"][service]["flavours"][flavour]["energy"] != int([item["emissions"] for item in self.kepler if item["service"] == service and item["flavour"] == flavour][0] * 1000):
-                        servicestr = f'service {service} {flavour} {int([item["emissions"] for item in self.kepler if item["service"] == service and item["flavour"] == flavour][0] * 1000)}'
+                        servicestr = f'service {service} {flavour} {int([item["emissions"] for item in self.kepler if item["service"] == service and item["flavour"] == flavour][0] * 1000)} vs old {myApplication["components"][service]["flavours"][flavour]["energy"]}'
                         self.changes.append(servicestr)
-
 
         for service in myApplication["requirements"]["dependencies"]:
             for flavour in myApplication["requirements"]["dependencies"][service]:
                 for connection in myApplication["requirements"]["dependencies"][service][flavour]:
                     if [item for item in self.istio if item["source"] == service and item["source_flavour"] == flavour and item["destination"] == connection]:
                         if myApplication["requirements"]["dependencies"][service][flavour][connection]["energy"] != int([item["emissions"] for item in self.istio if item["source"] == service and item["source_flavour"] == flavour and item["destination"] == connection][0] * 1000):
-                            linkstr = f'link {service} {flavour} {connection} {int([item["emissions"] for item in self.istio if item["source"] == service and item["source_flavour"] == flavour and item["destination"] == connection][0] * 1000)}'
+                            linkstr = f'link {service} {flavour} {connection} {int([item["emissions"] for item in self.istio if item["source"] == service and item["source_flavour"] == flavour and item["destination"] == connection][0] * 1000)} vs old {myApplication["requirements"]["dependencies"][service][flavour][connection]["energy"]}'
                             self.changes.append(linkstr)
         
         # with open(infraOut, "w") as file:

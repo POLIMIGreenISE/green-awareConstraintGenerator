@@ -26,11 +26,7 @@ class Adapter:
             for fact in self.prologFacts:
                 file.write(fact + ".\n")
 
-        p = Prolog()
-        p.consult(self.prologRules)
-        a = p.query(f"save_to_file('{self.prologConstraints}')")
-        print(sorted(a))
-        exit()
+        Prolog().consult("rules.pl")
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
 

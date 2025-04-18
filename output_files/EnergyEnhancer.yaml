@@ -1,0 +1,41 @@
+requirements:
+  components:
+    frontend:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: washington
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: california
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: texas
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: florida
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: newyork
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: arizona
+    productcatalogservice:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: florida

@@ -1,230 +1,368 @@
 {
     "services": [
         {
-            "service": "load_balancer",
-            "history": [
-                {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "flavour": "large",
-                    "emissions": 12.699,
-                    "max_emissions": 0.747,
-                    "min_emissions": 0.747,
-                    "joules": 12699.0,
-                    "count": 17
-                }
-            ]
-        },
-        {
             "service": "frontend",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "flavour": "large",
-                    "emissions": 10.097999999999999,
-                    "max_emissions": 0.594,
-                    "min_emissions": 0.594,
-                    "joules": 10098.0,
-                    "count": 17
+                    "emissions": 2.861262,
+                    "max_emissions": 2.861262,
+                    "min_emissions": 2.861262,
+                    "joules": 2861.262,
+                    "count": 1
                 }
             ]
         },
         {
-            "service": "api",
+            "service": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "flavour": "large",
-                    "emissions": 20.866564910107954,
-                    "max_emissions": 1.2274449947122323,
-                    "min_emissions": 1.2274449947122323,
-                    "joules": 20866.564910107954,
-                    "count": 17
+                    "emissions": 1.277202,
+                    "max_emissions": 1.277202,
+                    "min_emissions": 1.277202,
+                    "joules": 1277.202,
+                    "count": 1
                 }
             ]
         },
         {
-            "service": "identity_provider",
+            "service": "currencyservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "flavour": "large",
-                    "emissions": 15.027999999999999,
-                    "max_emissions": 0.8839999999999996,
-                    "min_emissions": 0.8839999999999996,
-                    "joules": 15027.999999999998,
-                    "count": 17
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 1.137168,
+                    "max_emissions": 1.137168,
+                    "min_emissions": 1.137168,
+                    "joules": 1137.168,
+                    "count": 1
                 }
             ]
         },
         {
-            "service": "database",
+            "service": "recommendationservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "flavour": "large",
-                    "emissions": 23.13699999999995,
-                    "max_emissions": 1.360999999999997,
-                    "min_emissions": 1.360999999999997,
-                    "joules": 23136.999999999945,
-                    "count": 17
+                    "emissions": 0.778833,
+                    "max_emissions": 0.778833,
+                    "min_emissions": 0.778833,
+                    "joules": 778.833,
+                    "count": 1
                 }
             ]
         },
         {
-            "service": "redis",
+            "service": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "flavour": "large",
-                    "emissions": 1.4960000000000024,
-                    "max_emissions": 0.08800000000000016,
-                    "min_emissions": 0.08800000000000016,
-                    "joules": 1496.0000000000027,
-                    "count": 17
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.705945,
+                    "max_emissions": 0.705945,
+                    "min_emissions": 0.705945,
+                    "joules": 705.945,
+                    "count": 1
                 }
             ]
         },
         {
-            "service": "etcd",
+            "service": "adservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "flavour": "large",
-                    "emissions": 0.7650000000000001,
-                    "max_emissions": 0.045,
-                    "min_emissions": 0.045,
-                    "joules": 765.0,
-                    "count": 17
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.324624,
+                    "max_emissions": 0.324624,
+                    "min_emissions": 0.324624,
+                    "joules": 324.624,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "checkoutservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.15506999999999999,
+                    "max_emissions": 0.15506999999999999,
+                    "min_emissions": 0.15506999999999999,
+                    "joules": 155.07,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "shippingservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.127671,
+                    "max_emissions": 0.127671,
+                    "min_emissions": 0.127671,
+                    "joules": 127.671,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "emailservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.06540900000000001,
+                    "max_emissions": 0.06540900000000001,
+                    "min_emissions": 0.06540900000000001,
+                    "joules": 65.409,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "paymentservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "flavour": "tiny",
+                    "emissions": 0.045117,
+                    "max_emissions": 0.045117,
+                    "min_emissions": 0.045117,
+                    "joules": 45.117,
+                    "count": 1
                 }
             ]
         }
     ],
     "connections": [
         {
-            "source": "load_balancer",
-            "destination": "frontend",
+            "source": "checkoutservice",
+            "destination": "currencyservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "source_flavour": "large",
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "tiny",
+                    "emissions": 3.4794820030169803e-09,
+                    "max_emissions": 3.4794820030169803e-09,
+                    "min_emissions": 3.4794820030169803e-09,
+                    "joules": 3.4794820030169804e-06,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "emailservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "tiny",
+                    "emissions": 5.316583618963687e-09,
+                    "max_emissions": 5.316583618963687e-09,
+                    "min_emissions": 5.316583618963687e-09,
+                    "joules": 5.316583618963687e-06,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "paymentservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "tiny",
+                    "emissions": 1.4636885448967852e-09,
+                    "max_emissions": 1.4636885448967852e-09,
+                    "min_emissions": 1.4636885448967852e-09,
+                    "joules": 1.4636885448967851e-06,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "productcatalogservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
                     "destination_flavour": "large",
-                    "emissions": 0.08499999999999984,
-                    "max_emissions": 0.0049999999999999906,
-                    "min_emissions": 0.0049999999999999906,
-                    "joules": 84.99999999999983,
-                    "count": 17
+                    "emissions": 2.0890716320822383e-09,
+                    "max_emissions": 2.0890716320822383e-09,
+                    "min_emissions": 2.0890716320822383e-09,
+                    "joules": 2.0890716320822385e-06,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "checkoutservice",
+            "destination": "shippingservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "tiny",
+                    "emissions": 5.152219635914196e-09,
+                    "max_emissions": 5.152219635914196e-09,
+                    "min_emissions": 5.152219635914196e-09,
+                    "joules": 5.1522196359141965e-06,
+                    "count": 1
                 }
             ]
         },
         {
             "source": "frontend",
-            "destination": "api",
+            "destination": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.08499999999999984,
-                    "max_emissions": 0.0049999999999999906,
-                    "min_emissions": 0.0049999999999999906,
-                    "joules": 84.99999999999983,
-                    "count": 17
+                    "emissions": 1.1069616941586624e-07,
+                    "max_emissions": 1.1069616941586624e-07,
+                    "min_emissions": 1.1069616941586624e-07,
+                    "joules": 0.00011069616941586624,
+                    "count": 1
                 }
             ]
         },
         {
             "source": "frontend",
-            "destination": "redis",
+            "destination": "recommendationservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.05100000000000001,
-                    "max_emissions": 0.003,
-                    "min_emissions": 0.003,
-                    "joules": 51.0,
-                    "count": 17
+                    "emissions": 3.325635824338209e-08,
+                    "max_emissions": 3.325635824338209e-08,
+                    "min_emissions": 3.325635824338209e-08,
+                    "joules": 3.325635824338209e-05,
+                    "count": 1
                 }
             ]
         },
         {
-            "source": "api",
-            "destination": "identity_provider",
+            "source": "frontend",
+            "destination": "shippingservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
-                    "destination_flavour": "large",
-                    "emissions": 0.05100000000000001,
-                    "max_emissions": 0.003,
-                    "min_emissions": 0.003,
-                    "joules": 51.0,
-                    "count": 17
+                    "destination_flavour": "tiny",
+                    "emissions": 7.69695440139809e-09,
+                    "max_emissions": 7.69695440139809e-09,
+                    "min_emissions": 7.69695440139809e-09,
+                    "joules": 7.69695440139809e-06,
+                    "count": 1
                 }
             ]
         },
         {
-            "source": "api",
-            "destination": "etcd",
+            "source": "frontend",
+            "destination": "adservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
-                    "destination_flavour": "large",
-                    "emissions": 0.06800000000000007,
-                    "max_emissions": 0.004000000000000005,
-                    "min_emissions": 0.004000000000000005,
-                    "joules": 68.0000000000001,
-                    "count": 17
+                    "destination_flavour": "tiny",
+                    "emissions": 1.6296939699445272e-08,
+                    "max_emissions": 1.6296939699445272e-08,
+                    "min_emissions": 1.6296939699445272e-08,
+                    "joules": 1.6296939699445272e-05,
+                    "count": 1
                 }
             ]
         },
         {
-            "source": "api",
-            "destination": "database",
+            "source": "checkoutservice",
+            "destination": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
-                    "source_flavour": "large",
-                    "destination_flavour": "large",
-                    "emissions": 0.1870000000000003,
-                    "max_emissions": 0.01100000000000002,
-                    "min_emissions": 0.01100000000000002,
-                    "joules": 187.00000000000034,
-                    "count": 17
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "tiny",
+                    "emissions": 2.712488707059275e-09,
+                    "max_emissions": 2.712488707059275e-09,
+                    "min_emissions": 2.712488707059275e-09,
+                    "joules": 2.712488707059275e-06,
+                    "count": 1
                 }
             ]
         },
         {
-            "source": "api",
-            "destination": "redis",
+            "source": "frontend",
+            "destination": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
-                    "destination_flavour": "large",
-                    "emissions": 0.01700000000000002,
-                    "max_emissions": 0.0010000000000000013,
-                    "min_emissions": 0.0010000000000000013,
-                    "joules": 17.000000000000025,
-                    "count": 17
+                    "destination_flavour": "tiny",
+                    "emissions": 3.5171871902859043e-08,
+                    "max_emissions": 3.5171871902859043e-08,
+                    "min_emissions": 3.5171871902859043e-08,
+                    "joules": 3.517187190285904e-05,
+                    "count": 1
                 }
             ]
         },
         {
-            "source": "identity_provider",
-            "destination": "etcd",
+            "source": "frontend",
+            "destination": "checkoutservice",
             "history": [
                 {
-                    "timestamp": "2025-04-09 11:41:02",
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "large",
+                    "destination_flavour": "tiny",
+                    "emissions": 3.6487012544123915e-09,
+                    "max_emissions": 3.6487012544123915e-09,
+                    "min_emissions": 3.6487012544123915e-09,
+                    "joules": 3.6487012544123915e-06,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "frontend",
+            "destination": "currencyservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
+                    "source_flavour": "large",
+                    "destination_flavour": "tiny",
+                    "emissions": 7.372059574450011e-08,
+                    "max_emissions": 7.372059574450011e-08,
+                    "min_emissions": 7.372059574450011e-08,
+                    "joules": 7.372059574450011e-05,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "recommendationservice",
+            "destination": "productcatalogservice",
+            "history": [
+                {
+                    "timestamp": "2025-04-18 16:12:51",
                     "source_flavour": "large",
                     "destination_flavour": "large",
-                    "emissions": 0.01700000000000002,
-                    "max_emissions": 0.0010000000000000013,
-                    "min_emissions": 0.0010000000000000013,
-                    "joules": 17.000000000000025,
-                    "count": 17
+                    "emissions": 1.2377707999347731e-08,
+                    "max_emissions": 1.2377707999347731e-08,
+                    "min_emissions": 1.2377707999347731e-08,
+                    "joules": 1.237770799934773e-05,
+                    "count": 1
                 }
             ]
         }
@@ -232,78 +370,138 @@
     "constraints": [
         {
             "category": "affinity",
-            "source": "api",
+            "source": "frontend",
             "source_flavour": "large",
-            "destination": "database",
+            "destination": "productcatalogservice",
             "destination_flavour": "large",
-            "constraint_emissions": 0.01100000000000002,
+            "constraint_emissions": 3.0109358081115617e-05,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-09 11:41:02"
+            "timestamp": "2025-04-18 16:12:51"
         },
         {
             "category": "affinity",
-            "source": "load_balancer",
+            "source": "frontend",
             "source_flavour": "large",
-            "destination": "frontend",
+            "destination": "currencyservice",
+            "destination_flavour": "tiny",
+            "constraint_emissions": 2.005200204250403e-05,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "affinity",
+            "source": "frontend",
+            "source_flavour": "large",
+            "destination": "cartservice",
+            "destination_flavour": "tiny",
+            "constraint_emissions": 9.56674915757766e-06,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "affinity",
+            "source": "frontend",
+            "source_flavour": "large",
+            "destination": "recommendationservice",
             "destination_flavour": "large",
-            "constraint_emissions": 0.0049999999999999906,
+            "constraint_emissions": 7.898385082803247e-06,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-09 11:41:02"
+            "timestamp": "2025-04-18 16:12:51"
         },
         {
             "category": "avoid",
-            "source": "api",
+            "source": "frontend",
             "flavour": "large",
-            "node": "private3",
-            "constraint_emissions": 1.2274449947122323,
+            "node": "washington",
+            "constraint_emissions": 698.147928,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-09 11:41:02"
+            "timestamp": "2025-04-18 16:12:51"
         },
         {
             "category": "avoid",
-            "source": "database",
+            "source": "frontend",
             "flavour": "large",
-            "node": "private3",
-            "constraint_emissions": 1.360999999999997,
+            "node": "california",
+            "constraint_emissions": 672.39657,
             "memory_weight": 1.0,
-            "timestamp": "2025-04-09 11:41:02"
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "texas",
+            "constraint_emissions": 660.951522,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "florida",
+            "constraint_emissions": 858.3786,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "newyork",
+            "constraint_emissions": 675.257832,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "arizona",
+            "constraint_emissions": 655.228998,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
+        },
+        {
+            "category": "avoid",
+            "source": "productcatalogservice",
+            "flavour": "large",
+            "node": "florida",
+            "constraint_emissions": 383.1606,
+            "memory_weight": 1.0,
+            "timestamp": "2025-04-18 16:12:51"
         }
     ],
     "nodes": [
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "public1",
-            "mix": 402
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "washington",
+            "mix": 244
         },
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "public2",
-            "mix": 255
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "california",
+            "mix": 235
         },
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "private1",
-            "mix": 346
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "texas",
+            "mix": 231
         },
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "private2",
-            "mix": 74
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "florida",
+            "mix": 300
         },
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "private3",
-            "mix": 537
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "newyork",
+            "mix": 236
         },
         {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "private4",
-            "mix": 155
-        },
-        {
-            "timestamp": "2025-04-09 11:41:02",
-            "node": "private5",
-            "mix": 343
+            "timestamp": "2025-04-18 16:12:51",
+            "node": "arizona",
+            "mix": 229
         }
     ]
 }

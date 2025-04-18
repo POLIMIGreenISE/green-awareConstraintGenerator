@@ -1,0 +1,298 @@
+name: online_boutique
+components:
+  frontend:
+    flavours:
+      tiny:
+        uses:
+          - { component: checkoutservice, min_flavour: tiny }
+          - { component: adservice, min_flavour: tiny }
+          - { component: recommendationservice, min_flavour: tiny }
+          - { component: productcatalogservice, min_flavour: tiny }
+          - { component: cartservice, min_flavour: tiny }
+          - { component: shippingservice, min_flavour: tiny }
+          - { component: currencyservice, min_flavour: tiny }
+        energy: 1189
+      medium:
+        uses:
+          - { component: checkoutservice, min_flavour: tiny }
+          - { component: adservice, min_flavour: tiny }
+          - { component: recommendationservice, min_flavour: large }
+          - { component: productcatalogservice, min_flavour: large }
+          - { component: cartservice, min_flavour: tiny }
+          - { component: shippingservice, min_flavour: tiny }
+          - { component: currencyservice, min_flavour: tiny }
+        energy: 1585
+      large:
+        uses:
+          - { component: checkoutservice, min_flavour: large }
+          - { component: adservice, min_flavour: tiny }
+          - { component: recommendationservice, min_flavour: large }
+          - { component: productcatalogservice, min_flavour: large }
+          - { component: cartservice, min_flavour: tiny }
+          - { component: shippingservice, min_flavour: tiny }
+          - { component: currencyservice, min_flavour: tiny }
+        energy: 1981
+    importance_order: [tiny, medium, large]
+  checkoutservice:
+    flavours:
+      tiny:
+        uses:
+          - { component: productcatalogservice, min_flavour: tiny }
+          - { component: cartservice, min_flavour: tiny }
+          - { component: shippingservice, min_flavour: tiny }
+          - { component: currencyservice, min_flavour: tiny }
+          - { component: paymentservice, min_flavour: tiny }
+          - { component: emailservice, min_flavour: tiny }
+        energy: 107
+      large:
+        uses:
+          - { component: productcatalogservice, min_flavour: large }
+          - { component: cartservice, min_flavour: tiny }
+          - { component: shippingservice, min_flavour: tiny }
+          - { component: currencyservice, min_flavour: tiny }
+          - { component: paymentservice, min_flavour: tiny }
+          - { component: emailservice, min_flavour: tiny }
+        energy: 134
+    importance_order: [tiny, large]
+  adservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 251
+    importance_order: [tiny]
+  recommendationservice:
+    flavours:
+      tiny:
+        uses:
+          - { component: productcatalogservice, min_flavour: tiny }
+        energy: 431
+      large:
+        uses:
+          - { component: productcatalogservice, min_flavour: large }
+        energy: 539
+    importance_order: [tiny, large]
+  productcatalogservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 791
+      large:
+        uses: []
+        energy: 989
+    importance_order: [tiny, large]
+  cartservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 546
+    importance_order: [tiny]
+  shippingservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 98
+    importance_order: [tiny]
+  currencyservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 881
+    importance_order: [tiny]
+  paymentservice:
+    flavours:
+      large:
+        uses: []
+        energy: 43
+    importance_order: [tiny]
+  emailservice:
+    flavours:
+      tiny:
+        uses: []
+        energy: 50
+    importance_order: [tiny]
+requirements:
+  components:
+    frontend:
+      common:
+        subnet: [private]
+        security: [firewall]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 97 }
+        medium: { cpu: 1, ram: 4, availability: 98 }
+        large: { cpu: 2, ram: 4, availability: 99 }
+    checkoutservice:
+      common:
+        subnet: [private]
+        security: [firewall, ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 98 }
+        large: { cpu: 2, ram: 4, availability: 99 }
+    adservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 97 }
+    recommendationservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 97 }
+        large: { cpu: 1, ram: 4, availability: 99 }
+    productcatalogservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 97 }
+        large: { cpu: 2, ram: 4, availability: 99 }
+    cartservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 2, availability: 97 }
+    shippingservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 4, availability: 99 }
+    currencyservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 4, availability: 99 }
+    paymentservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 4, availability: 99 }
+    emailservice:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        tiny: { cpu: 1, ram: 4, availability: 99 }
+  dependencies:
+    frontend:
+      tiny:
+        checkoutservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        adservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        recommendationservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        productcatalogservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        cartservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        shippingservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        currencyservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+      medium:
+        checkoutservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        adservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        recommendationservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        productcatalogservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        cartservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        shippingservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        currencyservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+      large:
+        checkoutservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        adservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        recommendationservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        productcatalogservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        cartservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        shippingservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+        currencyservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 7
+    checkoutservice:
+      tiny:
+        productcatalogservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        cartservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        shippingservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        currencyservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        paymentservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+        emailservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 5
+      large:
+        productcatalogservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        cartservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        shippingservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        currencyservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        paymentservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+        emailservice: 
+          requirements: { latency: 50, availability: 97 }
+          energy: 6
+    recommendationservice:
+      tiny:
+        productcatalogservice: 
+          requirements: { latency: 60, availability: 97 }
+          energy: 5
+      large:
+        productcatalogservice: 
+          requirements: { latency: 20, availability: 99 }
+          energy: 6
+  budget:
+    cost: 2000000
+    carbon: 2000000

@@ -1,33 +1,51 @@
-serviceConnection(load_balancer, frontend, 0.0049999999999999906, 4.99999999999999).
-serviceConnection(frontend, api, 0.0049999999999999906, 4.99999999999999).
-serviceConnection(frontend, redis, 0.003, 3.0).
-serviceConnection(api, identity_provider, 0.003, 3.0).
-serviceConnection(api, etcd, 0.004000000000000005, 4.000000000000005).
-serviceConnection(api, database, 0.01100000000000002, 11.00000000000002).
-serviceConnection(api, redis, 0.0010000000000000013, 1.0000000000000013).
-serviceConnection(identity_provider, etcd, 0.0010000000000000013, 1.0000000000000013).
-service(load_balancer, 0.747, 747.0).
-service(frontend, 0.594, 594.0).
-service(api, 1.2274449947122323, 1227.4449947122323).
-service(identity_provider, 0.8839999999999996, 883.9999999999995).
-service(database, 1.360999999999997, 1360.999999999997).
-service(redis, 0.08800000000000016, 88.00000000000016).
-service(etcd, 0.045, 45.0).
-node(public1, 402).
-node(public2, 255).
-node(private1, 346).
-node(private2, 74).
-node(private3, 620).
-node(private4, 155).
-node(private5, 290).
-deployedTo(load_balancer,large,public1).
-deployedTo(api,large,private1).
-deployedTo(frontend,large,public1).
-deployedTo(identity_provider,large,private3).
-deployedTo(redis,large,private3).
-deployedTo(database,large,private5).
-deployedTo(etcd,large,private2).
-highConsumptionConnection(api,large,database,large,0.006).
-highConsumptionConnection(load_balancer,large,frontend,large,0.003).
-highConsumptionService(api,large,private3,0.910).
-highConsumptionService(database,large,private3,1.000).
+serviceConnection(checkoutservice, currencyservice, 3.4794820030169803e-09, 3.4794820030169804e-06).
+serviceConnection(checkoutservice, emailservice, 5.316583618963687e-09, 5.316583618963687e-06).
+serviceConnection(checkoutservice, paymentservice, 1.4636885448967852e-09, 1.4636885448967851e-06).
+serviceConnection(checkoutservice, productcatalogservice, 2.0890716320822383e-09, 2.0890716320822385e-06).
+serviceConnection(checkoutservice, shippingservice, 5.152219635914196e-09, 5.1522196359141965e-06).
+serviceConnection(frontend, productcatalogservice, 1.1069616941586624e-07, 0.00011069616941586624).
+serviceConnection(frontend, recommendationservice, 3.325635824338209e-08, 3.325635824338209e-05).
+serviceConnection(frontend, shippingservice, 7.69695440139809e-09, 7.69695440139809e-06).
+serviceConnection(frontend, adservice, 1.6296939699445272e-08, 1.6296939699445272e-05).
+serviceConnection(checkoutservice, cartservice, 2.712488707059275e-09, 2.712488707059275e-06).
+serviceConnection(frontend, cartservice, 3.5171871902859043e-08, 3.517187190285904e-05).
+serviceConnection(frontend, checkoutservice, 3.6487012544123915e-09, 3.6487012544123915e-06).
+serviceConnection(frontend, currencyservice, 7.372059574450011e-08, 7.372059574450011e-05).
+serviceConnection(recommendationservice, productcatalogservice, 1.2377707999347731e-08, 1.237770799934773e-05).
+service(frontend, 2.861262, 2861.262).
+service(productcatalogservice, 1.277202, 1277.202).
+service(currencyservice, 1.137168, 1137.168).
+service(recommendationservice, 0.778833, 778.833).
+service(cartservice, 0.705945, 705.945).
+service(adservice, 0.324624, 324.624).
+service(checkoutservice, 0.15506999999999999, 155.07).
+service(shippingservice, 0.127671, 127.671).
+service(emailservice, 0.06540900000000001, 65.409).
+service(paymentservice, 0.045117, 45.117).
+node(washington, 244).
+node(california, 235).
+node(texas, 231).
+node(florida, 300).
+node(newyork, 236).
+node(arizona, 229).
+deployedTo(frontend,large,washington).
+deployedTo(productcatalogservice,large,florida).
+deployedTo(recommendationservice,large,texas).
+deployedTo(checkoutservice,tiny,california).
+deployedTo(adservice,tiny,texas).
+deployedTo(cartservice,tiny,florida).
+deployedTo(shippingservice,tiny,florida).
+deployedTo(currencyservice,tiny,florida).
+deployedTo(paymentservice,tiny,newyork).
+deployedTo(emailservice,tiny,newyork).
+highConsumptionConnection(frontend,large,productcatalogservice,large,0.000).
+highConsumptionConnection(frontend,large,currencyservice,tiny,0.000).
+highConsumptionConnection(frontend,large,cartservice,tiny,0.000).
+highConsumptionConnection(frontend,large,recommendationservice,large,0.000).
+highConsumptionService(frontend,large,washington,0.813).
+highConsumptionService(frontend,large,california,0.783).
+highConsumptionService(frontend,large,texas,0.770).
+highConsumptionService(frontend,large,florida,1.000).
+highConsumptionService(frontend,large,newyork,0.787).
+highConsumptionService(frontend,large,arizona,0.763).
+highConsumptionService(productcatalogservice,large,florida,0.446).

@@ -1,5 +1,6 @@
 import json
-from components.energyMixGatherer import EnergyMixGatherer
+import re
+from components.EnergyMixGatherer import EnergyMixGatherer
 
 class WeightGenerator:
     def __init__(self, constraints, prologFacts, deployment):
@@ -15,16 +16,8 @@ class WeightGenerator:
         average_global = 100
         multiplier = 0.75   
 
-        def findNode(service, services):
-            for s in services:
-                if s["service"] == service:
-                    return s["node"]
-
-        for constr in self.constraints:
-            constr["constraint_emissions"] *= EnergyMixGatherer(findNode(constr["source"], self.deployment)).gather_energyMix()
-
         maxConsumption = max(constr["constraint_emissions"] for constr in self.constraints)
-    
+        
         for constr in self.constraints:
             if constr["category"] == "affinity":
                 if maxConsumption < average_global:
@@ -49,4 +42,15 @@ class WeightGenerator:
                 new_rule = f"highConsumptionService({constr['source']},{constr['flavour']},{constr['node']},{final_weight:.3f})"
                 self.prologFacts.append(new_rule)
 
+        # itemsToRemove = []
+        # for fact in self.prologFacts:
+        #     if fact.startswith("highConsumption"):
+        #         match = re.match(r'(\w+)\((.*?)\)', fact)
+        #         if match:
+        #             args = match.group(2).split(',')
+        #             if float(args[-1]) < 0.3:
+        #                 itemsToRemove.append(fact)
+        # for fact in itemsToRemove:
+        #     self.prologFacts.remove(fact)
+        
         return self.prologFacts

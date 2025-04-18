@@ -1,0 +1,13 @@
+Component frontend deployed in flavour large on node washington.
+Component productcatalogservice deployed in flavour large on node florida.
+Component recommendationservice deployed in flavour large on node texas.
+Component checkoutservice deployed in flavour tiny on node california.
+Component adservice deployed in flavour tiny on node texas.
+Component cartservice deployed in flavour tiny on node florida.
+Component shippingservice deployed in flavour tiny on node florida.
+Component currencyservice deployed in flavour tiny on node florida.
+Component paymentservice deployed in flavour tiny on node newyork.
+Component emailservice deployed in flavour tiny on node newyork.
+Objective value: 13
+	Total cost: 85
+	Total carb: 4194

@@ -1,0 +1,13 @@
+Component frontend deployed in flavour large on node france.
+Component productcatalogservice deployed in flavour large on node greatbritain.
+Component recommendationservice deployed in flavour large on node germany.
+Component checkoutservice deployed in flavour tiny on node spain.
+Component adservice deployed in flavour tiny on node germany.
+Component cartservice deployed in flavour tiny on node greatbritain.
+Component shippingservice deployed in flavour tiny on node greatbritain.
+Component currencyservice deployed in flavour tiny on node greatbritain.
+Component paymentservice deployed in flavour tiny on node italy.
+Component emailservice deployed in flavour tiny on node italy.
+Objective value: 13
+	Total cost: 85
+	Total carb: 4194
