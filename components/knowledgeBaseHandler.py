@@ -1,16 +1,16 @@
 import json
 import math
 from datetime import datetime
-from components.EnergyMixGatherer import EnergyMixGatherer
 
 class KnowledgeBaseHandler:
-    def __init__(self, knowledgeBase, istio, kepler, affinity, avoid, infrastructure):
+    def __init__(self, knowledgeBase, istio, kepler, affinity, avoid, infrastructure, energyMix):
         self.knowledgeBase = knowledgeBase
         self.istio = istio
         self.kepler = kepler
         self.affinity = affinity
         self.avoid = avoid
         self.infrastructure = infrastructure
+        self.energyMix = energyMix
         self.constraints = None
         
     def handle_knowledgeBase(self):
@@ -114,7 +114,7 @@ class KnowledgeBaseHandler:
                 node = {
                     "timestamp": timestamp,
                     "node": element,
-                    "mix":  EnergyMixGatherer(element).gather_energyMix()
+                    "mix":  self.energyMix.gather_energyMix(element)
                 }
                 nodes.append(node)
             knowledge = {
@@ -293,13 +293,13 @@ class KnowledgeBaseHandler:
                     if element == node["node"]:
                         node_found = True
                         node["timestamp"] = timestamp
-                        node["mix"] = EnergyMixGatherer(element).gather_energyMix()
+                        node["mix"] = self.energyMix.gather_energyMix(element)
                         break
                 if not node_found:
                     newNode = {
                         "timestamp": timestamp,
                         "node": element,
-                        "mix": EnergyMixGatherer(element).gather_energyMix()
+                        "mix": self.energyMix.gather_energyMix(element)
                     }
                     myKnowledgeBase["nodes"].append(newNode)
             # Save the knowledge base

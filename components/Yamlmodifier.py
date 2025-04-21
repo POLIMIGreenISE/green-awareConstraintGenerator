@@ -1,14 +1,14 @@
 import os
 import yaml
-from components.EnergyMixGatherer import EnergyMixGatherer
 
 class YamlModifier:
-    def __init__(self, infrastructure, application, istio, kepler, changelog):
+    def __init__(self, infrastructure, application, istio, kepler, changelog, energyMix):
         self.infrastructure = infrastructure
         self.application = application
         self.istio = istio
         self.kepler = kepler
         self.changelog= changelog
+        self.energyMix = energyMix
         self.changes = None
 
     def modify_YAML(self):
@@ -27,8 +27,8 @@ class YamlModifier:
         self.changes = []
 
         for node in myInfrastructure["nodes"]:
-            if myInfrastructure["nodes"][node]["profile"]["carbon"] != EnergyMixGatherer(node).gather_energyMix():
-                nodestr = f"node {node} {EnergyMixGatherer(node).gather_energyMix()} vs old {myInfrastructure["nodes"][node]["profile"]["carbon"]}"
+            if myInfrastructure["nodes"][node]["profile"]["carbon"] != self.energyMix.gather_energyMix(node):
+                nodestr = f"node {node} {self.energyMix.gather_energyMix(node)} vs old {myInfrastructure["nodes"][node]["profile"]["carbon"]}"
                 self.changes.append(nodestr)
 
         for service in myApplication["components"]:

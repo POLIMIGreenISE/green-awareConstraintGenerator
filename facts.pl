@@ -25,7 +25,7 @@ service(paymentservice, 0.045117, 45.117).
 node(washington, 244).
 node(california, 235).
 node(texas, 231).
-node(florida, 300).
+node(florida, 570).
 node(newyork, 236).
 node(arizona, 229).
 deployedTo(frontend,large,washington).
@@ -38,14 +38,8 @@ deployedTo(shippingservice,tiny,florida).
 deployedTo(currencyservice,tiny,florida).
 deployedTo(paymentservice,tiny,newyork).
 deployedTo(emailservice,tiny,newyork).
-highConsumptionConnection(frontend,large,productcatalogservice,large,0.000).
-highConsumptionConnection(frontend,large,currencyservice,tiny,0.000).
-highConsumptionConnection(frontend,large,cartservice,tiny,0.000).
-highConsumptionConnection(frontend,large,recommendationservice,large,0.000).
-highConsumptionService(frontend,large,washington,0.813).
-highConsumptionService(frontend,large,california,0.783).
-highConsumptionService(frontend,large,texas,0.770).
+highConsumptionService(frontend,large,washington,0.428).
+highConsumptionService(frontend,large,california,0.412).
 highConsumptionService(frontend,large,florida,1.000).
-highConsumptionService(frontend,large,newyork,0.787).
-highConsumptionService(frontend,large,arizona,0.763).
+highConsumptionService(frontend,large,newyork,0.414).
 highConsumptionService(productcatalogservice,large,florida,0.446).

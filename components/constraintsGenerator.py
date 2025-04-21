@@ -1,14 +1,14 @@
 import json
 import statistics
-from components.EnergyMixGatherer import EnergyMixGatherer
 
 class ConstraintsGenerator:
-    def __init__(self, istio, kepler, deployment, infrastructure, knowledgeBase):
+    def __init__(self, istio, kepler, deployment, infrastructure, knowledgeBase, energyMix):
         self.istio = istio
         self.kepler = kepler
         self.deployment = deployment
         self.infrastructure = infrastructure
         self.knowledgeBase = knowledgeBase
+        self.energyMix = energyMix
         self.affinity = None
         self.avoid = None
         self.maxConsumption = None
@@ -61,7 +61,7 @@ class ConstraintsGenerator:
         maxIstio = max(self.istio, key=lambda x: x['emissions'])
         maxKepler = max(self.kepler, key=lambda x: x['emissions'])
         self.maxConsumption = max(maxIstio['emissions'], maxKepler['emissions'])
-        maxNode = max(self.infrastructure["nodes"], key=lambda x: EnergyMixGatherer(x).gather_energyMix())
+        maxNode = max(self.infrastructure["nodes"], key=lambda x: self.energyMix.gather_energyMix(x))
 
         # Dynamic Thresholding
         if not myKnowledgeBase:
@@ -123,7 +123,7 @@ class ConstraintsGenerator:
                     "source_flavour": findFlavour(comm['source'], self.deployment),
                     "destination": comm["destination"],
                     "destination_flavour": findFlavour(comm['destination'], self.deployment),
-                    "constraint_emissions": comm['emissions'] * (EnergyMixGatherer(findNode(comm["source"], self.deployment)).gather_energyMix() + EnergyMixGatherer(findNode(comm["destination"], self.deployment)).gather_energyMix()) / 2
+                    "constraint_emissions": comm['emissions'] * (self.energyMix.gather_energyMix(findNode(comm["source"], self.deployment)) + self.energyMix.gather_energyMix(findNode(comm["destination"], self.deployment))) / 2
                 }
                 self.affinity.append(affinity)
 
@@ -133,16 +133,15 @@ class ConstraintsGenerator:
             deployableNodes = obtainDeployableNodes(service["service"], self.infrastructure)
             if len(deployableNodes) > 1:
                 for node in deployableNodes:
-                    nodeWeight = float(EnergyMixGatherer(node).gather_energyMix() / EnergyMixGatherer(maxNode).gather_energyMix())
+                    nodeWeight = float(self.energyMix.gather_energyMix(node) / self.energyMix.gather_energyMix(maxNode))
                     scaledWeight = nodeWeight * serviceWeight
-                    print(scaledWeight, keplerThreshold)
                     if(scaledWeight >= keplerThreshold):
                         avoid = {
                             "category": "avoid",
                             "source": service["service"],
                             "flavour": findFlavour(service['service'], self.deployment),
                             "node": node,
-                            "constraint_emissions": service["emissions"] * EnergyMixGatherer(node).gather_energyMix()
+                            "constraint_emissions": service["emissions"] * self.energyMix.gather_energyMix(node)
                         }
                         self.avoid.append(avoid)
 

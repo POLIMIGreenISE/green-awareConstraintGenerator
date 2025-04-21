@@ -9,12 +9,14 @@ from components.KnowledgeBaseHandler import KnowledgeBaseHandler
 from components.WeightGenerator import WeightGenerator
 from components.Adapter import Adapter
 from components.Yamlmodifier import YamlModifier
+from components.EnergyMixGatherer import EnergyMixGatherer
 
 
 def run(
     rules,
     interaction,
     service,
+    nodes,
     deployment,
     application,
     infrastructure,
@@ -29,6 +31,7 @@ def run(
     deploymentInformation = DeploymentHandler(deployment).handle_deployment()
     newKepler = KeplerHandler(service).handler_kepler()
     newIstio = IstioHandler(interaction).handle_istio()
+    energyMix = EnergyMixGatherer(nodes)
     istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler, deploymentInformation).estimate_consumption()
     affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, kb).generate_constraints()
     finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation).handle_knowledgeBase()
@@ -41,6 +44,7 @@ if __name__ == "__main__":
     parser.add_argument("rules", type=str, help="Prolog rules ABSOLUTE file path")
     parser.add_argument("interaction", type=str, help="Interaction file path")
     parser.add_argument("service", type=str, help="Service file path")
+    parser.add_argument("nodes", type=str, help="Nodes file path")
     parser.add_argument("deployment", type=str, help="Deployment file path")
     parser.add_argument("app", type=str, help="Application yaml file path")
     parser.add_argument("infrastructure", type=str, help="Infrastructure yaml file path")
@@ -56,6 +60,7 @@ if __name__ == "__main__":
         args.rules,
         args.interaction,
         args.service,
+        args.nodes,
         args.deployment,
         args.app,
         args.infrastructure,

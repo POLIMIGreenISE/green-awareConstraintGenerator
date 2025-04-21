@@ -43,7 +43,7 @@ nodes:
       security: [ssl, firewall]
     profile:
       cost: 7
-      carbon: 300
+      carbon: 570
   newyork:
     capabilities:
       cpu: 2

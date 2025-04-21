@@ -78,5 +78,8 @@ class ConsumptionEstimator:
                         joules = {"service": truncate_string(pod["pod_name"]), "flavour": findFlavour(truncate_string(pod["pod_name"]), self.deployment), 
                                 "emissions": estimated_emissions, "joules": simulate_traffic(float(pod["value"]))}
                         self.keplerConsumption.append(joules)
-
+        # for x in self.keplerConsumption:
+        #     if x.get("service") == "frontend":
+        #         x["emissions"] = 0.481
+        #         x["joules"] = 481
         return self.istioConsumption, self.keplerConsumption

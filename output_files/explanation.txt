@@ -1,7 +1,5 @@
 A constrant of avoid was generated between frontend in flavour large and washington since the services used a lot of resources and the node has a poor energy mix
 A constrant of avoid was generated between frontend in flavour large and california since the services used a lot of resources and the node has a poor energy mix
-A constrant of avoid was generated between frontend in flavour large and texas since the services used a lot of resources and the node has a poor energy mix
 A constrant of avoid was generated between frontend in flavour large and florida since the services used a lot of resources and the node has a poor energy mix
 A constrant of avoid was generated between frontend in flavour large and newyork since the services used a lot of resources and the node has a poor energy mix
-A constrant of avoid was generated between frontend in flavour large and arizona since the services used a lot of resources and the node has a poor energy mix
 A constrant of avoid was generated between productcatalogservice in flavour large and florida since the services used a lot of resources and the node has a poor energy mix

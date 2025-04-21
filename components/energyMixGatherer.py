@@ -5,13 +5,10 @@ import os
 import yaml
 
 class EnergyMixGatherer:
-    def __init__(self, node):
-        self.node = node
-        self.mix = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "input_files", "infra_OB_US.yaml"))
-        # os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "input_files", "node2.csv"))
-        
+    def __init__(self, path):
+        self.path = path
 
-    def gather_energyMix(self):
+    def gather_energyMix(self, node):
         """Gather the energy mix based on the node."""
         
         # sums = defaultdict(lambda: {"sum": 0.0, "count": 0.0})
@@ -23,11 +20,11 @@ class EnergyMixGatherer:
         #             sums[key]["sum"] += float(row["value"])
         #             sums[key]["count"] += 1
         
-        with open(self.mix, "r") as file:
+        with open(self.path, "r") as file:
             myInfra = yaml.safe_load(file)
         myEnergyMix = {
             node: [{"mix": details["profile"]["carbon"]}]
             for node, details in myInfra["nodes"].items()
         }
         
-        return statistics.mean(x["mix"] for x in myEnergyMix[self.node]) #int(sums[self.node]["sum"] / sums[self.node]["count"])
+        return statistics.mean(x["mix"] for x in myEnergyMix[node]) #int(sums[self.node]["sum"] / sums[self.node]["count"])

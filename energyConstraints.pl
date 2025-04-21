@@ -1,11 +1,5 @@
-affinity(d(frontend,large),d(productcatalogservice,large),0.0).
-affinity(d(frontend,large),d(recommendationservice,large),0.0).
-affinity(d(frontend,large),d(cartservice,tiny),0.0).
-affinity(d(frontend,large),d(currencyservice,tiny),0.0).
-avoid(d(frontend,large),washington,0.813).
-avoid(d(frontend,large),california,0.783).
-avoid(d(frontend,large),texas,0.77).
+avoid(d(frontend,large),washington,0.428).
+avoid(d(frontend,large),california,0.412).
 avoid(d(frontend,large),florida,1.0).
-avoid(d(frontend,large),newyork,0.787).
-avoid(d(frontend,large),arizona,0.763).
+avoid(d(frontend,large),newyork,0.414).
 avoid(d(productcatalogservice,large),florida,0.446).
