@@ -2,30 +2,30 @@ requirements:
   components:
     frontend:
       large:
-      - avoid:
+      - affinity:
           energy_oriented: true
           resilience_oriented: false
           soft: true
-          value: washington
-      - avoid:
+          value: productcatalogservice,large
+      - affinity:
           energy_oriented: true
           resilience_oriented: false
           soft: true
-          value: california
-      - avoid:
+          value: currencyservice,tiny
+      - avoidNode:
           energy_oriented: true
           resilience_oriented: false
           soft: true
-          value: florida
-      - avoid:
+          value: greatbritain
+      - avoidNode:
           energy_oriented: true
           resilience_oriented: false
           soft: true
-          value: newyork
+          value: italy
     productcatalogservice:
       large:
-      - avoid:
+      - avoidNode:
           energy_oriented: true
           resilience_oriented: false
           soft: true
-          value: florida
+          value: italy

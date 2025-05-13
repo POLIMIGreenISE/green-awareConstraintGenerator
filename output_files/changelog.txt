@@ -7,17 +7,17 @@ service cartservice tiny 705 vs old 546
 service shippingservice tiny 127 vs old 98
 service currencyservice tiny 1137 vs old 881
 service emailservice tiny 65 vs old 50
-link frontend large checkoutservice 0 vs old 7
-link frontend large adservice 0 vs old 7
-link frontend large recommendationservice 0 vs old 7
-link frontend large productcatalogservice 0 vs old 7
-link frontend large cartservice 0 vs old 7
-link frontend large shippingservice 0 vs old 7
-link frontend large currencyservice 0 vs old 7
-link checkoutservice tiny productcatalogservice 0 vs old 5
-link checkoutservice tiny cartservice 0 vs old 5
-link checkoutservice tiny shippingservice 0 vs old 5
-link checkoutservice tiny currencyservice 0 vs old 5
-link checkoutservice tiny paymentservice 0 vs old 5
-link checkoutservice tiny emailservice 0 vs old 5
-link recommendationservice large productcatalogservice 0 vs old 6
+link frontend large checkoutservice 157 vs old 7
+link frontend large adservice 705 vs old 7
+link frontend large recommendationservice 1438 vs old 7
+link frontend large productcatalogservice 4789 vs old 7
+link frontend large cartservice 1521 vs old 7
+link frontend large shippingservice 333 vs old 7
+link frontend large currencyservice 3189 vs old 7
+link checkoutservice tiny productcatalogservice 90 vs old 5
+link checkoutservice tiny cartservice 117 vs old 5
+link checkoutservice tiny shippingservice 222 vs old 5
+link checkoutservice tiny currencyservice 150 vs old 5
+link checkoutservice tiny paymentservice 63 vs old 5
+link checkoutservice tiny emailservice 230 vs old 5
+link recommendationservice large productcatalogservice 535 vs old 6

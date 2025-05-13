@@ -33,11 +33,11 @@ def run(
     newIstio = IstioHandler(interaction).handle_istio()
     energyMix = EnergyMixGatherer(nodes)
     istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler, deploymentInformation).estimate_consumption()
-    affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, kb).generate_constraints()
-    finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation).handle_knowledgeBase()
+    affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, kb, energyMix).generate_constraints()
+    finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
     finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
-    Adapter(rules, facts, finalPrologFacts, prologConstraints, finalConstraints, explanation, yamlConstraints).adapt_output()
-    YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions, changelog).modify_YAML()
+    Adapter(rules, facts, finalPrologFacts, prologConstraints, finalConstraints, explanation, yamlConstraints, infrastructureInformation, energyMix).adapt_output()
+    YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions, changelog, energyMix).modify_YAML()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="FREEDA main loop over ECLYPSE simulator")

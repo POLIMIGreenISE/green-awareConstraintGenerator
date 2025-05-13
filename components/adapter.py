@@ -3,7 +3,7 @@ import yaml
 import os
 
 class Adapter:
-    def __init__(self, prologRules, prologFile, prologFacts, prologConstraints, constraints, explanationFile, yamlOut):
+    def __init__(self, prologRules, prologFile, prologFacts, prologConstraints, constraints, explanationFile, yamlOut, infrastructure, energyMix):
         self.prologRules = prologRules
         self.prologFile = prologFile
         self.prologFacts = prologFacts
@@ -11,6 +11,8 @@ class Adapter:
         self.prologConstraints = prologConstraints
         self.explanationFile = explanationFile
         self.yamlout = yamlOut
+        self.infrastructure = infrastructure
+        self.energyMix = energyMix
 
     # Create the prolog file and execute it
     def adapt_output(self):
@@ -19,8 +21,24 @@ class Adapter:
             match constrType:
                 case "affinity":
                     return "since the services exchanged a lot of data between them"
-                case "avoid":
-                    return "since the services used a lot of resources and the node has a poor energy mix"
+                case "avoidNode":
+                    return "This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node."
+
+        def savings(constraint):
+            def obtainIndex(data, element):
+                index = next(i for i, item in enumerate(data) if item["node"] == element)
+                return index
+            nodes = []
+            minNode = min(self.infrastructure["nodes"], key=lambda x: self.energyMix.gather_energyMix(x))
+            for node in self.infrastructure["nodes"]:
+                details = {"node": node,
+                           "carbon": self.infrastructure["nodes"][node]["profile"]["carbon"]}
+                nodes.append(details)
+            nodes = sorted(nodes, key=lambda x: x['carbon'], reverse=True)
+            index = min(obtainIndex(nodes, constraint["node"]), len(nodes))
+            maxSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / nodes[index]["carbon"] * self.infrastructure["nodes"][minNode]["profile"]["carbon"])
+            minSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / nodes[index]["carbon"] * nodes[index+1]["carbon"])
+            return f"The estimated emissions savings resulting from avoiding this deployment range between {maxSave} gCO2eq and {minSave} gCO2eq."
 
         with open(self.prologFile, 'w') as file:
             for fact in self.prologFacts:
@@ -29,20 +47,22 @@ class Adapter:
         Prolog().consult("rules.pl")
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
-
+        
         with open(self.explanationFile, "w") as explfile:
             for constraint in self.constraints:
                 if (constraint.get("constraint_emissions") / maxV) > 0.3:
                     if constraint["category"] == "affinity":
-                        explanation = (f'A constrant of {constraint["category"]} was generated '
+                        explanation = (f'A {constraint["category"]} was generated '
                             f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
                             f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
                             f'{explain(constraint["category"])}\n')
                         explfile.write(explanation)
                     elif constraint["category"] == "avoid":
-                        explanation = (f'A constrant of {constraint["category"]} was generated '
-                            f'between {constraint["source"]} in flavour {constraint["flavour"]} '
-                            f'and {constraint["node"]} {explain(constraint["category"])}\n'
+                        constraint["category"] = "avoidNode"
+                        explanation = (f'A {constraint["category"]} constraint was generated '
+                            f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
+                            f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
+                            f'{savings(constraint)}\n'
                             )
                         explfile.write(explanation)
 
