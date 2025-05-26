@@ -1,8 +1,6 @@
-A affinity was generated between frontend in flavour large and productcatalogservice in flavour large since the services exchanged a lot of data between them
-A affinity was generated between frontend in flavour large and currencyservice in flavour tiny since the services exchanged a lot of data between them
 A avoidNode constraint was generated for the deployment of the frontend component in the large flavour on the greatbritain node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 563.6686139999999 gCO2eq and 231.762222 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 541.1249365218437 gCO2eq and 222.49299420441292 gCO2eq.
 A avoidNode constraint was generated for the deployment of the frontend component in the large flavour on the italy node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 912.7425780000001 gCO2eq and 349.07396400000005 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 876.2378413729347 gCO2eq and 335.112904851091 gCO2eq.
 A avoidNode constraint was generated for the deployment of the productcatalogservice component in the large flavour on the italy node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 407.427438 gCO2eq and 155.818644 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 391.1325574090016 gCO2eq and 149.58674609372474 gCO2eq.

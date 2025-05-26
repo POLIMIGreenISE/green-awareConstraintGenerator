@@ -2,16 +2,6 @@ requirements:
   components:
     frontend:
       large:
-      - affinity:
-          energy_oriented: true
-          resilience_oriented: false
-          soft: true
-          value: productcatalogservice,large
-      - affinity:
-          energy_oriented: true
-          resilience_oriented: false
-          soft: true
-          value: currencyservice,tiny
       - avoidNode:
           energy_oriented: true
           resilience_oriented: false

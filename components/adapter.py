@@ -67,15 +67,15 @@ class Adapter:
                         explfile.write(explanation)
 
         outputdata = {
-        "requirements": {
-            "components": {}
-        }
+            "requirements": {
+                "components": {}
+            }
         }
         for element in self.constraints:
             if (element.get("constraint_emissions") / maxV) > 0.3:
                 source = element["source"]
                 flavour = element.get("source_flavour", element.get("flavour", None))
-                affinityvalue = element.get("destination", "") + "," + element.get("destination_flavour", "")
+                affinityvalue = element.get("destination", "") #+ "," + element.get("destination_flavour", "")
                 
                 if source not in outputdata["requirements"]["components"]:
                     outputdata["requirements"]["components"][source] = {}

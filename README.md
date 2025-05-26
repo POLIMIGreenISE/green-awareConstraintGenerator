@@ -7,7 +7,8 @@ This component develops techniques to classify the profile of nodes in a Cloud-I
 ## Folders
 
 - Components: Logical units in charge of different tasks inside the tool
-- Files: Contains the inputs and outputs generated from this tool
+- Input Files: Contains the inputs files needed for this tool
+- Output Files: Contains the outputs generated from this tool
 - Images: Graphical assets used for this readme.
 
 ## Terminology
@@ -18,6 +19,24 @@ This component develops techniques to classify the profile of nodes in a Cloud-I
 - Flavour: The typology of a service. Can range from small to large. A small service will use less resources than its large counterpart.
 - Energy mix: Combination of different energy resources to meet the energy needs of a node. The mix includes renewable and non renewable resources.
 - Deployment: Includes the information about the disposition of each service in which flavour on which node.
+
+# Installation
+
+```bash
+python -m .venv venv
+source ./.venv/bin/activate # or equivalent in other OS
+pip intall -r requirements.txt
+```
+# Utilisation
+```bash
+python .\EnergyAnalyzer [--region {eu,us}] [--keep]
+```
+Optional: --region {eu,us} / -r 
+- Indicates the geographical region used for the infrastructure and the deployment.
+Defaults to eu
+Optional: --keep / -k:
+- Indicates whether to keep or not the knowledge base. The knowledge base should be cleared when changing infrastructure.
+Defaults to not keeping
 
 # Components
 
@@ -54,10 +73,3 @@ Creates an internal ranking of constraints based on the amount of energy consump
 ## Adapter
 
 Formats the output for the consumption of future components
-
-# Installation
-```bash
-python -m .venv venv
-source ./.venv/bin/activate # or equivalent in other OS
-pip intall -r requirements.txt
-```

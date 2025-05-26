@@ -57,7 +57,7 @@ class ConsumptionEstimator:
             # requestVolume measures the amount of requests in a span of 1 hour, multiplied by the average size of said requests
             data_transfer = (float(element["requestVolume"]) * float(element["requestSize"]) / (1024 ** 3))
             # data_transfer (GB/h) * energy_intensity (kWh/GB) = kWh
-            estimated_emissions = data_transfer * wattcoefficient * 150000
+            estimated_emissions = data_transfer * wattcoefficient #* 150000
             # Convert kWh to Joules
             joules = (estimated_emissions) * 1000
             consumption = {"source": element["source"], "source_flavour": findFlavour(element["source"], self.deployment), 
