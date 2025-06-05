@@ -1,13 +1,14 @@
-from tkinter import *
+from tkinter import filedialog, messagebox
 import customtkinter
 from typing import Union, Callable
 import main
 import os
 
-class MyScrollableCheckboxFrame(customtkinter.CTkScrollableFrame):
+class MyScrollableApplicationFrame(customtkinter.CTkScrollableFrame):
     def __init__(self, master, title, values):
         super().__init__(master, label_text=title)
         self.grid_columnconfigure(0, weight=1)
+        self.grid_rowconfigure(0, weight=1)
         self.values = values
         self.checkboxes = []
         self.spinboxes = []
@@ -37,24 +38,68 @@ class MyScrollableCheckboxFrame(customtkinter.CTkScrollableFrame):
                     checked_spinboxes.append(self.spinboxes[i].get())
         return checked_checkboxes, checked_spinboxes
     
-class MyScrollableRadiobuttonFrame(customtkinter.CTkScrollableFrame):
+class MyScrollableInfrastructureFrame(customtkinter.CTkScrollableFrame):
     def __init__(self, master, title, values):
         super().__init__(master, label_text=title)
-        self.grid_columnconfigure(0, weight=1)
         self.values = values
         self.radiobuttons = []
         self.variable = customtkinter.StringVar(value="")
+        self.grid(row=0, column=0, sticky="nsew")
+        self.grid_rowconfigure(1, weight=1)
+        self.grid_columnconfigure(0, weight=1)
 
-        for i, value in enumerate(self.values):
-            radiobutton = customtkinter.CTkRadioButton(self, text=value, value=value, variable=self.variable)
-            radiobutton.grid(row=i + 1, column=0, padx=10, pady=(10, 0), sticky="w")
-            self.radiobuttons.append(radiobutton)
+        # for i, value in enumerate(self.values):
+        #     radiobutton = customtkinter.CTkRadioButton(self, text=value, value=value, variable=self.variable)
+        #     radiobutton.grid(row=i + 1, column=0, padx=10, pady=(10, 0), sticky="w")
+        #     self.radiobuttons.append(radiobutton)
+        
+        self.open_button = customtkinter.CTkButton(self, text="Open File", command=self.open_file)
+        self.open_button.grid(row=0, column=0, padx=50, pady=(10, 0), sticky="w")
+        self.save_button = customtkinter.CTkButton(self, text="Save File", command=self.save_file)
+        self.save_button.grid(row=0, column=1, padx=50, pady=(10, 0), sticky="w")
+
+        self.textbox = customtkinter.CTkTextbox(self, wrap="word")
+        self.textbox.grid(row=1, column=0, columnspan=2, padx=25, pady=(25, 0), sticky="nsew")
+
+        self.current_file = None
 
     def get(self):
         return self.variable.get()
 
     def set(self, value):
         self.variable.set(value)
+
+    def open_file(self):
+        file_path = filedialog.askopenfilename()
+        if not file_path:
+            return
+
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
+                self.textbox.delete("1.0", "end")
+                self.textbox.insert("1.0", content)
+                self.current_file = file_path
+        except Exception as e:
+            messagebox.showerror("Error", f"Could not read file:\n{e}")
+
+    def save_file(self):
+        if self.current_file:
+            file_path = self.current_file
+        else:
+            file_path = filedialog.asksaveasfilename(defaultextension=".txt",
+                                              filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
+            if not file_path:
+                return
+
+        try:
+            content = self.textbox.get("1.0", "end-1c")
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            messagebox.showinfo("Success", f"File saved to:\n{file_path}")
+            self.current_file = file_path
+        except Exception as e:
+            messagebox.showerror("Error", f"Could not save file:\n{e}")
 
 class FloatSpinbox(customtkinter.CTkFrame):
     def __init__(self, *args,
@@ -68,10 +113,7 @@ class FloatSpinbox(customtkinter.CTkFrame):
         self.step_size = step_size
         self.command = command
 
-        self.configure(fg_color=("gray78", "gray28"))  # set frame color
-
-        self.grid_columnconfigure((0, 2), weight=0)  # buttons don't expand
-        self.grid_columnconfigure(1, weight=1)  # entry expands
+        self.configure(fg_color=("gray78", "gray28"))
 
         self.subtract_button = customtkinter.CTkButton(self, text="-", width=height-6, height=height-6,
                                                        command=self.subtract_button_callback)
@@ -117,19 +159,14 @@ class FloatSpinbox(customtkinter.CTkFrame):
         self.entry.delete(0, "end")
         self.entry.insert(0, str(float(value)))
 
-class App(customtkinter.CTk):
-    def __init__(self):
-        super().__init__()
-
-        self.title("Energy Analyzer")
-        self.geometry("720x480")
-        self.grid_columnconfigure((0, 1), weight=1)
-        self.grid_rowconfigure(0, weight=1)
-
-        self.radiobutton_frame = MyScrollableRadiobuttonFrame(self, "Options", values=["EU", "US"])
+class FirstPage(customtkinter.CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent)
+        self.controller = controller
+        self.radiobutton_frame = MyScrollableInfrastructureFrame(self, "Options", values=["EU", "US"])
         self.radiobutton_frame.grid(row=0, column=0, padx=(0, 10), pady=(10, 0), sticky="nsew")
         self.radiobutton_frame.configure(fg_color="transparent")
-        self.checkbox_frame = MyScrollableCheckboxFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
+        self.checkbox_frame = MyScrollableApplicationFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
         self.checkbox_frame.grid(row=0, column=1, padx=(0, 10), pady=(10, 0), sticky="nsew")
         self.checkbox_frame.configure(fg_color="transparent")
         
@@ -140,6 +177,46 @@ class App(customtkinter.CTk):
         print("radio frame:", self.radiobutton_frame.get())
         print("checkbox frame:", self.checkbox_frame.get())
         #print("valuees:", self.)
+
+class SecondPage(customtkinter.CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent)
+        self.controller = controller
+
+        label = customtkinter.CTkLabel(self, text="This is the second page!", font=customtkinter.CTkFont(size=20))
+        label.pack(pady=20)
+
+        back_button = customtkinter.CTkButton(self, text="Back to Editor", command=lambda: controller.show_page("FileEditorPage"))
+        back_button.pack()
+
+class App(customtkinter.CTk):
+    def __init__(self):
+        super().__init__()
+
+        self.title("Energy Analyzer")
+        self.geometry("1080x600")
+        self.container = customtkinter.CTkFrame(self, width=1080, height=600)
+        self.container.grid(row=0, column=0, sticky="nsew")
+        self.container.grid_propagate(False)
+        self.grid_rowconfigure(0, weight=1)
+        self.grid_columnconfigure(0, weight=1)
+        self.container.grid_rowconfigure(0, weight=1)
+        self.container.grid_columnconfigure(0, weight=1)
+        self.pages = {}
+
+        for PageClass in (FirstPage, SecondPage):
+            page_name = PageClass.__name__
+            frame = PageClass(parent=self.container, controller=self)
+            frame.grid_rowconfigure(0, weight=1)
+            frame.grid_columnconfigure(0, weight=1)
+            frame.grid(row=0, column=0, sticky="nsew")
+            self.pages[page_name] = frame
+
+        self.show_page("FirstPage")
+    
+    def show_page(self, page_name):
+        page = self.pages[page_name]
+        page.tkraise()
 
 app = App()
 app.mainloop()

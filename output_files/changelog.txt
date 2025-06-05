@@ -1,12 +1,12 @@
-service frontend large 2746 vs old 1981
-service checkoutservice tiny 148 vs old 107
-service adservice tiny 311 vs old 251
-service recommendationservice large 747 vs old 539
-service productcatalogservice large 1226 vs old 989
-service cartservice tiny 677 vs old 546
-service shippingservice tiny 122 vs old 98
-service currencyservice tiny 1091 vs old 881
-service emailservice tiny 62 vs old 50
+service frontend large 2832 vs old 1981
+service checkoutservice tiny 153 vs old 107
+service adservice tiny 321 vs old 251
+service recommendationservice large 770 vs old 539
+service productcatalogservice large 1264 vs old 989
+service cartservice tiny 698 vs old 546
+service shippingservice tiny 126 vs old 98
+service currencyservice tiny 1125 vs old 881
+service emailservice tiny 64 vs old 50
 link frontend large checkoutservice 0 vs old 7
 link frontend large adservice 0 vs old 7
 link frontend large recommendationservice 0 vs old 7

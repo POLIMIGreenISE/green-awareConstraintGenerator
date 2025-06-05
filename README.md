@@ -31,10 +31,11 @@ pip intall -r requirements.txt
 ```bash
 python .\EnergyAnalyzer [--region {eu,us}] [--keep]
 ```
-Optional: --region {eu,us} / -r 
+> Optional: --region {eu,us} / -r 
 - Indicates the geographical region used for the infrastructure and the deployment.
-Defaults to eu
-Optional: --keep / -k:
+- Defaults to eu
+
+> Optional: --keep / -k:
 - Indicates whether to keep or not the knowledge base. The knowledge base should be cleared when changing infrastructure.
 Defaults to not keeping
 
