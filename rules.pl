@@ -1,25 +1,21 @@
-:- ['facts.pl'].
-
-:- initialization(save_to_file).
-
 :- dynamic highConsumptionService/4.
 :- dynamic highConsumptionConnection/5.
 
-save_to_file :-
-    open('energyConstraints.pl', write, Stream),
+save_to_file([Facts, Path]) :-
+    consult(Facts),
     allSuggested(Constraints),
+    open(Path, write, Stream),
     write_results(Constraints, Stream),
     close(Stream).
 
 allSuggested(Constraints) :-
-    findall(Constraint, distinct(suggested(Constraint)), Constraints).
+    bagof(Constraint, suggested(Constraint), Constraints).
 
 suggested(affinity(d(C,FC),d(S,FS),W)) :-
-    deployedTo(C,FC,N), deployedTo(S,FS,M), dif(C,S), dif(N,M),
+    deployedTo(C,FC,_), deployedTo(S,FS,_), dif(C,S),
     highConsumptionConnection(C,FC,S,FS,W).
 
 suggested(avoid(d(C,FC),N,W)) :-
-    deployedTo(C,FC,_),
     highConsumptionService(C,FC,N,W).
 
 write_results([], _).

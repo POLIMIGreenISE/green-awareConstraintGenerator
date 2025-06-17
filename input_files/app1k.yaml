@@ -2,5544 +2,5544 @@ components:
   comp0:
     flavours:
       tiny:
-        energy: 179
+        energy: 317
         uses: []
     importance_order:
     - tiny
   comp1:
     flavours:
       tiny:
-        energy: 196
+        energy: 336
         uses: []
     importance_order:
     - tiny
   comp10:
     flavours:
       tiny:
-        energy: 374
+        energy: 187
         uses: []
     importance_order:
     - tiny
   comp100:
     flavours:
       tiny:
-        energy: 139
+        energy: 785
         uses: []
     importance_order:
     - tiny
   comp101:
     flavours:
       tiny:
-        energy: 809
+        energy: 402
         uses: []
     importance_order:
     - tiny
   comp102:
     flavours:
       tiny:
-        energy: 324
+        energy: 315
         uses: []
     importance_order:
     - tiny
   comp103:
     flavours:
       tiny:
-        energy: 605
+        energy: 804
         uses: []
     importance_order:
     - tiny
   comp104:
     flavours:
       tiny:
-        energy: 767
+        energy: 300
         uses: []
     importance_order:
     - tiny
   comp105:
     flavours:
       tiny:
-        energy: 573
+        energy: 559
         uses: []
     importance_order:
     - tiny
   comp106:
     flavours:
       tiny:
-        energy: 214
+        energy: 363
         uses: []
     importance_order:
     - tiny
   comp107:
     flavours:
       tiny:
-        energy: 371
+        energy: 124
         uses: []
     importance_order:
     - tiny
   comp108:
     flavours:
       tiny:
-        energy: 711
+        energy: 571
         uses: []
     importance_order:
     - tiny
   comp109:
     flavours:
       tiny:
-        energy: 541
+        energy: 766
         uses: []
     importance_order:
     - tiny
   comp11:
     flavours:
       tiny:
-        energy: 774
+        energy: 536
         uses: []
     importance_order:
     - tiny
   comp110:
     flavours:
       tiny:
-        energy: 359
+        energy: 770
         uses: []
     importance_order:
     - tiny
   comp111:
     flavours:
       tiny:
-        energy: 539
+        energy: 138
         uses: []
     importance_order:
     - tiny
   comp112:
     flavours:
       tiny:
-        energy: 678
+        energy: 668
         uses: []
     importance_order:
     - tiny
   comp113:
     flavours:
       tiny:
-        energy: 790
+        energy: 441
         uses: []
     importance_order:
     - tiny
   comp114:
     flavours:
       tiny:
-        energy: 234
+        energy: 603
         uses: []
     importance_order:
     - tiny
   comp115:
     flavours:
       tiny:
-        energy: 832
+        energy: 113
         uses: []
     importance_order:
     - tiny
   comp116:
     flavours:
       tiny:
-        energy: 141
+        energy: 450
         uses: []
     importance_order:
     - tiny
   comp117:
     flavours:
       tiny:
-        energy: 380
+        energy: 460
         uses: []
     importance_order:
     - tiny
   comp118:
     flavours:
       tiny:
-        energy: 352
+        energy: 379
         uses: []
     importance_order:
     - tiny
   comp119:
     flavours:
       tiny:
-        energy: 881
+        energy: 776
         uses: []
     importance_order:
     - tiny
   comp12:
     flavours:
       tiny:
-        energy: 145
+        energy: 594
         uses: []
     importance_order:
     - tiny
   comp120:
     flavours:
       tiny:
-        energy: 523
+        energy: 378
         uses: []
     importance_order:
     - tiny
   comp121:
     flavours:
       tiny:
-        energy: 862
+        energy: 646
         uses: []
     importance_order:
     - tiny
   comp122:
     flavours:
       tiny:
-        energy: 396
+        energy: 237
         uses: []
     importance_order:
     - tiny
   comp123:
     flavours:
       tiny:
-        energy: 861
+        energy: 676
         uses: []
     importance_order:
     - tiny
   comp124:
     flavours:
       tiny:
-        energy: 663
+        energy: 316
         uses: []
     importance_order:
     - tiny
   comp125:
     flavours:
       tiny:
-        energy: 134
+        energy: 140
         uses: []
     importance_order:
     - tiny
   comp126:
     flavours:
       tiny:
-        energy: 236
+        energy: 860
         uses: []
     importance_order:
     - tiny
   comp127:
     flavours:
       tiny:
-        energy: 152
+        energy: 691
         uses: []
     importance_order:
     - tiny
   comp128:
     flavours:
       tiny:
-        energy: 787
+        energy: 417
         uses: []
     importance_order:
     - tiny
   comp129:
     flavours:
       tiny:
-        energy: 703
+        energy: 342
         uses: []
     importance_order:
     - tiny
   comp13:
     flavours:
       tiny:
-        energy: 398
+        energy: 192
         uses: []
     importance_order:
     - tiny
   comp130:
     flavours:
       tiny:
-        energy: 183
+        energy: 889
         uses: []
     importance_order:
     - tiny
   comp131:
     flavours:
       tiny:
-        energy: 635
+        energy: 472
         uses: []
     importance_order:
     - tiny
   comp132:
     flavours:
       tiny:
-        energy: 412
+        energy: 179
         uses: []
     importance_order:
     - tiny
   comp133:
     flavours:
       tiny:
-        energy: 301
+        energy: 868
         uses: []
     importance_order:
     - tiny
   comp134:
     flavours:
       tiny:
-        energy: 519
+        energy: 447
         uses: []
     importance_order:
     - tiny
   comp135:
     flavours:
       tiny:
-        energy: 404
+        energy: 496
         uses: []
     importance_order:
     - tiny
   comp136:
     flavours:
       tiny:
-        energy: 364
+        energy: 486
         uses: []
     importance_order:
     - tiny
   comp137:
     flavours:
       tiny:
-        energy: 704
+        energy: 882
         uses: []
     importance_order:
     - tiny
   comp138:
     flavours:
       tiny:
-        energy: 115
+        energy: 399
         uses: []
     importance_order:
     - tiny
   comp139:
     flavours:
       tiny:
-        energy: 603
+        energy: 314
         uses: []
     importance_order:
     - tiny
   comp14:
     flavours:
       tiny:
-        energy: 762
+        energy: 635
         uses: []
     importance_order:
     - tiny
   comp140:
     flavours:
       tiny:
-        energy: 646
+        energy: 863
         uses: []
     importance_order:
     - tiny
   comp141:
     flavours:
       tiny:
-        energy: 396
+        energy: 424
         uses: []
     importance_order:
     - tiny
   comp142:
     flavours:
       tiny:
-        energy: 102
+        energy: 120
         uses: []
     importance_order:
     - tiny
   comp143:
     flavours:
       tiny:
-        energy: 450
+        energy: 685
         uses: []
     importance_order:
     - tiny
   comp144:
     flavours:
       tiny:
-        energy: 824
+        energy: 217
         uses: []
     importance_order:
     - tiny
   comp145:
     flavours:
       tiny:
-        energy: 705
+        energy: 545
         uses: []
     importance_order:
     - tiny
   comp146:
     flavours:
       tiny:
-        energy: 519
+        energy: 305
         uses: []
     importance_order:
     - tiny
   comp147:
     flavours:
       tiny:
-        energy: 260
+        energy: 294
         uses: []
     importance_order:
     - tiny
   comp148:
     flavours:
       tiny:
-        energy: 106
+        energy: 515
         uses: []
     importance_order:
     - tiny
   comp149:
     flavours:
       tiny:
-        energy: 772
+        energy: 141
         uses: []
     importance_order:
     - tiny
   comp15:
     flavours:
       tiny:
-        energy: 898
+        energy: 221
         uses: []
     importance_order:
     - tiny
   comp150:
     flavours:
       tiny:
-        energy: 292
+        energy: 641
         uses: []
     importance_order:
     - tiny
   comp151:
     flavours:
       tiny:
-        energy: 799
+        energy: 622
         uses: []
     importance_order:
     - tiny
   comp152:
     flavours:
       tiny:
-        energy: 660
+        energy: 665
         uses: []
     importance_order:
     - tiny
   comp153:
     flavours:
       tiny:
-        energy: 393
+        energy: 188
         uses: []
     importance_order:
     - tiny
   comp154:
     flavours:
       tiny:
-        energy: 376
+        energy: 452
         uses: []
     importance_order:
     - tiny
   comp155:
     flavours:
       tiny:
-        energy: 223
+        energy: 303
         uses: []
     importance_order:
     - tiny
   comp156:
     flavours:
       tiny:
-        energy: 173
+        energy: 661
         uses: []
     importance_order:
     - tiny
   comp157:
     flavours:
       tiny:
-        energy: 477
+        energy: 860
         uses: []
     importance_order:
     - tiny
   comp158:
     flavours:
       tiny:
-        energy: 866
+        energy: 374
         uses: []
     importance_order:
     - tiny
   comp159:
     flavours:
       tiny:
-        energy: 170
+        energy: 528
         uses: []
     importance_order:
     - tiny
   comp16:
     flavours:
       tiny:
-        energy: 442
+        energy: 372
         uses: []
     importance_order:
     - tiny
   comp160:
     flavours:
       tiny:
-        energy: 390
+        energy: 468
         uses: []
     importance_order:
     - tiny
   comp161:
     flavours:
       tiny:
-        energy: 630
+        energy: 256
         uses: []
     importance_order:
     - tiny
   comp162:
     flavours:
       tiny:
-        energy: 410
+        energy: 181
         uses: []
     importance_order:
     - tiny
   comp163:
     flavours:
       tiny:
-        energy: 426
+        energy: 788
         uses: []
     importance_order:
     - tiny
   comp164:
     flavours:
       tiny:
-        energy: 290
+        energy: 878
         uses: []
     importance_order:
     - tiny
   comp165:
     flavours:
       tiny:
-        energy: 871
+        energy: 590
         uses: []
     importance_order:
     - tiny
   comp166:
     flavours:
       tiny:
-        energy: 728
+        energy: 632
         uses: []
     importance_order:
     - tiny
   comp167:
     flavours:
       tiny:
-        energy: 185
+        energy: 270
         uses: []
     importance_order:
     - tiny
   comp168:
     flavours:
       tiny:
-        energy: 347
+        energy: 546
         uses: []
     importance_order:
     - tiny
   comp169:
     flavours:
       tiny:
-        energy: 443
+        energy: 819
         uses: []
     importance_order:
     - tiny
   comp17:
     flavours:
       tiny:
-        energy: 260
+        energy: 855
         uses: []
     importance_order:
     - tiny
   comp170:
     flavours:
       tiny:
-        energy: 538
+        energy: 280
         uses: []
     importance_order:
     - tiny
   comp171:
     flavours:
       tiny:
-        energy: 620
+        energy: 692
         uses: []
     importance_order:
     - tiny
   comp172:
     flavours:
       tiny:
-        energy: 396
+        energy: 458
         uses: []
     importance_order:
     - tiny
   comp173:
     flavours:
       tiny:
-        energy: 686
+        energy: 705
         uses: []
     importance_order:
     - tiny
   comp174:
     flavours:
       tiny:
-        energy: 853
+        energy: 820
         uses: []
     importance_order:
     - tiny
   comp175:
     flavours:
       tiny:
-        energy: 843
+        energy: 602
         uses: []
     importance_order:
     - tiny
   comp176:
     flavours:
       tiny:
-        energy: 716
+        energy: 451
         uses: []
     importance_order:
     - tiny
   comp177:
     flavours:
       tiny:
-        energy: 370
+        energy: 703
         uses: []
     importance_order:
     - tiny
   comp178:
     flavours:
       tiny:
-        energy: 798
+        energy: 122
         uses: []
     importance_order:
     - tiny
   comp179:
     flavours:
       tiny:
-        energy: 877
+        energy: 860
         uses: []
     importance_order:
     - tiny
   comp18:
     flavours:
       tiny:
-        energy: 782
+        energy: 808
         uses: []
     importance_order:
     - tiny
   comp180:
     flavours:
       tiny:
-        energy: 861
+        energy: 882
         uses: []
     importance_order:
     - tiny
   comp181:
     flavours:
       tiny:
-        energy: 665
+        energy: 539
         uses: []
     importance_order:
     - tiny
   comp182:
     flavours:
       tiny:
-        energy: 733
+        energy: 100
         uses: []
     importance_order:
     - tiny
   comp183:
     flavours:
       tiny:
-        energy: 786
+        energy: 753
         uses: []
     importance_order:
     - tiny
   comp184:
     flavours:
       tiny:
-        energy: 327
+        energy: 847
         uses: []
     importance_order:
     - tiny
   comp185:
     flavours:
       tiny:
-        energy: 800
+        energy: 201
         uses: []
     importance_order:
     - tiny
   comp186:
     flavours:
       tiny:
-        energy: 223
+        energy: 367
         uses: []
     importance_order:
     - tiny
   comp187:
     flavours:
       tiny:
-        energy: 273
+        energy: 268
         uses: []
     importance_order:
     - tiny
   comp188:
     flavours:
       tiny:
-        energy: 599
+        energy: 267
         uses: []
     importance_order:
     - tiny
   comp189:
     flavours:
       tiny:
-        energy: 247
+        energy: 561
         uses: []
     importance_order:
     - tiny
   comp19:
     flavours:
       tiny:
-        energy: 622
+        energy: 744
         uses: []
     importance_order:
     - tiny
   comp190:
     flavours:
       tiny:
-        energy: 627
+        energy: 721
         uses: []
     importance_order:
     - tiny
   comp191:
     flavours:
       tiny:
-        energy: 416
+        energy: 146
         uses: []
     importance_order:
     - tiny
   comp192:
     flavours:
       tiny:
-        energy: 728
+        energy: 280
         uses: []
     importance_order:
     - tiny
   comp193:
     flavours:
       tiny:
-        energy: 347
+        energy: 672
         uses: []
     importance_order:
     - tiny
   comp194:
     flavours:
       tiny:
-        energy: 490
+        energy: 560
         uses: []
     importance_order:
     - tiny
   comp195:
     flavours:
       tiny:
-        energy: 783
+        energy: 566
         uses: []
     importance_order:
     - tiny
   comp196:
     flavours:
       tiny:
-        energy: 498
+        energy: 239
         uses: []
     importance_order:
     - tiny
   comp197:
     flavours:
       tiny:
-        energy: 667
+        energy: 591
         uses: []
     importance_order:
     - tiny
   comp198:
     flavours:
       tiny:
-        energy: 348
+        energy: 570
         uses: []
     importance_order:
     - tiny
   comp199:
     flavours:
       tiny:
-        energy: 608
+        energy: 461
         uses: []
     importance_order:
     - tiny
   comp2:
     flavours:
       tiny:
-        energy: 432
+        energy: 344
         uses: []
     importance_order:
     - tiny
   comp20:
     flavours:
       tiny:
-        energy: 609
+        energy: 360
         uses: []
     importance_order:
     - tiny
   comp200:
     flavours:
       tiny:
-        energy: 492
+        energy: 141
         uses: []
     importance_order:
     - tiny
   comp201:
     flavours:
       tiny:
-        energy: 407
+        energy: 616
         uses: []
     importance_order:
     - tiny
   comp202:
     flavours:
       tiny:
-        energy: 773
+        energy: 608
         uses: []
     importance_order:
     - tiny
   comp203:
     flavours:
       tiny:
-        energy: 133
+        energy: 827
         uses: []
     importance_order:
     - tiny
   comp204:
     flavours:
       tiny:
-        energy: 324
+        energy: 759
         uses: []
     importance_order:
     - tiny
   comp205:
     flavours:
       tiny:
-        energy: 140
+        energy: 257
         uses: []
     importance_order:
     - tiny
   comp206:
     flavours:
       tiny:
-        energy: 861
+        energy: 810
         uses: []
     importance_order:
     - tiny
   comp207:
     flavours:
       tiny:
-        energy: 504
+        energy: 240
         uses: []
     importance_order:
     - tiny
   comp208:
     flavours:
       tiny:
-        energy: 868
+        energy: 624
         uses: []
     importance_order:
     - tiny
   comp209:
     flavours:
       tiny:
-        energy: 435
+        energy: 305
         uses: []
     importance_order:
     - tiny
   comp21:
     flavours:
       tiny:
-        energy: 524
+        energy: 614
         uses: []
     importance_order:
     - tiny
   comp210:
     flavours:
       tiny:
-        energy: 623
+        energy: 458
         uses: []
     importance_order:
     - tiny
   comp211:
     flavours:
       tiny:
-        energy: 235
+        energy: 326
         uses: []
     importance_order:
     - tiny
   comp212:
     flavours:
       tiny:
-        energy: 141
+        energy: 258
         uses: []
     importance_order:
     - tiny
   comp213:
     flavours:
       tiny:
-        energy: 847
+        energy: 598
         uses: []
     importance_order:
     - tiny
   comp214:
     flavours:
       tiny:
-        energy: 280
+        energy: 795
         uses: []
     importance_order:
     - tiny
   comp215:
     flavours:
       tiny:
-        energy: 786
+        energy: 327
         uses: []
     importance_order:
     - tiny
   comp216:
     flavours:
       tiny:
-        energy: 465
+        energy: 443
         uses: []
     importance_order:
     - tiny
   comp217:
     flavours:
       tiny:
-        energy: 556
+        energy: 791
         uses: []
     importance_order:
     - tiny
   comp218:
     flavours:
       tiny:
-        energy: 199
+        energy: 286
         uses: []
     importance_order:
     - tiny
   comp219:
     flavours:
       tiny:
-        energy: 555
+        energy: 238
         uses: []
     importance_order:
     - tiny
   comp22:
     flavours:
       tiny:
-        energy: 225
+        energy: 808
         uses: []
     importance_order:
     - tiny
   comp220:
     flavours:
       tiny:
-        energy: 723
+        energy: 511
         uses: []
     importance_order:
     - tiny
   comp221:
     flavours:
       tiny:
-        energy: 460
+        energy: 155
         uses: []
     importance_order:
     - tiny
   comp222:
     flavours:
       tiny:
-        energy: 544
+        energy: 339
         uses: []
     importance_order:
     - tiny
   comp223:
     flavours:
       tiny:
-        energy: 408
+        energy: 265
         uses: []
     importance_order:
     - tiny
   comp224:
     flavours:
       tiny:
-        energy: 704
+        energy: 821
         uses: []
     importance_order:
     - tiny
   comp225:
     flavours:
       tiny:
-        energy: 334
+        energy: 656
         uses: []
     importance_order:
     - tiny
   comp226:
     flavours:
       tiny:
-        energy: 685
+        energy: 751
         uses: []
     importance_order:
     - tiny
   comp227:
     flavours:
       tiny:
-        energy: 385
+        energy: 417
         uses: []
     importance_order:
     - tiny
   comp228:
     flavours:
       tiny:
-        energy: 301
+        energy: 261
         uses: []
     importance_order:
     - tiny
   comp229:
     flavours:
       tiny:
-        energy: 274
+        energy: 600
         uses: []
     importance_order:
     - tiny
   comp23:
     flavours:
       tiny:
-        energy: 671
+        energy: 225
         uses: []
     importance_order:
     - tiny
   comp230:
     flavours:
       tiny:
-        energy: 668
+        energy: 843
         uses: []
     importance_order:
     - tiny
   comp231:
     flavours:
       tiny:
-        energy: 811
+        energy: 416
         uses: []
     importance_order:
     - tiny
   comp232:
     flavours:
       tiny:
-        energy: 169
+        energy: 317
         uses: []
     importance_order:
     - tiny
   comp233:
     flavours:
       tiny:
-        energy: 541
+        energy: 850
         uses: []
     importance_order:
     - tiny
   comp234:
     flavours:
       tiny:
-        energy: 290
+        energy: 540
         uses: []
     importance_order:
     - tiny
   comp235:
     flavours:
       tiny:
-        energy: 844
+        energy: 663
         uses: []
     importance_order:
     - tiny
   comp236:
     flavours:
       tiny:
-        energy: 374
+        energy: 800
         uses: []
     importance_order:
     - tiny
   comp237:
     flavours:
       tiny:
-        energy: 595
+        energy: 374
         uses: []
     importance_order:
     - tiny
   comp238:
     flavours:
       tiny:
-        energy: 333
+        energy: 255
         uses: []
     importance_order:
     - tiny
   comp239:
     flavours:
       tiny:
-        energy: 705
+        energy: 425
         uses: []
     importance_order:
     - tiny
   comp24:
     flavours:
       tiny:
-        energy: 486
+        energy: 560
         uses: []
     importance_order:
     - tiny
   comp240:
     flavours:
       tiny:
-        energy: 663
+        energy: 286
         uses: []
     importance_order:
     - tiny
   comp241:
     flavours:
       tiny:
-        energy: 251
+        energy: 777
         uses: []
     importance_order:
     - tiny
   comp242:
     flavours:
       tiny:
-        energy: 558
+        energy: 526
         uses: []
     importance_order:
     - tiny
   comp243:
     flavours:
       tiny:
-        energy: 684
+        energy: 258
         uses: []
     importance_order:
     - tiny
   comp244:
     flavours:
       tiny:
-        energy: 693
+        energy: 867
         uses: []
     importance_order:
     - tiny
   comp245:
     flavours:
       tiny:
-        energy: 262
+        energy: 405
         uses: []
     importance_order:
     - tiny
   comp246:
     flavours:
       tiny:
-        energy: 347
+        energy: 484
         uses: []
     importance_order:
     - tiny
   comp247:
     flavours:
       tiny:
-        energy: 673
+        energy: 479
         uses: []
     importance_order:
     - tiny
   comp248:
     flavours:
       tiny:
-        energy: 886
+        energy: 779
         uses: []
     importance_order:
     - tiny
   comp249:
     flavours:
       tiny:
-        energy: 503
+        energy: 722
         uses: []
     importance_order:
     - tiny
   comp25:
     flavours:
       tiny:
-        energy: 723
+        energy: 695
         uses: []
     importance_order:
     - tiny
   comp250:
     flavours:
       tiny:
-        energy: 311
+        energy: 414
         uses: []
     importance_order:
     - tiny
   comp251:
     flavours:
       tiny:
-        energy: 621
+        energy: 537
         uses: []
     importance_order:
     - tiny
   comp252:
     flavours:
       tiny:
-        energy: 875
+        energy: 118
         uses: []
     importance_order:
     - tiny
   comp253:
     flavours:
       tiny:
-        energy: 339
+        energy: 387
         uses: []
     importance_order:
     - tiny
   comp254:
     flavours:
       tiny:
-        energy: 142
+        energy: 619
         uses: []
     importance_order:
     - tiny
   comp255:
     flavours:
       tiny:
-        energy: 152
+        energy: 197
         uses: []
     importance_order:
     - tiny
   comp256:
     flavours:
       tiny:
-        energy: 674
+        energy: 223
         uses: []
     importance_order:
     - tiny
   comp257:
     flavours:
       tiny:
-        energy: 471
+        energy: 136
         uses: []
     importance_order:
     - tiny
   comp258:
     flavours:
       tiny:
-        energy: 638
+        energy: 436
         uses: []
     importance_order:
     - tiny
   comp259:
     flavours:
       tiny:
-        energy: 169
+        energy: 291
         uses: []
     importance_order:
     - tiny
   comp26:
     flavours:
       tiny:
-        energy: 124
+        energy: 611
         uses: []
     importance_order:
     - tiny
   comp260:
     flavours:
       tiny:
-        energy: 458
+        energy: 295
         uses: []
     importance_order:
     - tiny
   comp261:
     flavours:
       tiny:
-        energy: 620
+        energy: 767
         uses: []
     importance_order:
     - tiny
   comp262:
     flavours:
       tiny:
-        energy: 785
+        energy: 588
         uses: []
     importance_order:
     - tiny
   comp263:
     flavours:
       tiny:
-        energy: 608
+        energy: 230
         uses: []
     importance_order:
     - tiny
   comp264:
     flavours:
       tiny:
-        energy: 116
+        energy: 871
         uses: []
     importance_order:
     - tiny
   comp265:
     flavours:
       tiny:
-        energy: 189
+        energy: 129
         uses: []
     importance_order:
     - tiny
   comp266:
     flavours:
       tiny:
-        energy: 369
+        energy: 292
         uses: []
     importance_order:
     - tiny
   comp267:
     flavours:
       tiny:
-        energy: 136
+        energy: 453
         uses: []
     importance_order:
     - tiny
   comp268:
     flavours:
       tiny:
-        energy: 144
+        energy: 648
         uses: []
     importance_order:
     - tiny
   comp269:
     flavours:
       tiny:
-        energy: 131
+        energy: 477
         uses: []
     importance_order:
     - tiny
   comp27:
     flavours:
       tiny:
-        energy: 730
+        energy: 702
         uses: []
     importance_order:
     - tiny
   comp270:
     flavours:
       tiny:
-        energy: 722
+        energy: 755
         uses: []
     importance_order:
     - tiny
   comp271:
     flavours:
       tiny:
-        energy: 760
+        energy: 230
         uses: []
     importance_order:
     - tiny
   comp272:
     flavours:
       tiny:
-        energy: 333
+        energy: 845
         uses: []
     importance_order:
     - tiny
   comp273:
     flavours:
       tiny:
-        energy: 180
+        energy: 365
         uses: []
     importance_order:
     - tiny
   comp274:
     flavours:
       tiny:
-        energy: 378
+        energy: 186
         uses: []
     importance_order:
     - tiny
   comp275:
     flavours:
       tiny:
-        energy: 624
+        energy: 199
         uses: []
     importance_order:
     - tiny
   comp276:
     flavours:
       tiny:
-        energy: 542
+        energy: 814
         uses: []
     importance_order:
     - tiny
   comp277:
     flavours:
       tiny:
-        energy: 426
+        energy: 891
         uses: []
     importance_order:
     - tiny
   comp278:
     flavours:
       tiny:
-        energy: 892
+        energy: 670
         uses: []
     importance_order:
     - tiny
   comp279:
     flavours:
       tiny:
-        energy: 698
+        energy: 298
         uses: []
     importance_order:
     - tiny
   comp28:
     flavours:
       tiny:
-        energy: 597
+        energy: 726
         uses: []
     importance_order:
     - tiny
   comp280:
     flavours:
       tiny:
-        energy: 323
+        energy: 799
         uses: []
     importance_order:
     - tiny
   comp281:
     flavours:
       tiny:
-        energy: 234
+        energy: 693
         uses: []
     importance_order:
     - tiny
   comp282:
     flavours:
       tiny:
-        energy: 876
+        energy: 334
         uses: []
     importance_order:
     - tiny
   comp283:
     flavours:
       tiny:
-        energy: 749
+        energy: 473
         uses: []
     importance_order:
     - tiny
   comp284:
     flavours:
       tiny:
-        energy: 198
+        energy: 490
         uses: []
     importance_order:
     - tiny
   comp285:
     flavours:
       tiny:
-        energy: 173
+        energy: 255
         uses: []
     importance_order:
     - tiny
   comp286:
     flavours:
       tiny:
-        energy: 372
+        energy: 431
         uses: []
     importance_order:
     - tiny
   comp287:
     flavours:
       tiny:
-        energy: 355
+        energy: 497
         uses: []
     importance_order:
     - tiny
   comp288:
     flavours:
       tiny:
-        energy: 255
+        energy: 646
         uses: []
     importance_order:
     - tiny
   comp289:
     flavours:
       tiny:
-        energy: 799
+        energy: 645
         uses: []
     importance_order:
     - tiny
   comp29:
     flavours:
       tiny:
-        energy: 156
+        energy: 268
         uses: []
     importance_order:
     - tiny
   comp290:
     flavours:
       tiny:
-        energy: 540
+        energy: 348
         uses: []
     importance_order:
     - tiny
   comp291:
     flavours:
       tiny:
-        energy: 208
+        energy: 721
         uses: []
     importance_order:
     - tiny
   comp292:
     flavours:
       tiny:
-        energy: 253
+        energy: 505
         uses: []
     importance_order:
     - tiny
   comp293:
     flavours:
       tiny:
-        energy: 353
+        energy: 724
         uses: []
     importance_order:
     - tiny
   comp294:
     flavours:
       tiny:
-        energy: 511
+        energy: 311
         uses: []
     importance_order:
     - tiny
   comp295:
     flavours:
       tiny:
-        energy: 705
+        energy: 787
         uses: []
     importance_order:
     - tiny
   comp296:
     flavours:
       tiny:
-        energy: 535
+        energy: 501
         uses: []
     importance_order:
     - tiny
   comp297:
     flavours:
       tiny:
-        energy: 195
+        energy: 272
         uses: []
     importance_order:
     - tiny
   comp298:
     flavours:
       tiny:
-        energy: 272
+        energy: 789
         uses: []
     importance_order:
     - tiny
   comp299:
     flavours:
       tiny:
-        energy: 550
+        energy: 768
         uses: []
     importance_order:
     - tiny
   comp3:
     flavours:
       tiny:
-        energy: 796
+        energy: 334
         uses: []
     importance_order:
     - tiny
   comp30:
     flavours:
       tiny:
-        energy: 603
+        energy: 394
         uses: []
     importance_order:
     - tiny
   comp300:
     flavours:
       tiny:
-        energy: 805
+        energy: 425
         uses: []
     importance_order:
     - tiny
   comp301:
     flavours:
       tiny:
-        energy: 523
+        energy: 532
         uses: []
     importance_order:
     - tiny
   comp302:
     flavours:
       tiny:
-        energy: 124
+        energy: 376
         uses: []
     importance_order:
     - tiny
   comp303:
     flavours:
       tiny:
-        energy: 779
+        energy: 167
         uses: []
     importance_order:
     - tiny
   comp304:
     flavours:
       tiny:
-        energy: 852
+        energy: 514
         uses: []
     importance_order:
     - tiny
   comp305:
     flavours:
       tiny:
-        energy: 550
+        energy: 432
         uses: []
     importance_order:
     - tiny
   comp306:
     flavours:
       tiny:
-        energy: 229
+        energy: 671
         uses: []
     importance_order:
     - tiny
   comp307:
     flavours:
       tiny:
-        energy: 780
+        energy: 703
         uses: []
     importance_order:
     - tiny
   comp308:
     flavours:
       tiny:
-        energy: 397
+        energy: 117
         uses: []
     importance_order:
     - tiny
   comp309:
     flavours:
       tiny:
-        energy: 272
+        energy: 400
         uses: []
     importance_order:
     - tiny
   comp31:
     flavours:
       tiny:
-        energy: 578
+        energy: 371
         uses: []
     importance_order:
     - tiny
   comp310:
     flavours:
       tiny:
-        energy: 155
+        energy: 300
         uses: []
     importance_order:
     - tiny
   comp311:
     flavours:
       tiny:
-        energy: 605
+        energy: 858
         uses: []
     importance_order:
     - tiny
   comp312:
     flavours:
       tiny:
-        energy: 883
+        energy: 334
         uses: []
     importance_order:
     - tiny
   comp313:
     flavours:
       tiny:
-        energy: 517
+        energy: 299
         uses: []
     importance_order:
     - tiny
   comp314:
     flavours:
       tiny:
-        energy: 620
+        energy: 375
         uses: []
     importance_order:
     - tiny
   comp315:
     flavours:
       tiny:
-        energy: 758
+        energy: 772
         uses: []
     importance_order:
     - tiny
   comp316:
     flavours:
       tiny:
-        energy: 787
+        energy: 138
         uses: []
     importance_order:
     - tiny
   comp317:
     flavours:
       tiny:
-        energy: 808
+        energy: 188
         uses: []
     importance_order:
     - tiny
   comp318:
     flavours:
       tiny:
-        energy: 410
+        energy: 217
         uses: []
     importance_order:
     - tiny
   comp319:
     flavours:
       tiny:
-        energy: 140
+        energy: 769
         uses: []
     importance_order:
     - tiny
   comp32:
     flavours:
       tiny:
-        energy: 669
+        energy: 819
         uses: []
     importance_order:
     - tiny
   comp320:
     flavours:
       tiny:
-        energy: 384
+        energy: 592
         uses: []
     importance_order:
     - tiny
   comp321:
     flavours:
       tiny:
-        energy: 538
+        energy: 576
         uses: []
     importance_order:
     - tiny
   comp322:
     flavours:
       tiny:
-        energy: 497
+        energy: 422
         uses: []
     importance_order:
     - tiny
   comp323:
     flavours:
       tiny:
-        energy: 638
+        energy: 275
         uses: []
     importance_order:
     - tiny
   comp324:
     flavours:
       tiny:
-        energy: 140
+        energy: 567
         uses: []
     importance_order:
     - tiny
   comp325:
     flavours:
       tiny:
-        energy: 792
+        energy: 695
         uses: []
     importance_order:
     - tiny
   comp326:
     flavours:
       tiny:
-        energy: 565
+        energy: 105
         uses: []
     importance_order:
     - tiny
   comp327:
     flavours:
       tiny:
-        energy: 700
+        energy: 862
         uses: []
     importance_order:
     - tiny
   comp328:
     flavours:
       tiny:
-        energy: 141
+        energy: 873
         uses: []
     importance_order:
     - tiny
   comp329:
     flavours:
       tiny:
-        energy: 387
+        energy: 796
         uses: []
     importance_order:
     - tiny
   comp33:
     flavours:
       tiny:
-        energy: 154
+        energy: 874
         uses: []
     importance_order:
     - tiny
   comp330:
     flavours:
       tiny:
-        energy: 649
+        energy: 583
         uses: []
     importance_order:
     - tiny
   comp331:
     flavours:
       tiny:
-        energy: 235
+        energy: 464
         uses: []
     importance_order:
     - tiny
   comp332:
     flavours:
       tiny:
-        energy: 815
+        energy: 752
         uses: []
     importance_order:
     - tiny
   comp333:
     flavours:
       tiny:
-        energy: 369
+        energy: 430
         uses: []
     importance_order:
     - tiny
   comp334:
     flavours:
       tiny:
-        energy: 228
+        energy: 268
         uses: []
     importance_order:
     - tiny
   comp335:
     flavours:
       tiny:
-        energy: 663
+        energy: 790
         uses: []
     importance_order:
     - tiny
   comp336:
     flavours:
       tiny:
-        energy: 440
+        energy: 513
         uses: []
     importance_order:
     - tiny
   comp337:
     flavours:
       tiny:
-        energy: 273
+        energy: 841
         uses: []
     importance_order:
     - tiny
   comp338:
     flavours:
       tiny:
-        energy: 878
+        energy: 789
         uses: []
     importance_order:
     - tiny
   comp339:
     flavours:
       tiny:
-        energy: 370
+        energy: 472
         uses: []
     importance_order:
     - tiny
   comp34:
     flavours:
       tiny:
-        energy: 815
+        energy: 509
         uses: []
     importance_order:
     - tiny
   comp340:
     flavours:
       tiny:
-        energy: 566
+        energy: 796
         uses: []
     importance_order:
     - tiny
   comp341:
     flavours:
       tiny:
-        energy: 322
+        energy: 295
         uses: []
     importance_order:
     - tiny
   comp342:
     flavours:
       tiny:
-        energy: 822
+        energy: 544
         uses: []
     importance_order:
     - tiny
   comp343:
     flavours:
       tiny:
-        energy: 494
+        energy: 379
         uses: []
     importance_order:
     - tiny
   comp344:
     flavours:
       tiny:
-        energy: 650
+        energy: 474
         uses: []
     importance_order:
     - tiny
   comp345:
     flavours:
       tiny:
-        energy: 625
+        energy: 606
         uses: []
     importance_order:
     - tiny
   comp346:
     flavours:
       tiny:
-        energy: 590
+        energy: 805
         uses: []
     importance_order:
     - tiny
   comp347:
     flavours:
       tiny:
-        energy: 144
+        energy: 335
         uses: []
     importance_order:
     - tiny
   comp348:
     flavours:
       tiny:
-        energy: 856
+        energy: 607
         uses: []
     importance_order:
     - tiny
   comp349:
     flavours:
       tiny:
-        energy: 476
+        energy: 558
         uses: []
     importance_order:
     - tiny
   comp35:
     flavours:
       tiny:
-        energy: 785
+        energy: 178
         uses: []
     importance_order:
     - tiny
   comp350:
     flavours:
       tiny:
-        energy: 290
+        energy: 739
         uses: []
     importance_order:
     - tiny
   comp351:
     flavours:
       tiny:
-        energy: 521
+        energy: 191
         uses: []
     importance_order:
     - tiny
   comp352:
     flavours:
       tiny:
-        energy: 382
+        energy: 557
         uses: []
     importance_order:
     - tiny
   comp353:
     flavours:
       tiny:
-        energy: 653
+        energy: 687
         uses: []
     importance_order:
     - tiny
   comp354:
     flavours:
       tiny:
-        energy: 405
+        energy: 725
         uses: []
     importance_order:
     - tiny
   comp355:
     flavours:
       tiny:
-        energy: 195
+        energy: 320
         uses: []
     importance_order:
     - tiny
   comp356:
     flavours:
       tiny:
-        energy: 637
+        energy: 576
         uses: []
     importance_order:
     - tiny
   comp357:
     flavours:
       tiny:
-        energy: 562
+        energy: 744
         uses: []
     importance_order:
     - tiny
   comp358:
     flavours:
       tiny:
-        energy: 256
+        energy: 464
         uses: []
     importance_order:
     - tiny
   comp359:
     flavours:
       tiny:
-        energy: 367
+        energy: 692
         uses: []
     importance_order:
     - tiny
   comp36:
     flavours:
       tiny:
-        energy: 896
+        energy: 334
         uses: []
     importance_order:
     - tiny
   comp360:
     flavours:
       tiny:
-        energy: 464
+        energy: 104
         uses: []
     importance_order:
     - tiny
   comp361:
     flavours:
       tiny:
-        energy: 693
+        energy: 278
         uses: []
     importance_order:
     - tiny
   comp362:
     flavours:
       tiny:
-        energy: 470
+        energy: 830
         uses: []
     importance_order:
     - tiny
   comp363:
     flavours:
       tiny:
-        energy: 156
+        energy: 564
         uses: []
     importance_order:
     - tiny
   comp364:
     flavours:
       tiny:
-        energy: 158
+        energy: 477
         uses: []
     importance_order:
     - tiny
   comp365:
     flavours:
       tiny:
-        energy: 764
+        energy: 296
         uses: []
     importance_order:
     - tiny
   comp366:
     flavours:
       tiny:
-        energy: 670
+        energy: 318
         uses: []
     importance_order:
     - tiny
   comp367:
     flavours:
       tiny:
-        energy: 235
+        energy: 216
         uses: []
     importance_order:
     - tiny
   comp368:
     flavours:
       tiny:
-        energy: 112
+        energy: 742
         uses: []
     importance_order:
     - tiny
   comp369:
     flavours:
       tiny:
-        energy: 209
+        energy: 543
         uses: []
     importance_order:
     - tiny
   comp37:
     flavours:
       tiny:
-        energy: 514
+        energy: 261
         uses: []
     importance_order:
     - tiny
   comp370:
     flavours:
       tiny:
-        energy: 159
+        energy: 369
         uses: []
     importance_order:
     - tiny
   comp371:
     flavours:
       tiny:
-        energy: 391
+        energy: 226
         uses: []
     importance_order:
     - tiny
   comp372:
     flavours:
       tiny:
-        energy: 847
+        energy: 756
         uses: []
     importance_order:
     - tiny
   comp373:
     flavours:
       tiny:
-        energy: 556
+        energy: 478
         uses: []
     importance_order:
     - tiny
   comp374:
     flavours:
       tiny:
-        energy: 795
+        energy: 714
         uses: []
     importance_order:
     - tiny
   comp375:
     flavours:
       tiny:
-        energy: 243
+        energy: 826
         uses: []
     importance_order:
     - tiny
   comp376:
     flavours:
       tiny:
-        energy: 536
+        energy: 304
         uses: []
     importance_order:
     - tiny
   comp377:
     flavours:
       tiny:
-        energy: 694
+        energy: 840
         uses: []
     importance_order:
     - tiny
   comp378:
     flavours:
       tiny:
-        energy: 522
+        energy: 754
         uses: []
     importance_order:
     - tiny
   comp379:
     flavours:
       tiny:
-        energy: 592
+        energy: 729
         uses: []
     importance_order:
     - tiny
   comp38:
     flavours:
       tiny:
-        energy: 546
+        energy: 249
         uses: []
     importance_order:
     - tiny
   comp380:
     flavours:
       tiny:
-        energy: 265
+        energy: 496
         uses: []
     importance_order:
     - tiny
   comp381:
     flavours:
       tiny:
-        energy: 295
+        energy: 506
         uses: []
     importance_order:
     - tiny
   comp382:
     flavours:
       tiny:
-        energy: 874
+        energy: 247
         uses: []
     importance_order:
     - tiny
   comp383:
     flavours:
       tiny:
-        energy: 756
+        energy: 386
         uses: []
     importance_order:
     - tiny
   comp384:
     flavours:
       tiny:
-        energy: 673
+        energy: 494
         uses: []
     importance_order:
     - tiny
   comp385:
     flavours:
       tiny:
-        energy: 543
+        energy: 809
         uses: []
     importance_order:
     - tiny
   comp386:
     flavours:
       tiny:
-        energy: 165
+        energy: 637
         uses: []
     importance_order:
     - tiny
   comp387:
     flavours:
       tiny:
-        energy: 100
+        energy: 816
         uses: []
     importance_order:
     - tiny
   comp388:
     flavours:
       tiny:
-        energy: 839
+        energy: 612
         uses: []
     importance_order:
     - tiny
   comp389:
     flavours:
       tiny:
-        energy: 499
+        energy: 622
         uses: []
     importance_order:
     - tiny
   comp39:
     flavours:
       tiny:
-        energy: 128
+        energy: 145
         uses: []
     importance_order:
     - tiny
   comp390:
     flavours:
       tiny:
-        energy: 882
+        energy: 860
         uses: []
     importance_order:
     - tiny
   comp391:
     flavours:
       tiny:
-        energy: 775
+        energy: 259
         uses: []
     importance_order:
     - tiny
   comp392:
     flavours:
       tiny:
-        energy: 838
+        energy: 850
         uses: []
     importance_order:
     - tiny
   comp393:
     flavours:
       tiny:
-        energy: 388
+        energy: 434
         uses: []
     importance_order:
     - tiny
   comp394:
     flavours:
       tiny:
-        energy: 475
+        energy: 179
         uses: []
     importance_order:
     - tiny
   comp395:
     flavours:
       tiny:
-        energy: 640
+        energy: 577
         uses: []
     importance_order:
     - tiny
   comp396:
     flavours:
       tiny:
-        energy: 754
+        energy: 652
         uses: []
     importance_order:
     - tiny
   comp397:
     flavours:
       tiny:
-        energy: 657
+        energy: 224
         uses: []
     importance_order:
     - tiny
   comp398:
     flavours:
       tiny:
-        energy: 376
+        energy: 426
         uses: []
     importance_order:
     - tiny
   comp399:
     flavours:
       tiny:
-        energy: 781
+        energy: 176
         uses: []
     importance_order:
     - tiny
   comp4:
     flavours:
       tiny:
-        energy: 592
+        energy: 577
         uses: []
     importance_order:
     - tiny
   comp40:
     flavours:
       tiny:
-        energy: 577
+        energy: 329
         uses: []
     importance_order:
     - tiny
   comp400:
     flavours:
       tiny:
-        energy: 879
+        energy: 530
         uses: []
     importance_order:
     - tiny
   comp401:
     flavours:
       tiny:
-        energy: 118
+        energy: 382
         uses: []
     importance_order:
     - tiny
   comp402:
     flavours:
       tiny:
-        energy: 479
+        energy: 372
         uses: []
     importance_order:
     - tiny
   comp403:
     flavours:
       tiny:
-        energy: 825
+        energy: 596
         uses: []
     importance_order:
     - tiny
   comp404:
     flavours:
       tiny:
-        energy: 786
+        energy: 325
         uses: []
     importance_order:
     - tiny
   comp405:
     flavours:
       tiny:
-        energy: 556
+        energy: 668
         uses: []
     importance_order:
     - tiny
   comp406:
     flavours:
       tiny:
-        energy: 101
+        energy: 577
         uses: []
     importance_order:
     - tiny
   comp407:
     flavours:
       tiny:
-        energy: 860
+        energy: 369
         uses: []
     importance_order:
     - tiny
   comp408:
     flavours:
       tiny:
-        energy: 882
+        energy: 162
         uses: []
     importance_order:
     - tiny
   comp409:
     flavours:
       tiny:
-        energy: 380
+        energy: 322
         uses: []
     importance_order:
     - tiny
   comp41:
     flavours:
       tiny:
-        energy: 507
+        energy: 352
         uses: []
     importance_order:
     - tiny
   comp410:
     flavours:
       tiny:
-        energy: 507
+        energy: 782
         uses: []
     importance_order:
     - tiny
   comp411:
     flavours:
       tiny:
-        energy: 346
+        energy: 779
         uses: []
     importance_order:
     - tiny
   comp412:
     flavours:
       tiny:
-        energy: 420
+        energy: 589
         uses: []
     importance_order:
     - tiny
   comp413:
     flavours:
       tiny:
-        energy: 318
+        energy: 447
         uses: []
     importance_order:
     - tiny
   comp414:
     flavours:
       tiny:
-        energy: 177
+        energy: 350
         uses: []
     importance_order:
     - tiny
   comp415:
     flavours:
       tiny:
-        energy: 397
+        energy: 442
         uses: []
     importance_order:
     - tiny
   comp416:
     flavours:
       tiny:
-        energy: 102
+        energy: 495
         uses: []
     importance_order:
     - tiny
   comp417:
     flavours:
       tiny:
-        energy: 381
+        energy: 171
         uses: []
     importance_order:
     - tiny
   comp418:
     flavours:
       tiny:
-        energy: 446
+        energy: 525
         uses: []
     importance_order:
     - tiny
   comp419:
     flavours:
       tiny:
-        energy: 785
+        energy: 833
         uses: []
     importance_order:
     - tiny
   comp42:
     flavours:
       tiny:
-        energy: 215
+        energy: 174
         uses: []
     importance_order:
     - tiny
   comp420:
     flavours:
       tiny:
-        energy: 340
+        energy: 292
         uses: []
     importance_order:
     - tiny
   comp421:
     flavours:
       tiny:
-        energy: 369
+        energy: 203
         uses: []
     importance_order:
     - tiny
   comp422:
     flavours:
       tiny:
-        energy: 140
+        energy: 653
         uses: []
     importance_order:
     - tiny
   comp423:
     flavours:
       tiny:
-        energy: 736
+        energy: 892
         uses: []
     importance_order:
     - tiny
   comp424:
     flavours:
       tiny:
-        energy: 577
+        energy: 102
         uses: []
     importance_order:
     - tiny
   comp425:
     flavours:
       tiny:
-        energy: 129
+        energy: 555
         uses: []
     importance_order:
     - tiny
   comp426:
     flavours:
       tiny:
-        energy: 611
+        energy: 359
         uses: []
     importance_order:
     - tiny
   comp427:
     flavours:
       tiny:
-        energy: 386
+        energy: 364
         uses: []
     importance_order:
     - tiny
   comp428:
     flavours:
       tiny:
-        energy: 101
+        energy: 781
         uses: []
     importance_order:
     - tiny
   comp429:
     flavours:
       tiny:
-        energy: 254
+        energy: 124
         uses: []
     importance_order:
     - tiny
   comp43:
     flavours:
       tiny:
-        energy: 355
+        energy: 591
         uses: []
     importance_order:
     - tiny
   comp430:
     flavours:
       tiny:
-        energy: 442
+        energy: 128
         uses: []
     importance_order:
     - tiny
   comp431:
     flavours:
       tiny:
-        energy: 583
+        energy: 657
         uses: []
     importance_order:
     - tiny
   comp432:
     flavours:
       tiny:
-        energy: 622
+        energy: 176
         uses: []
     importance_order:
     - tiny
   comp433:
     flavours:
       tiny:
-        energy: 758
+        energy: 421
         uses: []
     importance_order:
     - tiny
   comp434:
     flavours:
       tiny:
-        energy: 256
+        energy: 596
         uses: []
     importance_order:
     - tiny
   comp435:
     flavours:
       tiny:
-        energy: 704
+        energy: 281
         uses: []
     importance_order:
     - tiny
   comp436:
     flavours:
       tiny:
-        energy: 694
+        energy: 221
         uses: []
     importance_order:
     - tiny
   comp437:
     flavours:
       tiny:
-        energy: 493
+        energy: 822
         uses: []
     importance_order:
     - tiny
   comp438:
     flavours:
       tiny:
-        energy: 598
+        energy: 104
         uses: []
     importance_order:
     - tiny
   comp439:
     flavours:
       tiny:
-        energy: 846
+        energy: 762
         uses: []
     importance_order:
     - tiny
   comp44:
     flavours:
       tiny:
-        energy: 233
+        energy: 158
         uses: []
     importance_order:
     - tiny
   comp440:
     flavours:
       tiny:
-        energy: 814
+        energy: 396
         uses: []
     importance_order:
     - tiny
   comp441:
     flavours:
       tiny:
-        energy: 453
+        energy: 298
         uses: []
     importance_order:
     - tiny
   comp442:
     flavours:
       tiny:
-        energy: 810
+        energy: 759
         uses: []
     importance_order:
     - tiny
   comp443:
     flavours:
       tiny:
-        energy: 351
+        energy: 845
         uses: []
     importance_order:
     - tiny
   comp444:
     flavours:
       tiny:
-        energy: 257
+        energy: 443
         uses: []
     importance_order:
     - tiny
   comp445:
     flavours:
       tiny:
-        energy: 753
+        energy: 312
         uses: []
     importance_order:
     - tiny
   comp446:
     flavours:
       tiny:
-        energy: 857
+        energy: 589
         uses: []
     importance_order:
     - tiny
   comp447:
     flavours:
       tiny:
-        energy: 714
+        energy: 303
         uses: []
     importance_order:
     - tiny
   comp448:
     flavours:
       tiny:
-        energy: 339
+        energy: 295
         uses: []
     importance_order:
     - tiny
   comp449:
     flavours:
       tiny:
-        energy: 699
+        energy: 293
         uses: []
     importance_order:
     - tiny
   comp45:
     flavours:
       tiny:
-        energy: 789
+        energy: 817
         uses: []
     importance_order:
     - tiny
   comp450:
     flavours:
       tiny:
-        energy: 715
+        energy: 579
         uses: []
     importance_order:
     - tiny
   comp451:
     flavours:
       tiny:
-        energy: 472
+        energy: 836
         uses: []
     importance_order:
     - tiny
   comp452:
     flavours:
       tiny:
-        energy: 581
+        energy: 800
         uses: []
     importance_order:
     - tiny
   comp453:
     flavours:
       tiny:
-        energy: 796
+        energy: 709
         uses: []
     importance_order:
     - tiny
   comp454:
     flavours:
       tiny:
-        energy: 392
+        energy: 499
         uses: []
     importance_order:
     - tiny
   comp455:
     flavours:
       tiny:
-        energy: 538
+        energy: 127
         uses: []
     importance_order:
     - tiny
   comp456:
     flavours:
       tiny:
-        energy: 330
+        energy: 234
         uses: []
     importance_order:
     - tiny
   comp457:
     flavours:
       tiny:
-        energy: 790
+        energy: 779
         uses: []
     importance_order:
     - tiny
   comp458:
     flavours:
       tiny:
-        energy: 241
+        energy: 385
         uses: []
     importance_order:
     - tiny
   comp459:
     flavours:
       tiny:
-        energy: 300
+        energy: 389
         uses: []
     importance_order:
     - tiny
   comp46:
     flavours:
       tiny:
-        energy: 535
+        energy: 815
         uses: []
     importance_order:
     - tiny
   comp460:
     flavours:
       tiny:
-        energy: 386
+        energy: 569
         uses: []
     importance_order:
     - tiny
   comp461:
     flavours:
       tiny:
-        energy: 555
+        energy: 543
         uses: []
     importance_order:
     - tiny
   comp462:
     flavours:
       tiny:
-        energy: 779
+        energy: 396
         uses: []
     importance_order:
     - tiny
   comp463:
     flavours:
       tiny:
-        energy: 233
+        energy: 426
         uses: []
     importance_order:
     - tiny
   comp464:
     flavours:
       tiny:
-        energy: 426
+        energy: 304
         uses: []
     importance_order:
     - tiny
   comp465:
     flavours:
       tiny:
-        energy: 423
+        energy: 462
         uses: []
     importance_order:
     - tiny
   comp466:
     flavours:
       tiny:
-        energy: 268
+        energy: 858
         uses: []
     importance_order:
     - tiny
   comp467:
     flavours:
       tiny:
-        energy: 602
+        energy: 452
         uses: []
     importance_order:
     - tiny
   comp468:
     flavours:
       tiny:
-        energy: 419
+        energy: 282
         uses: []
     importance_order:
     - tiny
   comp469:
     flavours:
       tiny:
-        energy: 194
+        energy: 533
         uses: []
     importance_order:
     - tiny
   comp47:
     flavours:
       tiny:
-        energy: 273
+        energy: 565
         uses: []
     importance_order:
     - tiny
   comp470:
     flavours:
       tiny:
-        energy: 710
+        energy: 434
         uses: []
     importance_order:
     - tiny
   comp471:
     flavours:
       tiny:
-        energy: 640
+        energy: 893
         uses: []
     importance_order:
     - tiny
   comp472:
     flavours:
       tiny:
-        energy: 366
+        energy: 391
         uses: []
     importance_order:
     - tiny
   comp473:
     flavours:
       tiny:
-        energy: 347
+        energy: 496
         uses: []
     importance_order:
     - tiny
   comp474:
     flavours:
       tiny:
-        energy: 580
+        energy: 866
         uses: []
     importance_order:
     - tiny
   comp475:
     flavours:
       tiny:
-        energy: 186
+        energy: 174
         uses: []
     importance_order:
     - tiny
   comp476:
     flavours:
       tiny:
-        energy: 214
+        energy: 219
         uses: []
     importance_order:
     - tiny
   comp477:
     flavours:
       tiny:
-        energy: 350
+        energy: 872
         uses: []
     importance_order:
     - tiny
   comp478:
     flavours:
       tiny:
-        energy: 154
+        energy: 751
         uses: []
     importance_order:
     - tiny
   comp479:
     flavours:
       tiny:
-        energy: 603
+        energy: 801
         uses: []
     importance_order:
     - tiny
   comp48:
     flavours:
       tiny:
-        energy: 109
+        energy: 284
         uses: []
     importance_order:
     - tiny
   comp480:
     flavours:
       tiny:
-        energy: 384
+        energy: 476
         uses: []
     importance_order:
     - tiny
   comp481:
     flavours:
       tiny:
-        energy: 600
+        energy: 353
         uses: []
     importance_order:
     - tiny
   comp482:
     flavours:
       tiny:
-        energy: 813
+        energy: 868
         uses: []
     importance_order:
     - tiny
   comp483:
     flavours:
       tiny:
-        energy: 173
+        energy: 874
         uses: []
     importance_order:
     - tiny
   comp484:
     flavours:
       tiny:
-        energy: 714
+        energy: 761
         uses: []
     importance_order:
     - tiny
   comp485:
     flavours:
       tiny:
-        energy: 880
+        energy: 255
         uses: []
     importance_order:
     - tiny
   comp486:
     flavours:
       tiny:
-        energy: 492
+        energy: 648
         uses: []
     importance_order:
     - tiny
   comp487:
     flavours:
       tiny:
-        energy: 533
+        energy: 441
         uses: []
     importance_order:
     - tiny
   comp488:
     flavours:
       tiny:
-        energy: 885
+        energy: 126
         uses: []
     importance_order:
     - tiny
   comp489:
     flavours:
       tiny:
-        energy: 824
+        energy: 343
         uses: []
     importance_order:
     - tiny
   comp49:
     flavours:
       tiny:
-        energy: 734
+        energy: 460
         uses: []
     importance_order:
     - tiny
   comp490:
     flavours:
       tiny:
-        energy: 452
+        energy: 623
         uses: []
     importance_order:
     - tiny
   comp491:
     flavours:
       tiny:
-        energy: 283
+        energy: 122
         uses: []
     importance_order:
     - tiny
   comp492:
     flavours:
       tiny:
-        energy: 651
+        energy: 497
         uses: []
     importance_order:
     - tiny
   comp493:
     flavours:
       tiny:
-        energy: 367
+        energy: 744
         uses: []
     importance_order:
     - tiny
   comp494:
     flavours:
       tiny:
-        energy: 273
+        energy: 609
         uses: []
     importance_order:
     - tiny
   comp495:
     flavours:
       tiny:
-        energy: 284
+        energy: 417
         uses: []
     importance_order:
     - tiny
   comp496:
     flavours:
       tiny:
-        energy: 879
+        energy: 512
         uses: []
     importance_order:
     - tiny
   comp497:
     flavours:
       tiny:
-        energy: 833
+        energy: 108
         uses: []
     importance_order:
     - tiny
   comp498:
     flavours:
       tiny:
-        energy: 377
+        energy: 723
         uses: []
     importance_order:
     - tiny
   comp499:
     flavours:
       tiny:
-        energy: 381
+        energy: 836
         uses: []
     importance_order:
     - tiny
   comp5:
     flavours:
       tiny:
-        energy: 143
+        energy: 702
         uses: []
     importance_order:
     - tiny
   comp50:
     flavours:
       tiny:
-        energy: 275
+        energy: 747
         uses: []
     importance_order:
     - tiny
   comp500:
     flavours:
       tiny:
-        energy: 736
+        energy: 542
         uses: []
     importance_order:
     - tiny
   comp501:
     flavours:
       tiny:
-        energy: 674
+        energy: 396
         uses: []
     importance_order:
     - tiny
   comp502:
     flavours:
       tiny:
-        energy: 778
+        energy: 762
         uses: []
     importance_order:
     - tiny
   comp503:
     flavours:
       tiny:
-        energy: 384
+        energy: 879
         uses: []
     importance_order:
     - tiny
   comp504:
     flavours:
       tiny:
-        energy: 603
+        energy: 827
         uses: []
     importance_order:
     - tiny
   comp505:
     flavours:
       tiny:
-        energy: 711
+        energy: 392
         uses: []
     importance_order:
     - tiny
   comp506:
     flavours:
       tiny:
-        energy: 781
+        energy: 676
         uses: []
     importance_order:
     - tiny
   comp507:
     flavours:
       tiny:
-        energy: 861
+        energy: 247
         uses: []
     importance_order:
     - tiny
   comp508:
     flavours:
       tiny:
-        energy: 865
+        energy: 149
         uses: []
     importance_order:
     - tiny
   comp509:
     flavours:
       tiny:
-        energy: 156
+        energy: 626
         uses: []
     importance_order:
     - tiny
   comp51:
     flavours:
       tiny:
-        energy: 488
+        energy: 867
         uses: []
     importance_order:
     - tiny
   comp510:
     flavours:
       tiny:
-        energy: 175
+        energy: 684
         uses: []
     importance_order:
     - tiny
   comp511:
     flavours:
       tiny:
-        energy: 442
+        energy: 847
         uses: []
     importance_order:
     - tiny
   comp512:
     flavours:
       tiny:
-        energy: 172
+        energy: 588
         uses: []
     importance_order:
     - tiny
   comp513:
     flavours:
       tiny:
-        energy: 270
+        energy: 644
         uses: []
     importance_order:
     - tiny
   comp514:
     flavours:
       tiny:
-        energy: 631
+        energy: 303
         uses: []
     importance_order:
     - tiny
   comp515:
     flavours:
       tiny:
-        energy: 521
+        energy: 433
         uses: []
     importance_order:
     - tiny
   comp516:
     flavours:
       tiny:
-        energy: 507
+        energy: 765
         uses: []
     importance_order:
     - tiny
   comp517:
     flavours:
       tiny:
-        energy: 602
+        energy: 545
         uses: []
     importance_order:
     - tiny
   comp518:
     flavours:
       tiny:
-        energy: 783
+        energy: 253
         uses: []
     importance_order:
     - tiny
   comp519:
     flavours:
       tiny:
-        energy: 672
+        energy: 404
         uses: []
     importance_order:
     - tiny
   comp52:
     flavours:
       tiny:
-        energy: 650
+        energy: 836
         uses: []
     importance_order:
     - tiny
   comp520:
     flavours:
       tiny:
-        energy: 478
+        energy: 372
         uses: []
     importance_order:
     - tiny
   comp521:
     flavours:
       tiny:
-        energy: 256
+        energy: 495
         uses: []
     importance_order:
     - tiny
   comp522:
     flavours:
       tiny:
-        energy: 497
+        energy: 616
         uses: []
     importance_order:
     - tiny
   comp523:
     flavours:
       tiny:
-        energy: 772
+        energy: 886
         uses: []
     importance_order:
     - tiny
   comp524:
     flavours:
       tiny:
-        energy: 807
+        energy: 366
         uses: []
     importance_order:
     - tiny
   comp525:
     flavours:
       tiny:
-        energy: 791
+        energy: 457
         uses: []
     importance_order:
     - tiny
   comp526:
     flavours:
       tiny:
-        energy: 497
+        energy: 685
         uses: []
     importance_order:
     - tiny
   comp527:
     flavours:
       tiny:
-        energy: 275
+        energy: 892
         uses: []
     importance_order:
     - tiny
   comp528:
     flavours:
       tiny:
-        energy: 297
+        energy: 374
         uses: []
     importance_order:
     - tiny
   comp529:
     flavours:
       tiny:
-        energy: 861
+        energy: 597
         uses: []
     importance_order:
     - tiny
   comp53:
     flavours:
       tiny:
-        energy: 190
+        energy: 676
         uses: []
     importance_order:
     - tiny
   comp530:
     flavours:
       tiny:
-        energy: 386
+        energy: 743
         uses: []
     importance_order:
     - tiny
   comp531:
     flavours:
       tiny:
-        energy: 359
+        energy: 658
         uses: []
     importance_order:
     - tiny
   comp532:
     flavours:
       tiny:
-        energy: 532
+        energy: 855
         uses: []
     importance_order:
     - tiny
   comp533:
     flavours:
       tiny:
-        energy: 874
+        energy: 467
         uses: []
     importance_order:
     - tiny
   comp534:
     flavours:
       tiny:
-        energy: 106
+        energy: 499
         uses: []
     importance_order:
     - tiny
   comp535:
     flavours:
       tiny:
-        energy: 101
+        energy: 483
         uses: []
     importance_order:
     - tiny
   comp536:
     flavours:
       tiny:
-        energy: 610
+        energy: 881
         uses: []
     importance_order:
     - tiny
   comp537:
     flavours:
       tiny:
-        energy: 711
+        energy: 136
         uses: []
     importance_order:
     - tiny
   comp538:
     flavours:
       tiny:
-        energy: 822
+        energy: 356
         uses: []
     importance_order:
     - tiny
   comp539:
     flavours:
       tiny:
-        energy: 519
+        energy: 258
         uses: []
     importance_order:
     - tiny
   comp54:
     flavours:
       tiny:
-        energy: 356
+        energy: 760
         uses: []
     importance_order:
     - tiny
   comp540:
     flavours:
       tiny:
-        energy: 420
+        energy: 212
         uses: []
     importance_order:
     - tiny
   comp541:
     flavours:
       tiny:
-        energy: 775
+        energy: 141
         uses: []
     importance_order:
     - tiny
   comp542:
     flavours:
       tiny:
-        energy: 485
+        energy: 809
         uses: []
     importance_order:
     - tiny
   comp543:
     flavours:
       tiny:
-        energy: 304
+        energy: 834
         uses: []
     importance_order:
     - tiny
   comp544:
     flavours:
       tiny:
-        energy: 775
+        energy: 575
         uses: []
     importance_order:
     - tiny
   comp545:
     flavours:
       tiny:
-        energy: 871
+        energy: 536
         uses: []
     importance_order:
     - tiny
   comp546:
     flavours:
       tiny:
-        energy: 130
+        energy: 455
         uses: []
     importance_order:
     - tiny
   comp547:
     flavours:
       tiny:
-        energy: 408
+        energy: 598
         uses: []
     importance_order:
     - tiny
   comp548:
     flavours:
       tiny:
-        energy: 544
+        energy: 889
         uses: []
     importance_order:
     - tiny
   comp549:
     flavours:
       tiny:
-        energy: 525
+        energy: 116
         uses: []
     importance_order:
     - tiny
   comp55:
     flavours:
       tiny:
-        energy: 275
+        energy: 341
         uses: []
     importance_order:
     - tiny
   comp550:
     flavours:
       tiny:
-        energy: 269
+        energy: 115
         uses: []
     importance_order:
     - tiny
   comp551:
     flavours:
       tiny:
-        energy: 595
+        energy: 351
         uses: []
     importance_order:
     - tiny
   comp552:
     flavours:
       tiny:
-        energy: 875
+        energy: 476
         uses: []
     importance_order:
     - tiny
   comp553:
     flavours:
       tiny:
-        energy: 411
+        energy: 117
         uses: []
     importance_order:
     - tiny
   comp554:
     flavours:
       tiny:
-        energy: 813
+        energy: 396
         uses: []
     importance_order:
     - tiny
   comp555:
     flavours:
       tiny:
-        energy: 803
+        energy: 252
         uses: []
     importance_order:
     - tiny
   comp556:
     flavours:
       tiny:
-        energy: 237
+        energy: 814
         uses: []
     importance_order:
     - tiny
   comp557:
     flavours:
       tiny:
-        energy: 103
+        energy: 812
         uses: []
     importance_order:
     - tiny
   comp558:
     flavours:
       tiny:
-        energy: 442
+        energy: 376
         uses: []
     importance_order:
     - tiny
   comp559:
     flavours:
       tiny:
-        energy: 372
+        energy: 694
         uses: []
     importance_order:
     - tiny
   comp56:
     flavours:
       tiny:
-        energy: 472
+        energy: 687
         uses: []
     importance_order:
     - tiny
   comp560:
     flavours:
       tiny:
-        energy: 314
+        energy: 552
         uses: []
     importance_order:
     - tiny
   comp561:
     flavours:
       tiny:
-        energy: 491
+        energy: 264
         uses: []
     importance_order:
     - tiny
   comp562:
     flavours:
       tiny:
-        energy: 349
+        energy: 490
         uses: []
     importance_order:
     - tiny
   comp563:
     flavours:
       tiny:
-        energy: 817
+        energy: 765
         uses: []
     importance_order:
     - tiny
   comp564:
     flavours:
       tiny:
-        energy: 192
+        energy: 132
         uses: []
     importance_order:
     - tiny
   comp565:
     flavours:
       tiny:
-        energy: 281
+        energy: 618
         uses: []
     importance_order:
     - tiny
   comp566:
     flavours:
       tiny:
-        energy: 112
+        energy: 146
         uses: []
     importance_order:
     - tiny
   comp567:
     flavours:
       tiny:
-        energy: 776
+        energy: 128
         uses: []
     importance_order:
     - tiny
   comp568:
     flavours:
       tiny:
-        energy: 216
+        energy: 399
         uses: []
     importance_order:
     - tiny
   comp569:
     flavours:
       tiny:
-        energy: 179
+        energy: 163
         uses: []
     importance_order:
     - tiny
   comp57:
     flavours:
       tiny:
-        energy: 848
+        energy: 439
         uses: []
     importance_order:
     - tiny
   comp570:
     flavours:
       tiny:
-        energy: 344
+        energy: 669
         uses: []
     importance_order:
     - tiny
   comp571:
     flavours:
       tiny:
-        energy: 460
+        energy: 612
         uses: []
     importance_order:
     - tiny
   comp572:
     flavours:
       tiny:
-        energy: 452
+        energy: 512
         uses: []
     importance_order:
     - tiny
   comp573:
     flavours:
       tiny:
-        energy: 135
+        energy: 717
         uses: []
     importance_order:
     - tiny
   comp574:
     flavours:
       tiny:
-        energy: 307
+        energy: 463
         uses: []
     importance_order:
     - tiny
   comp575:
     flavours:
       tiny:
-        energy: 708
+        energy: 757
         uses: []
     importance_order:
     - tiny
   comp576:
     flavours:
       tiny:
-        energy: 877
+        energy: 562
         uses: []
     importance_order:
     - tiny
   comp577:
     flavours:
       tiny:
-        energy: 891
+        energy: 726
         uses: []
     importance_order:
     - tiny
   comp578:
     flavours:
       tiny:
-        energy: 797
+        energy: 290
         uses: []
     importance_order:
     - tiny
   comp579:
     flavours:
       tiny:
-        energy: 642
+        energy: 163
         uses: []
     importance_order:
     - tiny
   comp58:
     flavours:
       tiny:
-        energy: 365
+        energy: 430
         uses: []
     importance_order:
     - tiny
   comp580:
     flavours:
       tiny:
-        energy: 641
+        energy: 615
         uses: []
     importance_order:
     - tiny
   comp581:
     flavours:
       tiny:
-        energy: 546
+        energy: 166
         uses: []
     importance_order:
     - tiny
   comp582:
     flavours:
       tiny:
-        energy: 499
+        energy: 441
         uses: []
     importance_order:
     - tiny
   comp583:
     flavours:
       tiny:
-        energy: 817
+        energy: 892
         uses: []
     importance_order:
     - tiny
   comp584:
     flavours:
       tiny:
-        energy: 572
+        energy: 768
         uses: []
     importance_order:
     - tiny
   comp585:
     flavours:
       tiny:
-        energy: 662
+        energy: 575
         uses: []
     importance_order:
     - tiny
   comp586:
     flavours:
       tiny:
-        energy: 649
+        energy: 436
         uses: []
     importance_order:
     - tiny
   comp587:
     flavours:
       tiny:
-        energy: 156
+        energy: 574
         uses: []
     importance_order:
     - tiny
   comp588:
     flavours:
       tiny:
-        energy: 277
+        energy: 224
         uses: []
     importance_order:
     - tiny
   comp589:
     flavours:
       tiny:
-        energy: 150
+        energy: 376
         uses: []
     importance_order:
     - tiny
   comp59:
     flavours:
       tiny:
-        energy: 702
+        energy: 349
         uses: []
     importance_order:
     - tiny
   comp590:
     flavours:
       tiny:
-        energy: 713
+        energy: 670
         uses: []
     importance_order:
     - tiny
   comp591:
     flavours:
       tiny:
-        energy: 425
+        energy: 784
         uses: []
     importance_order:
     - tiny
   comp592:
     flavours:
       tiny:
-        energy: 417
+        energy: 408
         uses: []
     importance_order:
     - tiny
   comp593:
     flavours:
       tiny:
-        energy: 240
+        energy: 201
         uses: []
     importance_order:
     - tiny
   comp594:
     flavours:
       tiny:
-        energy: 632
+        energy: 822
         uses: []
     importance_order:
     - tiny
   comp595:
     flavours:
       tiny:
-        energy: 588
+        energy: 705
         uses: []
     importance_order:
     - tiny
   comp596:
     flavours:
       tiny:
-        energy: 256
+        energy: 338
         uses: []
     importance_order:
     - tiny
   comp597:
     flavours:
       tiny:
-        energy: 255
+        energy: 125
         uses: []
     importance_order:
     - tiny
   comp598:
     flavours:
       tiny:
-        energy: 493
+        energy: 100
         uses: []
     importance_order:
     - tiny
   comp599:
     flavours:
       tiny:
-        energy: 235
+        energy: 563
         uses: []
     importance_order:
     - tiny
   comp6:
     flavours:
       tiny:
-        energy: 739
+        energy: 862
         uses: []
     importance_order:
     - tiny
   comp60:
     flavours:
       tiny:
-        energy: 832
+        energy: 622
         uses: []
     importance_order:
     - tiny
   comp600:
     flavours:
       tiny:
-        energy: 494
+        energy: 155
         uses: []
     importance_order:
     - tiny
   comp601:
     flavours:
       tiny:
-        energy: 788
+        energy: 875
         uses: []
     importance_order:
     - tiny
   comp602:
     flavours:
       tiny:
-        energy: 109
+        energy: 597
         uses: []
     importance_order:
     - tiny
   comp603:
     flavours:
       tiny:
-        energy: 724
+        energy: 136
         uses: []
     importance_order:
     - tiny
   comp604:
     flavours:
       tiny:
-        energy: 797
+        energy: 262
         uses: []
     importance_order:
     - tiny
   comp605:
     flavours:
       tiny:
-        energy: 366
+        energy: 814
         uses: []
     importance_order:
     - tiny
   comp606:
     flavours:
       tiny:
-        energy: 224
+        energy: 191
         uses: []
     importance_order:
     - tiny
   comp607:
     flavours:
       tiny:
-        energy: 744
+        energy: 367
         uses: []
     importance_order:
     - tiny
   comp608:
     flavours:
       tiny:
-        energy: 338
+        energy: 183
         uses: []
     importance_order:
     - tiny
   comp609:
     flavours:
       tiny:
-        energy: 811
+        energy: 850
         uses: []
     importance_order:
     - tiny
   comp61:
     flavours:
       tiny:
-        energy: 195
+        energy: 459
         uses: []
     importance_order:
     - tiny
   comp610:
     flavours:
       tiny:
-        energy: 648
+        energy: 638
         uses: []
     importance_order:
     - tiny
   comp611:
     flavours:
       tiny:
-        energy: 362
+        energy: 659
         uses: []
     importance_order:
     - tiny
   comp612:
     flavours:
       tiny:
-        energy: 239
+        energy: 885
         uses: []
     importance_order:
     - tiny
   comp613:
     flavours:
       tiny:
-        energy: 205
+        energy: 744
         uses: []
     importance_order:
     - tiny
   comp614:
     flavours:
       tiny:
-        energy: 471
+        energy: 503
         uses: []
     importance_order:
     - tiny
   comp615:
     flavours:
       tiny:
-        energy: 358
+        energy: 653
         uses: []
     importance_order:
     - tiny
   comp616:
     flavours:
       tiny:
-        energy: 886
+        energy: 836
         uses: []
     importance_order:
     - tiny
   comp617:
     flavours:
       tiny:
-        energy: 355
+        energy: 827
         uses: []
     importance_order:
     - tiny
   comp618:
     flavours:
       tiny:
-        energy: 266
+        energy: 294
         uses: []
     importance_order:
     - tiny
   comp619:
     flavours:
       tiny:
-        energy: 626
+        energy: 734
         uses: []
     importance_order:
     - tiny
   comp62:
     flavours:
       tiny:
-        energy: 538
+        energy: 301
         uses: []
     importance_order:
     - tiny
   comp620:
     flavours:
       tiny:
-        energy: 737
+        energy: 142
         uses: []
     importance_order:
     - tiny
   comp621:
     flavours:
       tiny:
-        energy: 187
+        energy: 773
         uses: []
     importance_order:
     - tiny
   comp622:
     flavours:
       tiny:
-        energy: 165
+        energy: 726
         uses: []
     importance_order:
     - tiny
   comp623:
     flavours:
       tiny:
-        energy: 863
+        energy: 248
         uses: []
     importance_order:
     - tiny
   comp624:
     flavours:
       tiny:
-        energy: 138
+        energy: 228
         uses: []
     importance_order:
     - tiny
   comp625:
     flavours:
       tiny:
-        energy: 845
+        energy: 826
         uses: []
     importance_order:
     - tiny
   comp626:
     flavours:
       tiny:
-        energy: 551
+        energy: 322
         uses: []
     importance_order:
     - tiny
   comp627:
     flavours:
       tiny:
-        energy: 132
+        energy: 672
         uses: []
     importance_order:
     - tiny
   comp628:
     flavours:
       tiny:
-        energy: 511
+        energy: 878
         uses: []
     importance_order:
     - tiny
   comp629:
     flavours:
       tiny:
-        energy: 295
+        energy: 539
         uses: []
     importance_order:
     - tiny
   comp63:
     flavours:
       tiny:
-        energy: 664
+        energy: 109
         uses: []
     importance_order:
     - tiny
   comp630:
     flavours:
       tiny:
-        energy: 555
+        energy: 645
         uses: []
     importance_order:
     - tiny
   comp631:
     flavours:
       tiny:
-        energy: 611
+        energy: 612
         uses: []
     importance_order:
     - tiny
   comp632:
     flavours:
       tiny:
-        energy: 763
+        energy: 588
         uses: []
     importance_order:
     - tiny
   comp633:
     flavours:
       tiny:
-        energy: 288
+        energy: 833
         uses: []
     importance_order:
     - tiny
   comp634:
     flavours:
       tiny:
-        energy: 502
+        energy: 542
         uses: []
     importance_order:
     - tiny
   comp635:
     flavours:
       tiny:
-        energy: 452
+        energy: 569
         uses: []
     importance_order:
     - tiny
   comp636:
     flavours:
       tiny:
-        energy: 664
+        energy: 131
         uses: []
     importance_order:
     - tiny
   comp637:
     flavours:
       tiny:
-        energy: 862
+        energy: 106
         uses: []
     importance_order:
     - tiny
   comp638:
     flavours:
       tiny:
-        energy: 480
+        energy: 386
         uses: []
     importance_order:
     - tiny
   comp639:
     flavours:
       tiny:
-        energy: 815
+        energy: 754
         uses: []
     importance_order:
     - tiny
   comp64:
     flavours:
       tiny:
-        energy: 581
+        energy: 393
         uses: []
     importance_order:
     - tiny
   comp640:
     flavours:
       tiny:
-        energy: 100
+        energy: 400
         uses: []
     importance_order:
     - tiny
   comp641:
     flavours:
       tiny:
-        energy: 629
+        energy: 229
         uses: []
     importance_order:
     - tiny
   comp642:
     flavours:
       tiny:
-        energy: 296
+        energy: 520
         uses: []
     importance_order:
     - tiny
   comp643:
     flavours:
       tiny:
-        energy: 729
+        energy: 526
         uses: []
     importance_order:
     - tiny
   comp644:
     flavours:
       tiny:
-        energy: 410
+        energy: 872
         uses: []
     importance_order:
     - tiny
   comp645:
     flavours:
       tiny:
-        energy: 204
+        energy: 793
         uses: []
     importance_order:
     - tiny
   comp646:
     flavours:
       tiny:
-        energy: 731
+        energy: 321
         uses: []
     importance_order:
     - tiny
   comp647:
     flavours:
       tiny:
-        energy: 733
+        energy: 632
         uses: []
     importance_order:
     - tiny
   comp648:
     flavours:
       tiny:
-        energy: 591
+        energy: 776
         uses: []
     importance_order:
     - tiny
   comp649:
     flavours:
       tiny:
-        energy: 861
+        energy: 343
         uses: []
     importance_order:
     - tiny
   comp65:
     flavours:
       tiny:
-        energy: 866
+        energy: 703
         uses: []
     importance_order:
     - tiny
   comp650:
     flavours:
       tiny:
-        energy: 760
+        energy: 733
         uses: []
     importance_order:
     - tiny
   comp651:
     flavours:
       tiny:
-        energy: 633
+        energy: 232
         uses: []
     importance_order:
     - tiny
   comp652:
     flavours:
       tiny:
-        energy: 870
+        energy: 882
         uses: []
     importance_order:
     - tiny
   comp653:
     flavours:
       tiny:
-        energy: 738
+        energy: 764
         uses: []
     importance_order:
     - tiny
   comp654:
     flavours:
       tiny:
-        energy: 779
+        energy: 580
         uses: []
     importance_order:
     - tiny
   comp655:
     flavours:
       tiny:
-        energy: 623
+        energy: 891
         uses: []
     importance_order:
     - tiny
   comp656:
     flavours:
       tiny:
-        energy: 115
+        energy: 582
         uses: []
     importance_order:
     - tiny
   comp657:
     flavours:
       tiny:
-        energy: 234
+        energy: 179
         uses: []
     importance_order:
     - tiny
   comp658:
     flavours:
       tiny:
-        energy: 608
+        energy: 416
         uses: []
     importance_order:
     - tiny
   comp659:
     flavours:
       tiny:
-        energy: 839
+        energy: 508
         uses: []
     importance_order:
     - tiny
   comp66:
     flavours:
       tiny:
-        energy: 733
+        energy: 217
         uses: []
     importance_order:
     - tiny
   comp660:
     flavours:
       tiny:
-        energy: 853
+        energy: 352
         uses: []
     importance_order:
     - tiny
   comp661:
     flavours:
       tiny:
-        energy: 250
+        energy: 106
         uses: []
     importance_order:
     - tiny
   comp662:
     flavours:
       tiny:
-        energy: 360
+        energy: 182
         uses: []
     importance_order:
     - tiny
   comp663:
     flavours:
       tiny:
-        energy: 637
+        energy: 843
         uses: []
     importance_order:
     - tiny
   comp664:
     flavours:
       tiny:
-        energy: 491
+        energy: 540
         uses: []
     importance_order:
     - tiny
   comp665:
     flavours:
       tiny:
-        energy: 258
+        energy: 428
         uses: []
     importance_order:
     - tiny
   comp666:
     flavours:
       tiny:
-        energy: 138
+        energy: 523
         uses: []
     importance_order:
     - tiny
   comp667:
     flavours:
       tiny:
-        energy: 312
+        energy: 279
         uses: []
     importance_order:
     - tiny
   comp668:
     flavours:
       tiny:
-        energy: 779
+        energy: 182
         uses: []
     importance_order:
     - tiny
   comp669:
     flavours:
       tiny:
-        energy: 437
+        energy: 186
         uses: []
     importance_order:
     - tiny
   comp67:
     flavours:
       tiny:
-        energy: 262
+        energy: 188
         uses: []
     importance_order:
     - tiny
   comp670:
     flavours:
       tiny:
-        energy: 250
+        energy: 146
         uses: []
     importance_order:
     - tiny
   comp671:
     flavours:
       tiny:
-        energy: 105
+        energy: 117
         uses: []
     importance_order:
     - tiny
   comp672:
     flavours:
       tiny:
-        energy: 692
+        energy: 660
         uses: []
     importance_order:
     - tiny
   comp673:
     flavours:
       tiny:
-        energy: 256
+        energy: 695
         uses: []
     importance_order:
     - tiny
   comp674:
     flavours:
       tiny:
-        energy: 664
+        energy: 176
         uses: []
     importance_order:
     - tiny
   comp675:
     flavours:
       tiny:
-        energy: 876
+        energy: 148
         uses: []
     importance_order:
     - tiny
   comp676:
     flavours:
       tiny:
-        energy: 493
+        energy: 496
         uses: []
     importance_order:
     - tiny
   comp677:
     flavours:
       tiny:
-        energy: 361
+        energy: 139
         uses: []
     importance_order:
     - tiny
   comp678:
     flavours:
       tiny:
-        energy: 292
+        energy: 166
         uses: []
     importance_order:
     - tiny
   comp679:
     flavours:
       tiny:
-        energy: 899
+        energy: 393
         uses: []
     importance_order:
     - tiny
   comp68:
     flavours:
       tiny:
-        energy: 438
+        energy: 396
         uses: []
     importance_order:
     - tiny
   comp680:
     flavours:
       tiny:
-        energy: 729
+        energy: 686
         uses: []
     importance_order:
     - tiny
   comp681:
     flavours:
       tiny:
-        energy: 777
+        energy: 209
         uses: []
     importance_order:
     - tiny
   comp682:
     flavours:
       tiny:
-        energy: 799
+        energy: 491
         uses: []
     importance_order:
     - tiny
   comp683:
     flavours:
       tiny:
-        energy: 370
+        energy: 513
         uses: []
     importance_order:
     - tiny
   comp684:
     flavours:
       tiny:
-        energy: 705
+        energy: 807
         uses: []
     importance_order:
     - tiny
   comp685:
     flavours:
       tiny:
-        energy: 385
+        energy: 707
         uses: []
     importance_order:
     - tiny
   comp686:
     flavours:
       tiny:
-        energy: 767
+        energy: 230
         uses: []
     importance_order:
     - tiny
   comp687:
     flavours:
       tiny:
-        energy: 862
+        energy: 223
         uses: []
     importance_order:
     - tiny
   comp688:
     flavours:
       tiny:
-        energy: 245
+        energy: 242
         uses: []
     importance_order:
     - tiny
   comp689:
     flavours:
       tiny:
-        energy: 242
+        energy: 125
         uses: []
     importance_order:
     - tiny
   comp69:
     flavours:
       tiny:
-        energy: 386
+        energy: 172
         uses: []
     importance_order:
     - tiny
   comp690:
     flavours:
       tiny:
-        energy: 464
+        energy: 790
         uses: []
     importance_order:
     - tiny
   comp691:
     flavours:
       tiny:
-        energy: 600
+        energy: 147
         uses: []
     importance_order:
     - tiny
   comp692:
     flavours:
       tiny:
-        energy: 577
+        energy: 635
         uses: []
     importance_order:
     - tiny
   comp693:
     flavours:
       tiny:
-        energy: 859
+        energy: 248
         uses: []
     importance_order:
     - tiny
   comp694:
     flavours:
       tiny:
-        energy: 446
+        energy: 600
         uses: []
     importance_order:
     - tiny
   comp695:
     flavours:
       tiny:
-        energy: 848
+        energy: 859
         uses: []
     importance_order:
     - tiny
   comp696:
     flavours:
       tiny:
-        energy: 240
+        energy: 539
         uses: []
     importance_order:
     - tiny
   comp697:
     flavours:
       tiny:
-        energy: 701
+        energy: 821
         uses: []
     importance_order:
     - tiny
   comp698:
     flavours:
       tiny:
-        energy: 202
+        energy: 802
         uses: []
     importance_order:
     - tiny
   comp699:
     flavours:
       tiny:
-        energy: 325
+        energy: 553
         uses: []
     importance_order:
     - tiny
   comp7:
     flavours:
       tiny:
-        energy: 211
+        energy: 734
         uses: []
     importance_order:
     - tiny
   comp70:
     flavours:
       tiny:
-        energy: 551
+        energy: 548
         uses: []
     importance_order:
     - tiny
   comp700:
     flavours:
       tiny:
-        energy: 606
+        energy: 734
         uses: []
     importance_order:
     - tiny
   comp701:
     flavours:
       tiny:
-        energy: 748
+        energy: 633
         uses: []
     importance_order:
     - tiny
   comp702:
     flavours:
       tiny:
-        energy: 317
+        energy: 683
         uses: []
     importance_order:
     - tiny
   comp703:
     flavours:
       tiny:
-        energy: 210
+        energy: 452
         uses: []
     importance_order:
     - tiny
   comp704:
     flavours:
       tiny:
-        energy: 177
+        energy: 580
         uses: []
     importance_order:
     - tiny
   comp705:
     flavours:
       tiny:
-        energy: 732
+        energy: 457
         uses: []
     importance_order:
     - tiny
   comp706:
     flavours:
       tiny:
-        energy: 798
+        energy: 258
         uses: []
     importance_order:
     - tiny
   comp707:
     flavours:
       tiny:
-        energy: 872
+        energy: 397
         uses: []
     importance_order:
     - tiny
   comp708:
     flavours:
       tiny:
-        energy: 177
+        energy: 759
         uses: []
     importance_order:
     - tiny
   comp709:
     flavours:
       tiny:
-        energy: 107
+        energy: 668
         uses: []
     importance_order:
     - tiny
   comp71:
     flavours:
       tiny:
-        energy: 303
+        energy: 788
         uses: []
     importance_order:
     - tiny
   comp710:
     flavours:
       tiny:
-        energy: 665
+        energy: 721
         uses: []
     importance_order:
     - tiny
   comp711:
     flavours:
       tiny:
-        energy: 633
+        energy: 505
         uses: []
     importance_order:
     - tiny
   comp712:
     flavours:
       tiny:
-        energy: 352
+        energy: 864
         uses: []
     importance_order:
     - tiny
   comp713:
     flavours:
       tiny:
-        energy: 813
+        energy: 624
         uses: []
     importance_order:
     - tiny
   comp714:
     flavours:
       tiny:
-        energy: 326
+        energy: 353
         uses: []
     importance_order:
     - tiny
   comp715:
     flavours:
       tiny:
-        energy: 649
+        energy: 627
         uses: []
     importance_order:
     - tiny
   comp716:
     flavours:
       tiny:
-        energy: 231
+        energy: 166
         uses: []
     importance_order:
     - tiny
   comp717:
     flavours:
       tiny:
-        energy: 131
+        energy: 246
         uses: []
     importance_order:
     - tiny
   comp718:
     flavours:
       tiny:
-        energy: 786
+        energy: 195
         uses: []
     importance_order:
     - tiny
   comp719:
     flavours:
       tiny:
-        energy: 354
+        energy: 197
         uses: []
     importance_order:
     - tiny
   comp72:
     flavours:
       tiny:
-        energy: 730
+        energy: 160
         uses: []
     importance_order:
     - tiny
   comp720:
     flavours:
       tiny:
-        energy: 852
+        energy: 785
         uses: []
     importance_order:
     - tiny
   comp721:
     flavours:
       tiny:
-        energy: 619
+        energy: 345
         uses: []
     importance_order:
     - tiny
   comp722:
     flavours:
       tiny:
-        energy: 803
+        energy: 586
         uses: []
     importance_order:
     - tiny
   comp723:
     flavours:
       tiny:
-        energy: 875
+        energy: 296
         uses: []
     importance_order:
     - tiny
   comp724:
     flavours:
       tiny:
-        energy: 238
+        energy: 520
         uses: []
     importance_order:
     - tiny
   comp725:
     flavours:
       tiny:
-        energy: 141
+        energy: 833
         uses: []
     importance_order:
     - tiny
   comp726:
     flavours:
       tiny:
-        energy: 545
+        energy: 815
         uses: []
     importance_order:
     - tiny
   comp727:
     flavours:
       tiny:
-        energy: 780
+        energy: 626
         uses: []
     importance_order:
     - tiny
   comp728:
     flavours:
       tiny:
-        energy: 503
+        energy: 255
         uses: []
     importance_order:
     - tiny
   comp729:
     flavours:
       tiny:
-        energy: 227
+        energy: 160
         uses: []
     importance_order:
     - tiny
   comp73:
     flavours:
       tiny:
-        energy: 791
+        energy: 105
         uses: []
     importance_order:
     - tiny
   comp730:
     flavours:
       tiny:
-        energy: 181
+        energy: 871
         uses: []
     importance_order:
     - tiny
   comp731:
     flavours:
       tiny:
-        energy: 791
+        energy: 123
         uses: []
     importance_order:
     - tiny
   comp732:
     flavours:
       tiny:
-        energy: 621
+        energy: 524
         uses: []
     importance_order:
     - tiny
   comp733:
     flavours:
       tiny:
-        energy: 541
+        energy: 285
         uses: []
     importance_order:
     - tiny
   comp734:
     flavours:
       tiny:
-        energy: 684
+        energy: 353
         uses: []
     importance_order:
     - tiny
   comp735:
     flavours:
       tiny:
-        energy: 821
+        energy: 839
         uses: []
     importance_order:
     - tiny
   comp736:
     flavours:
       tiny:
-        energy: 521
+        energy: 419
         uses: []
     importance_order:
     - tiny
   comp737:
     flavours:
       tiny:
-        energy: 505
+        energy: 438
         uses: []
     importance_order:
     - tiny
   comp738:
     flavours:
       tiny:
-        energy: 324
+        energy: 120
         uses: []
     importance_order:
     - tiny
   comp739:
     flavours:
       tiny:
-        energy: 872
+        energy: 749
         uses: []
     importance_order:
     - tiny
   comp74:
     flavours:
       tiny:
-        energy: 201
+        energy: 499
         uses: []
     importance_order:
     - tiny
   comp740:
     flavours:
       tiny:
-        energy: 522
+        energy: 555
         uses: []
     importance_order:
     - tiny
   comp741:
     flavours:
       tiny:
-        energy: 690
+        energy: 283
         uses: []
     importance_order:
     - tiny
   comp742:
     flavours:
       tiny:
-        energy: 687
+        energy: 792
         uses: []
     importance_order:
     - tiny
   comp743:
     flavours:
       tiny:
-        energy: 405
+        energy: 737
         uses: []
     importance_order:
     - tiny
   comp744:
     flavours:
       tiny:
-        energy: 774
+        energy: 865
         uses: []
     importance_order:
     - tiny
   comp745:
     flavours:
       tiny:
-        energy: 162
+        energy: 486
         uses: []
     importance_order:
     - tiny
   comp746:
     flavours:
       tiny:
-        energy: 549
+        energy: 707
         uses: []
     importance_order:
     - tiny
   comp747:
     flavours:
       tiny:
-        energy: 742
+        energy: 430
         uses: []
     importance_order:
     - tiny
   comp748:
     flavours:
       tiny:
-        energy: 702
+        energy: 174
         uses: []
     importance_order:
     - tiny
   comp749:
     flavours:
       tiny:
-        energy: 782
+        energy: 896
         uses: []
     importance_order:
     - tiny
   comp75:
     flavours:
       tiny:
-        energy: 571
+        energy: 543
         uses: []
     importance_order:
     - tiny
   comp750:
     flavours:
       tiny:
-        energy: 480
+        energy: 854
         uses: []
     importance_order:
     - tiny
   comp751:
     flavours:
       tiny:
-        energy: 716
+        energy: 424
         uses: []
     importance_order:
     - tiny
   comp752:
     flavours:
       tiny:
-        energy: 141
+        energy: 666
         uses: []
     importance_order:
     - tiny
   comp753:
     flavours:
       tiny:
-        energy: 283
+        energy: 446
         uses: []
     importance_order:
     - tiny
   comp754:
     flavours:
       tiny:
-        energy: 200
+        energy: 580
         uses: []
     importance_order:
     - tiny
   comp755:
     flavours:
       tiny:
-        energy: 763
+        energy: 363
         uses: []
     importance_order:
     - tiny
   comp756:
     flavours:
       tiny:
-        energy: 840
+        energy: 106
         uses: []
     importance_order:
     - tiny
   comp757:
     flavours:
       tiny:
-        energy: 761
+        energy: 455
         uses: []
     importance_order:
     - tiny
   comp758:
     flavours:
       tiny:
-        energy: 276
+        energy: 101
         uses: []
     importance_order:
     - tiny
   comp759:
     flavours:
       tiny:
-        energy: 709
+        energy: 244
         uses: []
     importance_order:
     - tiny
   comp76:
     flavours:
       tiny:
-        energy: 493
+        energy: 759
         uses: []
     importance_order:
     - tiny
   comp760:
     flavours:
       tiny:
-        energy: 381
+        energy: 398
         uses: []
     importance_order:
     - tiny
   comp761:
     flavours:
       tiny:
-        energy: 675
+        energy: 645
         uses: []
     importance_order:
     - tiny
   comp762:
     flavours:
       tiny:
-        energy: 624
+        energy: 672
         uses: []
     importance_order:
     - tiny
   comp763:
     flavours:
       tiny:
-        energy: 399
+        energy: 681
         uses: []
     importance_order:
     - tiny
   comp764:
     flavours:
       tiny:
-        energy: 301
+        energy: 538
         uses: []
     importance_order:
     - tiny
   comp765:
     flavours:
       tiny:
-        energy: 213
+        energy: 541
         uses: []
     importance_order:
     - tiny
   comp766:
     flavours:
       tiny:
-        energy: 336
+        energy: 183
         uses: []
     importance_order:
     - tiny
   comp767:
     flavours:
       tiny:
-        energy: 680
+        energy: 408
         uses: []
     importance_order:
     - tiny
   comp768:
     flavours:
       tiny:
-        energy: 111
+        energy: 434
         uses: []
     importance_order:
     - tiny
   comp769:
     flavours:
       tiny:
-        energy: 437
+        energy: 137
         uses: []
     importance_order:
     - tiny
   comp77:
     flavours:
       tiny:
-        energy: 797
+        energy: 665
         uses: []
     importance_order:
     - tiny
   comp770:
     flavours:
       tiny:
-        energy: 871
+        energy: 459
         uses: []
     importance_order:
     - tiny
   comp771:
     flavours:
       tiny:
-        energy: 639
+        energy: 515
         uses: []
     importance_order:
     - tiny
   comp772:
     flavours:
       tiny:
-        energy: 702
+        energy: 635
         uses: []
     importance_order:
     - tiny
   comp773:
     flavours:
       tiny:
-        energy: 824
+        energy: 706
         uses: []
     importance_order:
     - tiny
   comp774:
     flavours:
       tiny:
-        energy: 529
+        energy: 481
         uses: []
     importance_order:
     - tiny
   comp775:
     flavours:
       tiny:
-        energy: 582
+        energy: 241
         uses: []
     importance_order:
     - tiny
   comp776:
     flavours:
       tiny:
-        energy: 113
+        energy: 715
         uses: []
     importance_order:
     - tiny
   comp777:
     flavours:
       tiny:
-        energy: 543
+        energy: 224
         uses: []
     importance_order:
     - tiny
   comp778:
     flavours:
       tiny:
-        energy: 353
+        energy: 799
         uses: []
     importance_order:
     - tiny
   comp779:
     flavours:
       tiny:
-        energy: 208
+        energy: 356
         uses: []
     importance_order:
     - tiny
   comp78:
     flavours:
       tiny:
-        energy: 579
+        energy: 344
         uses: []
     importance_order:
     - tiny
   comp780:
     flavours:
       tiny:
-        energy: 606
+        energy: 127
         uses: []
     importance_order:
     - tiny
   comp781:
     flavours:
       tiny:
-        energy: 181
+        energy: 268
         uses: []
     importance_order:
     - tiny
   comp782:
     flavours:
       tiny:
-        energy: 222
+        energy: 259
         uses: []
     importance_order:
     - tiny
   comp783:
     flavours:
       tiny:
-        energy: 194
+        energy: 843
         uses: []
     importance_order:
     - tiny
   comp784:
     flavours:
       tiny:
-        energy: 634
+        energy: 664
         uses: []
     importance_order:
     - tiny
   comp785:
     flavours:
       tiny:
-        energy: 359
+        energy: 822
         uses: []
     importance_order:
     - tiny
   comp786:
     flavours:
       tiny:
-        energy: 697
+        energy: 764
         uses: []
     importance_order:
     - tiny
   comp787:
     flavours:
       tiny:
-        energy: 451
+        energy: 580
         uses: []
     importance_order:
     - tiny
   comp788:
     flavours:
       tiny:
-        energy: 610
+        energy: 781
         uses: []
     importance_order:
     - tiny
   comp789:
     flavours:
       tiny:
-        energy: 443
+        energy: 428
         uses: []
     importance_order:
     - tiny
   comp79:
     flavours:
       tiny:
-        energy: 155
+        energy: 877
         uses: []
     importance_order:
     - tiny
   comp790:
     flavours:
       tiny:
-        energy: 525
+        energy: 874
         uses: []
     importance_order:
     - tiny
   comp791:
     flavours:
       tiny:
-        energy: 732
+        energy: 191
         uses: []
     importance_order:
     - tiny
   comp792:
     flavours:
       tiny:
-        energy: 770
+        energy: 749
         uses: []
     importance_order:
     - tiny
   comp793:
     flavours:
       tiny:
-        energy: 602
+        energy: 154
         uses: []
     importance_order:
     - tiny
   comp794:
     flavours:
       tiny:
-        energy: 302
+        energy: 843
         uses: []
     importance_order:
     - tiny
   comp795:
     flavours:
       tiny:
-        energy: 544
+        energy: 356
         uses: []
     importance_order:
     - tiny
   comp796:
     flavours:
       tiny:
-        energy: 313
+        energy: 146
         uses: []
     importance_order:
     - tiny
   comp797:
     flavours:
       tiny:
-        energy: 322
+        energy: 611
         uses: []
     importance_order:
     - tiny
   comp798:
     flavours:
       tiny:
-        energy: 236
+        energy: 115
         uses: []
     importance_order:
     - tiny
   comp799:
     flavours:
       tiny:
-        energy: 877
+        energy: 852
         uses: []
     importance_order:
     - tiny
   comp8:
     flavours:
       tiny:
-        energy: 178
+        energy: 475
         uses: []
     importance_order:
     - tiny
   comp80:
     flavours:
       tiny:
-        energy: 782
+        energy: 124
         uses: []
     importance_order:
     - tiny
   comp800:
     flavours:
       tiny:
-        energy: 364
+        energy: 191
         uses: []
     importance_order:
     - tiny
   comp801:
     flavours:
       tiny:
-        energy: 676
+        energy: 521
         uses: []
     importance_order:
     - tiny
   comp802:
     flavours:
       tiny:
-        energy: 344
+        energy: 315
         uses: []
     importance_order:
     - tiny
   comp803:
     flavours:
       tiny:
-        energy: 357
+        energy: 239
         uses: []
     importance_order:
     - tiny
   comp804:
     flavours:
       tiny:
-        energy: 322
+        energy: 879
         uses: []
     importance_order:
     - tiny
   comp805:
     flavours:
       tiny:
-        energy: 513
+        energy: 224
         uses: []
     importance_order:
     - tiny
   comp806:
     flavours:
       tiny:
-        energy: 137
+        energy: 317
         uses: []
     importance_order:
     - tiny
   comp807:
     flavours:
       tiny:
-        energy: 168
+        energy: 511
         uses: []
     importance_order:
     - tiny
   comp808:
     flavours:
       tiny:
-        energy: 884
+        energy: 394
         uses: []
     importance_order:
     - tiny
   comp809:
     flavours:
       tiny:
-        energy: 338
+        energy: 815
         uses: []
     importance_order:
     - tiny
   comp81:
     flavours:
       tiny:
-        energy: 355
+        energy: 207
         uses: []
     importance_order:
     - tiny
   comp810:
     flavours:
       tiny:
-        energy: 195
+        energy: 868
         uses: []
     importance_order:
     - tiny
@@ -5553,1344 +5553,1344 @@ components:
   comp812:
     flavours:
       tiny:
-        energy: 645
+        energy: 511
         uses: []
     importance_order:
     - tiny
   comp813:
     flavours:
       tiny:
-        energy: 175
+        energy: 748
         uses: []
     importance_order:
     - tiny
   comp814:
     flavours:
       tiny:
-        energy: 240
+        energy: 836
         uses: []
     importance_order:
     - tiny
   comp815:
     flavours:
       tiny:
-        energy: 577
+        energy: 106
         uses: []
     importance_order:
     - tiny
   comp816:
     flavours:
       tiny:
-        energy: 343
+        energy: 855
         uses: []
     importance_order:
     - tiny
   comp817:
     flavours:
       tiny:
-        energy: 664
+        energy: 771
         uses: []
     importance_order:
     - tiny
   comp818:
     flavours:
       tiny:
-        energy: 250
+        energy: 528
         uses: []
     importance_order:
     - tiny
   comp819:
     flavours:
       tiny:
-        energy: 207
+        energy: 637
         uses: []
     importance_order:
     - tiny
   comp82:
     flavours:
       tiny:
-        energy: 689
+        energy: 794
         uses: []
     importance_order:
     - tiny
   comp820:
     flavours:
       tiny:
-        energy: 196
+        energy: 507
         uses: []
     importance_order:
     - tiny
   comp821:
     flavours:
       tiny:
-        energy: 290
+        energy: 750
         uses: []
     importance_order:
     - tiny
   comp822:
     flavours:
       tiny:
-        energy: 415
+        energy: 837
         uses: []
     importance_order:
     - tiny
   comp823:
     flavours:
       tiny:
-        energy: 349
+        energy: 102
         uses: []
     importance_order:
     - tiny
   comp824:
     flavours:
       tiny:
-        energy: 779
+        energy: 117
         uses: []
     importance_order:
     - tiny
   comp825:
     flavours:
       tiny:
-        energy: 514
+        energy: 547
         uses: []
     importance_order:
     - tiny
   comp826:
     flavours:
       tiny:
-        energy: 152
+        energy: 780
         uses: []
     importance_order:
     - tiny
   comp827:
     flavours:
       tiny:
-        energy: 506
+        energy: 686
         uses: []
     importance_order:
     - tiny
   comp828:
     flavours:
       tiny:
-        energy: 154
+        energy: 537
         uses: []
     importance_order:
     - tiny
   comp829:
     flavours:
       tiny:
-        energy: 792
+        energy: 645
         uses: []
     importance_order:
     - tiny
   comp83:
     flavours:
       tiny:
-        energy: 800
+        energy: 702
         uses: []
     importance_order:
     - tiny
   comp830:
     flavours:
       tiny:
-        energy: 159
+        energy: 643
         uses: []
     importance_order:
     - tiny
   comp831:
     flavours:
       tiny:
-        energy: 370
+        energy: 882
         uses: []
     importance_order:
     - tiny
   comp832:
     flavours:
       tiny:
-        energy: 410
+        energy: 208
         uses: []
     importance_order:
     - tiny
   comp833:
     flavours:
       tiny:
-        energy: 869
+        energy: 490
         uses: []
     importance_order:
     - tiny
   comp834:
     flavours:
       tiny:
-        energy: 219
+        energy: 583
         uses: []
     importance_order:
     - tiny
   comp835:
     flavours:
       tiny:
-        energy: 733
+        energy: 137
         uses: []
     importance_order:
     - tiny
   comp836:
     flavours:
       tiny:
-        energy: 771
+        energy: 558
         uses: []
     importance_order:
     - tiny
   comp837:
     flavours:
       tiny:
-        energy: 206
+        energy: 427
         uses: []
     importance_order:
     - tiny
   comp838:
     flavours:
       tiny:
-        energy: 607
+        energy: 636
         uses: []
     importance_order:
     - tiny
   comp839:
     flavours:
       tiny:
-        energy: 477
+        energy: 845
         uses: []
     importance_order:
     - tiny
   comp84:
     flavours:
       tiny:
-        energy: 266
+        energy: 321
         uses: []
     importance_order:
     - tiny
   comp840:
     flavours:
       tiny:
-        energy: 263
+        energy: 159
         uses: []
     importance_order:
     - tiny
   comp841:
     flavours:
       tiny:
-        energy: 407
+        energy: 158
         uses: []
     importance_order:
     - tiny
   comp842:
     flavours:
       tiny:
-        energy: 460
+        energy: 248
         uses: []
     importance_order:
     - tiny
   comp843:
     flavours:
       tiny:
-        energy: 322
+        energy: 434
         uses: []
     importance_order:
     - tiny
   comp844:
     flavours:
       tiny:
-        energy: 230
+        energy: 875
         uses: []
     importance_order:
     - tiny
   comp845:
     flavours:
       tiny:
-        energy: 395
+        energy: 405
         uses: []
     importance_order:
     - tiny
   comp846:
     flavours:
       tiny:
-        energy: 222
+        energy: 109
         uses: []
     importance_order:
     - tiny
   comp847:
     flavours:
       tiny:
-        energy: 519
+        energy: 419
         uses: []
     importance_order:
     - tiny
   comp848:
     flavours:
       tiny:
-        energy: 266
+        energy: 206
         uses: []
     importance_order:
     - tiny
   comp849:
     flavours:
       tiny:
-        energy: 674
+        energy: 655
         uses: []
     importance_order:
     - tiny
   comp85:
     flavours:
       tiny:
-        energy: 237
+        energy: 565
         uses: []
     importance_order:
     - tiny
   comp850:
     flavours:
       tiny:
-        energy: 857
+        energy: 483
         uses: []
     importance_order:
     - tiny
   comp851:
     flavours:
       tiny:
-        energy: 733
+        energy: 775
         uses: []
     importance_order:
     - tiny
   comp852:
     flavours:
       tiny:
-        energy: 166
+        energy: 745
         uses: []
     importance_order:
     - tiny
   comp853:
     flavours:
       tiny:
-        energy: 325
+        energy: 753
         uses: []
     importance_order:
     - tiny
   comp854:
     flavours:
       tiny:
-        energy: 897
+        energy: 877
         uses: []
     importance_order:
     - tiny
   comp855:
     flavours:
       tiny:
-        energy: 462
+        energy: 594
         uses: []
     importance_order:
     - tiny
   comp856:
     flavours:
       tiny:
-        energy: 212
+        energy: 702
         uses: []
     importance_order:
     - tiny
   comp857:
     flavours:
       tiny:
-        energy: 579
+        energy: 156
         uses: []
     importance_order:
     - tiny
   comp858:
     flavours:
       tiny:
-        energy: 612
+        energy: 789
         uses: []
     importance_order:
     - tiny
   comp859:
     flavours:
       tiny:
-        energy: 775
+        energy: 519
         uses: []
     importance_order:
     - tiny
   comp86:
     flavours:
       tiny:
-        energy: 465
+        energy: 877
         uses: []
     importance_order:
     - tiny
   comp860:
     flavours:
       tiny:
-        energy: 690
+        energy: 774
         uses: []
     importance_order:
     - tiny
   comp861:
     flavours:
       tiny:
-        energy: 889
+        energy: 791
         uses: []
     importance_order:
     - tiny
   comp862:
     flavours:
       tiny:
-        energy: 176
+        energy: 148
         uses: []
     importance_order:
     - tiny
   comp863:
     flavours:
       tiny:
-        energy: 810
+        energy: 345
         uses: []
     importance_order:
     - tiny
   comp864:
     flavours:
       tiny:
-        energy: 372
+        energy: 246
         uses: []
     importance_order:
     - tiny
   comp865:
     flavours:
       tiny:
-        energy: 395
+        energy: 869
         uses: []
     importance_order:
     - tiny
   comp866:
     flavours:
       tiny:
-        energy: 302
+        energy: 737
         uses: []
     importance_order:
     - tiny
   comp867:
     flavours:
       tiny:
-        energy: 700
+        energy: 531
         uses: []
     importance_order:
     - tiny
   comp868:
     flavours:
       tiny:
-        energy: 790
+        energy: 186
         uses: []
     importance_order:
     - tiny
   comp869:
     flavours:
       tiny:
-        energy: 214
+        energy: 256
         uses: []
     importance_order:
     - tiny
   comp87:
     flavours:
       tiny:
-        energy: 247
+        energy: 263
         uses: []
     importance_order:
     - tiny
   comp870:
     flavours:
       tiny:
-        energy: 831
+        energy: 510
         uses: []
     importance_order:
     - tiny
   comp871:
     flavours:
       tiny:
-        energy: 506
+        energy: 553
         uses: []
     importance_order:
     - tiny
   comp872:
     flavours:
       tiny:
-        energy: 203
+        energy: 780
         uses: []
     importance_order:
     - tiny
   comp873:
     flavours:
       tiny:
-        energy: 830
+        energy: 335
         uses: []
     importance_order:
     - tiny
   comp874:
     flavours:
       tiny:
-        energy: 152
+        energy: 810
         uses: []
     importance_order:
     - tiny
   comp875:
     flavours:
       tiny:
-        energy: 191
+        energy: 332
         uses: []
     importance_order:
     - tiny
   comp876:
     flavours:
       tiny:
-        energy: 482
+        energy: 267
         uses: []
     importance_order:
     - tiny
   comp877:
     flavours:
       tiny:
-        energy: 714
+        energy: 306
         uses: []
     importance_order:
     - tiny
   comp878:
     flavours:
       tiny:
-        energy: 628
+        energy: 314
         uses: []
     importance_order:
     - tiny
   comp879:
     flavours:
       tiny:
-        energy: 782
+        energy: 475
         uses: []
     importance_order:
     - tiny
   comp88:
     flavours:
       tiny:
-        energy: 322
+        energy: 692
         uses: []
     importance_order:
     - tiny
   comp880:
     flavours:
       tiny:
-        energy: 845
+        energy: 769
         uses: []
     importance_order:
     - tiny
   comp881:
     flavours:
       tiny:
-        energy: 725
+        energy: 180
         uses: []
     importance_order:
     - tiny
   comp882:
     flavours:
       tiny:
-        energy: 494
+        energy: 692
         uses: []
     importance_order:
     - tiny
   comp883:
     flavours:
       tiny:
-        energy: 874
+        energy: 137
         uses: []
     importance_order:
     - tiny
   comp884:
     flavours:
       tiny:
-        energy: 422
+        energy: 158
         uses: []
     importance_order:
     - tiny
   comp885:
     flavours:
       tiny:
-        energy: 234
+        energy: 769
         uses: []
     importance_order:
     - tiny
   comp886:
     flavours:
       tiny:
-        energy: 201
+        energy: 746
         uses: []
     importance_order:
     - tiny
   comp887:
     flavours:
       tiny:
-        energy: 180
+        energy: 310
         uses: []
     importance_order:
     - tiny
   comp888:
     flavours:
       tiny:
-        energy: 752
+        energy: 156
         uses: []
     importance_order:
     - tiny
   comp889:
     flavours:
       tiny:
-        energy: 724
+        energy: 430
         uses: []
     importance_order:
     - tiny
   comp89:
     flavours:
       tiny:
-        energy: 341
+        energy: 472
         uses: []
     importance_order:
     - tiny
   comp890:
     flavours:
       tiny:
-        energy: 552
+        energy: 413
         uses: []
     importance_order:
     - tiny
   comp891:
     flavours:
       tiny:
-        energy: 413
+        energy: 395
         uses: []
     importance_order:
     - tiny
   comp892:
     flavours:
       tiny:
-        energy: 897
+        energy: 494
         uses: []
     importance_order:
     - tiny
   comp893:
     flavours:
       tiny:
-        energy: 556
+        energy: 694
         uses: []
     importance_order:
     - tiny
   comp894:
     flavours:
       tiny:
-        energy: 141
+        energy: 520
         uses: []
     importance_order:
     - tiny
   comp895:
     flavours:
       tiny:
-        energy: 804
+        energy: 410
         uses: []
     importance_order:
     - tiny
   comp896:
     flavours:
       tiny:
-        energy: 346
+        energy: 445
         uses: []
     importance_order:
     - tiny
   comp897:
     flavours:
       tiny:
-        energy: 337
+        energy: 671
         uses: []
     importance_order:
     - tiny
   comp898:
     flavours:
       tiny:
-        energy: 183
+        energy: 194
         uses: []
     importance_order:
     - tiny
   comp899:
     flavours:
       tiny:
-        energy: 606
+        energy: 421
         uses: []
     importance_order:
     - tiny
   comp9:
     flavours:
       tiny:
-        energy: 200
+        energy: 590
         uses: []
     importance_order:
     - tiny
   comp90:
     flavours:
       tiny:
-        energy: 458
+        energy: 596
         uses: []
     importance_order:
     - tiny
   comp900:
     flavours:
       tiny:
-        energy: 386
+        energy: 581
         uses: []
     importance_order:
     - tiny
   comp901:
     flavours:
       tiny:
-        energy: 413
+        energy: 157
         uses: []
     importance_order:
     - tiny
   comp902:
     flavours:
       tiny:
-        energy: 814
+        energy: 232
         uses: []
     importance_order:
     - tiny
   comp903:
     flavours:
       tiny:
-        energy: 405
+        energy: 159
         uses: []
     importance_order:
     - tiny
   comp904:
     flavours:
       tiny:
-        energy: 854
+        energy: 833
         uses: []
     importance_order:
     - tiny
   comp905:
     flavours:
       tiny:
-        energy: 700
+        energy: 338
         uses: []
     importance_order:
     - tiny
   comp906:
     flavours:
       tiny:
-        energy: 526
+        energy: 842
         uses: []
     importance_order:
     - tiny
   comp907:
     flavours:
       tiny:
-        energy: 688
+        energy: 617
         uses: []
     importance_order:
     - tiny
   comp908:
     flavours:
       tiny:
-        energy: 615
+        energy: 256
         uses: []
     importance_order:
     - tiny
   comp909:
     flavours:
       tiny:
-        energy: 185
+        energy: 310
         uses: []
     importance_order:
     - tiny
   comp91:
     flavours:
       tiny:
-        energy: 435
+        energy: 711
         uses: []
     importance_order:
     - tiny
   comp910:
     flavours:
       tiny:
-        energy: 723
+        energy: 711
         uses: []
     importance_order:
     - tiny
   comp911:
     flavours:
       tiny:
-        energy: 789
+        energy: 170
         uses: []
     importance_order:
     - tiny
   comp912:
     flavours:
       tiny:
-        energy: 851
+        energy: 658
         uses: []
     importance_order:
     - tiny
   comp913:
     flavours:
       tiny:
-        energy: 729
+        energy: 885
         uses: []
     importance_order:
     - tiny
   comp914:
     flavours:
       tiny:
-        energy: 588
+        energy: 224
         uses: []
     importance_order:
     - tiny
   comp915:
     flavours:
       tiny:
-        energy: 200
+        energy: 256
         uses: []
     importance_order:
     - tiny
   comp916:
     flavours:
       tiny:
-        energy: 215
+        energy: 503
         uses: []
     importance_order:
     - tiny
   comp917:
     flavours:
       tiny:
-        energy: 161
+        energy: 165
         uses: []
     importance_order:
     - tiny
   comp918:
     flavours:
       tiny:
-        energy: 790
+        energy: 402
         uses: []
     importance_order:
     - tiny
   comp919:
     flavours:
       tiny:
-        energy: 326
+        energy: 101
         uses: []
     importance_order:
     - tiny
   comp92:
     flavours:
       tiny:
-        energy: 275
+        energy: 102
         uses: []
     importance_order:
     - tiny
   comp920:
     flavours:
       tiny:
-        energy: 141
+        energy: 442
         uses: []
     importance_order:
     - tiny
   comp921:
     flavours:
       tiny:
-        energy: 247
+        energy: 112
         uses: []
     importance_order:
     - tiny
   comp922:
     flavours:
       tiny:
-        energy: 672
+        energy: 467
         uses: []
     importance_order:
     - tiny
   comp923:
     flavours:
       tiny:
-        energy: 379
+        energy: 737
         uses: []
     importance_order:
     - tiny
   comp924:
     flavours:
       tiny:
-        energy: 772
+        energy: 308
         uses: []
     importance_order:
     - tiny
   comp925:
     flavours:
       tiny:
-        energy: 436
+        energy: 204
         uses: []
     importance_order:
     - tiny
   comp926:
     flavours:
       tiny:
-        energy: 415
+        energy: 413
         uses: []
     importance_order:
     - tiny
   comp927:
     flavours:
       tiny:
-        energy: 282
+        energy: 240
         uses: []
     importance_order:
     - tiny
   comp928:
     flavours:
       tiny:
-        energy: 370
+        energy: 567
         uses: []
     importance_order:
     - tiny
   comp929:
     flavours:
       tiny:
-        energy: 103
+        energy: 588
         uses: []
     importance_order:
     - tiny
   comp93:
     flavours:
       tiny:
-        energy: 216
+        energy: 663
         uses: []
     importance_order:
     - tiny
   comp930:
     flavours:
       tiny:
-        energy: 272
+        energy: 525
         uses: []
     importance_order:
     - tiny
   comp931:
     flavours:
       tiny:
-        energy: 312
+        energy: 819
         uses: []
     importance_order:
     - tiny
   comp932:
     flavours:
       tiny:
-        energy: 656
+        energy: 355
         uses: []
     importance_order:
     - tiny
   comp933:
     flavours:
       tiny:
-        energy: 347
+        energy: 698
         uses: []
     importance_order:
     - tiny
   comp934:
     flavours:
       tiny:
-        energy: 544
+        energy: 257
         uses: []
     importance_order:
     - tiny
   comp935:
     flavours:
       tiny:
-        energy: 627
+        energy: 199
         uses: []
     importance_order:
     - tiny
   comp936:
     flavours:
       tiny:
-        energy: 771
+        energy: 423
         uses: []
     importance_order:
     - tiny
   comp937:
     flavours:
       tiny:
-        energy: 819
+        energy: 450
         uses: []
     importance_order:
     - tiny
   comp938:
     flavours:
       tiny:
-        energy: 600
+        energy: 290
         uses: []
     importance_order:
     - tiny
   comp939:
     flavours:
       tiny:
-        energy: 425
+        energy: 718
         uses: []
     importance_order:
     - tiny
   comp94:
     flavours:
       tiny:
-        energy: 141
+        energy: 290
         uses: []
     importance_order:
     - tiny
   comp940:
     flavours:
       tiny:
-        energy: 219
+        energy: 875
         uses: []
     importance_order:
     - tiny
   comp941:
     flavours:
       tiny:
-        energy: 381
+        energy: 324
         uses: []
     importance_order:
     - tiny
   comp942:
     flavours:
       tiny:
-        energy: 676
+        energy: 802
         uses: []
     importance_order:
     - tiny
   comp943:
     flavours:
       tiny:
-        energy: 266
+        energy: 351
         uses: []
     importance_order:
     - tiny
   comp944:
     flavours:
       tiny:
-        energy: 854
+        energy: 575
         uses: []
     importance_order:
     - tiny
   comp945:
     flavours:
       tiny:
-        energy: 275
+        energy: 155
         uses: []
     importance_order:
     - tiny
   comp946:
     flavours:
       tiny:
-        energy: 527
+        energy: 508
         uses: []
     importance_order:
     - tiny
   comp947:
     flavours:
       tiny:
-        energy: 894
+        energy: 508
         uses: []
     importance_order:
     - tiny
   comp948:
     flavours:
       tiny:
-        energy: 495
+        energy: 451
         uses: []
     importance_order:
     - tiny
   comp949:
     flavours:
       tiny:
-        energy: 169
+        energy: 883
         uses: []
     importance_order:
     - tiny
   comp95:
     flavours:
       tiny:
-        energy: 707
+        energy: 593
         uses: []
     importance_order:
     - tiny
   comp950:
     flavours:
       tiny:
-        energy: 506
+        energy: 679
         uses: []
     importance_order:
     - tiny
   comp951:
     flavours:
       tiny:
-        energy: 767
+        energy: 692
         uses: []
     importance_order:
     - tiny
   comp952:
     flavours:
       tiny:
-        energy: 607
+        energy: 246
         uses: []
     importance_order:
     - tiny
   comp953:
     flavours:
       tiny:
-        energy: 656
+        energy: 581
         uses: []
     importance_order:
     - tiny
   comp954:
     flavours:
       tiny:
-        energy: 363
+        energy: 295
         uses: []
     importance_order:
     - tiny
   comp955:
     flavours:
       tiny:
-        energy: 195
+        energy: 457
         uses: []
     importance_order:
     - tiny
   comp956:
     flavours:
       tiny:
-        energy: 154
+        energy: 686
         uses: []
     importance_order:
     - tiny
   comp957:
     flavours:
       tiny:
-        energy: 362
+        energy: 448
         uses: []
     importance_order:
     - tiny
   comp958:
     flavours:
       tiny:
-        energy: 246
+        energy: 528
         uses: []
     importance_order:
     - tiny
   comp959:
     flavours:
       tiny:
-        energy: 606
+        energy: 638
         uses: []
     importance_order:
     - tiny
   comp96:
     flavours:
       tiny:
-        energy: 217
+        energy: 458
         uses: []
     importance_order:
     - tiny
   comp960:
     flavours:
       tiny:
-        energy: 808
+        energy: 670
         uses: []
     importance_order:
     - tiny
   comp961:
     flavours:
       tiny:
-        energy: 521
+        energy: 383
         uses: []
     importance_order:
     - tiny
   comp962:
     flavours:
       tiny:
-        energy: 210
+        energy: 736
         uses: []
     importance_order:
     - tiny
   comp963:
     flavours:
       tiny:
-        energy: 608
+        energy: 131
         uses: []
     importance_order:
     - tiny
   comp964:
     flavours:
       tiny:
-        energy: 184
+        energy: 269
         uses: []
     importance_order:
     - tiny
   comp965:
     flavours:
       tiny:
-        energy: 865
+        energy: 487
         uses: []
     importance_order:
     - tiny
   comp966:
     flavours:
       tiny:
-        energy: 484
+        energy: 160
         uses: []
     importance_order:
     - tiny
   comp967:
     flavours:
       tiny:
-        energy: 148
+        energy: 412
         uses: []
     importance_order:
     - tiny
   comp968:
     flavours:
       tiny:
-        energy: 565
+        energy: 177
         uses: []
     importance_order:
     - tiny
   comp969:
     flavours:
       tiny:
-        energy: 501
+        energy: 443
         uses: []
     importance_order:
     - tiny
   comp97:
     flavours:
       tiny:
-        energy: 469
+        energy: 489
         uses: []
     importance_order:
     - tiny
   comp970:
     flavours:
       tiny:
-        energy: 110
+        energy: 662
         uses: []
     importance_order:
     - tiny
   comp971:
     flavours:
       tiny:
-        energy: 496
+        energy: 252
         uses: []
     importance_order:
     - tiny
   comp972:
     flavours:
       tiny:
-        energy: 790
+        energy: 229
         uses: []
     importance_order:
     - tiny
   comp973:
     flavours:
       tiny:
-        energy: 323
+        energy: 237
         uses: []
     importance_order:
     - tiny
   comp974:
     flavours:
       tiny:
-        energy: 335
+        energy: 767
         uses: []
     importance_order:
     - tiny
   comp975:
     flavours:
       tiny:
-        energy: 547
+        energy: 487
         uses: []
     importance_order:
     - tiny
   comp976:
     flavours:
       tiny:
-        energy: 104
+        energy: 328
         uses: []
     importance_order:
     - tiny
   comp977:
     flavours:
       tiny:
-        energy: 127
+        energy: 170
         uses: []
     importance_order:
     - tiny
   comp978:
     flavours:
       tiny:
-        energy: 478
+        energy: 130
         uses: []
     importance_order:
     - tiny
   comp979:
     flavours:
       tiny:
-        energy: 363
+        energy: 766
         uses: []
     importance_order:
     - tiny
   comp98:
     flavours:
       tiny:
-        energy: 411
+        energy: 473
         uses: []
     importance_order:
     - tiny
   comp980:
     flavours:
       tiny:
-        energy: 303
+        energy: 765
         uses: []
     importance_order:
     - tiny
   comp981:
     flavours:
       tiny:
-        energy: 374
+        energy: 805
         uses: []
     importance_order:
     - tiny
   comp982:
     flavours:
       tiny:
-        energy: 484
+        energy: 206
         uses: []
     importance_order:
     - tiny
   comp983:
     flavours:
       tiny:
-        energy: 393
+        energy: 853
         uses: []
     importance_order:
     - tiny
   comp984:
     flavours:
       tiny:
-        energy: 358
+        energy: 743
         uses: []
     importance_order:
     - tiny
   comp985:
     flavours:
       tiny:
-        energy: 215
+        energy: 101
         uses: []
     importance_order:
     - tiny
@@ -6904,98 +6904,98 @@ components:
   comp987:
     flavours:
       tiny:
-        energy: 117
+        energy: 638
         uses: []
     importance_order:
     - tiny
   comp988:
     flavours:
       tiny:
-        energy: 200
+        energy: 436
         uses: []
     importance_order:
     - tiny
   comp989:
     flavours:
       tiny:
-        energy: 575
+        energy: 868
         uses: []
     importance_order:
     - tiny
   comp99:
     flavours:
       tiny:
-        energy: 650
+        energy: 722
         uses: []
     importance_order:
     - tiny
   comp990:
     flavours:
       tiny:
-        energy: 714
+        energy: 835
         uses: []
     importance_order:
     - tiny
   comp991:
     flavours:
       tiny:
-        energy: 308
+        energy: 342
         uses: []
     importance_order:
     - tiny
   comp992:
     flavours:
       tiny:
-        energy: 265
+        energy: 541
         uses: []
     importance_order:
     - tiny
   comp993:
     flavours:
       tiny:
-        energy: 804
+        energy: 803
         uses: []
     importance_order:
     - tiny
   comp994:
     flavours:
       tiny:
-        energy: 843
+        energy: 427
         uses: []
     importance_order:
     - tiny
   comp995:
     flavours:
       tiny:
-        energy: 571
+        energy: 456
         uses: []
     importance_order:
     - tiny
   comp996:
     flavours:
       tiny:
-        energy: 834
+        energy: 852
         uses: []
     importance_order:
     - tiny
   comp997:
     flavours:
       tiny:
-        energy: 417
+        energy: 832
         uses: []
     importance_order:
     - tiny
   comp998:
     flavours:
       tiny:
-        energy: 100
+        energy: 767
         uses: []
     importance_order:
     - tiny
   comp999:
     flavours:
       tiny:
-        energy: 622
+        energy: 347
         uses: []
     importance_order:
     - tiny

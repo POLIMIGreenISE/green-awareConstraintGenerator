@@ -13,7 +13,8 @@ class WeightGenerator:
         give them a malus multiplier
         """
         average_global = 100
-        multiplier = 0.75   
+        multiplier = 0.75
+        contraints_threshold = 0.1 
 
         maxConsumption = max(constr["constraint_emissions"] for constr in self.constraints)
         
@@ -47,7 +48,7 @@ class WeightGenerator:
                 match = re.match(r'(\w+)\((.*?)\)', fact)
                 if match:
                     args = match.group(2).split(',')
-                    if float(args[-1]) < 0.3:
+                    if float(args[-1]) < contraints_threshold:
                         itemsToRemove.append(fact)
         for fact in itemsToRemove:
             self.prologFacts.remove(fact)

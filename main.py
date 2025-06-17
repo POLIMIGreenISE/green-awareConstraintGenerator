@@ -33,7 +33,7 @@ def run(
     newIstio = IstioHandler(interaction).handle_istio()
     energyMix = EnergyMixGatherer(nodes)
     istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler, deploymentInformation).estimate_consumption()
-    affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, kb, energyMix).generate_constraints()
+    affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, application, kb, energyMix).generate_constraints()
     finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
     finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
     Adapter(rules, facts, finalPrologFacts, prologConstraints, finalConstraints, explanation, yamlConstraints, infrastructureInformation, energyMix).adapt_output()

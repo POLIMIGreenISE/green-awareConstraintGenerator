@@ -1,12 +1,14 @@
 import json
+import yaml
 import statistics
 
 class ConstraintsGenerator:
-    def __init__(self, istio, kepler, deployment, infrastructure, knowledgeBase, energyMix):
+    def __init__(self, istio, kepler, deployment, infrastructure, application, knowledgeBase, energyMix):
         self.istio = istio
         self.kepler = kepler
         self.deployment = deployment
         self.infrastructure = infrastructure
+        self.application = application
         self.knowledgeBase = knowledgeBase
         self.energyMix = energyMix
         self.affinity = None
@@ -49,6 +51,32 @@ class ConstraintsGenerator:
                         if set(mysubnet) & set(infrastructure["nodes"][node]["capabilities"][value]):
                             deployableNodes.append(node)
             return deployableNodes
+
+        # Given a service, obtain the nodes that match its resources
+        def obtainResourcefulNodes(service, infrastructure):
+            with open(self.application, "r") as file:
+                myapp = yaml.safe_load(file)
+            resourcefulNodes = []
+            mysecurity = myapp["requirements"]["components"][service["service"]]["common"]["security"]
+            mycpu = myapp["requirements"]["components"][service["service"]]["flavour-specific"][service["flavour"]]["cpu"]
+            myram = myapp["requirements"]["components"][service["service"]]["flavour-specific"][service["flavour"]]["ram"]
+            isDeployable = True
+            for node in infrastructure["nodes"]:
+                for property in infrastructure["nodes"][node]["capabilities"]:
+                    if property == "security":
+                        if set(mysecurity) & set(infrastructure["nodes"][node]["capabilities"][property]):
+                            isDeployable = True
+                        else:
+                            isDeployable = False
+                    if property == "cpu":
+                        if mycpu > infrastructure["nodes"][node]["capabilities"][property]:
+                            isDeployable = False
+                    if property == "ram":
+                        if myram > infrastructure["nodes"][node]["capabilities"][property]:
+                            isDeployable = False
+                if isDeployable:
+                    resourcefulNodes.append(node)
+            return resourcefulNodes
 
         # Open knowledgebase
         try:
@@ -131,9 +159,12 @@ class ConstraintsGenerator:
         for service in monitorKepler:
             serviceWeight = float(service['emissions'])
             deployableNodes = obtainDeployableNodes(service["service"], self.infrastructure)
-            if len(deployableNodes) > 1:
-                for node in deployableNodes:
-                    nodeWeight = float(self.energyMix.gather_energyMix(node) / self.energyMix.gather_energyMix(maxNode))
+            resourcefulNodes = obtainResourcefulNodes(service, self.infrastructure)
+            considerableNodes = set(deployableNodes) & set(resourcefulNodes)
+            maxDeployable = max(considerableNodes)
+            if len(considerableNodes) > 1:
+                for node in considerableNodes:
+                    nodeWeight = float(self.energyMix.gather_energyMix(node) / self.energyMix.gather_energyMix(maxDeployable))
                     scaledWeight = nodeWeight * serviceWeight
                     if(scaledWeight >= keplerThreshold):
                         avoid = {
@@ -144,5 +175,25 @@ class ConstraintsGenerator:
                             "constraint_emissions": service["emissions"] * self.energyMix.gather_energyMix(node)
                         }
                         self.avoid.append(avoid)
+
+        # Avoid scenarios where a service is told to avoid all its deployable nodes
+        seen_sources = set()
+        itemsToRemove = []
+        for avoid in self.avoid:
+            source = avoid["source"]
+            if source not in seen_sources:
+                avoidInstances = sum(1 for item in self.avoid if item.get("source") == source)
+                seen_sources.add(source)
+                myservice = {
+                    "service": source,
+                    "flavour": avoid["flavour"]
+                }
+                availableNodes = set(obtainResourcefulNodes(myservice, self.infrastructure)) & set(obtainDeployableNodes(myservice["service"], self.infrastructure))
+                if avoidInstances == len(availableNodes):
+                    pendingRemoval = min((item for item in self.avoid if item["source"] == source), key=lambda x: x["constraint_emissions"], default=None)
+                    itemsToRemove.append(pendingRemoval)
+
+        for removed in itemsToRemove:
+            self.avoid.remove(removed)
 
         return self.affinity, self.avoid, self.maxConsumption, self.prologFacts

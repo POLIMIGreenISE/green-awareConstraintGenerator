@@ -1,6 +1,6 @@
 A avoidNode constraint was generated for the deployment of the frontend component in the large flavour on the greatbritain node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 557.9461394014355 gCO2eq and 229.40932635287447 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 514.2089911017956 gCO2eq and 211.42603187434236 gCO2eq.
 A avoidNode constraint was generated for the deployment of the frontend component in the large flavour on the italy node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 903.4762358835427 gCO2eq and 345.5300964821072 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 832.6531378754966 gCO2eq and 318.44414677370094 gCO2eq.
 A avoidNode constraint was generated for the deployment of the productcatalogservice component in the large flavour on the italy node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
-The estimated emissions savings resulting from avoiding this deployment range between 403.2911545405252 gCO2eq and 154.23674248885288 gCO2eq.
+The estimated emissions savings resulting from avoiding this deployment range between 371.6773413273093 gCO2eq and 142.14619323489575 gCO2eq.

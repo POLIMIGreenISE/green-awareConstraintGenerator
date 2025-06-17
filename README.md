@@ -23,9 +23,9 @@ This component develops techniques to classify the profile of nodes in a Cloud-I
 # Installation
 
 ```bash
-python -m .venv venv
+python -m venv .venv
 source ./.venv/bin/activate # or equivalent in other OS
-pip intall -r requirements.txt
+pip install -r requirements.txt
 ```
 # Utilisation
 ```bash

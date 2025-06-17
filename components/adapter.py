@@ -3,12 +3,12 @@ import yaml
 import os
 
 class Adapter:
-    def __init__(self, prologRules, prologFile, prologFacts, prologConstraints, constraints, explanationFile, yamlOut, infrastructure, energyMix):
+    def __init__(self, prologRules, prologFile, prologFacts, prologOutput, constraints, explanationFile, yamlOut, infrastructure, energyMix):
         self.prologRules = prologRules
         self.prologFile = prologFile
         self.prologFacts = prologFacts
         self.constraints = constraints
-        self.prologConstraints = prologConstraints
+        self.prologOutput = prologOutput
         self.explanationFile = explanationFile
         self.yamlout = yamlOut
         self.infrastructure = infrastructure
@@ -37,14 +37,20 @@ class Adapter:
             nodes = sorted(nodes, key=lambda x: x['carbon'], reverse=True)
             index = min(obtainIndex(nodes, constraint["node"]), len(nodes))
             maxSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / nodes[index]["carbon"] * self.infrastructure["nodes"][minNode]["profile"]["carbon"])
-            minSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / nodes[index]["carbon"] * nodes[index+1]["carbon"])
+            try:
+                minSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / int(nodes[index]["carbon"]) * int(nodes[index+1]["carbon"]))
+            except IndexError:
+                minSave = maxSave
             return f"The estimated emissions savings resulting from avoiding this deployment range between {maxSave} gCO2eq and {minSave} gCO2eq."
 
         with open(self.prologFile, 'w') as file:
             for fact in self.prologFacts:
                 file.write(fact + ".\n")
 
-        Prolog().consult("rules.pl")
+        p = Prolog()
+        p.consult(self.prologRules)
+        list(p.query(f"save_to_file(['{self.prologFile}', '{self.prologOutput}'])"))
+        # Prolog().consult("rules2.pl")
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
         
