@@ -11,11 +11,10 @@ class DeploymentHandler:
         with open(self.deployment_file, "r") as file:
             text = file.read()
 
-        pattern = r"Component (\w+) deployed in flavour (\w+) on node (\w+)."
+        pattern = r"Component (\S+) deployed in flavour (\S+) on node (\S+)."
 
         self.deploymentinfo = [
             {"service": match.group(1), "flavour": match.group(2), "node": match.group(3)}
             for match in re.finditer(pattern, text)
         ]
-
         return self.deploymentinfo

@@ -12,16 +12,16 @@ serviceConnection(frontend, cartservice, 1.0145732279670878e-05, 0.0101457322796
 serviceConnection(frontend, checkoutservice, 1.0525099772343437e-06, 0.0010525099772343437).
 serviceConnection(frontend, currencyservice, 2.126555646475965e-05, 0.021265556464759652).
 serviceConnection(recommendationservice, productcatalogservice, 3.5704926921195376e-06, 0.0035704926921195377).
-service(frontend, 2.217012891441344, 2217.012891441344).
-service(productcatalogservice, 0.9896239138445438, 989.6239138445438).
-service(currencyservice, 0.8811203293283069, 881.1203293283069).
-service(recommendationservice, 0.6034689592494277, 603.4689592494277).
-service(cartservice, 0.5469926087329856, 546.9926087329856).
-service(adservice, 0.25153082551379596, 251.53082551379595).
-service(checkoutservice, 0.12015404009692547, 120.15404009692547).
-service(shippingservice, 0.09892426938295333, 98.92426938295333).
-service(emailservice, 0.05068134138582446, 50.68134138582446).
-service(paymentservice, 0.03495834027892556, 34.95834027892556).
+service(frontend, 2.610197924374597, 2610.1979243745973).
+service(productcatalogservice, 1.1651327314335715, 1165.1327314335715).
+service(currencyservice, 1.0373861440389631, 1037.386144038963).
+service(recommendationservice, 0.7104935794186064, 710.4935794186064).
+service(cartservice, 0.6440012042667275, 644.0012042667274).
+service(adservice, 0.29613956743638964, 296.13956743638965).
+service(checkoutservice, 0.1414632396938025, 141.4632396938025).
+service(shippingservice, 0.1164683902427772, 116.4683902427772).
+service(emailservice, 0.05966962691127832, 59.66962691127832).
+service(paymentservice, 0.041158167184273474, 41.15816718427347).
 node(france, 16).
 node(spain, 88).
 node(germany, 132).
@@ -37,10 +37,11 @@ deployedTo(shippingservice,tiny,greatbritain).
 deployedTo(currencyservice,tiny,greatbritain).
 deployedTo(paymentservice,tiny,italy).
 deployedTo(emailservice,tiny,italy).
-highConsumptionService(frontend,large,germany,0.394).
 highConsumptionService(frontend,large,spain,0.263).
-highConsumptionService(frontend,large,italy,1.000).
 highConsumptionService(frontend,large,greatbritain,0.636).
-highConsumptionService(productcatalogservice,large,germany,0.176).
-highConsumptionService(productcatalogservice,large,italy,0.446).
+highConsumptionService(frontend,large,italy,1.000).
+highConsumptionService(frontend,large,germany,0.394).
+highConsumptionService(productcatalogservice,large,spain,0.117).
 highConsumptionService(productcatalogservice,large,greatbritain,0.284).
+highConsumptionService(productcatalogservice,large,italy,0.446).
+highConsumptionService(productcatalogservice,large,germany,0.176).

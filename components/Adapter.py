@@ -54,23 +54,25 @@ class Adapter:
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
         
-        with open(self.explanationFile, "w") as explfile:
-            for constraint in self.constraints:
-                if (constraint.get("constraint_emissions") / maxV) > 0.3:
-                    if constraint["category"] == "affinity":
-                        explanation = (f'A {constraint["category"]} was generated '
-                            f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
-                            f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
-                            f'{explain(constraint["category"])}\n')
-                        explfile.write(explanation)
-                    elif constraint["category"] == "avoid":
-                        constraint["category"] = "avoidNode"
-                        explanation = (f'A {constraint["category"]} constraint was generated '
-                            f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
-                            f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
-                            f'{savings(constraint)}\n'
-                            )
-                        explfile.write(explanation)
+        # final_explanation = []
+        # for constraint in self.constraints:
+        #     if (constraint.get("constraint_emissions") / maxV) > 0.3:
+        #         if constraint["category"] == "affinity":
+        #             explanation = (f'A {constraint["category"]} was generated '
+        #                 f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
+        #                 f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
+        #                 f'{explain(constraint["category"])}\n')
+        #             final_explanation.append(explanation)
+        #         elif constraint["category"] == "avoid":
+        #             constraint["category"] = "avoidNode"
+        #             explanation = (f'A {constraint["category"]} constraint was generated '
+        #                 f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
+        #                 f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
+        #                 f'{savings(constraint)}\n'
+        #                 )
+        #             final_explanation.append(explanation)
+        # with open(self.explanationFile, "w") as explfile:
+        #     explfile.write("\n".join(final_explanation))
 
         outputdata = {
             "requirements": {

@@ -4,12 +4,12 @@
             "service": "frontend",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "large",
-                    "emissions": 2.217012891441344,
-                    "max_emissions": 2.217012891441344,
-                    "min_emissions": 2.217012891441344,
-                    "joules": 2217.012891441344,
+                    "emissions": 2.610197924374597,
+                    "max_emissions": 2.610197924374597,
+                    "min_emissions": 2.610197924374597,
+                    "joules": 2610.1979243745973,
                     "count": 1
                 }
             ]
@@ -18,12 +18,12 @@
             "service": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "large",
-                    "emissions": 0.9896239138445438,
-                    "max_emissions": 0.9896239138445438,
-                    "min_emissions": 0.9896239138445438,
-                    "joules": 989.6239138445438,
+                    "emissions": 1.1651327314335715,
+                    "max_emissions": 1.1651327314335715,
+                    "min_emissions": 1.1651327314335715,
+                    "joules": 1165.1327314335715,
                     "count": 1
                 }
             ]
@@ -32,12 +32,12 @@
             "service": "currencyservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.8811203293283069,
-                    "max_emissions": 0.8811203293283069,
-                    "min_emissions": 0.8811203293283069,
-                    "joules": 881.1203293283069,
+                    "emissions": 1.0373861440389631,
+                    "max_emissions": 1.0373861440389631,
+                    "min_emissions": 1.0373861440389631,
+                    "joules": 1037.386144038963,
                     "count": 1
                 }
             ]
@@ -46,12 +46,12 @@
             "service": "recommendationservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "large",
-                    "emissions": 0.6034689592494277,
-                    "max_emissions": 0.6034689592494277,
-                    "min_emissions": 0.6034689592494277,
-                    "joules": 603.4689592494277,
+                    "emissions": 0.7104935794186064,
+                    "max_emissions": 0.7104935794186064,
+                    "min_emissions": 0.7104935794186064,
+                    "joules": 710.4935794186064,
                     "count": 1
                 }
             ]
@@ -60,12 +60,12 @@
             "service": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.5469926087329856,
-                    "max_emissions": 0.5469926087329856,
-                    "min_emissions": 0.5469926087329856,
-                    "joules": 546.9926087329856,
+                    "emissions": 0.6440012042667275,
+                    "max_emissions": 0.6440012042667275,
+                    "min_emissions": 0.6440012042667275,
+                    "joules": 644.0012042667274,
                     "count": 1
                 }
             ]
@@ -74,12 +74,12 @@
             "service": "adservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.25153082551379596,
-                    "max_emissions": 0.25153082551379596,
-                    "min_emissions": 0.25153082551379596,
-                    "joules": 251.53082551379595,
+                    "emissions": 0.29613956743638964,
+                    "max_emissions": 0.29613956743638964,
+                    "min_emissions": 0.29613956743638964,
+                    "joules": 296.13956743638965,
                     "count": 1
                 }
             ]
@@ -88,12 +88,12 @@
             "service": "checkoutservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.12015404009692547,
-                    "max_emissions": 0.12015404009692547,
-                    "min_emissions": 0.12015404009692547,
-                    "joules": 120.15404009692547,
+                    "emissions": 0.1414632396938025,
+                    "max_emissions": 0.1414632396938025,
+                    "min_emissions": 0.1414632396938025,
+                    "joules": 141.4632396938025,
                     "count": 1
                 }
             ]
@@ -102,12 +102,12 @@
             "service": "shippingservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.09892426938295333,
-                    "max_emissions": 0.09892426938295333,
-                    "min_emissions": 0.09892426938295333,
-                    "joules": 98.92426938295333,
+                    "emissions": 0.1164683902427772,
+                    "max_emissions": 0.1164683902427772,
+                    "min_emissions": 0.1164683902427772,
+                    "joules": 116.4683902427772,
                     "count": 1
                 }
             ]
@@ -116,12 +116,12 @@
             "service": "emailservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.05068134138582446,
-                    "max_emissions": 0.05068134138582446,
-                    "min_emissions": 0.05068134138582446,
-                    "joules": 50.68134138582446,
+                    "emissions": 0.05966962691127832,
+                    "max_emissions": 0.05966962691127832,
+                    "min_emissions": 0.05966962691127832,
+                    "joules": 59.66962691127832,
                     "count": 1
                 }
             ]
@@ -130,12 +130,12 @@
             "service": "paymentservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "flavour": "tiny",
-                    "emissions": 0.03495834027892556,
-                    "max_emissions": 0.03495834027892556,
-                    "min_emissions": 0.03495834027892556,
-                    "joules": 34.95834027892556,
+                    "emissions": 0.041158167184273474,
+                    "max_emissions": 0.041158167184273474,
+                    "min_emissions": 0.041158167184273474,
+                    "joules": 41.15816718427347,
                     "count": 1
                 }
             ]
@@ -147,7 +147,7 @@
             "destination": "currencyservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "tiny",
                     "emissions": 1.0036967316395136e-06,
@@ -163,7 +163,7 @@
             "destination": "emailservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "tiny",
                     "emissions": 1.5336298900856789e-06,
@@ -179,7 +179,7 @@
             "destination": "paymentservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "tiny",
                     "emissions": 4.222178494894573e-07,
@@ -195,7 +195,7 @@
             "destination": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "large",
                     "emissions": 6.026168169467995e-07,
@@ -211,7 +211,7 @@
             "destination": "shippingservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "tiny",
                     "emissions": 1.4862172026675564e-06,
@@ -227,7 +227,7 @@
             "destination": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "large",
                     "emissions": 3.193158733149987e-05,
@@ -243,7 +243,7 @@
             "destination": "recommendationservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "large",
                     "emissions": 9.593180262514066e-06,
@@ -259,7 +259,7 @@
             "destination": "shippingservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "tiny",
                     "emissions": 2.220275308095603e-06,
@@ -275,7 +275,7 @@
             "destination": "adservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "tiny",
                     "emissions": 4.701040297916905e-06,
@@ -291,7 +291,7 @@
             "destination": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "tiny",
                     "destination_flavour": "tiny",
                     "emissions": 7.824486654978678e-07,
@@ -307,7 +307,7 @@
             "destination": "cartservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "tiny",
                     "emissions": 1.0145732279670878e-05,
@@ -323,7 +323,7 @@
             "destination": "checkoutservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "tiny",
                     "emissions": 1.0525099772343437e-06,
@@ -339,7 +339,7 @@
             "destination": "currencyservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "tiny",
                     "emissions": 2.126555646475965e-05,
@@ -355,7 +355,7 @@
             "destination": "productcatalogservice",
             "history": [
                 {
-                    "timestamp": "2025-06-17 11:03:23",
+                    "timestamp": "2025-06-24 13:27:06",
                     "source_flavour": "large",
                     "destination_flavour": "large",
                     "emissions": 3.5704926921195376e-06,
@@ -376,7 +376,7 @@
             "destination_flavour": "large",
             "constraint_emissions": 0.003656166749456735,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "affinity",
@@ -386,7 +386,7 @@
             "destination_flavour": "tiny",
             "constraint_emissions": 0.00243490621521498,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "affinity",
@@ -396,114 +396,104 @@
             "destination_flavour": "tiny",
             "constraint_emissions": 0.0011616863460223155,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
-        },
-        {
-            "category": "affinity",
-            "source": "frontend",
-            "source_flavour": "large",
-            "destination": "recommendationservice",
-            "destination_flavour": "large",
-            "constraint_emissions": 0.0007098953394260409,
-            "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
-        },
-        {
-            "category": "avoid",
-            "source": "frontend",
-            "flavour": "large",
-            "node": "germany",
-            "constraint_emissions": 292.6457016702574,
-            "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "avoid",
             "source": "frontend",
             "flavour": "large",
             "node": "spain",
-            "constraint_emissions": 195.09713444683825,
+            "constraint_emissions": 229.69741734496455,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
-        },
-        {
-            "category": "avoid",
-            "source": "frontend",
-            "flavour": "large",
-            "node": "italy",
-            "constraint_emissions": 742.6993186328502,
-            "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "avoid",
             "source": "frontend",
             "flavour": "large",
             "node": "greatbritain",
-            "constraint_emissions": 472.22374587700625,
+            "constraint_emissions": 555.9721578917892,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "avoid",
-            "source": "productcatalogservice",
+            "source": "frontend",
+            "flavour": "large",
+            "node": "italy",
+            "constraint_emissions": 874.4163046654901,
+            "memory_weight": 1.0,
+            "timestamp": "2025-06-24 13:27:06"
+        },
+        {
+            "category": "avoid",
+            "source": "frontend",
             "flavour": "large",
             "node": "germany",
-            "constraint_emissions": 130.63035662747978,
+            "constraint_emissions": 344.54612601744685,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "avoid",
             "source": "productcatalogservice",
             "flavour": "large",
             "node": "spain",
-            "constraint_emissions": 87.08690441831986,
+            "constraint_emissions": 102.53168036615429,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
-        },
-        {
-            "category": "avoid",
-            "source": "productcatalogservice",
-            "flavour": "large",
-            "node": "italy",
-            "constraint_emissions": 331.5240111379222,
-            "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
         },
         {
             "category": "avoid",
             "source": "productcatalogservice",
             "flavour": "large",
             "node": "greatbritain",
-            "constraint_emissions": 210.78989364888784,
+            "constraint_emissions": 248.17327179535073,
             "memory_weight": 1.0,
-            "timestamp": "2025-06-17 11:03:23"
+            "timestamp": "2025-06-24 13:27:06"
+        },
+        {
+            "category": "avoid",
+            "source": "productcatalogservice",
+            "flavour": "large",
+            "node": "italy",
+            "constraint_emissions": 390.3194650302465,
+            "memory_weight": 1.0,
+            "timestamp": "2025-06-24 13:27:06"
+        },
+        {
+            "category": "avoid",
+            "source": "productcatalogservice",
+            "flavour": "large",
+            "node": "germany",
+            "constraint_emissions": 153.79752054923145,
+            "memory_weight": 1.0,
+            "timestamp": "2025-06-24 13:27:06"
         }
     ],
     "nodes": [
         {
-            "timestamp": "2025-06-17 11:03:23",
+            "timestamp": "2025-06-24 13:27:06",
             "node": "france",
             "mix": 16
         },
         {
-            "timestamp": "2025-06-17 11:03:23",
+            "timestamp": "2025-06-24 13:27:06",
             "node": "spain",
             "mix": 88
         },
         {
-            "timestamp": "2025-06-17 11:03:23",
+            "timestamp": "2025-06-24 13:27:06",
             "node": "germany",
             "mix": 132
         },
         {
-            "timestamp": "2025-06-17 11:03:23",
+            "timestamp": "2025-06-24 13:27:06",
             "node": "greatbritain",
             "mix": 213
         },
         {
-            "timestamp": "2025-06-17 11:03:23",
+            "timestamp": "2025-06-24 13:27:06",
             "node": "italy",
             "mix": 335
         }

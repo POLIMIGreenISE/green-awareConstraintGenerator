@@ -64,7 +64,7 @@ class MyScrollableInfrastructureFrame(customtkinter.CTkScrollableFrame):
         self.current_file = None
 
     def get(self):
-        return self.variable.get()
+        return self.textbox.get("1.0", "end-1c")
 
     def set(self, value):
         self.variable.set(value)
@@ -88,7 +88,7 @@ class MyScrollableInfrastructureFrame(customtkinter.CTkScrollableFrame):
             file_path = self.current_file
         else:
             file_path = filedialog.asksaveasfilename(defaultextension=".txt",
-                                              filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
+                                            filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")])
             if not file_path:
                 return
 
@@ -163,22 +163,67 @@ class FirstPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
-        self.radiobutton_frame = MyScrollableInfrastructureFrame(self, "Options", values=["EU", "US"])
+        self.radiobutton_frame = MyScrollableInfrastructureFrame(self, "Infrastructure Upload", values=["EU", "US"])
         self.radiobutton_frame.grid(row=0, column=0, padx=(0, 10), pady=(10, 0), sticky="nsew")
         self.radiobutton_frame.configure(fg_color="transparent")
-        self.checkbox_frame = MyScrollableApplicationFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
-        self.checkbox_frame.grid(row=0, column=1, padx=(0, 10), pady=(10, 0), sticky="nsew")
-        self.checkbox_frame.configure(fg_color="transparent")
+        self.grid_rowconfigure(0, weight=1) 
+        self.grid_columnconfigure(0, weight=1)
+        # self.checkbox_frame = MyScrollableApplicationFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
+        # self.checkbox_frame.grid(row=0, column=1, padx=(0, 10), pady=(10, 0), sticky="nsew")
+        # self.checkbox_frame.configure(fg_color="transparent")
         
-        self.button = customtkinter.CTkButton(self, text="Run Analyzer", command=self.button_callback)
+        self.button = customtkinter.CTkButton(self, text="Go to Application Upload", command=self.button_callback)
         self.button.grid(row=3, column=0, padx=10, pady=10, sticky="ew", columnspan=2)
 
     def button_callback(self):
-        print("radio frame:", self.radiobutton_frame.get())
-        print("checkbox frame:", self.checkbox_frame.get())
-        #print("valuees:", self.)
+        print(self.radiobutton_frame.get())
+        self.controller.show_page("SecondPage")
 
 class SecondPage(customtkinter.CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent)
+        self.controller = controller
+        self.radiobutton_frame = MyScrollableInfrastructureFrame(self, "Application Upload", values=["EU", "US"])
+        self.radiobutton_frame.grid(row=0, column=0, padx=(0, 10), pady=(10, 0), sticky="nsew")
+        self.radiobutton_frame.configure(fg_color="transparent")
+        # self.checkbox_frame = MyScrollableApplicationFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
+        # self.checkbox_frame.grid(row=0, column=1, padx=(0, 10), pady=(10, 0), sticky="nsew")
+        # self.checkbox_frame.configure(fg_color="transparent")
+        
+        self.buttonback = customtkinter.CTkButton(self, text="Back to Infrastructure Upload", command=self.button_back)
+        self.buttonback.grid(row=3, column=0, padx=10, pady=10, sticky="ew")
+        self.buttonforward = customtkinter.CTkButton(self, text="Go to Deployment Upload", command=self.button_forward)
+        self.buttonforward.grid(row=4, column=0, padx=10, pady=10, sticky="ew")
+
+    def button_back(self):
+        self.controller.show_page("FirstPage")
+
+    def button_forward(self):
+        self.controller.show_page("ThirdPage")
+
+class ThirdPage(customtkinter.CTkFrame):
+    def __init__(self, parent, controller):
+        super().__init__(parent)
+        self.controller = controller
+        self.radiobutton_frame = MyScrollableInfrastructureFrame(self, "Deployment Upload", values=["EU", "US"])
+        self.radiobutton_frame.grid(row=0, column=0, padx=(0, 10), pady=(10, 0), sticky="nsew")
+        self.radiobutton_frame.configure(fg_color="transparent")
+        # self.checkbox_frame = MyScrollableApplicationFrame(self, "Scenarios", values=["Change Nodes", "Change Application"])
+        # self.checkbox_frame.grid(row=0, column=1, padx=(0, 10), pady=(10, 0), sticky="nsew")
+        # self.checkbox_frame.configure(fg_color="transparent")
+        
+        self.buttonback = customtkinter.CTkButton(self, text="Back to Application Upload", command=self.button_back)
+        self.buttonback.grid(row=3, column=0, padx=10, pady=10, sticky="ew")
+        self.buttonforward = customtkinter.CTkButton(self, text="Go to Deployment Upload", command=self.button_forward)
+        self.buttonforward.grid(row=4, column=0, padx=10, pady=10, sticky="ew")
+
+    def button_back(self):
+        self.controller.show_page("SecondPage")
+
+    def button_forward(self):
+        self.controller.show_page("FourthPage")
+
+class FourthPage(customtkinter.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
@@ -186,7 +231,7 @@ class SecondPage(customtkinter.CTkFrame):
         label = customtkinter.CTkLabel(self, text="This is the second page!", font=customtkinter.CTkFont(size=20))
         label.pack(pady=20)
 
-        back_button = customtkinter.CTkButton(self, text="Back to Editor", command=lambda: controller.show_page("FileEditorPage"))
+        back_button = customtkinter.CTkButton(self, text="Back to Editor", command=lambda: controller.show_page("ThirdPage"))
         back_button.pack()
 
 class App(customtkinter.CTk):
@@ -204,7 +249,7 @@ class App(customtkinter.CTk):
         self.container.grid_columnconfigure(0, weight=1)
         self.pages = {}
 
-        for PageClass in (FirstPage, SecondPage):
+        for PageClass in (FirstPage, SecondPage, ThirdPage, FourthPage):
             page_name = PageClass.__name__
             frame = PageClass(parent=self.container, controller=self)
             frame.grid_rowconfigure(0, weight=1)

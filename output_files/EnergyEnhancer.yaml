@@ -2,19 +2,24 @@ requirements:
   components:
     frontend:
       large:
-      - avoidNode:
+      - avoid:
           energy_oriented: true
           resilience_oriented: false
           soft: true
           value: greatbritain
-      - avoidNode:
+      - avoid:
           energy_oriented: true
           resilience_oriented: false
           soft: true
           value: italy
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: germany
     productcatalogservice:
       large:
-      - avoidNode:
+      - avoid:
           energy_oriented: true
           resilience_oriented: false
           soft: true
