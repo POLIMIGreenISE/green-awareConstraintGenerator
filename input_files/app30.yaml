@@ -1,0 +1,548 @@
+components:
+  comp0:
+    flavours:
+      large:
+        energy: 482
+        uses: []
+    importance_order:
+    - large
+  comp1:
+    flavours:
+      large:
+        energy: 1000
+        uses: []
+    importance_order:
+    - large
+  comp10:
+    flavours:
+      large:
+        energy: 1571
+        uses: []
+    importance_order:
+    - large
+  comp11:
+    flavours:
+      large:
+        energy: 1709
+        uses: []
+    importance_order:
+    - large
+  comp12:
+    flavours:
+      large:
+        energy: 407
+        uses: []
+    importance_order:
+    - large
+  comp13:
+    flavours:
+      large:
+        energy: 755
+        uses: []
+    importance_order:
+    - large
+  comp14:
+    flavours:
+      large:
+        energy: 514
+        uses: []
+    importance_order:
+    - large
+  comp15:
+    flavours:
+      large:
+        energy: 648
+        uses: []
+    importance_order:
+    - large
+  comp16:
+    flavours:
+      large:
+        energy: 814
+        uses: []
+    importance_order:
+    - large
+  comp17:
+    flavours:
+      large:
+        energy: 1549
+        uses: []
+    importance_order:
+    - large
+  comp18:
+    flavours:
+      large:
+        energy: 164
+        uses: []
+    importance_order:
+    - large
+  comp19:
+    flavours:
+      large:
+        energy: 1283
+        uses: []
+    importance_order:
+    - large
+  comp2:
+    flavours:
+      large:
+        energy: 153
+        uses: []
+    importance_order:
+    - large
+  comp20:
+    flavours:
+      large:
+        energy: 635
+        uses: []
+    importance_order:
+    - large
+  comp21:
+    flavours:
+      large:
+        energy: 1108
+        uses: []
+    importance_order:
+    - large
+  comp22:
+    flavours:
+      large:
+        energy: 315
+        uses: []
+    importance_order:
+    - large
+  comp23:
+    flavours:
+      large:
+        energy: 338
+        uses: []
+    importance_order:
+    - large
+  comp24:
+    flavours:
+      large:
+        energy: 546
+        uses: []
+    importance_order:
+    - large
+  comp25:
+    flavours:
+      large:
+        energy: 1704
+        uses: []
+    importance_order:
+    - large
+  comp26:
+    flavours:
+      large:
+        energy: 1284
+        uses: []
+    importance_order:
+    - large
+  comp27:
+    flavours:
+      large:
+        energy: 724
+        uses: []
+    importance_order:
+    - large
+  comp28:
+    flavours:
+      large:
+        energy: 1306
+        uses: []
+    importance_order:
+    - large
+  comp29:
+    flavours:
+      large:
+        energy: 1017
+        uses: []
+    importance_order:
+    - large
+  comp3:
+    flavours:
+      large:
+        energy: 523
+        uses: []
+    importance_order:
+    - large
+  comp4:
+    flavours:
+      large:
+        energy: 319
+        uses: []
+    importance_order:
+    - large
+  comp5:
+    flavours:
+      large:
+        energy: 857
+        uses: []
+    importance_order:
+    - large
+  comp6:
+    flavours:
+      large:
+        energy: 308
+        uses: []
+    importance_order:
+    - large
+  comp7:
+    flavours:
+      large:
+        energy: 1431
+        uses: []
+    importance_order:
+    - large
+  comp8:
+    flavours:
+      large:
+        energy: 1571
+        uses: []
+    importance_order:
+    - large
+  comp9:
+    flavours:
+      large:
+        energy: 1186
+        uses: []
+    importance_order:
+    - large
+name: onlineboutique
+requirements:
+  budget:
+    carbon: 2000000
+    cost: 2000000
+  components:
+    comp0:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp1:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp10:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp11:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp12:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp13:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp14:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp15:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp16:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp17:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp18:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp19:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp2:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp20:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp21:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp22:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp23:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp24:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp25:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp26:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp27:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp28:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp29:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp3:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp4:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp5:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp6:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp7:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp8:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+    comp9:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 4
+  dependencies: []

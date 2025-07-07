@@ -17,7 +17,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 555
+      carbon: 272
       cost: 10
   node1:
     capabilities:
@@ -31,7 +31,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 343
+      carbon: 243
       cost: 10
   node10:
     capabilities:
@@ -45,7 +45,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 478
+      carbon: 631
       cost: 10
   node11:
     capabilities:
@@ -59,7 +59,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 404
+      carbon: 568
       cost: 10
   node12:
     capabilities:
@@ -73,7 +73,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 216
+      carbon: 566
       cost: 10
   node13:
     capabilities:
@@ -87,7 +87,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 124
+      carbon: 154
       cost: 10
   node14:
     capabilities:
@@ -101,7 +101,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 528
+      carbon: 600
       cost: 10
   node15:
     capabilities:
@@ -115,7 +115,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 604
+      carbon: 150
       cost: 10
   node16:
     capabilities:
@@ -129,7 +129,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 592
+      carbon: 338
       cost: 10
   node17:
     capabilities:
@@ -143,7 +143,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 737
+      carbon: 463
       cost: 10
   node18:
     capabilities:
@@ -157,7 +157,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 692
+      carbon: 101
       cost: 10
   node19:
     capabilities:
@@ -171,7 +171,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 391
+      carbon: 187
       cost: 10
   node2:
     capabilities:
@@ -185,7 +185,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 174
+      carbon: 616
       cost: 10
   node20:
     capabilities:
@@ -199,7 +199,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 861
+      carbon: 538
       cost: 10
   node21:
     capabilities:
@@ -213,7 +213,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 186
+      carbon: 425
       cost: 10
   node22:
     capabilities:
@@ -227,7 +227,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 758
+      carbon: 384
       cost: 10
   node23:
     capabilities:
@@ -241,7 +241,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 647
+      carbon: 779
       cost: 10
   node24:
     capabilities:
@@ -255,7 +255,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 204
+      carbon: 462
       cost: 10
   node25:
     capabilities:
@@ -269,7 +269,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 529
+      carbon: 532
       cost: 10
   node26:
     capabilities:
@@ -283,7 +283,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 584
+      carbon: 316
       cost: 10
   node27:
     capabilities:
@@ -297,7 +297,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 397
+      carbon: 298
       cost: 10
   node28:
     capabilities:
@@ -311,7 +311,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 125
+      carbon: 643
       cost: 10
   node29:
     capabilities:
@@ -325,7 +325,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 835
+      carbon: 836
       cost: 10
   node3:
     capabilities:
@@ -339,7 +339,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 888
+      carbon: 801
       cost: 10
   node30:
     capabilities:
@@ -353,7 +353,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 841
+      carbon: 893
       cost: 10
   node31:
     capabilities:
@@ -367,7 +367,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 461
+      carbon: 312
       cost: 10
   node32:
     capabilities:
@@ -381,7 +381,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 585
+      carbon: 521
       cost: 10
   node33:
     capabilities:
@@ -395,7 +395,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 488
+      carbon: 886
       cost: 10
   node34:
     capabilities:
@@ -409,7 +409,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 681
+      carbon: 562
       cost: 10
   node35:
     capabilities:
@@ -423,7 +423,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 413
+      carbon: 302
       cost: 10
   node36:
     capabilities:
@@ -437,7 +437,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 185
+      carbon: 822
       cost: 10
   node37:
     capabilities:
@@ -451,7 +451,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 725
+      carbon: 674
       cost: 10
   node38:
     capabilities:
@@ -465,7 +465,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 487
+      carbon: 569
       cost: 10
   node39:
     capabilities:
@@ -479,7 +479,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 837
+      carbon: 873
       cost: 10
   node4:
     capabilities:
@@ -493,7 +493,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 167
+      carbon: 478
       cost: 10
   node40:
     capabilities:
@@ -507,7 +507,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 852
+      carbon: 599
       cost: 10
   node41:
     capabilities:
@@ -521,7 +521,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 508
+      carbon: 153
       cost: 10
   node42:
     capabilities:
@@ -535,7 +535,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 844
+      carbon: 633
       cost: 10
   node43:
     capabilities:
@@ -549,7 +549,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 752
+      carbon: 368
       cost: 10
   node44:
     capabilities:
@@ -563,7 +563,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 514
+      carbon: 635
       cost: 10
   node45:
     capabilities:
@@ -577,7 +577,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 632
+      carbon: 678
       cost: 10
   node46:
     capabilities:
@@ -591,7 +591,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 223
+      carbon: 107
       cost: 10
   node47:
     capabilities:
@@ -605,7 +605,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 557
+      carbon: 110
       cost: 10
   node48:
     capabilities:
@@ -619,7 +619,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 213
+      carbon: 770
       cost: 10
   node49:
     capabilities:
@@ -633,7 +633,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 884
+      carbon: 447
       cost: 10
   node5:
     capabilities:
@@ -647,7 +647,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 646
+      carbon: 523
       cost: 10
   node50:
     capabilities:
@@ -661,7 +661,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 483
+      carbon: 348
       cost: 10
   node51:
     capabilities:
@@ -675,7 +675,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 311
+      carbon: 360
       cost: 10
   node52:
     capabilities:
@@ -689,7 +689,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 868
+      carbon: 449
       cost: 10
   node53:
     capabilities:
@@ -703,7 +703,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 898
+      carbon: 152
       cost: 10
   node54:
     capabilities:
@@ -717,7 +717,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 407
+      carbon: 511
       cost: 10
   node55:
     capabilities:
@@ -731,7 +731,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 258
+      carbon: 212
       cost: 10
   node56:
     capabilities:
@@ -745,7 +745,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 566
+      carbon: 623
       cost: 10
   node57:
     capabilities:
@@ -759,7 +759,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 607
+      carbon: 360
       cost: 10
   node58:
     capabilities:
@@ -773,7 +773,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 875
+      carbon: 376
       cost: 10
   node59:
     capabilities:
@@ -787,7 +787,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 463
+      carbon: 884
       cost: 10
   node6:
     capabilities:
@@ -801,7 +801,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 103
+      carbon: 338
       cost: 10
   node60:
     capabilities:
@@ -815,7 +815,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 644
+      carbon: 455
       cost: 10
   node61:
     capabilities:
@@ -829,7 +829,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 242
+      carbon: 494
       cost: 10
   node62:
     capabilities:
@@ -843,7 +843,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 707
+      carbon: 356
       cost: 10
   node63:
     capabilities:
@@ -857,7 +857,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 256
+      carbon: 197
       cost: 10
   node64:
     capabilities:
@@ -871,7 +871,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 449
+      carbon: 438
       cost: 10
   node65:
     capabilities:
@@ -885,7 +885,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 345
+      carbon: 400
       cost: 10
   node66:
     capabilities:
@@ -899,7 +899,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 322
+      carbon: 845
       cost: 10
   node67:
     capabilities:
@@ -913,7 +913,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 436
+      carbon: 892
       cost: 10
   node68:
     capabilities:
@@ -927,7 +927,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 784
+      carbon: 351
       cost: 10
   node69:
     capabilities:
@@ -941,7 +941,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 757
+      carbon: 397
       cost: 10
   node7:
     capabilities:
@@ -955,7 +955,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 416
+      carbon: 393
       cost: 10
   node70:
     capabilities:
@@ -969,7 +969,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 833
+      carbon: 451
       cost: 10
   node71:
     capabilities:
@@ -983,7 +983,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 291
+      carbon: 282
       cost: 10
   node72:
     capabilities:
@@ -997,7 +997,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 449
+      carbon: 375
       cost: 10
   node73:
     capabilities:
@@ -1011,7 +1011,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 446
+      carbon: 202
       cost: 10
   node74:
     capabilities:
@@ -1025,7 +1025,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 551
+      carbon: 631
       cost: 10
   node75:
     capabilities:
@@ -1039,7 +1039,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 791
+      carbon: 362
       cost: 10
   node76:
     capabilities:
@@ -1053,7 +1053,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 892
+      carbon: 302
       cost: 10
   node77:
     capabilities:
@@ -1067,7 +1067,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 549
+      carbon: 629
       cost: 10
   node78:
     capabilities:
@@ -1081,7 +1081,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 614
+      carbon: 737
       cost: 10
   node79:
     capabilities:
@@ -1095,7 +1095,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 400
+      carbon: 277
       cost: 10
   node8:
     capabilities:
@@ -1109,7 +1109,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 168
+      carbon: 490
       cost: 10
   node80:
     capabilities:
@@ -1123,7 +1123,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 623
+      carbon: 591
       cost: 10
   node81:
     capabilities:
@@ -1137,7 +1137,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 303
+      carbon: 291
       cost: 10
   node82:
     capabilities:
@@ -1151,7 +1151,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 298
+      carbon: 701
       cost: 10
   node83:
     capabilities:
@@ -1165,7 +1165,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 140
+      carbon: 241
       cost: 10
   node84:
     capabilities:
@@ -1179,7 +1179,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 362
+      carbon: 524
       cost: 10
   node85:
     capabilities:
@@ -1193,7 +1193,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 236
+      carbon: 821
       cost: 10
   node86:
     capabilities:
@@ -1207,7 +1207,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 708
+      carbon: 222
       cost: 10
   node87:
     capabilities:
@@ -1221,7 +1221,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 336
+      carbon: 260
       cost: 10
   node88:
     capabilities:
@@ -1235,7 +1235,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 291
+      carbon: 446
       cost: 10
   node89:
     capabilities:
@@ -1249,7 +1249,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 631
+      carbon: 833
       cost: 10
   node9:
     capabilities:
@@ -1263,7 +1263,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 225
+      carbon: 314
       cost: 10
   node90:
     capabilities:
@@ -1277,7 +1277,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 430
+      carbon: 819
       cost: 10
   node91:
     capabilities:
@@ -1291,7 +1291,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 512
+      carbon: 316
       cost: 10
   node92:
     capabilities:
@@ -1305,7 +1305,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 200
+      carbon: 887
       cost: 10
   node93:
     capabilities:
@@ -1319,7 +1319,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 212
+      carbon: 701
       cost: 10
   node94:
     capabilities:
@@ -1333,7 +1333,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 488
+      carbon: 123
       cost: 10
   node95:
     capabilities:
@@ -1347,7 +1347,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 184
+      carbon: 277
       cost: 10
   node96:
     capabilities:
@@ -1361,7 +1361,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 145
+      carbon: 437
       cost: 10
   node97:
     capabilities:
@@ -1375,7 +1375,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 613
+      carbon: 316
       cost: 10
   node98:
     capabilities:
@@ -1389,7 +1389,7 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 372
+      carbon: 149
       cost: 10
   node99:
     capabilities:
@@ -1403,5 +1403,5 @@ nodes:
       subnet:
       - private
     profile:
-      carbon: 422
+      carbon: 718
       cost: 10

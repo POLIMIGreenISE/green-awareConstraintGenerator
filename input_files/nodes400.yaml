@@ -1,0 +1,5607 @@
+links:
+  capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes: []
+name: onlineboutique
+nodes:
+  node0:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 254
+      cost: 10
+  node1:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 713
+      cost: 10
+  node10:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 337
+      cost: 10
+  node100:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 661
+      cost: 10
+  node101:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 635
+      cost: 10
+  node102:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 810
+      cost: 10
+  node103:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 715
+      cost: 10
+  node104:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 390
+      cost: 10
+  node105:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 517
+      cost: 10
+  node106:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 488
+      cost: 10
+  node107:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 788
+      cost: 10
+  node108:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 779
+      cost: 10
+  node109:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 694
+      cost: 10
+  node11:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 451
+      cost: 10
+  node110:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 458
+      cost: 10
+  node111:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 321
+      cost: 10
+  node112:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 221
+      cost: 10
+  node113:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 638
+      cost: 10
+  node114:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 635
+      cost: 10
+  node115:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 847
+      cost: 10
+  node116:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 190
+      cost: 10
+  node117:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 535
+      cost: 10
+  node118:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 205
+      cost: 10
+  node119:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 556
+      cost: 10
+  node12:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 218
+      cost: 10
+  node120:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 420
+      cost: 10
+  node121:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 106
+      cost: 10
+  node122:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 694
+      cost: 10
+  node123:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 639
+      cost: 10
+  node124:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 271
+      cost: 10
+  node125:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 864
+      cost: 10
+  node126:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 362
+      cost: 10
+  node127:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 587
+      cost: 10
+  node128:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 674
+      cost: 10
+  node129:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 462
+      cost: 10
+  node13:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 677
+      cost: 10
+  node130:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 832
+      cost: 10
+  node131:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 110
+      cost: 10
+  node132:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 173
+      cost: 10
+  node133:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 127
+      cost: 10
+  node134:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 646
+      cost: 10
+  node135:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 847
+      cost: 10
+  node136:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 398
+      cost: 10
+  node137:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 847
+      cost: 10
+  node138:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 311
+      cost: 10
+  node139:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 172
+      cost: 10
+  node14:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 635
+      cost: 10
+  node140:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 410
+      cost: 10
+  node141:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 681
+      cost: 10
+  node142:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 627
+      cost: 10
+  node143:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 285
+      cost: 10
+  node144:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 262
+      cost: 10
+  node145:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 897
+      cost: 10
+  node146:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 503
+      cost: 10
+  node147:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 862
+      cost: 10
+  node148:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 718
+      cost: 10
+  node149:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 583
+      cost: 10
+  node15:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 676
+      cost: 10
+  node150:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 405
+      cost: 10
+  node151:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 662
+      cost: 10
+  node152:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 388
+      cost: 10
+  node153:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 668
+      cost: 10
+  node154:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 271
+      cost: 10
+  node155:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 337
+      cost: 10
+  node156:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 225
+      cost: 10
+  node157:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 706
+      cost: 10
+  node158:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 561
+      cost: 10
+  node159:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 733
+      cost: 10
+  node16:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 742
+      cost: 10
+  node160:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 180
+      cost: 10
+  node161:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 575
+      cost: 10
+  node162:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 554
+      cost: 10
+  node163:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 481
+      cost: 10
+  node164:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 311
+      cost: 10
+  node165:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 371
+      cost: 10
+  node166:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 580
+      cost: 10
+  node167:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 896
+      cost: 10
+  node168:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 845
+      cost: 10
+  node169:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 772
+      cost: 10
+  node17:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 712
+      cost: 10
+  node170:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 255
+      cost: 10
+  node171:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 487
+      cost: 10
+  node172:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 257
+      cost: 10
+  node173:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 463
+      cost: 10
+  node174:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 796
+      cost: 10
+  node175:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 561
+      cost: 10
+  node176:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 565
+      cost: 10
+  node177:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 509
+      cost: 10
+  node178:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 322
+      cost: 10
+  node179:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 812
+      cost: 10
+  node18:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 686
+      cost: 10
+  node180:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 406
+      cost: 10
+  node181:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 740
+      cost: 10
+  node182:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 897
+      cost: 10
+  node183:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 483
+      cost: 10
+  node184:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 345
+      cost: 10
+  node185:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 268
+      cost: 10
+  node186:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 128
+      cost: 10
+  node187:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 172
+      cost: 10
+  node188:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 868
+      cost: 10
+  node189:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 359
+      cost: 10
+  node19:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 418
+      cost: 10
+  node190:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 163
+      cost: 10
+  node191:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 458
+      cost: 10
+  node192:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 840
+      cost: 10
+  node193:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 183
+      cost: 10
+  node194:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 249
+      cost: 10
+  node195:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 290
+      cost: 10
+  node196:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 586
+      cost: 10
+  node197:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 447
+      cost: 10
+  node198:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 878
+      cost: 10
+  node199:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 559
+      cost: 10
+  node2:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 695
+      cost: 10
+  node20:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 214
+      cost: 10
+  node200:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 636
+      cost: 10
+  node201:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 160
+      cost: 10
+  node202:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 564
+      cost: 10
+  node203:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 742
+      cost: 10
+  node204:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 490
+      cost: 10
+  node205:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 653
+      cost: 10
+  node206:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 853
+      cost: 10
+  node207:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 512
+      cost: 10
+  node208:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 533
+      cost: 10
+  node209:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 223
+      cost: 10
+  node21:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 653
+      cost: 10
+  node210:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 316
+      cost: 10
+  node211:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 319
+      cost: 10
+  node212:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 651
+      cost: 10
+  node213:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 441
+      cost: 10
+  node214:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 134
+      cost: 10
+  node215:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 597
+      cost: 10
+  node216:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 729
+      cost: 10
+  node217:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 413
+      cost: 10
+  node218:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 592
+      cost: 10
+  node219:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 365
+      cost: 10
+  node22:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 326
+      cost: 10
+  node220:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 696
+      cost: 10
+  node221:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 269
+      cost: 10
+  node222:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 705
+      cost: 10
+  node223:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 225
+      cost: 10
+  node224:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 608
+      cost: 10
+  node225:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 150
+      cost: 10
+  node226:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 186
+      cost: 10
+  node227:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 730
+      cost: 10
+  node228:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 555
+      cost: 10
+  node229:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 456
+      cost: 10
+  node23:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 410
+      cost: 10
+  node230:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 605
+      cost: 10
+  node231:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 611
+      cost: 10
+  node232:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 432
+      cost: 10
+  node233:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 175
+      cost: 10
+  node234:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 407
+      cost: 10
+  node235:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 696
+      cost: 10
+  node236:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 220
+      cost: 10
+  node237:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 699
+      cost: 10
+  node238:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 216
+      cost: 10
+  node239:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 167
+      cost: 10
+  node24:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 566
+      cost: 10
+  node240:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 242
+      cost: 10
+  node241:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 556
+      cost: 10
+  node242:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 778
+      cost: 10
+  node243:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 396
+      cost: 10
+  node244:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 501
+      cost: 10
+  node245:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 717
+      cost: 10
+  node246:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 562
+      cost: 10
+  node247:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 102
+      cost: 10
+  node248:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 256
+      cost: 10
+  node249:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 529
+      cost: 10
+  node25:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 571
+      cost: 10
+  node250:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 156
+      cost: 10
+  node251:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 747
+      cost: 10
+  node252:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 683
+      cost: 10
+  node253:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 449
+      cost: 10
+  node254:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 377
+      cost: 10
+  node255:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 891
+      cost: 10
+  node256:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 137
+      cost: 10
+  node257:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 242
+      cost: 10
+  node258:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 439
+      cost: 10
+  node259:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 163
+      cost: 10
+  node26:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 310
+      cost: 10
+  node260:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 668
+      cost: 10
+  node261:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 855
+      cost: 10
+  node262:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 645
+      cost: 10
+  node263:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 135
+      cost: 10
+  node264:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 876
+      cost: 10
+  node265:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 663
+      cost: 10
+  node266:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 508
+      cost: 10
+  node267:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 811
+      cost: 10
+  node268:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 283
+      cost: 10
+  node269:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 267
+      cost: 10
+  node27:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 733
+      cost: 10
+  node270:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 197
+      cost: 10
+  node271:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 604
+      cost: 10
+  node272:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 483
+      cost: 10
+  node273:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 484
+      cost: 10
+  node274:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 362
+      cost: 10
+  node275:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 309
+      cost: 10
+  node276:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 131
+      cost: 10
+  node277:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 409
+      cost: 10
+  node278:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 494
+      cost: 10
+  node279:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 619
+      cost: 10
+  node28:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 560
+      cost: 10
+  node280:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 637
+      cost: 10
+  node281:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 785
+      cost: 10
+  node282:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 720
+      cost: 10
+  node283:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 371
+      cost: 10
+  node284:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 253
+      cost: 10
+  node285:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 683
+      cost: 10
+  node286:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 148
+      cost: 10
+  node287:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 451
+      cost: 10
+  node288:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 889
+      cost: 10
+  node289:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 182
+      cost: 10
+  node29:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 415
+      cost: 10
+  node290:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 826
+      cost: 10
+  node291:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 772
+      cost: 10
+  node292:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 340
+      cost: 10
+  node293:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 766
+      cost: 10
+  node294:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 521
+      cost: 10
+  node295:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 147
+      cost: 10
+  node296:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 776
+      cost: 10
+  node297:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 317
+      cost: 10
+  node298:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 154
+      cost: 10
+  node299:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 292
+      cost: 10
+  node3:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 856
+      cost: 10
+  node30:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 658
+      cost: 10
+  node300:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 711
+      cost: 10
+  node301:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 348
+      cost: 10
+  node302:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 854
+      cost: 10
+  node303:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 285
+      cost: 10
+  node304:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 108
+      cost: 10
+  node305:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 755
+      cost: 10
+  node306:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 126
+      cost: 10
+  node307:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 686
+      cost: 10
+  node308:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 587
+      cost: 10
+  node309:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 786
+      cost: 10
+  node31:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 563
+      cost: 10
+  node310:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 884
+      cost: 10
+  node311:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 745
+      cost: 10
+  node312:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 834
+      cost: 10
+  node313:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 490
+      cost: 10
+  node314:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 534
+      cost: 10
+  node315:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 207
+      cost: 10
+  node316:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 244
+      cost: 10
+  node317:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 615
+      cost: 10
+  node318:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 816
+      cost: 10
+  node319:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 431
+      cost: 10
+  node32:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 777
+      cost: 10
+  node320:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 429
+      cost: 10
+  node321:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 846
+      cost: 10
+  node322:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 633
+      cost: 10
+  node323:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 837
+      cost: 10
+  node324:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 688
+      cost: 10
+  node325:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 404
+      cost: 10
+  node326:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 440
+      cost: 10
+  node327:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 620
+      cost: 10
+  node328:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 776
+      cost: 10
+  node329:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 659
+      cost: 10
+  node33:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 264
+      cost: 10
+  node330:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 124
+      cost: 10
+  node331:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 349
+      cost: 10
+  node332:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 818
+      cost: 10
+  node333:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 132
+      cost: 10
+  node334:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 627
+      cost: 10
+  node335:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 546
+      cost: 10
+  node336:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 800
+      cost: 10
+  node337:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 887
+      cost: 10
+  node338:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 162
+      cost: 10
+  node339:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 663
+      cost: 10
+  node34:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 473
+      cost: 10
+  node340:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 695
+      cost: 10
+  node341:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 325
+      cost: 10
+  node342:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 848
+      cost: 10
+  node343:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 331
+      cost: 10
+  node344:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 565
+      cost: 10
+  node345:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 471
+      cost: 10
+  node346:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 248
+      cost: 10
+  node347:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 736
+      cost: 10
+  node348:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 132
+      cost: 10
+  node349:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 732
+      cost: 10
+  node35:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 541
+      cost: 10
+  node350:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 409
+      cost: 10
+  node351:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 311
+      cost: 10
+  node352:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 636
+      cost: 10
+  node353:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 264
+      cost: 10
+  node354:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 839
+      cost: 10
+  node355:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 538
+      cost: 10
+  node356:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 175
+      cost: 10
+  node357:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 497
+      cost: 10
+  node358:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 768
+      cost: 10
+  node359:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 486
+      cost: 10
+  node36:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 549
+      cost: 10
+  node360:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 165
+      cost: 10
+  node361:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 656
+      cost: 10
+  node362:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 858
+      cost: 10
+  node363:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 643
+      cost: 10
+  node364:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 593
+      cost: 10
+  node365:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 118
+      cost: 10
+  node366:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 446
+      cost: 10
+  node367:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 727
+      cost: 10
+  node368:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 714
+      cost: 10
+  node369:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 539
+      cost: 10
+  node37:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 889
+      cost: 10
+  node370:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 608
+      cost: 10
+  node371:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 854
+      cost: 10
+  node372:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 749
+      cost: 10
+  node373:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 331
+      cost: 10
+  node374:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 204
+      cost: 10
+  node375:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 847
+      cost: 10
+  node376:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 803
+      cost: 10
+  node377:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 272
+      cost: 10
+  node378:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 727
+      cost: 10
+  node379:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 419
+      cost: 10
+  node38:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 164
+      cost: 10
+  node380:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 529
+      cost: 10
+  node381:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 299
+      cost: 10
+  node382:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 442
+      cost: 10
+  node383:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 740
+      cost: 10
+  node384:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 262
+      cost: 10
+  node385:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 257
+      cost: 10
+  node386:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 398
+      cost: 10
+  node387:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 878
+      cost: 10
+  node388:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 225
+      cost: 10
+  node389:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 866
+      cost: 10
+  node39:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 716
+      cost: 10
+  node390:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 468
+      cost: 10
+  node391:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 447
+      cost: 10
+  node392:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 894
+      cost: 10
+  node393:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 252
+      cost: 10
+  node394:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 538
+      cost: 10
+  node395:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 660
+      cost: 10
+  node396:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 438
+      cost: 10
+  node397:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 382
+      cost: 10
+  node398:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 677
+      cost: 10
+  node399:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 676
+      cost: 10
+  node4:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 685
+      cost: 10
+  node40:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 517
+      cost: 10
+  node41:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 877
+      cost: 10
+  node42:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 483
+      cost: 10
+  node43:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 450
+      cost: 10
+  node44:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 519
+      cost: 10
+  node45:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 437
+      cost: 10
+  node46:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 856
+      cost: 10
+  node47:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 116
+      cost: 10
+  node48:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 469
+      cost: 10
+  node49:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 560
+      cost: 10
+  node5:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 841
+      cost: 10
+  node50:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 537
+      cost: 10
+  node51:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 836
+      cost: 10
+  node52:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 199
+      cost: 10
+  node53:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 474
+      cost: 10
+  node54:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 417
+      cost: 10
+  node55:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 839
+      cost: 10
+  node56:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 150
+      cost: 10
+  node57:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 524
+      cost: 10
+  node58:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 724
+      cost: 10
+  node59:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 849
+      cost: 10
+  node6:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 419
+      cost: 10
+  node60:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 265
+      cost: 10
+  node61:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 272
+      cost: 10
+  node62:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 108
+      cost: 10
+  node63:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 149
+      cost: 10
+  node64:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 185
+      cost: 10
+  node65:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 376
+      cost: 10
+  node66:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 331
+      cost: 10
+  node67:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 354
+      cost: 10
+  node68:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 312
+      cost: 10
+  node69:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 786
+      cost: 10
+  node7:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 351
+      cost: 10
+  node70:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 727
+      cost: 10
+  node71:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 378
+      cost: 10
+  node72:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 306
+      cost: 10
+  node73:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 672
+      cost: 10
+  node74:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 715
+      cost: 10
+  node75:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 637
+      cost: 10
+  node76:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 530
+      cost: 10
+  node77:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 348
+      cost: 10
+  node78:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 600
+      cost: 10
+  node79:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 463
+      cost: 10
+  node8:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 711
+      cost: 10
+  node80:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 610
+      cost: 10
+  node81:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 548
+      cost: 10
+  node82:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 208
+      cost: 10
+  node83:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 791
+      cost: 10
+  node84:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 817
+      cost: 10
+  node85:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 139
+      cost: 10
+  node86:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 781
+      cost: 10
+  node87:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 719
+      cost: 10
+  node88:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 525
+      cost: 10
+  node89:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 646
+      cost: 10
+  node9:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 743
+      cost: 10
+  node90:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 429
+      cost: 10
+  node91:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 867
+      cost: 10
+  node92:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 488
+      cost: 10
+  node93:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 413
+      cost: 10
+  node94:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 151
+      cost: 10
+  node95:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 458
+      cost: 10
+  node96:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 233
+      cost: 10
+  node97:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 177
+      cost: 10
+  node98:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 358
+      cost: 10
+  node99:
+    capabilities:
+      availability: 99
+      cpu: 8
+      ram: 16
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 823
+      cost: 10

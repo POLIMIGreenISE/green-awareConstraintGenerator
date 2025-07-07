@@ -17,6 +17,11 @@ class ConstraintsGenerator:
         self.prologFacts = None
         with open(self.application, "r") as file:
             self.myapp = yaml.safe_load(file)
+        try:
+            with open(self.knowledgeBase, "r") as file:
+                self.myKnowledgeBase = json.load(file)
+        except json.JSONDecodeError:
+            self.myKnowledgeBase = {}
     
     def generate_constraints(self):
         """From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output."""
@@ -77,13 +82,6 @@ class ConstraintsGenerator:
                     resourcefulNodes.append(node)
             return resourcefulNodes
 
-        # Open knowledgebase
-        try:
-            with open(self.knowledgeBase, "r") as file:
-                myKnowledgeBase = json.load(file)
-        except json.JSONDecodeError:
-            myKnowledgeBase = {}
-
         # Find the max consumption for all our estimates
         maxIstio = max(self.istio, key=lambda x: x['emissions'])
         maxKepler = max(self.kepler, key=lambda x: x['emissions'])
@@ -93,14 +91,14 @@ class ConstraintsGenerator:
         # Dynamic Thresholding
         cut_points = 5
         threshold_points = 3
-        if not myKnowledgeBase:
+        if not self.myKnowledgeBase:
             # Findthe avg consumption for all our estimates
             istioThreshold = statistics.quantiles([x["emissions"] for x in self.istio], n=cut_points)[threshold_points]
             # 75th quantile
             keplerThreshold = statistics.quantiles([x["emissions"] for x in self.kepler], n=cut_points)[threshold_points]
         else:
             quant_istio = []
-            for element in myKnowledgeBase["connections"]:
+            for element in self.myKnowledgeBase["connections"]:
                 for historyPoint in element["history"]:
                     quant_istio.append((historyPoint["emissions"] / historyPoint["count"]))
             for element in self.istio:
@@ -108,17 +106,18 @@ class ConstraintsGenerator:
             istioThreshold = statistics.quantiles(quant_istio, n=cut_points)[threshold_points]
             # 75th quantile
             quant_kepler = []
-            for element in myKnowledgeBase["services"]:
+            for element in self.myKnowledgeBase["services"]:
                 for historyPoint in element["history"]:
                     quant_kepler.append((historyPoint["emissions"] / historyPoint["count"]))
             for element in self.kepler:
                 quant_kepler.append(element["emissions"])
             keplerThreshold = statistics.quantiles(quant_kepler, n=cut_points)[threshold_points]
         # Filter only the consumption above the threshold, which are to our interest
-        monitorIstio = checkThreshold(self.istio, 'emissions', istioThreshold)
+        maxThreshold = max(istioThreshold, keplerThreshold)
+        monitorIstio = checkThreshold(self.istio, 'emissions', maxThreshold)
         monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
-        monitorKepler = checkThreshold(self.kepler, 'emissions', keplerThreshold)
-        monitorKepler = sorted(monitorKepler, key=lambda x: x['emissions'], reverse=True)      
+        monitorKepler = checkThreshold(self.kepler, 'emissions', maxThreshold)
+        monitorKepler = sorted(monitorKepler, key=lambda x: x['emissions'], reverse=True)    
         
         self.prologFacts = []
         self.affinity = []

@@ -13,6 +13,13 @@ class Adapter:
         self.yamlout = yamlOut
         self.infrastructure = infrastructure
         self.energyMix = energyMix
+        self.nodes = []
+        for node in self.infrastructure["nodes"]:
+            details = {"node": node,
+                        "carbon": self.infrastructure["nodes"][node]["profile"]["carbon"]}
+            self.nodes.append(details)
+        self.minNode = min(self.infrastructure["nodes"], key=lambda x: self.energyMix.gather_energyMix(x))
+        self.nodes = sorted(self.nodes, key=lambda x: x['carbon'], reverse=True)
 
     # Create the prolog file and execute it
     def adapt_output(self):
@@ -28,20 +35,15 @@ class Adapter:
             def obtainIndex(data, element):
                 index = next(i for i, item in enumerate(data) if item["node"] == element)
                 return index
-            nodes = []
-            minNode = min(self.infrastructure["nodes"], key=lambda x: self.energyMix.gather_energyMix(x))
-            for node in self.infrastructure["nodes"]:
-                details = {"node": node,
-                           "carbon": self.infrastructure["nodes"][node]["profile"]["carbon"]}
-                nodes.append(details)
-            nodes = sorted(nodes, key=lambda x: x['carbon'], reverse=True)
-            index = min(obtainIndex(nodes, constraint["node"]), len(nodes))
-            maxSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / nodes[index]["carbon"] * self.infrastructure["nodes"][minNode]["profile"]["carbon"])
+            index = min(obtainIndex(self.nodes, constraint["node"]), len(self.nodes))
+            maxSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / self.nodes[index]["carbon"] * self.infrastructure["nodes"][self.minNode]["profile"]["carbon"])
             try:
-                minSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / int(nodes[index]["carbon"]) * int(nodes[index+1]["carbon"]))
+                minSave = constraint["constraint_emissions"] - (constraint["constraint_emissions"] / int(self.nodes[index]["carbon"]) * int(self.nodes[index+1]["carbon"]))
             except IndexError:
                 minSave = maxSave
             return f"The estimated emissions savings resulting from avoiding this deployment range between {maxSave} gCO2eq and {minSave} gCO2eq."
+
+        contraints_threshold = 0.1 
 
         with open(self.prologFile, 'w') as file:
             for fact in self.prologFacts:
@@ -54,25 +56,25 @@ class Adapter:
 
         maxV = max(x["constraint_emissions"] for x in self.constraints)
         
-        # final_explanation = []
-        # for constraint in self.constraints:
-        #     if (constraint.get("constraint_emissions") / maxV) > 0.3:
-        #         if constraint["category"] == "affinity":
-        #             explanation = (f'A {constraint["category"]} was generated '
-        #                 f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
-        #                 f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
-        #                 f'{explain(constraint["category"])}\n')
-        #             final_explanation.append(explanation)
-        #         elif constraint["category"] == "avoid":
-        #             constraint["category"] = "avoidNode"
-        #             explanation = (f'A {constraint["category"]} constraint was generated '
-        #                 f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
-        #                 f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
-        #                 f'{savings(constraint)}\n'
-        #                 )
-        #             final_explanation.append(explanation)
-        # with open(self.explanationFile, "w") as explfile:
-        #     explfile.write("\n".join(final_explanation))
+        final_explanation = []
+        for constraint in self.constraints:
+            if (constraint.get("constraint_emissions") / maxV) > contraints_threshold:
+                if constraint["category"] == "affinity":
+                    explanation = (f'A {constraint["category"]} was generated '
+                        f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
+                        f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
+                        f'{explain(constraint["category"])}\n')
+                    final_explanation.append(explanation)
+                elif constraint["category"] == "avoid":
+                    constraint["category"] = "avoidNode"
+                    explanation = (f'A {constraint["category"]} constraint was generated '
+                        f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
+                        f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
+                        f'{savings(constraint)}\n'
+                        )
+                    final_explanation.append(explanation)
+        with open(self.explanationFile, "w") as explfile:
+            explfile.write("\n".join(final_explanation))
 
         outputdata = {
             "requirements": {

@@ -11,7 +11,6 @@ from components.Adapter import Adapter
 from components.Yamlmodifier import YamlModifier
 from components.EnergyMixGatherer import EnergyMixGatherer
 
-
 def run(
     rules,
     interaction,

@@ -1,0 +1,13 @@
+Component comp0 deployed in flavour large on node node0.
+Component comp1 deployed in flavour large on node node1.
+Component comp2 deployed in flavour large on node node2.
+Component comp3 deployed in flavour large on node node3.
+Component comp4 deployed in flavour large on node node4.
+Component comp5 deployed in flavour large on node node5.
+Component comp6 deployed in flavour large on node node6.
+Component comp7 deployed in flavour large on node node7.
+Component comp8 deployed in flavour large on node node8.
+Component comp9 deployed in flavour large on node node9.
+Objective value: 13
+	Total cost: 85
+	Total carb: 4194

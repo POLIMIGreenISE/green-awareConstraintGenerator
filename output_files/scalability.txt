@@ -8,7 +8,19 @@ Execution time: 0.0518240 seconds
 0.000010 kWh of electricity used since the beginning.
 Execution time: 0.4699133 seconds
 
+0.000011 kWh of electricity used since the beginning.
+Execution time: 0.4524714 seconds
+
+0.000006 kWh of electricity used since the beginning.
+Execution time: 0.4604246 seconds
+
 1k:
 
 0.000805 kWh of electricity used since the beginning.
 Execution time: 139.0305348 seconds
+
+0.000669 kWh of electricity used since the beginning.
+Execution time: 114.8673402 seconds
+
+0.000732 kWh of electricity used since the beginning.
+Execution time: 126.1357431 seconds

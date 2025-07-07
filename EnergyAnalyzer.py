@@ -12,19 +12,19 @@ from components.Yamlmodifier import YamlModifier
 from components.EnergyMixGatherer import EnergyMixGatherer
 from codecarbon import OfflineEmissionsTracker
 
-def generate_rnd(value):
-    num_components = value
-    num_nodes = value
+def generate_rnd(value_apps, value_nodes):
+    num_components = int(value_apps)
+    num_nodes = int(value_nodes)
     deployment1k = []
     kepler1k = []
     istio1k = []
     minenergy = 100
     maxenergy = 1800
-    app1kpath = os.path.abspath(os.path.join("input_files", f"app{value}.yaml"))
-    nodes1kpath = os.path.abspath(os.path.join("input_files", f"nodes{value}.yaml"))
-    deployment1kpath = os.path.abspath(os.path.join("input_files", f"deployment{value}.txt"))
-    kepler1kpath = os.path.abspath(os.path.join("input_files", f"kepler-metrics{value}.txt"))
-    istio1kpath = os.path.abspath(os.path.join("input_files", f"istio_data_default{value}.json"))
+    app1kpath = os.path.abspath(os.path.join("input_files", f"app{num_components}.yaml"))
+    nodes1kpath = os.path.abspath(os.path.join("input_files", f"nodes{num_nodes}.yaml"))
+    deployment1kpath = os.path.abspath(os.path.join("input_files", f"deployment{num_nodes}.txt"))
+    kepler1kpath = os.path.abspath(os.path.join("input_files", f"kepler-metrics{num_components}.txt"))
+    istio1kpath = os.path.abspath(os.path.join("input_files", f"istio_data_default{num_components}.json"))
 
     app1k = {
         "name": "onlineboutique",
@@ -149,11 +149,17 @@ changelog = os.path.abspath(os.path.join("output_files", "changelog.txt"))
 
 parser = argparse.ArgumentParser(description="FREEDA Energy Analyzer")
 parser.add_argument('--region', '-r', 
-                    choices=['eu', 'us', '100', '1k'], 
-                    required=False, 
+                    choices=['eu', 'us'],
+                    required=False,
                     help="The region that should be utilised for the infrastructure")
 parser.add_argument('--keep', '-k', action='store_true',
                     help="Keep the current knowledge base, should not be kept if switching between regions",
+                    required=False)
+parser.add_argument('--nodes', '-n',
+                    help="Define the number of nodes for the scalability tests",
+                    required=False)
+parser.add_argument('--services', '-s',
+                    help="Define the number of services for the scalability tests",
                     required=False)
 args = parser.parse_args()
 if args.region == "eu":
@@ -170,22 +176,6 @@ elif args.region == "us":
     deployment = os.path.abspath(os.path.join("input_files", "deployment_US.txt"))
     infrastructure = os.path.abspath(os.path.join("input_files", "infra_OB_US.yaml"))
     application = os.path.abspath(os.path.join("input_files", "app_OB.yaml"))
-elif args.region == "100":
-    a,n,d,k,i = generate_rnd(100)
-    istio = i
-    kepler = k
-    nodes = n
-    deployment = d
-    infrastructure = n
-    application = a
-elif args.region == "1k":
-    a,n,d,k,i = generate_rnd(1000)
-    istio = i
-    kepler = k
-    nodes = n
-    deployment = d
-    infrastructure = n
-    application = a
 else:
     istio = os.path.abspath(os.path.join("input_files", "istio_data_default.json"))
     kepler = os.path.abspath(os.path.join("input_files", "kepler-metrics.txt"))
@@ -196,6 +186,15 @@ else:
 
 if not args.keep:
     open(knowledgeBase, "w").close()
+
+if args.nodes and args.services:
+    a,n,d,k,i = generate_rnd(args.nodes, args.services)
+    istio = i
+    kepler = k
+    nodes = n
+    deployment = d
+    infrastructure = n
+    application = a
 
 infrastructureInformation = InfrastructureHandler(infrastructure).handle_infrastructure()
 deploymentInformation = DeploymentHandler(deployment).handle_deployment()

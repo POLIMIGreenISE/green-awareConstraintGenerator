@@ -1,0 +1,10 @@
+kepler_container_platform_joules_total{container_id="0",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp0-minikube",source="trained_power_model"} 168
+kepler_container_platform_joules_total{container_id="1",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp1-minikube",source="trained_power_model"} 985
+kepler_container_platform_joules_total{container_id="2",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp2-minikube",source="trained_power_model"} 366
+kepler_container_platform_joules_total{container_id="3",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp3-minikube",source="trained_power_model"} 1349
+kepler_container_platform_joules_total{container_id="4",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp4-minikube",source="trained_power_model"} 850
+kepler_container_platform_joules_total{container_id="5",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp5-minikube",source="trained_power_model"} 1790
+kepler_container_platform_joules_total{container_id="6",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp6-minikube",source="trained_power_model"} 821
+kepler_container_platform_joules_total{container_id="7",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp7-minikube",source="trained_power_model"} 263
+kepler_container_platform_joules_total{container_id="8",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp8-minikube",source="trained_power_model"} 1725
+kepler_container_platform_joules_total{container_id="9",container_name="server",container_namespace="default",mode="dynamic",pod_name="comp9-minikube",source="trained_power_model"} 1504
