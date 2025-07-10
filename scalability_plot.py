@@ -53,8 +53,9 @@ fig.suptitle('Fixed Nodes - Energy', fontsize=16)
 
 for idx, node in enumerate(valid_nodes):
     subset = df[df['nodes'] == node]
-    services = subset['services']
-    energy = subset['kwhelectricity']
+    grouped = subset.groupby('services', as_index=False)['kwhelectricity'].mean()
+    services = grouped['services']
+    energy = grouped['kwhelectricity']
 
     axes[idx].plot(services, energy, marker='o', linestyle='-')
     axes[idx].set_title(f'{node} Nodes')
@@ -72,8 +73,9 @@ fig2.suptitle('Fixed Nodes - Time', fontsize=16)
 
 for idx, node in enumerate(valid_nodes):
     subset = df[df['nodes'] == node]
-    services = subset['services']
-    energy = subset['secondsexectime']
+    grouped = subset.groupby('services', as_index=False)['secondsexectime'].mean()
+    services = grouped['services']
+    energy = grouped['secondsexectime']
 
     axes2[idx].plot(services, energy, marker='o', linestyle='-')
     axes2[idx].set_title(f'{node} Nodes')
@@ -103,8 +105,9 @@ fig3.suptitle('Fixed Services - Energy', fontsize=16)
 
 for idx, service in enumerate(valid_services):
     subset = df[df['services'] == service]
-    nodes = subset['nodes']
-    energy = subset['kwhelectricity']
+    grouped = subset.groupby('nodes', as_index=False)['kwhelectricity'].mean()
+    nodes = grouped['nodes']
+    energy = grouped['kwhelectricity']
 
     axes3[idx].plot(nodes, energy, marker='o', linestyle='-')
     axes3[idx].set_title(f'{service} Services')
@@ -122,8 +125,9 @@ fig4.suptitle('Fixed Services - Time', fontsize=16)
 
 for idx, service in enumerate(valid_services):
     subset = df[df['services'] == service]
-    nodes = subset['nodes']
-    energy = subset['secondsexectime']
+    grouped = subset.groupby('nodes', as_index=False)['secondsexectime'].mean()
+    nodes = grouped['nodes']
+    energy = grouped['secondsexectime']
 
     axes4[idx].plot(nodes, energy, marker='o', linestyle='-')
     axes4[idx].set_title(f'{service} Services')

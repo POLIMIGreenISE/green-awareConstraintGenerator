@@ -2,700 +2,700 @@ components:
   comp0:
     flavours:
       large:
-        energy: 1286
+        energy: 229
         uses: []
     importance_order:
     - large
   comp1:
     flavours:
       large:
-        energy: 1485
+        energy: 1319
         uses: []
     importance_order:
     - large
   comp10:
     flavours:
       large:
-        energy: 693
+        energy: 1260
         uses: []
     importance_order:
     - large
   comp11:
     flavours:
       large:
-        energy: 554
+        energy: 348
         uses: []
     importance_order:
     - large
   comp12:
     flavours:
       large:
-        energy: 817
+        energy: 1643
         uses: []
     importance_order:
     - large
   comp13:
     flavours:
       large:
-        energy: 1098
+        energy: 1747
         uses: []
     importance_order:
     - large
   comp14:
     flavours:
       large:
-        energy: 1432
+        energy: 389
         uses: []
     importance_order:
     - large
   comp15:
     flavours:
       large:
-        energy: 1511
+        energy: 1216
         uses: []
     importance_order:
     - large
   comp16:
     flavours:
       large:
-        energy: 1568
+        energy: 638
         uses: []
     importance_order:
     - large
   comp17:
     flavours:
       large:
-        energy: 1374
+        energy: 568
         uses: []
     importance_order:
     - large
   comp18:
     flavours:
       large:
-        energy: 672
+        energy: 1355
         uses: []
     importance_order:
     - large
   comp19:
     flavours:
       large:
-        energy: 625
+        energy: 666
         uses: []
     importance_order:
     - large
   comp2:
     flavours:
       large:
-        energy: 776
+        energy: 931
         uses: []
     importance_order:
     - large
   comp20:
     flavours:
       large:
-        energy: 1411
+        energy: 1665
         uses: []
     importance_order:
     - large
   comp21:
     flavours:
       large:
-        energy: 1152
+        energy: 295
         uses: []
     importance_order:
     - large
   comp22:
     flavours:
       large:
-        energy: 106
+        energy: 872
         uses: []
     importance_order:
     - large
   comp23:
     flavours:
       large:
-        energy: 1775
+        energy: 1566
         uses: []
     importance_order:
     - large
   comp24:
     flavours:
       large:
-        energy: 1469
+        energy: 241
         uses: []
     importance_order:
     - large
   comp25:
     flavours:
       large:
-        energy: 591
+        energy: 957
         uses: []
     importance_order:
     - large
   comp26:
     flavours:
       large:
-        energy: 1119
+        energy: 523
         uses: []
     importance_order:
     - large
   comp27:
     flavours:
       large:
-        energy: 671
+        energy: 866
         uses: []
     importance_order:
     - large
   comp28:
     flavours:
       large:
-        energy: 1610
+        energy: 257
         uses: []
     importance_order:
     - large
   comp29:
     flavours:
       large:
-        energy: 104
+        energy: 1143
         uses: []
     importance_order:
     - large
   comp3:
     flavours:
       large:
-        energy: 486
+        energy: 1464
         uses: []
     importance_order:
     - large
   comp30:
     flavours:
       large:
-        energy: 237
+        energy: 1790
         uses: []
     importance_order:
     - large
   comp31:
     flavours:
       large:
-        energy: 1365
+        energy: 745
         uses: []
     importance_order:
     - large
   comp32:
     flavours:
       large:
-        energy: 1026
+        energy: 589
         uses: []
     importance_order:
     - large
   comp33:
     flavours:
       large:
-        energy: 844
+        energy: 466
         uses: []
     importance_order:
     - large
   comp34:
     flavours:
       large:
-        energy: 594
+        energy: 503
         uses: []
     importance_order:
     - large
   comp35:
     flavours:
       large:
-        energy: 633
+        energy: 230
         uses: []
     importance_order:
     - large
   comp36:
     flavours:
       large:
-        energy: 588
+        energy: 864
         uses: []
     importance_order:
     - large
   comp37:
     flavours:
       large:
-        energy: 1692
+        energy: 835
         uses: []
     importance_order:
     - large
   comp38:
     flavours:
       large:
-        energy: 1103
+        energy: 408
         uses: []
     importance_order:
     - large
   comp39:
     flavours:
       large:
-        energy: 1340
+        energy: 1480
         uses: []
     importance_order:
     - large
   comp4:
     flavours:
       large:
-        energy: 620
+        energy: 1259
         uses: []
     importance_order:
     - large
   comp40:
     flavours:
       large:
-        energy: 1135
+        energy: 765
         uses: []
     importance_order:
     - large
   comp41:
     flavours:
       large:
-        energy: 105
+        energy: 1294
         uses: []
     importance_order:
     - large
   comp42:
     flavours:
       large:
-        energy: 839
+        energy: 957
         uses: []
     importance_order:
     - large
   comp43:
     flavours:
       large:
-        energy: 649
+        energy: 1095
         uses: []
     importance_order:
     - large
   comp44:
     flavours:
       large:
-        energy: 110
+        energy: 554
         uses: []
     importance_order:
     - large
   comp45:
     flavours:
       large:
-        energy: 167
+        energy: 1143
         uses: []
     importance_order:
     - large
   comp46:
     flavours:
       large:
-        energy: 462
+        energy: 1318
         uses: []
     importance_order:
     - large
   comp47:
     flavours:
       large:
-        energy: 716
+        energy: 787
         uses: []
     importance_order:
     - large
   comp48:
     flavours:
       large:
-        energy: 335
+        energy: 1262
         uses: []
     importance_order:
     - large
   comp49:
     flavours:
       large:
-        energy: 731
+        energy: 1325
         uses: []
     importance_order:
     - large
   comp5:
     flavours:
       large:
-        energy: 1398
+        energy: 1288
         uses: []
     importance_order:
     - large
   comp50:
     flavours:
       large:
-        energy: 1193
+        energy: 1466
         uses: []
     importance_order:
     - large
   comp51:
     flavours:
       large:
-        energy: 1480
+        energy: 1708
         uses: []
     importance_order:
     - large
   comp52:
     flavours:
       large:
-        energy: 753
+        energy: 1270
         uses: []
     importance_order:
     - large
   comp53:
     flavours:
       large:
-        energy: 527
+        energy: 872
         uses: []
     importance_order:
     - large
   comp54:
     flavours:
       large:
-        energy: 1752
+        energy: 376
         uses: []
     importance_order:
     - large
   comp55:
     flavours:
       large:
-        energy: 839
+        energy: 1195
         uses: []
     importance_order:
     - large
   comp56:
     flavours:
       large:
-        energy: 734
+        energy: 1292
         uses: []
     importance_order:
     - large
   comp57:
     flavours:
       large:
-        energy: 420
+        energy: 1230
         uses: []
     importance_order:
     - large
   comp58:
     flavours:
       large:
-        energy: 1036
+        energy: 1204
         uses: []
     importance_order:
     - large
   comp59:
     flavours:
       large:
-        energy: 530
+        energy: 305
         uses: []
     importance_order:
     - large
   comp6:
     flavours:
       large:
-        energy: 215
+        energy: 1001
         uses: []
     importance_order:
     - large
   comp60:
     flavours:
       large:
-        energy: 1385
+        energy: 1461
         uses: []
     importance_order:
     - large
   comp61:
     flavours:
       large:
-        energy: 1693
+        energy: 1440
         uses: []
     importance_order:
     - large
   comp62:
     flavours:
       large:
-        energy: 143
+        energy: 761
         uses: []
     importance_order:
     - large
   comp63:
     flavours:
       large:
-        energy: 995
+        energy: 1646
         uses: []
     importance_order:
     - large
   comp64:
     flavours:
       large:
-        energy: 1520
+        energy: 450
         uses: []
     importance_order:
     - large
   comp65:
     flavours:
       large:
-        energy: 222
+        energy: 1666
         uses: []
     importance_order:
     - large
   comp66:
     flavours:
       large:
-        energy: 375
+        energy: 895
         uses: []
     importance_order:
     - large
   comp67:
     flavours:
       large:
-        energy: 361
+        energy: 1064
         uses: []
     importance_order:
     - large
   comp68:
     flavours:
       large:
-        energy: 1027
+        energy: 755
         uses: []
     importance_order:
     - large
   comp69:
     flavours:
       large:
-        energy: 1220
+        energy: 718
         uses: []
     importance_order:
     - large
   comp7:
     flavours:
       large:
-        energy: 541
+        energy: 153
         uses: []
     importance_order:
     - large
   comp70:
     flavours:
       large:
-        energy: 1437
+        energy: 536
         uses: []
     importance_order:
     - large
   comp71:
     flavours:
       large:
-        energy: 257
+        energy: 284
         uses: []
     importance_order:
     - large
   comp72:
     flavours:
       large:
-        energy: 645
+        energy: 379
         uses: []
     importance_order:
     - large
   comp73:
     flavours:
       large:
-        energy: 1431
+        energy: 1304
         uses: []
     importance_order:
     - large
   comp74:
     flavours:
       large:
-        energy: 1690
+        energy: 1592
         uses: []
     importance_order:
     - large
   comp75:
     flavours:
       large:
-        energy: 1305
+        energy: 158
         uses: []
     importance_order:
     - large
   comp76:
     flavours:
       large:
-        energy: 1608
+        energy: 414
         uses: []
     importance_order:
     - large
   comp77:
     flavours:
       large:
-        energy: 1157
+        energy: 1693
         uses: []
     importance_order:
     - large
   comp78:
     flavours:
       large:
-        energy: 1441
+        energy: 295
         uses: []
     importance_order:
     - large
   comp79:
     flavours:
       large:
-        energy: 572
+        energy: 1725
         uses: []
     importance_order:
     - large
   comp8:
     flavours:
       large:
-        energy: 602
+        energy: 210
         uses: []
     importance_order:
     - large
   comp80:
     flavours:
       large:
-        energy: 1366
+        energy: 1490
         uses: []
     importance_order:
     - large
   comp81:
     flavours:
       large:
-        energy: 1527
+        energy: 795
         uses: []
     importance_order:
     - large
   comp82:
     flavours:
       large:
-        energy: 1223
+        energy: 1287
         uses: []
     importance_order:
     - large
   comp83:
     flavours:
       large:
-        energy: 650
+        energy: 1210
         uses: []
     importance_order:
     - large
   comp84:
     flavours:
       large:
-        energy: 673
+        energy: 403
         uses: []
     importance_order:
     - large
   comp85:
     flavours:
       large:
-        energy: 911
+        energy: 1625
         uses: []
     importance_order:
     - large
   comp86:
     flavours:
       large:
-        energy: 854
+        energy: 186
         uses: []
     importance_order:
     - large
   comp87:
     flavours:
       large:
-        energy: 916
+        energy: 120
         uses: []
     importance_order:
     - large
   comp88:
     flavours:
       large:
-        energy: 593
+        energy: 765
         uses: []
     importance_order:
     - large
   comp89:
     flavours:
       large:
-        energy: 758
+        energy: 1565
         uses: []
     importance_order:
     - large
   comp9:
     flavours:
       large:
-        energy: 1211
+        energy: 1147
         uses: []
     importance_order:
     - large
   comp90:
     flavours:
       large:
-        energy: 1659
+        energy: 644
         uses: []
     importance_order:
     - large
   comp91:
     flavours:
       large:
-        energy: 1380
+        energy: 1157
         uses: []
     importance_order:
     - large
   comp92:
     flavours:
       large:
-        energy: 947
+        energy: 1396
         uses: []
     importance_order:
     - large
   comp93:
     flavours:
       large:
-        energy: 412
+        energy: 392
         uses: []
     importance_order:
     - large
   comp94:
     flavours:
       large:
-        energy: 1625
+        energy: 107
         uses: []
     importance_order:
     - large
   comp95:
     flavours:
       large:
-        energy: 289
+        energy: 1246
         uses: []
     importance_order:
     - large
   comp96:
     flavours:
       large:
-        energy: 721
+        energy: 396
         uses: []
     importance_order:
     - large
   comp97:
     flavours:
       large:
-        energy: 1731
+        energy: 1558
         uses: []
     importance_order:
     - large
   comp98:
     flavours:
       large:
-        energy: 1596
+        energy: 192
         uses: []
     importance_order:
     - large
   comp99:
     flavours:
       large:
-        energy: 407
+        energy: 1351
         uses: []
     importance_order:
     - large

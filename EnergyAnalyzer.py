@@ -1,4 +1,4 @@
-import argparse, os, time, yaml, random, json
+import argparse, os, time, yaml, random, json, csv
 from components.IstioHandler import IstioHandler
 from components.KeplerHandler import KeplerHandler
 from components.DeploymentHandler import DeploymentHandler
@@ -217,4 +217,19 @@ YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions,
 
 end = time.perf_counter()
 tracker.stop()
-print(f"Execution time: {end - start:.7f} seconds")
+final_time = end - start
+final_time = "{:7f}".format(final_time)
+print(f"Execution time: {final_time} seconds")
+
+codecarbon_csv = os.path.abspath("./emissions.csv")
+with open(codecarbon_csv, 'r') as f:
+    reader = csv.DictReader(f)
+    lines = list(reader)
+    last_line = lines[-1]
+formatted_codecarbon = "{:.6f}".format(float(last_line["energy_consumed"]))
+
+new_row = [args.nodes, args.services, final_time, formatted_codecarbon]
+output_csv = os.path.abspath(os.path.join("output_files", "scalability.csv"))
+with open(output_csv, 'a', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(new_row)
