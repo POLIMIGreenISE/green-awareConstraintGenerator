@@ -146,6 +146,7 @@ prologFactsFile = os.path.abspath("facts.pl")
 prologConstraintFile = os.path.abspath("energyConstraints.pl")
 yamlOutput = os.path.abspath(os.path.join("output_files", "EnergyEnhancer.yaml"))
 changelog = os.path.abspath(os.path.join("output_files", "changelog.txt"))
+activeConstraints = os.path.abspath(os.path.join("input_files", "activeconstraints.json")) 
 
 parser = argparse.ArgumentParser(description="FREEDA Energy Analyzer")
 parser.add_argument('--region', '-r', 
@@ -205,11 +206,11 @@ energyMix = EnergyMixGatherer(nodes)
 print("Estimating Consumptions...")
 istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler, deploymentInformation).estimate_consumption()
 print("Generating Constraints...")
-affinityConstraints, avoidConstraints, highestConsumption, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, application, knowledgeBase, energyMix).generate_constraints()
+generatedConstraints, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, application, knowledgeBase, energyMix, activeConstraints).generate_constraints()
 print("Consulting KnowledgeBase...")
-finalConstraints = KnowledgeBaseHandler(knowledgeBase, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
+finalConstraints = KnowledgeBaseHandler(knowledgeBase, istioConsumptions, keplerConsumptions, generatedConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
 print("Generating Weights...")
-finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
+finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation, activeConstraints).generate_weights()
 print("Adapting the outputs...")
 Adapter(rules, prologFactsFile, finalPrologFacts, prologConstraintFile, finalConstraints, explanation, yamlOutput, infrastructureInformation, energyMix).adapt_output()
 print("Modifying YAML...")
@@ -221,15 +222,16 @@ final_time = end - start
 final_time = "{:7f}".format(final_time)
 print(f"Execution time: {final_time} seconds")
 
-codecarbon_csv = os.path.abspath("./emissions.csv")
-with open(codecarbon_csv, 'r') as f:
-    reader = csv.DictReader(f)
-    lines = list(reader)
-    last_line = lines[-1]
-formatted_codecarbon = "{:.6f}".format(float(last_line["energy_consumed"]))
+if args.nodes:
+    codecarbon_csv = os.path.abspath("./emissions.csv")
+    with open(codecarbon_csv, 'r') as f:
+        reader = csv.DictReader(f)
+        lines = list(reader)
+        last_line = lines[-1]
+    formatted_codecarbon = "{:.6f}".format(float(last_line["energy_consumed"]))
 
-new_row = [args.nodes, args.services, final_time, formatted_codecarbon]
-output_csv = os.path.abspath(os.path.join("output_files", "scalability.csv"))
-with open(output_csv, 'a', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(new_row)
+    new_row = [args.nodes, args.services, final_time, formatted_codecarbon]
+    output_csv = os.path.abspath(os.path.join("output_files", "scalability.csv"))
+    with open(output_csv, 'a', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(new_row)

@@ -24,7 +24,8 @@ def run(
     facts,
     prologConstraints,
     yamlConstraints,
-    changelog
+    changelog,
+    activeConstraints
 ):
     infrastructureInformation = InfrastructureHandler(infrastructure).handle_infrastructure()
     deploymentInformation = DeploymentHandler(deployment).handle_deployment()
@@ -32,9 +33,9 @@ def run(
     newIstio = IstioHandler(interaction).handle_istio()
     energyMix = EnergyMixGatherer(nodes)
     istioConsumptions, keplerConsumptions = ConsumptionEstimator(newIstio, newKepler, deploymentInformation).estimate_consumption()
-    affinityConstraints, avoidConstraints, _, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, application, kb, energyMix).generate_constraints()
-    finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, affinityConstraints, avoidConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
-    finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation).generate_weights()
+    generatedConstraints, prologFacts = ConstraintsGenerator(istioConsumptions, keplerConsumptions, deploymentInformation, infrastructureInformation, application, kb, energyMix, activeConstraints).generate_constraints()
+    finalConstraints = KnowledgeBaseHandler(kb, istioConsumptions, keplerConsumptions, generatedConstraints, infrastructureInformation, energyMix).handle_knowledgeBase()
+    finalPrologFacts = WeightGenerator(finalConstraints, prologFacts, deploymentInformation, activeConstraints).generate_weights()
     Adapter(rules, facts, finalPrologFacts, prologConstraints, finalConstraints, explanation, yamlConstraints, infrastructureInformation, energyMix).adapt_output()
     YamlModifier(infrastructure, application, istioConsumptions, keplerConsumptions, changelog, energyMix).modify_YAML()
 
@@ -53,6 +54,7 @@ if __name__ == "__main__":
     parser.add_argument("prolog_constraints", type=str, help="Prolog constraint file path")
     parser.add_argument("constraints", type=str, help="Constraints output file path")
     parser.add_argument("changelog", type=str, help="Changelog output file path")
+    parser.add_argument("activeConstraints", type=str, help="Active constraints input file path")
     args = parser.parse_args()
 
     run(
@@ -68,5 +70,6 @@ if __name__ == "__main__":
         args.facts,
         args.prolog_constraints,
         args.constraints,
-        args.changelog
+        args.changelog,
+        args.activeConstraints
     )

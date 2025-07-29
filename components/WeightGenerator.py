@@ -2,10 +2,13 @@ import json
 import re
 
 class WeightGenerator:
-    def __init__(self, constraints, prologFacts, deployment):
+    def __init__(self, constraints, prologFacts, deployment, activeConstraints):
         self.constraints = constraints
         self.prologFacts = prologFacts
         self.deployment = deployment
+        self.activeConstraints = activeConstraints 
+        with open(self.activeConstraints, "r") as file:
+            self.active = json.load(file)
 
     def generate_weights(self):
         """
@@ -18,33 +21,35 @@ class WeightGenerator:
 
         maxConsumption = max(constr["constraint_emissions"] for constr in self.constraints)
         
+        category_to_template = {
+            item["module"].lower(): item["template"]
+            for item in self.active
+            if item["active"]
+        }
+
         for constr in self.constraints:
-            if constr["category"] == "affinity":
-                if maxConsumption < average_global:
-                    final_weight = constr["constraint_emissions"] * multiplier
-                    final_weight /= average_global
-                elif constr["constraint_emissions"] < average_global:
-                    final_weight = constr["constraint_emissions"] * multiplier
-                    final_weight /= maxConsumption
-                else:
-                    final_weight = constr["constraint_emissions"] / maxConsumption
-                new_rule = f"highConsumptionConnection({constr['source']},{constr['source_flavour']},{constr['destination']},{constr['destination_flavour']},{final_weight:.3f})"
+            category = constr.get("category")
+            template = category_to_template.get(category)
+            if not template:
+                continue
+
+            # Weight calculation
+            ce = constr["constraint_emissions"]
+            if maxConsumption < average_global:
+                final_weight = ce * multiplier / average_global
+            elif ce < average_global:
+                final_weight = ce * multiplier / maxConsumption
+            else:
+                final_weight = ce / maxConsumption
+            try:
+                new_rule = template.format(**constr, weight=final_weight)
                 self.prologFacts.append(new_rule)
-            elif constr["category"] == "avoid":
-                if maxConsumption < average_global:
-                    final_weight = constr["constraint_emissions"] * multiplier
-                    final_weight /= average_global
-                elif constr["constraint_emissions"] < average_global:
-                    final_weight = constr["constraint_emissions"] * multiplier
-                    final_weight /= maxConsumption
-                else:
-                    final_weight = constr["constraint_emissions"] / maxConsumption
-                new_rule = f"highConsumptionService({constr['source']},{constr['flavour']},{constr['node']},{final_weight:.3f})"
-                self.prologFacts.append(new_rule)
+            except KeyError as e:
+                print(f"Missing key for category '{category}': {e}")
 
         itemsToRemove = []
         for fact in self.prologFacts:
-            if fact.startswith("highConsumption"):
+            if fact.startswith("high"):
                 match = re.match(r'(\w+)\((.*?)\)', fact)
                 if match:
                     args = match.group(2).split(',')

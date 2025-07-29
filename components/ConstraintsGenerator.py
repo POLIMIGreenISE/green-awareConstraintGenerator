@@ -1,9 +1,11 @@
 import json
 import yaml
 import statistics
+import importlib
+import inspect
 
 class ConstraintsGenerator:
-    def __init__(self, istio, kepler, deployment, infrastructure, application, knowledgeBase, energyMix):
+    def __init__(self, istio, kepler, deployment, infrastructure, application, knowledgeBase, energyMix, activeConstraints):
         self.istio = istio
         self.kepler = kepler
         self.deployment = deployment
@@ -11,8 +13,7 @@ class ConstraintsGenerator:
         self.application = application
         self.knowledgeBase = knowledgeBase
         self.energyMix = energyMix
-        self.affinity = None
-        self.avoid = None
+        self.activeConstraints = activeConstraints 
         self.maxConsumption = None
         self.prologFacts = None
         with open(self.application, "r") as file:
@@ -22,6 +23,8 @@ class ConstraintsGenerator:
                 self.myKnowledgeBase = json.load(file)
         except json.JSONDecodeError:
             self.myKnowledgeBase = {}
+        with open(self.activeConstraints, "r") as file:
+            self.active = json.load(file)
     
     def generate_constraints(self):
         """From the metrics, sorted from highest consumption to lowest, obtain the constraints to produce in output."""
@@ -112,16 +115,8 @@ class ConstraintsGenerator:
             for element in self.kepler:
                 quant_kepler.append(element["emissions"])
             keplerThreshold = statistics.quantiles(quant_kepler, n=cut_points)[threshold_points]
-        # Filter only the consumption above the threshold, which are to our interest
-        maxThreshold = max(istioThreshold, keplerThreshold)
-        monitorIstio = checkThreshold(self.istio, 'emissions', maxThreshold)
-        monitorIstio = sorted(monitorIstio, key=lambda x: x['emissions'], reverse=True)
-        monitorKepler = checkThreshold(self.kepler, 'emissions', maxThreshold)
-        monitorKepler = sorted(monitorKepler, key=lambda x: x['emissions'], reverse=True)    
         
         self.prologFacts = []
-        self.affinity = []
-        self.avoid = []
 
         # Prolog file preparation
         # For each communication in our Istio metrics, save the fact
@@ -141,58 +136,54 @@ class ConstraintsGenerator:
             rule = f'deployedTo({element["service"]},{element["flavour"]},{element["node"]})'
             self.prologFacts.append(rule)
 
-        # For each communication of interest, save that there is an affinity
-        for comm in monitorIstio:
-            if set(obtainDeployableNodes(comm['source'],self.infrastructure)) & set(obtainDeployableNodes(comm['destination'],self.infrastructure)):
-                affinity = {
-                    "category": "affinity",
-                    "source": comm["source"],
-                    "source_flavour": findFlavour(comm['source'], self.deployment),
-                    "destination": comm["destination"],
-                    "destination_flavour": findFlavour(comm['destination'], self.deployment),
-                    "constraint_emissions": comm['emissions'] * (self.energyMix.gather_energyMix(findNode(comm["source"], self.deployment)) + self.energyMix.gather_energyMix(findNode(comm["destination"], self.deployment))) / 2
-                }
-                self.affinity.append(affinity)
+        active_constraints = []
+        generated_constraints = []
+        thresholds = []  
+        
+        for item in self.active:
+            if item["active"]:
+                module_name = item["module"]
+                module_path = f"components.constraints.{module_name}"
+                module = importlib.import_module(module_path)
+                cls = getattr(module, module_name)
+                instance = cls()
+                active_constraints.append(instance)
 
-        # For each service of interest, save that there is an avoid
-        for service in monitorKepler:
-            serviceWeight = float(service['emissions'])
-            deployableNodes = obtainDeployableNodes(service["service"], self.infrastructure)
-            resourcefulNodes = obtainResourcefulNodes(service, self.infrastructure)
-            considerableNodes = set(deployableNodes) & set(resourcefulNodes)
-            maxDeployable = max(considerableNodes)
-            if len(considerableNodes) > 1:
-                for node in considerableNodes:
-                    nodeWeight = float(self.energyMix.gather_energyMix(node) / self.energyMix.gather_energyMix(maxDeployable))
-                    scaledWeight = nodeWeight * serviceWeight
-                    if(scaledWeight >= keplerThreshold):
-                        avoid = {
-                            "category": "avoid",
-                            "source": service["service"],
-                            "flavour": findFlavour(service['service'], self.deployment),
-                            "node": node,
-                            "constraint_emissions": service["emissions"] * self.energyMix.gather_energyMix(node)
-                        }
-                        self.avoid.append(avoid)
+        available_thresholds = {
+            "istioThreshold": istioThreshold,
+            "keplerThreshold": keplerThreshold
+        }
 
-        # Avoid scenarios where a service is told to avoid all its deployable nodes
-        seen_sources = set()
-        itemsToRemove = []
-        for avoid in self.avoid:
-            source = avoid["source"]
-            if source not in seen_sources:
-                avoidInstances = sum(1 for item in self.avoid if item.get("source") == source)
-                seen_sources.add(source)
-                myservice = {
-                    "service": source,
-                    "flavour": avoid["flavour"]
-                }
-                availableNodes = set(obtainResourcefulNodes(myservice, self.infrastructure)) & set(obtainDeployableNodes(myservice["service"], self.infrastructure))
-                if avoidInstances == len(availableNodes):
-                    pendingRemoval = min((item for item in self.avoid if item["source"] == source), key=lambda x: x["constraint_emissions"], default=None)
-                    itemsToRemove.append(pendingRemoval)
+        for constr in active_constraints:
+            if hasattr(constr, "get_neededThreshold"):
+                needed = constr.get_neededThreshold()
+                for name in needed:
+                    if name in available_thresholds:
+                        thresholds.append(available_thresholds[name])
 
-        for removed in itemsToRemove:
-            self.avoid.remove(removed)
+        # Filter only the consumption above the threshold, which are to our interest
+        maxThreshold = max(thresholds)
+        monitorIstio = sorted(checkThreshold(self.istio, 'emissions', maxThreshold), key=lambda x: x['emissions'], reverse=True)
+        monitorKepler = sorted(checkThreshold(self.kepler, 'emissions', maxThreshold), key=lambda x: x['emissions'], reverse=True)
 
-        return self.affinity, self.avoid, self.maxConsumption, self.prologFacts
+        available_args = {
+            "deployment": self.deployment,
+            "infrastructure": self.infrastructure,
+            "monitorIstio": monitorIstio,
+            "energyMix": self.energyMix,
+            "myapp": self.myapp,
+            "maxThreshold": maxThreshold,
+            "monitorKepler": monitorKepler
+        }
+
+        for constr in active_constraints:
+            method = getattr(constr, "generate_constraints")
+            sig = inspect.signature(method)
+            args_to_pass = {
+                name: available_args[name]
+                for name in sig.parameters
+                if name in available_args
+            }
+            generated_constraints += method(**args_to_pass)
+        
+        return generated_constraints, self.prologFacts

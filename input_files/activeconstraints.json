@@ -1,0 +1,4 @@
+[
+  {"module": "Avoid", "active": true, "template": "highConsumptionService({source},{flavour},{node},{weight})"},
+  {"module": "Affinity", "active": true, "template": "highConsumptionConnection({source},{source_flavour},{destination},{destination_flavour},{weight})"}
+]

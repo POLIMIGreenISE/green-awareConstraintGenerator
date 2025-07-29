@@ -53,11 +53,18 @@ fig.suptitle('Fixed Nodes - Energy', fontsize=16)
 
 for idx, node in enumerate(valid_nodes):
     subset = df[df['nodes'] == node]
-    grouped = subset.groupby('services', as_index=False)['kwhelectricity'].mean()
+    grouped = subset.groupby('services')['kwhelectricity'].agg(
+    mean='mean',
+    q25=lambda x: x.quantile(0.25),
+    q75=lambda x: x.quantile(0.75)
+).reset_index()
     services = grouped['services']
-    energy = grouped['kwhelectricity']
+    energy = grouped['mean']
+    minenergy = grouped['q25']
+    maxenergy = grouped['q75']
 
     axes[idx].plot(services, energy, marker='o', linestyle='-')
+    axes[idx].fill_between(services, minenergy, maxenergy, color='skyblue', alpha=0.3)
     axes[idx].set_title(f'{node} Nodes')
     axes[idx].set_xlabel('Services')
     axes[idx].set_ylabel('Energy (kWh)')
@@ -73,11 +80,18 @@ fig2.suptitle('Fixed Nodes - Time', fontsize=16)
 
 for idx, node in enumerate(valid_nodes):
     subset = df[df['nodes'] == node]
-    grouped = subset.groupby('services', as_index=False)['secondsexectime'].mean()
+    grouped = subset.groupby('services')['secondsexectime'].agg(
+    mean='mean',
+    q25=lambda x: x.quantile(0.25),
+    q75=lambda x: x.quantile(0.75)
+).reset_index()
     services = grouped['services']
-    energy = grouped['secondsexectime']
+    energy = grouped['mean']
+    minenergy = grouped['q25']
+    maxenergy = grouped['q75']
 
     axes2[idx].plot(services, energy, marker='o', linestyle='-')
+    axes2[idx].fill_between(services, minenergy, maxenergy, color='skyblue', alpha=0.3)
     axes2[idx].set_title(f'{node} Nodes')
     axes2[idx].set_xlabel('Services')
     axes2[idx].set_ylabel('Seconds (s)')
@@ -105,11 +119,18 @@ fig3.suptitle('Fixed Services - Energy', fontsize=16)
 
 for idx, service in enumerate(valid_services):
     subset = df[df['services'] == service]
-    grouped = subset.groupby('nodes', as_index=False)['kwhelectricity'].mean()
+    grouped = subset.groupby('nodes')['kwhelectricity'].agg(
+    mean='mean',
+    q25=lambda x: x.quantile(0.25),
+    q75=lambda x: x.quantile(0.75)
+).reset_index()
     nodes = grouped['nodes']
-    energy = grouped['kwhelectricity']
+    energy = grouped['mean']
+    minenergy = grouped['q25']
+    maxenergy = grouped['q75']
 
     axes3[idx].plot(nodes, energy, marker='o', linestyle='-')
+    axes3[idx].fill_between(nodes, minenergy, maxenergy, color='skyblue', alpha=0.3)
     axes3[idx].set_title(f'{service} Services')
     axes3[idx].set_xlabel('Nodes')
     axes3[idx].set_ylabel('Energy (kWh)')
@@ -125,11 +146,18 @@ fig4.suptitle('Fixed Services - Time', fontsize=16)
 
 for idx, service in enumerate(valid_services):
     subset = df[df['services'] == service]
-    grouped = subset.groupby('nodes', as_index=False)['secondsexectime'].mean()
+    grouped = subset.groupby('nodes')['secondsexectime'].agg(
+    mean='mean',
+    q25=lambda x: x.quantile(0.25),
+    q75=lambda x: x.quantile(0.75)
+).reset_index()
     nodes = grouped['nodes']
-    energy = grouped['secondsexectime']
+    energy = grouped['mean']
+    minenergy = grouped['q25']
+    maxenergy = grouped['q75']
 
     axes4[idx].plot(nodes, energy, marker='o', linestyle='-')
+    axes4[idx].fill_between(nodes, minenergy, maxenergy, color='skyblue', alpha=0.3)
     axes4[idx].set_title(f'{service} Services')
     axes4[idx].set_xlabel('Nodes')
     axes4[idx].set_ylabel('Seconds (s)')

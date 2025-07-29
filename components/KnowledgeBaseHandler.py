@@ -3,12 +3,11 @@ import math
 from datetime import datetime
 
 class KnowledgeBaseHandler:
-    def __init__(self, knowledgeBase, istio, kepler, affinity, avoid, infrastructure, energyMix):
+    def __init__(self, knowledgeBase, istio, kepler, generatedConstraints, infrastructure, energyMix):
         self.knowledgeBase = knowledgeBase
         self.istio = istio
         self.kepler = kepler
-        self.affinity = affinity
-        self.avoid = avoid
+        self.generatedConstraints = generatedConstraints
         self.infrastructure = infrastructure
         self.energyMix = energyMix
         self.constraints = None
@@ -102,11 +101,7 @@ class KnowledgeBaseHandler:
                 }
                 connections.append(historyData)
             # Save each constraint produced so far, and give a memory weight of 1
-            for element in self.affinity:
-                element["memory_weight"] = 1.0
-                element["timestamp"] = timestamp
-                constr.append(element)
-            for element in self.avoid:
+            for element in self.generatedConstraints:
                 element["memory_weight"] = 1.0
                 element["timestamp"] = timestamp
                 constr.append(element)
@@ -233,59 +228,32 @@ class KnowledgeBaseHandler:
                     }
                     myKnowledgeBase["connections"].append(newKnowledge)
             # For each constraint
-            for element in self.affinity:
+            excluded_keys = {"constraint_emissions", "memory_weight", "timestamp"}
+            for element in self.generatedConstraints:
                 constr_found = False
                 # If the constraint already existed, update its consumption
                 for constr in myKnowledgeBase["constraints"]:
-                    if constr["category"] == "affinity": 
-                        if constr["source"] == element["source"] and constr["source_flavour"] == element['source_flavour'] \
-                        and constr["destination"] == element["destination"] and constr["destination_flavour"] == element['destination_flavour']:
-                            constr_found = True
-                            constr["constraint_emissions"] = element["constraint_emissions"]
-                            constr["timestamp"] = timestamp
-                            break
+                    shared_keys = set(constr.keys()) & set(element.keys()) - excluded_keys
+                    if all(constr.get(k) == element.get(k) for k in shared_keys):
+                        constr_found = True
+                        constr["constraint_emissions"] = element["constraint_emissions"]
+                        constr["timestamp"] = timestamp
+                        break
                 # Otherwise add it
-                if not constr_found and constr["category"] == "affinity":
-                    element["memory_weight"] = 1.0
-                    element["timestamp"] = timestamp
-                    myKnowledgeBase["constraints"].append(element)
-            for element in self.avoid:
-                constr_found = False
-                # If the constraint already existed, update its consumption
-                for constr in myKnowledgeBase["constraints"]:
-                    if constr["category"] == "avoid":
-                        if constr["source"] == element["source"] and constr["flavour"] == element["flavour"] \
-                        and constr["node"] == element["node"]:
-                            constr_found = True
-                            constr["constraint_emissions"] = element["constraint_emissions"]
-                            constr["timestamp"] = timestamp
-                            break
-                # Otherwise add it
-                if not constr_found and constr["category"] == "avoid":
+                if not constr_found and constr["category"]:
                     element["memory_weight"] = 1.0
                     element["timestamp"] = timestamp
                     myKnowledgeBase["constraints"].append(element)
             # Now we search all the self.constraints that were not among our current self.constraints, and update their memory weight
             for constr in myKnowledgeBase["constraints"]:
                 constr_found = False
-                for element in self.affinity:
-                    if constr["category"] == "affinity":
-                        if constr["source"] == element["source"] and constr["source_flavour"] == element['source_flavour'] \
-                        and constr["destination"] == element["destination"] and constr["destination_flavour"] == element['destination_flavour']:
-                            constr_found = True
-                            break
-                if not constr_found and constr["category"] == "affinity":
-                    constr["memory_weight"] = sigmoid_decay_step(constr["memory_weight"])
-            # Now we search all the self.constraints that were not among our current self.constraints, and update their memory weight
-            for constr in myKnowledgeBase["constraints"]:
-                constr_found = False
-                for element in self.avoid:
-                    if constr["category"] == "avoid":
-                        if constr["source"] == element["source"] and constr["flavour"] == element["flavour"] \
-                        and constr["node"] == element["node"]:
-                            constr_found = True
-                            break
-                if not constr_found and constr["category"] == "avoid":
+                for element in self.generatedConstraints:
+                    shared_keys = set(constr.keys()) & set(element.keys()) - excluded_keys
+                    if all(constr.get(k) == element.get(k) for k in shared_keys):
+                        constr_found = True
+                        constr["memory_weight"] = 1.0
+                        break
+                if not constr_found and constr["category"]:
                     constr["memory_weight"] = sigmoid_decay_step(constr["memory_weight"])
             for element in self.infrastructure["nodes"]:
                 node_found = False
