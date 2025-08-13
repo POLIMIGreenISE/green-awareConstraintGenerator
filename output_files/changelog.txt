@@ -1,23 +1,100 @@
-service frontend large 2861 vs old 1981
-service checkoutservice tiny 155 vs old 107
-service adservice tiny 324 vs old 251
-service recommendationservice large 778 vs old 539
-service productcatalogservice large 1277 vs old 989
-service cartservice tiny 705 vs old 546
-service shippingservice tiny 127 vs old 98
-service currencyservice tiny 1137 vs old 881
-service emailservice tiny 65 vs old 50
-link frontend large checkoutservice 0 vs old 7
-link frontend large adservice 0 vs old 7
-link frontend large recommendationservice 0 vs old 7
-link frontend large productcatalogservice 0 vs old 7
-link frontend large cartservice 0 vs old 7
-link frontend large shippingservice 0 vs old 7
-link frontend large currencyservice 0 vs old 7
-link checkoutservice tiny productcatalogservice 0 vs old 5
-link checkoutservice tiny cartservice 0 vs old 5
-link checkoutservice tiny shippingservice 0 vs old 5
-link checkoutservice tiny currencyservice 0 vs old 5
-link checkoutservice tiny paymentservice 0 vs old 5
-link checkoutservice tiny emailservice 0 vs old 5
-link recommendationservice large productcatalogservice 0 vs old 6
+service comp0 large 1636 vs old 1653
+service comp1 large 195 vs old 197
+service comp10 large 1081 vs old 1093
+service comp11 large 585 vs old 591
+service comp12 large 1336 vs old 1350
+service comp13 large 812 vs old 821
+service comp14 large 1726 vs old 1744
+service comp15 large 1345 vs old 1359
+service comp16 large 933 vs old 943
+service comp17 large 1299 vs old 1313
+service comp18 large 1406 vs old 1421
+service comp19 large 393 vs old 398
+service comp2 large 1642 vs old 1659
+service comp20 large 1359 vs old 1373
+service comp21 large 1163 vs old 1175
+service comp22 large 1038 vs old 1049
+service comp23 large 1747 vs old 1765
+service comp24 large 111 vs old 113
+service comp25 large 1389 vs old 1404
+service comp26 large 375 vs old 379
+service comp27 large 1152 vs old 1164
+service comp28 large 1708 vs old 1726
+service comp29 large 1730 vs old 1748
+service comp3 large 1562 vs old 1579
+service comp30 large 329 vs old 333
+service comp31 large 1397 vs old 1412
+service comp32 large 693 vs old 701
+service comp33 large 1472 vs old 1488
+service comp34 large 855 vs old 864
+service comp35 large 1683 vs old 1701
+service comp36 large 1263 vs old 1276
+service comp37 large 1696 vs old 1714
+service comp38 large 1615 vs old 1632
+service comp39 large 1655 vs old 1672
+service comp4 large 293 vs old 297
+service comp40 large 502 vs old 508
+service comp41 large 1203 vs old 1216
+service comp42 large 489 vs old 495
+service comp43 large 313 vs old 317
+service comp44 large 1589 vs old 1606
+service comp45 large 1088 vs old 1100
+service comp46 large 373 vs old 377
+service comp47 large 1020 vs old 1031
+service comp48 large 833 vs old 842
+service comp49 large 1258 vs old 1271
+service comp5 large 1323 vs old 1337
+service comp50 large 1574 vs old 1591
+service comp51 large 1301 vs old 1315
+service comp52 large 380 vs old 384
+service comp53 large 438 vs old 443
+service comp54 large 1010 vs old 1021
+service comp55 large 168 vs old 170
+service comp56 large 757 vs old 765
+service comp57 large 1611 vs old 1628
+service comp58 large 1687 vs old 1705
+service comp59 large 1403 vs old 1418
+service comp6 large 691 vs old 699
+service comp60 large 134 vs old 136
+service comp61 large 1552 vs old 1568
+service comp62 large 664 vs old 671
+service comp63 large 1074 vs old 1086
+service comp64 large 809 vs old 818
+service comp65 large 1493 vs old 1509
+service comp66 large 1134 vs old 1146
+service comp67 large 792 vs old 801
+service comp68 large 1564 vs old 1581
+service comp69 large 1083 vs old 1095
+service comp7 large 1601 vs old 1618
+service comp70 large 1252 vs old 1265
+service comp71 large 713 vs old 721
+service comp72 large 1362 vs old 1376
+service comp73 large 1472 vs old 1488
+service comp74 large 163 vs old 165
+service comp75 large 1617 vs old 1634
+service comp76 large 720 vs old 728
+service comp77 large 864 vs old 873
+service comp78 large 1648 vs old 1665
+service comp79 large 536 vs old 542
+service comp8 large 356 vs old 360
+service comp80 large 791 vs old 800
+service comp81 large 1280 vs old 1294
+service comp82 large 453 vs old 458
+service comp83 large 1145 vs old 1157
+service comp84 large 392 vs old 397
+service comp85 large 550 vs old 556
+service comp86 large 867 vs old 876
+service comp87 large 1197 vs old 1210
+service comp88 large 1107 vs old 1119
+service comp89 large 1455 vs old 1470
+service comp9 large 763 vs old 771
+service comp90 large 1620 vs old 1637
+service comp91 large 1081 vs old 1093
+service comp92 large 420 vs old 425
+service comp93 large 690 vs old 698
+service comp94 large 488 vs old 494
+service comp95 large 1072 vs old 1084
+service comp96 large 1450 vs old 1465
+service comp97 large 1744 vs old 1762
+service comp98 large 390 vs old 395
+service comp99 large 1465 vs old 1481

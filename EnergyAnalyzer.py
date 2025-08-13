@@ -189,7 +189,14 @@ if not args.keep:
     open(knowledgeBase, "w").close()
 
 if args.nodes and args.services:
-    a,n,d,k,i = generate_rnd(args.nodes, args.services)
+    if os.path.getsize(os.path.abspath(os.path.join("input_files", f"app{int(args.services)}.yaml"))) > 0:
+        a = os.path.abspath(os.path.join("input_files", f"app{int(args.services)}.yaml"))
+        n = os.path.abspath(os.path.join("input_files", f"nodes{int(args.nodes)}.yaml"))
+        d = os.path.abspath(os.path.join("input_files", f"deployment{int(args.nodes)}.txt"))
+        k = os.path.abspath(os.path.join("input_files", f"kepler-metrics{int(args.services)}.txt"))
+        i = os.path.abspath(os.path.join("input_files", f"istio_data_default{int(args.services)}.json"))
+    else:
+        a,n,d,k,i = generate_rnd(args.nodes, args.services)
     istio = i
     kepler = k
     nodes = n
@@ -231,7 +238,7 @@ if args.nodes:
     formatted_codecarbon = "{:.6f}".format(float(last_line["energy_consumed"]))
 
     new_row = [args.nodes, args.services, final_time, formatted_codecarbon]
-    output_csv = os.path.abspath(os.path.join("output_files", "scalability.csv"))
+    output_csv = os.path.abspath(os.path.join("output_files", "scalability_threshold.csv"))
     with open(output_csv, 'a', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(new_row)

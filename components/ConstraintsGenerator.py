@@ -92,8 +92,8 @@ class ConstraintsGenerator:
         #maxNode = max(self.infrastructure["nodes"], key=lambda x: self.energyMix.gather_energyMix(x))
 
         # Dynamic Thresholding
-        cut_points = 5
-        threshold_points = 3
+        cut_points = 100
+        threshold_points = 79
         if not self.myKnowledgeBase:
             # Findthe avg consumption for all our estimates
             istioThreshold = statistics.quantiles([x["emissions"] for x in self.istio], n=cut_points)[threshold_points]

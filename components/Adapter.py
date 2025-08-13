@@ -13,6 +13,7 @@ class Adapter:
         self.yamlout = yamlOut
         self.infrastructure = infrastructure
         self.energyMix = energyMix
+        self.contraints_threshold = 0.1 
         self.nodes = []
         for node in self.infrastructure["nodes"]:
             details = {"node": node,
@@ -30,6 +31,8 @@ class Adapter:
                     return "since the services exchanged a lot of data between them"
                 case "avoidNode":
                     return "This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node."
+                case "delay":
+                    return "This service is not mandatory for the initial deployment and so its deployment can be delayed"
 
         def savings(constraint):
             def obtainIndex(data, element):
@@ -43,8 +46,6 @@ class Adapter:
                 minSave = maxSave
             return f"The estimated emissions savings resulting from avoiding this deployment range between {maxSave} gCO2eq and {minSave} gCO2eq."
 
-        contraints_threshold = 0.1 
-
         with open(self.prologFile, 'w') as file:
             for fact in self.prologFacts:
                 file.write(fact + ".\n")
@@ -54,25 +55,26 @@ class Adapter:
         list(p.query(f"save_to_file(['{self.prologFile}', '{self.prologOutput}'])"))
         # Prolog().consult("rules2.pl")
 
-        maxV = max(x["constraint_emissions"] for x in self.constraints)
+        maxV = max(x["constraint_emissions"] for x in self.constraints if "constraint_emissions" in x)
         
         final_explanation = []
         for constraint in self.constraints:
-            if (constraint.get("constraint_emissions") / maxV) > contraints_threshold:
-                if constraint["category"] == "affinity":
-                    explanation = (f'A {constraint["category"]} was generated '
-                        f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
-                        f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
-                        f'{explain(constraint["category"])}\n')
-                    final_explanation.append(explanation)
-                elif constraint["category"] == "avoid":
-                    constraint["category"] = "avoidNode"
-                    explanation = (f'A {constraint["category"]} constraint was generated '
-                        f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
-                        f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
-                        f'{savings(constraint)}\n'
-                        )
-                    final_explanation.append(explanation)
+            if "constraint_emissions" in constraint:
+                if (constraint.get("constraint_emissions") / maxV) > self.contraints_threshold:
+                    if constraint["category"] == "affinity":
+                        explanation = (f'A {constraint["category"]} was generated '
+                            f'between {constraint["source"]} in flavour {constraint["source_flavour"]} '
+                            f'and {constraint["destination"]} in flavour {constraint["destination_flavour"]} '
+                            f'{explain(constraint["category"])}\n')
+                        final_explanation.append(explanation)
+                    elif constraint["category"] == "avoid":
+                        constraint["category"] = "avoidNode"
+                        explanation = (f'A {constraint["category"]} constraint was generated '
+                            f'for the deployment of the {constraint["source"]} component in the {constraint["flavour"]} flavour '
+                            f'on the {constraint["node"]} node. {explain(constraint["category"])}\n'
+                            f'{savings(constraint)}\n'
+                            )
+                        final_explanation.append(explanation)
         with open(self.explanationFile, "w") as explfile:
             explfile.write("\n".join(final_explanation))
 
@@ -82,24 +84,43 @@ class Adapter:
             }
         }
         for element in self.constraints:
-            if (element.get("constraint_emissions") / maxV) > 0.3:
+            if "constraint_emissions" in element:
+                if (element.get("constraint_emissions") / maxV) > 0.3:
+                    source = element["source"]
+                    flavour = element.get("source_flavour", element.get("flavour", None))
+                    affinityvalue = element.get("destination", "") #+ "," + element.get("destination_flavour", "")
+                    
+                    if source not in outputdata["requirements"]["components"]:
+                        outputdata["requirements"]["components"][source] = {}
+                    if flavour not in outputdata["requirements"]["components"][source]:
+                        outputdata["requirements"]["components"][source][flavour] = []
+
+                    outputdata["requirements"]["components"][source][flavour].append({
+                        element.get("category"): {
+                            "energy_oriented": True,
+                            "resilience_oriented": False,
+                            "soft": True,
+                            "value": element.get("node", affinityvalue)
+                        }
+                    })
+            else:
                 source = element["source"]
                 flavour = element.get("source_flavour", element.get("flavour", None))
-                affinityvalue = element.get("destination", "") #+ "," + element.get("destination_flavour", "")
-                
+
                 if source not in outputdata["requirements"]["components"]:
                     outputdata["requirements"]["components"][source] = {}
                 if flavour not in outputdata["requirements"]["components"][source]:
                     outputdata["requirements"]["components"][source][flavour] = []
-
+                    
                 outputdata["requirements"]["components"][source][flavour].append({
                     element.get("category"): {
                         "energy_oriented": True,
                         "resilience_oriented": False,
                         "soft": True,
-                        "value": element.get("node", affinityvalue)
+                        "value": element.get("delay")
                     }
                 })
+
 
         with open(self.yamlout, "w") as file:
             yaml.dump(outputdata, file, default_flow_style=False)
