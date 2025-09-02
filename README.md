@@ -41,7 +41,7 @@ Defaults to not keeping
 
 # Components
 
-<img  src="FREEDA_EnergyAnalyserArchitecture.png"  width="400">
+<img  src="images/FREEDA_EnergyAnalyserArchitecture.png"  width="400">
 
 ## Energy Estimator
 
