@@ -1,4 +1,4 @@
-# FREEDA Energy Analyzer
+# Green-aware Constraint Generator
 
 This component develops techniques to classify the profile of nodes in a Cloud-IoT infrastructure and correspondingly generate requirements to reduce the energy consumed by MSAs deployed on such infrastructure. In addition, the relationship between an MSA components, based on the connections/functional dependencies between microservices and the information on the data they exchange, are considered in the analysis to provide information about microservice coplacement to the solver.
 
@@ -41,9 +41,9 @@ Defaults to not keeping
 
 # Components
 
-<img  src="images/Energy Analyzer.png"  width="400">
+<img  src="FREEDA_EnergyAnalyserArchitecture.png"  width="400">
 
-## Consumption Estimator
+## Energy Estimator
 
 Starting from Monitoring Metrics generates the consumption of each service and connection
 
@@ -59,18 +59,18 @@ Supporting module that provides the energy mix of the nodes
 
 Holds useful information gathered from previous iterations
 
-## Knowledge Base Updater
+## Knowledge Base Enricher
 
-Updates the memory of the current knowledge base
+Updates the memory of the current knowledge base and enriches the current constraints with relevant past ones
 
-## Knowledge Base Enrichment
-
-Enriches the current constraints with relevant past ones
-
-## Weights Generator
+## Constraints Ranker
 
 Creates an internal ranking of constraints based on the amount of energy consumption they help decrease
 
-## Adapter
+## Constraint Adapter
 
 Formats the output for the consumption of future components
+
+## Explainability Generator
+
+Component responsible for generating the Explanability Report, giving an human readable explanation for the constraints generated
