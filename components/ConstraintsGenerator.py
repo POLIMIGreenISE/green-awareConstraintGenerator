@@ -97,7 +97,7 @@ class ConstraintsGenerator:
         if not self.myKnowledgeBase:
             # Findthe avg consumption for all our estimates
             istioThreshold = statistics.quantiles([x["emissions"] for x in self.istio], n=cut_points)[threshold_points]
-            # 75th quantile
+            # 80th quantile
             keplerThreshold = statistics.quantiles([x["emissions"] for x in self.kepler], n=cut_points)[threshold_points]
         else:
             quant_istio = []
@@ -107,7 +107,7 @@ class ConstraintsGenerator:
             for element in self.istio:
                 quant_istio.append(element["emissions"])
             istioThreshold = statistics.quantiles(quant_istio, n=cut_points)[threshold_points]
-            # 75th quantile
+            # 80th quantile
             quant_kepler = []
             for element in self.myKnowledgeBase["services"]:
                 for historyPoint in element["history"]:

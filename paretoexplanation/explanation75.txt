@@ -1,0 +1,1112 @@
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 776.0341439985649 gCO2eq and 22.888647505575705 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 810.9120830546801 gCO2eq and 10.899355955035958 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 707.3682014818379 gCO2eq and 9.809420359532396 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.0769777964064 gCO2eq and 3.2698067865107987 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 697.5587811223055 gCO2eq and 16.349033932553994 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 746.6058829199676 gCO2eq and 5.449677977518036 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 681.2097471897515 gCO2eq and 2.179871191007237 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 724.8071710098956 gCO2eq and 10.899355955036071 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 800.0127270996442 gCO2eq and 23.978583101079266 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 708.4581370773416 gCO2eq and 1.0899355955036754 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 671.400326830219 gCO2eq and 10.899355955035958 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 679.0298759987443 gCO2eq and 7.629549168525273 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 660.500970875183 gCO2eq and 3.2698067865107987 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 843.6101509197882 gCO2eq and 5.449677977518036 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 657.2311640886722 gCO2eq and 10.899355955036071 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 844.7000865152918 gCO2eq and 1.0899355955035617 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node25 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 646.3318081336362 gCO2eq and 6.539613573021597 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 724.8071710098956 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 837.0705373467666 gCO2eq and 4.359742382014474 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 838.1604729422702 gCO2eq and 1.0899355955035617 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 713.9078150548595 gCO2eq and 5.449677977517922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 741.1562049424496 gCO2eq and 13.079227146043195 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 832.7107949647522 gCO2eq and 21.79871191007203 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 855.5994424703279 gCO2eq and 10.899355955036071 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp20 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 753.1454964929892 gCO2eq and 6.539613573021597 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 769.5563965528339 gCO2eq and 22.697590347766095 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 804.1432008922872 gCO2eq and 10.80837635607918 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 701.4636255095354 gCO2eq and 9.727538720471216 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 721.9995405860858 gCO2eq and 3.2425129068237766 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 691.7360867890642 gCO2eq and 16.212564534118656 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 740.3737803914203 gCO2eq and 5.404188178039476 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 675.5235222549455 gCO2eq and 2.161675271215813 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 718.757027679262 gCO2eq and 10.808376356079066 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 793.334824536208 gCO2eq and 23.77842798337406 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 702.5444631451434 gCO2eq and 1.0808376356079634 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 665.7959835344743 gCO2eq and 10.80837635607918 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 673.3618469837297 gCO2eq and 7.565863449255403 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 654.9876071783951 gCO2eq and 3.242512906823663 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 836.5683299605246 gCO2eq and 5.40418817803959 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 651.7450942715715 gCO2eq and 10.80837635607918 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 837.6491675961324 gCO2eq and 1.0808376356078497 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 718.757027679262 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 830.083304146877 gCO2eq and 4.323350542431626 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 831.164141782485 gCO2eq and 1.0808376356079634 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 707.948651323183 gCO2eq and 5.40418817803959 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 734.9695922133808 gCO2eq and 12.970051627294993 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 825.7599536044454 gCO2eq and 21.616752712158245 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 848.4575439522116 gCO2eq and 10.80837635607918 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp98 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 746.8588062050678 gCO2eq and 6.485025813647553 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 766.1015979151107 gCO2eq and 22.595693196934462 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 800.5331304056775 gCO2eq and 10.7598539033022 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 698.3145183243074 gCO2eq and 9.683868512971912 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 718.7582407405814 gCO2eq and 3.2279561709906375 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 688.6306498113355 gCO2eq and 16.139780854953187 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 737.049992376195 gCO2eq and 5.379926951650987 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 672.4908689563823 gCO2eq and 2.151970780660463 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 715.5302845695908 gCO2eq and 10.759853903302087 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 789.7732765023753 gCO2eq and 23.671678587264637 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 699.3905037146376 gCO2eq and 1.0759853903301746 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 662.8070004434104 gCO2eq and 10.759853903302087 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 670.3388981757219 gCO2eq and 7.5318977323114495 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 652.0471465401083 gCO2eq and 3.2279561709906375 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 832.8126921155838 gCO2eq and 5.379926951650987 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 648.8191903691177 gCO2eq and 10.7598539033022 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 833.8886775059141 gCO2eq and 1.0759853903302883 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 715.5302845695908 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 826.3567797736025 gCO2eq and 4.303941561320812 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 827.4327651639328 gCO2eq and 1.0759853903302883 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 704.7704306662887 gCO2eq and 5.3799269516511 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 731.670065424544 gCO2eq and 12.91182468396255 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 822.0528382122817 gCO2eq and 21.519707806604174 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 844.6485314092162 gCO2eq and 10.759853903302087 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp33 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 743.5059047181762 gCO2eq and 6.455912341981275 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 763.078649107103 gCO2eq and 22.506533189956713 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 797.3743187298942 gCO2eq and 10.717396757122287 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.5590495372328 gCO2eq and 9.645657081409922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 715.9221033757651 gCO2eq and 3.2152190271366408 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 685.913392455823 gCO2eq and 16.07609513568343 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 734.1416778628729 gCO2eq and 5.358698378561144 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 669.8372973201394 gCO2eq and 2.1434793514243893 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.7068843486286 gCO2eq and 10.717396757122287 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 786.6569219727719 gCO2eq and 23.57827286566885 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 696.630789212945 gCO2eq and 1.0717396757122515 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 660.1916402387296 gCO2eq and 10.717396757122287 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 667.6938179687152 gCO2eq and 7.502177729985533 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 649.4742434816073 gCO2eq and 3.2152190271366408 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 829.5265090012608 gCO2eq and 5.35869837856103 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 646.2590244544706 gCO2eq and 10.717396757122287 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 830.5982486769731 gCO2eq and 1.0717396757122515 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.7068843486286 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 823.0960709469875 gCO2eq and 4.286958702848892 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 824.1678106226998 gCO2eq and 1.0717396757122515 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 701.9894875915063 gCO2eq and 5.358698378561144 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.7829794843119 gCO2eq and 12.860876108546677 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 818.8091122441385 gCO2eq and 21.43479351424446 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 841.3156454340954 gCO2eq and 10.717396757122287 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp52 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 740.5721159171462 gCO2eq and 6.4304380542732815 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 762.6467992773876 gCO2eq and 22.493796046102716 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 796.9230599190678 gCO2eq and 10.711331450525108 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.1654111390794 gCO2eq and 9.640198305472609 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 715.5169408950771 gCO2eq and 3.213399435157612 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 685.5252128336067 gCO2eq and 16.06699717578772 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 733.7262043609696 gCO2eq and 5.355665725262497 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 669.458215657819 gCO2eq and 2.142266290104999 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.3035414599194 gCO2eq and 10.711331450525108 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 786.2117284685428 gCO2eq and 23.564929191155215 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 696.2365442841319 gCO2eq and 1.0711331450524995 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 659.8180173523465 gCO2eq and 10.711331450525108 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 667.315949367714 gCO2eq and 7.497932015367496 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 649.1066859018215 gCO2eq and 3.213399435157612 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 829.0570542706432 gCO2eq and 5.355665725262497 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 645.8932864666638 gCO2eq and 10.711331450525108 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 830.1281874156957 gCO2eq and 1.0711331450524995 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.3035414599194 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 822.630255400328 gCO2eq and 4.284532580209998 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 823.7013885453807 gCO2eq and 1.0711331450526131 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 701.5922100093944 gCO2eq and 5.355665725262497 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.3705386357071 gCO2eq and 12.853597740630107 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 818.345722820118 gCO2eq and 21.422662901050217 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 840.8395188662207 gCO2eq and 10.711331450525108 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp16 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 740.1530032312849 gCO2eq and 6.42679887031511 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 761.7830996179569 gCO2eq and 22.468321758394723 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 796.0205422974157 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 694.3781343427725 gCO2eq and 9.629280753597754 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 714.7066159337012 gCO2eq and 3.2097602511993273 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 684.7488535891747 gCO2eq and 16.048801255996295 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 732.8952573571636 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.7000523331784 gCO2eq and 2.1398401674661045 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 711.4968556825019 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 785.3213414600848 gCO2eq and 23.538241842127945 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.4480544265056 gCO2eq and 1.069920083733109 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 659.0707715795807 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 666.5602121657123 gCO2eq and 7.48944058613165 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 648.3715707422498 gCO2eq and 3.2097602511992136 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 828.1181448094082 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 645.1618104910506 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 829.1880648931412 gCO2eq and 1.0699200837329954 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 711.4968556825019 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 821.6986243070097 gCO2eq and 4.279680334932323 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 822.7685443907428 gCO2eq and 1.069920083733109 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 700.797654845171 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 727.5456569384982 gCO2eq and 12.839041004796968 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 817.4189439720774 gCO2eq and 21.398401674661727 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 839.8872657304721 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp3 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 739.3147778595621 gCO2eq and 6.419520502398541 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 761.7830996179569 gCO2eq and 22.468321758394723 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 796.0205422974157 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 694.3781343427725 gCO2eq and 9.629280753597754 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 714.7066159337012 gCO2eq and 3.2097602511993273 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 684.7488535891747 gCO2eq and 16.048801255996295 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 732.8952573571636 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.7000523331784 gCO2eq and 2.1398401674661045 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 711.4968556825019 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 785.3213414600848 gCO2eq and 23.538241842127945 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.4480544265056 gCO2eq and 1.069920083733109 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 659.0707715795807 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 666.5602121657123 gCO2eq and 7.48944058613165 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node73 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 648.3715707422498 gCO2eq and 3.2097602511992136 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 828.1181448094082 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node55 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 645.1618104910506 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 829.1880648931412 gCO2eq and 1.0699200837329954 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 711.4968556825019 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 821.6986243070097 gCO2eq and 4.279680334932323 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 822.7685443907428 gCO2eq and 1.069920083733109 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 700.797654845171 gCO2eq and 5.349600418665432 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 727.5456569384982 gCO2eq and 12.839041004796968 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 817.4189439720774 gCO2eq and 21.398401674661727 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 839.8872657304721 gCO2eq and 10.699200837330864 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp90 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 739.3147778595621 gCO2eq and 6.419520502398541 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 748.8276047264949 gCO2eq and 22.086207442775844 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 782.4827779726295 gCO2eq and 10.51724163941708 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 682.5689823981673 gCO2eq and 9.46551747547528 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 702.5517415130598 gCO2eq and 3.1551724918251693 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 673.1034649226921 gCO2eq and 15.77586245912562 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 720.4310523000688 gCO2eq and 5.25862081970854 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 657.3276024635664 gCO2eq and 2.103448327883484 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 699.3965690212347 gCO2eq and 10.51724163941708 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 771.9655363332124 gCO2eq and 23.13793160671753 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 683.620706562109 gCO2eq and 1.0517241639416852 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node26 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 647.862084988091 gCO2eq and 10.51724163941708 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 655.224154135683 gCO2eq and 7.36206914759191 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 814.0345028908806 gCO2eq and 5.258620819708426 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 815.0862270548224 gCO2eq and 1.051724163941799 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 699.3965690212347 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 807.7241579072304 gCO2eq and 4.206896655766741 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 808.7758820711722 gCO2eq and 1.051724163941799 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 688.8793273818176 gCO2eq and 5.25862081970854 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 715.1724314803603 gCO2eq and 12.62068996730045 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 803.5172612514637 gCO2eq and 21.03448327883416 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 825.6034686942395 gCO2eq and 10.51724163941708 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp47 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 726.741397283719 gCO2eq and 6.310344983650225 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 740.190608132187 gCO2eq and 21.83146456569648 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 773.4576017561055 gCO2eq and 10.395935507474519 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node1 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.6962144350974 gCO2eq and 9.356341956727078 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 694.448491899299 gCO2eq and 3.1187806522423216 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node72 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 665.3398724783704 gCO2eq and 15.593903261211835 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.1215822620057 gCO2eq and 5.197967753737203 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node27 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 649.7459692171585 gCO2eq and 2.079187101494881 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 691.3297112470567 gCO2eq and 10.395935507474519 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 763.061666248631 gCO2eq and 22.871058116444033 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node88 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 675.7358079858449 gCO2eq and 1.0395935507474405 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node7 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 647.6667821156636 gCO2eq and 7.277154855232197 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 804.6454082785292 gCO2eq and 5.197967753737316 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 805.6850018292766 gCO2eq and 1.0395935507474405 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 691.3297112470567 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 798.4078469740444 gCO2eq and 4.158374202989876 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 799.4474405247919 gCO2eq and 1.0395935507474405 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node3 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 680.9337757395822 gCO2eq and 5.197967753737316 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 706.9236145082685 gCO2eq and 12.475122608969514 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 794.2494727710546 gCO2eq and 20.791871014949038 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 816.0809373367512 gCO2eq and 10.395935507474519 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp18 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 718.3591435664905 gCO2eq and 6.237561304484757 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 706.9381712441016 gCO2eq and 20.850704488941233 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 738.7106733224881 gCO2eq and 9.928906899495814 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 663.25098088632 gCO2eq and 2.978672069848699 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 680.1301226154629 gCO2eq and 4.964453449747907 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 660.2723088164713 gCO2eq and 9.928906899495814 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.7817664229924 gCO2eq and 21.843595178890723 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 768.4973940209755 gCO2eq and 4.964453449747907 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 769.4902847109252 gCO2eq and 0.9928906899496042 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 660.2723088164713 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 762.5400498812782 gCO2eq and 3.971562759798303 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 763.5329405712276 gCO2eq and 0.9928906899494905 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 675.165669165715 gCO2eq and 11.914688279394909 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 758.5684871214797 gCO2eq and 19.85781379899163 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 779.419191610421 gCO2eq and 9.928906899495814 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp71 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 686.0874667551603 gCO2eq and 5.957344139697398 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 703.9152224360938 gCO2eq and 20.761544481963483 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 735.5518616467048 gCO2eq and 9.886449753315901 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 660.4148435215037 gCO2eq and 2.965934925994816 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 677.2218081021408 gCO2eq and 4.9432248766579505 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 657.448908595509 gCO2eq and 9.886449753316015 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 725.6654118933889 gCO2eq and 21.75018945729505 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 765.2112109066525 gCO2eq and 4.943224876658064 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 766.1998558819841 gCO2eq and 0.988644975331681 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 657.448908595509 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 759.279341054663 gCO2eq and 3.954579901326383 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 760.2679860299945 gCO2eq and 0.9886449753315674 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 672.2785832254829 gCO2eq and 11.86373970397915 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 755.3247611533366 gCO2eq and 19.772899506631802 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 776.0863056353 gCO2eq and 9.886449753315901 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp13 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 683.1536779541303 gCO2eq and 5.931869851989518 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 700.4604237983707 gCO2eq and 20.659647331131737 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 731.9417911600952 gCO2eq and 9.837927300538922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node70 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 657.1735436759996 gCO2eq and 2.9513781901616767 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 673.8980200869157 gCO2eq and 4.918963650269461 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node94 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 654.2221654858379 gCO2eq and 9.837927300538922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 722.1038638595563 gCO2eq and 21.64344006118563 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 761.455573061712 gCO2eq and 4.918963650269461 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 762.4393657917659 gCO2eq and 0.9837927300538922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node6 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 654.2221654858379 gCO2eq and 0.0 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 755.5528166813887 gCO2eq and 3.935170920215569 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 756.5366094114426 gCO2eq and 0.9837927300538922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.9790564366463 gCO2eq and 11.805512760646707 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 751.6176457611731 gCO2eq and 19.675854601077845 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 772.2772930923048 gCO2eq and 9.837927300538922 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp45 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 679.8007764672391 gCO2eq and 5.902756380323353 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.278225841786 gCO2eq and 20.506801604884117 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 726.5266854301809 gCO2eq and 9.765143621373454 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.9123380640779 gCO2eq and 4.882571810686727 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 716.7615418088075 gCO2eq and 21.48331596702144 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 755.822116294301 gCO2eq and 4.882571810686613 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 756.7986306564385 gCO2eq and 0.9765143621373227 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 749.963030121477 gCO2eq and 3.9060574485494044 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 750.9395444836144 gCO2eq and 0.9765143621374364 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 664.0297662533911 gCO2eq and 11.7181723456481 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 746.0569726729277 gCO2eq and 19.530287242746795 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 766.5637742778118 gCO2eq and 9.76514362137334 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp37 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.7714242369019 gCO2eq and 5.85908617282405 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 694.8463760120706 gCO2eq and 20.49406446103012 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 726.0754266193546 gCO2eq and 9.759078314776275 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.4968645621747 gCO2eq and 4.879539157388194 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 716.3163483045784 gCO2eq and 21.469972292507805 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 755.3526615636835 gCO2eq and 4.879539157388194 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 756.328569395161 gCO2eq and 0.9759078314775707 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 749.4972145748177 gCO2eq and 3.90363132591051 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 750.4731224062953 gCO2eq and 0.9759078314776843 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 663.6173254047865 gCO2eq and 11.71089397773153 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 745.5935832489072 gCO2eq and 19.51815662955255 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 766.0876477099373 gCO2eq and 9.759078314776275 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp46 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.3523115510404 gCO2eq and 5.855446988865765 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 687.0730790771934 gCO2eq and 20.264795871658862 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 717.952768024483 gCO2eq and 9.649902796027959 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node60 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 661.0183415279179 gCO2eq and 4.824951398014036 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 708.3028652284551 gCO2eq and 21.229786151261692 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 746.902476412567 gCO2eq and 4.824951398014036 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 747.8674666921698 gCO2eq and 0.96499027960283 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 741.1125347349503 gCO2eq and 3.8599611184112064 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 742.077525014553 gCO2eq and 0.9649902796027163 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node44 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 656.1933901299038 gCO2eq and 11.57988335523362 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 737.252573616539 gCO2eq and 19.299805592056032 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 757.5173694881978 gCO2eq and 9.649902796027959 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp35 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 666.8082832055346 gCO2eq and 5.789941677616753 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 678.4360824828856 gCO2eq and 20.010052994579496 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 708.9275918079591 gCO2eq and 9.528596664085512 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 699.3989951438735 gCO2eq and 20.96291266098808 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 737.5133818002155 gCO2eq and 4.764298332042699 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 738.4662414666241 gCO2eq and 0.9528596664085853 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 731.7962238017642 gCO2eq and 3.8114386656342276 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 732.7490834681728 gCO2eq and 0.9528596664085853 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 727.98478513613 gCO2eq and 19.05719332817091 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 747.9948381307095 gCO2eq and 9.528596664085399 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp15 component in the large flavour on the node80 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 658.4260294883061 gCO2eq and 5.717157998451285 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 671.0946353777238 gCO2eq and 19.79352154906212 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 701.2561920239136 gCO2eq and 9.425486451934262 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 691.8307055719794 gCO2eq and 20.736070194255603 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 729.5326513797166 gCO2eq and 4.712743225967188 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 730.47520002491 gCO2eq and 0.9425486451933693 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 723.877359508556 gCO2eq and 3.7701945807738184 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 724.8199081537495 gCO2eq and 0.942548645193483 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 720.1071649277823 gCO2eq and 18.850972903868637 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp9 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 739.9006864768444 gCO2eq and 9.425486451934376 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.9353862291468 gCO2eq and 19.72983582979225 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 698.9998979697826 gCO2eq and 9.395159918948707 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 689.6047380508339 gCO2eq and 20.6693518216872 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 727.1853777266288 gCO2eq and 4.697579959474297 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.1248937185236 gCO2eq and 0.9395159918948366 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 721.5482817752595 gCO2eq and 3.75806396757946 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 722.4877977671545 gCO2eq and 0.9395159918948366 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 717.79021780768 gCO2eq and 18.790319837897414 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp6 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 737.5200536374723 gCO2eq and 9.395159918948707 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 664.1850381022775 gCO2eq and 19.589727247398628 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 694.0360510506944 gCO2eq and 9.328441546380304 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 684.7076095043142 gCO2eq and 20.522571402036647 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 722.0213756898354 gCO2eq and 4.664220773190095 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 722.9542198444733 gCO2eq and 0.9328441546380191 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 716.4243107620072 gCO2eq and 3.73137661855219 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 717.3571549166452 gCO2eq and 0.9328441546380191 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.692934143455 gCO2eq and 18.65688309276061 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp68 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 732.2826613908537 gCO2eq and 9.328441546380304 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node82 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 661.1620892942698 gCO2eq and 19.500567240420878 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 690.877239374911 gCO2eq and 9.285984400200505 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 681.5912549747106 gCO2eq and 20.42916568044086 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 718.7351925755123 gCO2eq and 4.642992200100139 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 719.6637910155324 gCO2eq and 0.928598440020096 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 713.1636019353921 gCO2eq and 3.7143937600801564 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 714.0922003754122 gCO2eq and 0.9285984400199823 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 709.4492081753119 gCO2eq and 18.571968800400896 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp99 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 728.9497754157328 gCO2eq and 9.285984400200391 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 683.6570984016919 gCO2eq and 9.18893949464632 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node10 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.4681589070456 gCO2eq and 20.21566688822213 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 711.2239168856311 gCO2eq and 4.59446974732316 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 712.1428108350957 gCO2eq and 0.918893949464632 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 705.7105531888433 gCO2eq and 3.675575797858528 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 706.6294471383079 gCO2eq and 0.918893949464632 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 702.0349773909847 gCO2eq and 18.377878989292867 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp73 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 721.3317503297421 gCO2eq and 9.188939494646434 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node84 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.314298833601 gCO2eq and 8.982719070344046 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 695.2624560446334 gCO2eq and 4.491359535172023 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 696.1607279516678 gCO2eq and 0.8982719070344274 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 689.8728246024269 gCO2eq and 3.5930876281377095 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 690.7710965094614 gCO2eq and 0.8982719070343137 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 686.2797369742892 gCO2eq and 17.965438140688207 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp80 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 705.1434470220119 gCO2eq and 8.982719070344046 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 679.3009952036358 gCO2eq and 4.3882493230208865 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 680.17864506824 gCO2eq and 0.8776498646042228 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.0350960160107 gCO2eq and 3.5105994584166638 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 674.9127458806149 gCO2eq and 0.8776498646042228 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 670.524496557594 gCO2eq and 17.55299729208366 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp25 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 688.9551437142818 gCO2eq and 8.776498646041773 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 677.4231762811654 gCO2eq and 4.376118709826642 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 678.2984000231307 gCO2eq and 0.8752237419653284 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 672.1718338293734 gCO2eq and 3.5008949678613135 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 673.0470575713388 gCO2eq and 0.8752237419653284 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node36 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 668.6709388615121 gCO2eq and 17.50447483930668 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp27 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 687.050637442784 gCO2eq and 8.752237419653284 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp75 component in the large flavour on the node21 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 670.3813553219018 gCO2eq and 4.330628910348196 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp75 component in the large flavour on the node29 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 671.2474811039714 gCO2eq and 0.8661257820696164 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp75 component in the large flavour on the node99 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 665.1846006294838 gCO2eq and 3.4645031282784657 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp75 component in the large flavour on the node90 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 666.0507264115536 gCO2eq and 0.8661257820697301 gCO2eq.
+
+A avoidNode constraint was generated for the deployment of the comp75 component in the large flavour on the node62 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 679.9087389246678 gCO2eq and 8.661257820696392 gCO2eq.
